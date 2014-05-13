@@ -1,0 +1,27 @@
+H  SOFTWARE NAME & VERSION
+I  GPSU 5.02 01 FREEWARE VERSION
+S DateFormat=dd/mm/yyyy
+S Units=M,M
+S SymbolSet=0
+
+H R DATUM
+M E   Ord Srvy Grt Britn 075  5.7360400E+02  1.1960020E-05 375 -111 431
+
+H  COORDINATE SYSTEM
+U  BRITISH GRID
+
+F ID---- Zn East  North T Alt(m)   Comment
+W WS1MIL SD 45239 83970 I     40.0 Park at Mill Side
+W WS2TRA SD 44889 84290 I     41.0 Turn Right on track
+W WS3OFF SD 45209 84430 I     60.0 Turn off track North
+W WS4UP  SD 45239 84630 I    144.0 Join track which leads towards Grey Knotts
+W WS5WST SD 44175 87045 I    215.0 Whitbarrow Scar Summit
+W WS6FPW SD 43969 87900 I    180.0 Take FP West
+W WS7BRT SD 43509 87620 I     70.0 Second Track south
+W WS8WSH SD 43709 86210 I     59.0 Witherslack Hall
+W WS9NE  SD 43784 85970 I     60.0 Leave track NE
+W WS10PA SD 44114 86140 I     60.0 Path in Woods
+W WS11BR SD 44404 84910 I     50.0 Meet Bridleway
+W WS12CA SD 45144 84000 I     40.0 End at Car
+
+

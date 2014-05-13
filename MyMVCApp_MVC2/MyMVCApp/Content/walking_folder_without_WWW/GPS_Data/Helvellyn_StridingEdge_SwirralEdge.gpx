@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 2.3.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd">
+<metadata>
+<time>2007-04-25T13:34:13Z</time>
+<bounds minlat="54.52533592" minlon="-3.01944299" maxlat="54.54805892" maxlon="-2.95097399"/>
+</metadata>
+<wpt lat="54.54411599" lon="-2.95097399">
+<time>2007-02-12T11:29:21Z</time>
+<name>GLENCP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GLENCP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.54330999" lon="-2.96081694">
+<time>2007-02-12T11:29:21Z</time>
+<name>RATTBR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>RATTBR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.54118099" lon="-2.96521895">
+<time>2007-02-12T11:29:21Z</time>
+<name>MIREBB</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>MIREBB</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53597096" lon="-2.97384392">
+<time>2007-02-12T11:29:21Z</time>
+<name>MIREBT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>MIREBT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53742296" lon="-2.98325999">
+<time>2007-02-12T11:29:21Z</time>
+<name>BIRKMC</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BIRKMC</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53046095" lon="-2.99162295">
+<time>2007-02-12T11:29:21Z</time>
+<name>HOLINW</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HOLINW</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52533592" lon="-3.00489594">
+<time>2007-02-12T11:29:21Z</time>
+<name>STRED1</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STRED1</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52585694" lon="-3.01251099">
+<time>2007-02-12T11:29:21Z</time>
+<name>STRED2</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STRED2</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52590899" lon="-3.01490695">
+<time>2007-02-12T11:29:21Z</time>
+<name>STREDT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STREDT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52599993" lon="-3.01508297">
+<time>2007-02-12T11:29:21Z</time>
+<name>HELVCA</name>
+<sym>Trail Head</sym>
+<type>Trail</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELVCA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52744095" lon="-3.01871493">
+<time>2007-02-12T11:29:21Z</time>
+<name>HELVET</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELVET</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52872900" lon="-3.01944299">
+<time>2007-02-12T11:29:21Z</time>
+<name>SWIEDT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SWIEDT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53102698" lon="-3.01330299">
+<time>2007-02-12T11:29:21Z</time>
+<name>SWIJUN</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SWIJUN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53333796" lon="-3.00883192">
+<time>2007-02-12T11:29:21Z</time>
+<name>CACAMT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>CACAMT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53890195" lon="-3.01202995">
+<time>2007-02-12T11:29:21Z</time>
+<name>KEPPAT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KEPPAT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.54805892" lon="-2.98164496">
+<time>2007-02-12T11:29:21Z</time>
+<name>GLENYH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GLENYH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.54492200" lon="-2.95807296">
+<time>2007-02-12T11:29:21Z</time>
+<name>GLENEN</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GLENEN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>STRIDING</name>
+<number>1</number>
+<type>GPS Route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STRIDING</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<color>ff00ff</color>
+<opacity>1.0</opacity>
+<width>0.400</width>
+<pattern>Solid</pattern>
+</line>
+</extensions>
+<rtept lat="54.54411599" lon="-2.95097399">
+<time>2007-02-12T11:29:21Z</time>
+<name>GLENCP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GLENCP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.54330999" lon="-2.96081694">
+<time>2007-02-12T11:29:21Z</time>
+<name>RATTBR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>RATTBR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.54118099" lon="-2.96521895">
+<time>2007-02-12T11:29:21Z</time>
+<name>MIREBB</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>MIREBB</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53597096" lon="-2.97384392">
+<time>2007-02-12T11:29:21Z</time>
+<name>MIREBT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>MIREBT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53742296" lon="-2.98325999">
+<time>2007-02-12T11:29:21Z</time>
+<name>BIRKMC</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BIRKMC</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53046095" lon="-2.99162295">
+<time>2007-02-12T11:29:21Z</time>
+<name>HOLINW</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HOLINW</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52533592" lon="-3.00489594">
+<time>2007-02-12T11:29:21Z</time>
+<name>STRED1</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STRED1</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52585694" lon="-3.01251099">
+<time>2007-02-12T11:29:21Z</time>
+<name>STRED2</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STRED2</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52590899" lon="-3.01490695">
+<time>2007-02-12T11:29:21Z</time>
+<name>STREDT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STREDT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52599993" lon="-3.01508297">
+<time>2007-02-12T11:29:21Z</time>
+<name>HELVCA</name>
+<sym>Trail Head</sym>
+<type>Trail</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELVCA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52744095" lon="-3.01871493">
+<time>2007-02-12T11:29:21Z</time>
+<name>HELVET</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELVET</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52872900" lon="-3.01944299">
+<time>2007-02-12T11:29:21Z</time>
+<name>SWIEDT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SWIEDT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53102698" lon="-3.01330299">
+<time>2007-02-12T11:29:21Z</time>
+<name>SWIJUN</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SWIJUN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53333796" lon="-3.00883192">
+<time>2007-02-12T11:29:21Z</time>
+<name>CACAMT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>CACAMT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53890195" lon="-3.01202995">
+<time>2007-02-12T11:29:21Z</time>
+<name>KEPPAT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KEPPAT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.54805892" lon="-2.98164496">
+<time>2007-02-12T11:29:21Z</time>
+<name>GLENYH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GLENYH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.54492200" lon="-2.95807296">
+<time>2007-02-12T11:29:21Z</time>
+<name>GLENEN</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GLENEN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.54411599" lon="-2.95097399">
+<time>2007-02-12T11:29:21Z</time>
+<name>GLENCP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GLENCP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

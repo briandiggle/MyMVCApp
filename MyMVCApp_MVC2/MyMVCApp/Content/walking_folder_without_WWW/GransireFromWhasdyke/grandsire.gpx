@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.36786500" minlon="-2.87550800" maxlat="54.37451100" maxlon="-2.86358200"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.37451100" lon="-2.86382700">
+<ele>150.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR1CAR</name>
+<cmt>Park at Whasdyke on road from Ings</cmt>
+<desc>Park at Whasdyke on road from Ings</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR1CAR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.37282200" lon="-2.87372000">
+<ele>150.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR2SOU</name>
+<cmt>Turn South on Road</cmt>
+<desc>Turn South on Road</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR2SOU</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36970000" lon="-2.87034500">
+<ele>190.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR3LEA</name>
+<cmt>Leave road heading for summit</cmt>
+<desc>Leave road heading for summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR3LEA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36786500" lon="-2.87550800">
+<ele>249.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR4GRA</name>
+<cmt>Grandsire summit</cmt>
+<desc>Grandsire summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR4GRA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36970000" lon="-2.87034500">
+<ele>190.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR5ROA</name>
+<cmt>Back at road</cmt>
+<desc>Back at road</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR5ROA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.37035800" lon="-2.86635600">
+<ele>140.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR6YEW</name>
+<cmt>Yews FP turns NE</cmt>
+<desc>Yews FP turns NE</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR6YEW</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.37383800" lon="-2.86358200">
+<ele>150.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR7CAR</name>
+<cmt>Back at Car</cmt>
+<desc>Back at Car</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR7CAR</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>GRANDSIREWHAS</name>
+<type>Circular route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Grandsire from Whasdyke</label_text>
+</label>
+</extensions>
+<rtept lat="54.37451100" lon="-2.86382700">
+<ele>150.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR1CAR</name>
+<cmt>Park at Whasdyke on road from Ings</cmt>
+<desc>Park at Whasdyke on road from Ings</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR1CAR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.37282200" lon="-2.87372000">
+<ele>150.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR2SOU</name>
+<cmt>Turn South on Road</cmt>
+<desc>Turn South on Road</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR2SOU</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36970000" lon="-2.87034500">
+<ele>190.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR3LEA</name>
+<cmt>Leave road heading for summit</cmt>
+<desc>Leave road heading for summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR3LEA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36786500" lon="-2.87550800">
+<ele>249.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR4GRA</name>
+<cmt>Grandsire summit</cmt>
+<desc>Grandsire summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR4GRA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36970000" lon="-2.87034500">
+<ele>190.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR3LEA</name>
+<cmt>Leave road heading for summit</cmt>
+<desc>Leave road heading for summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR3LEA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.37035800" lon="-2.86635600">
+<ele>140.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR6YEW</name>
+<cmt>Yews FP turns NE</cmt>
+<desc>Yews FP turns NE</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR6YEW</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.37383800" lon="-2.86358200">
+<ele>150.000</ele>
+<time>2009-10-30T07:54:13.781Z</time>
+<name>GR7CAR</name>
+<cmt>Back at Car</cmt>
+<desc>Back at Car</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-30T07:54:17.640Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GR7CAR</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

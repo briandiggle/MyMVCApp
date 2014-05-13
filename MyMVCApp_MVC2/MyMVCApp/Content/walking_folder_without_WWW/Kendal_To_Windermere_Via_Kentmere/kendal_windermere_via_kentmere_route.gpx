@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.34903300" minlon="-2.90415100" maxlat="54.43311600" maxlon="-2.75629000"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.34903300" lon="-2.75629000">
+<ele>60.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK1RIV</name>
+<cmt>Detour off road to river bank</cmt>
+<desc>Detour off road to river bank</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK1RIV</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.35666800" lon="-2.75704500">
+<ele>65.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK2DWA</name>
+<cmt>Join dales way heading along N bank</cmt>
+<desc>Join dales way heading along N bank</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK2DWA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36240800" lon="-2.77315700">
+<ele>67.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK3RIG</name>
+<cmt>Turn R off Dales Way</cmt>
+<desc>Turn R off Dales Way</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK3RIG</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36887500" lon="-2.77374000">
+<ele>84.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK4TJU</name>
+<cmt>Turn R at T Junction</cmt>
+<desc>Turn R at T Junction</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK4TJU</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.37148900" lon="-2.77255700">
+<ele>86.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK5LEF</name>
+<cmt>Turn up track to the left</cmt>
+<desc>Turn up track to the left</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK5LEF</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.37442700" lon="-2.77692300">
+<ele>110.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK6TRA</name>
+<cmt>Turn Right on track to Potter Tarn</cmt>
+<desc>Turn Right on track to Potter Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK6TRA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.38421900" lon="-2.77757000">
+<ele>250.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK7POT</name>
+<cmt>Potter Tarn</cmt>
+<desc>Potter Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK7POT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39071800" lon="-2.78708700">
+<ele>395.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK8NAM</name>
+<cmt>Nameless summit (Potter fell -1)</cmt>
+<desc>Nameless summit (Potter fell -1)</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK8NAM</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39838600" lon="-2.79647600">
+<ele>427.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK9BRU</name>
+<cmt>Brunt Knott</cmt>
+<desc>Brunt Knott</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK9BRU</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40356600" lon="-2.80150600">
+<ele>423.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK10SU</name>
+<cmt>423 nameless summit</cmt>
+<desc>423 nameless summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK10SU</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40622800" lon="-2.81989200">
+<ele>220.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK11BR</name>
+<cmt>Rejoin path, taking bridle way</cmt>
+<desc>Rejoin path, taking bridle way</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK11BR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.41758000" lon="-2.82905600">
+<ele>250.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK12LE</name>
+<cmt>Path veers west</cmt>
+<desc>Path veers west</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK12LE</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.42040700" lon="-2.83620300">
+<ele>159.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK13RO</name>
+<cmt>Kentmere Road</cmt>
+<desc>Kentmere Road</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK13RO</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.43012900" lon="-2.84688300">
+<ele>170.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK14HA</name>
+<cmt>KENTMERE HALL TAKE FP NE</cmt>
+<desc>KENTMERE HALL TAKE FP NE</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK14HA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.43311600" lon="-2.84386100">
+<ele>230.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK15GA</name>
+<cmt>Bridleway to Garburn Pass</cmt>
+<desc>Bridleway to Garburn Pass</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK15GA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.43174200" lon="-2.87021000">
+<ele>450.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK16OF</name>
+<cmt>Turn off track towards Sallows</cmt>
+<desc>Turn off track towards Sallows</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK16OF</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.42859800" lon="-2.86998900">
+<ele>516.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK17SA</name>
+<cmt>Sallows summit</cmt>
+<desc>Sallows summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK17SA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.42835700" lon="-2.87853900">
+<ele>450.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK18MH</name>
+<cmt>MOOR HEAD CONTOUR ROUND</cmt>
+<desc>MOOR HEAD CONTOUR ROUND</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK18MH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.42433600" lon="-2.88754700">
+<ele>483.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK19SH</name>
+<cmt>Sour Howes</cmt>
+<desc>Sour Howes</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK19SH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.41830500" lon="-2.87658300">
+<ele>445.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK20CH</name>
+<cmt>Capple Howe</cmt>
+<desc>Capple Howe</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK20CH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.41636900" lon="-2.88329100">
+<ele>400.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK21WA</name>
+<cmt>Cross over wall</cmt>
+<desc>Cross over wall</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK21WA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.41211500" lon="-2.89335400">
+<ele>250.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK22TR</name>
+<cmt>Join track towards Dubbs Res</cmt>
+<desc>Join track towards Dubbs Res</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK22TR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39598000" lon="-2.88762800">
+<ele>200.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK23SM</name>
+<cmt>Smaller road south</cmt>
+<desc>Smaller road south</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK23SM</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39259900" lon="-2.88901800">
+<ele>200.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK24WE</name>
+<cmt>Right turn  head west</cmt>
+<desc>Right turn  head west</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK24WE</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39225000" lon="-2.89979100">
+<ele>200.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK25FP</name>
+<cmt>Leave road south on FP to orrest head</cmt>
+<desc>Leave road south on FP to orrest head</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK25FP</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.38615600" lon="-2.90350800">
+<ele>180.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK26OR</name>
+<cmt>Orrest Head</cmt>
+<desc>Orrest Head</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK26OR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.38039900" lon="-2.90415100">
+<ele>120.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK27ST</name>
+<cmt>Station</cmt>
+<desc>Station</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK27ST</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>KENDALWINDKM</name>
+<type>Non circular route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Kendal to Windermere via Kentmere</label_text>
+</label>
+</extensions>
+<rtept lat="54.34903300" lon="-2.75629000">
+<ele>60.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK1RIV</name>
+<cmt>Detour off road to river bank</cmt>
+<desc>Detour off road to river bank</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK1RIV</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.35666800" lon="-2.75704500">
+<ele>65.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK2DWA</name>
+<cmt>Join dales way heading along N bank</cmt>
+<desc>Join dales way heading along N bank</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK2DWA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36240800" lon="-2.77315700">
+<ele>67.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK3RIG</name>
+<cmt>Turn R off Dales Way</cmt>
+<desc>Turn R off Dales Way</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK3RIG</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36887500" lon="-2.77374000">
+<ele>84.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK4TJU</name>
+<cmt>Turn R at T Junction</cmt>
+<desc>Turn R at T Junction</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK4TJU</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.37148900" lon="-2.77255700">
+<ele>86.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK5LEF</name>
+<cmt>Turn up track to the left</cmt>
+<desc>Turn up track to the left</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK5LEF</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.37442700" lon="-2.77692300">
+<ele>110.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK6TRA</name>
+<cmt>Turn Right on track to Potter Tarn</cmt>
+<desc>Turn Right on track to Potter Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK6TRA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.38421900" lon="-2.77757000">
+<ele>250.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK7POT</name>
+<cmt>Potter Tarn</cmt>
+<desc>Potter Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK7POT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39071800" lon="-2.78708700">
+<ele>395.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK8NAM</name>
+<cmt>Nameless summit (Potter fell -1)</cmt>
+<desc>Nameless summit (Potter fell -1)</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK8NAM</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39838600" lon="-2.79647600">
+<ele>427.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK9BRU</name>
+<cmt>Brunt Knott</cmt>
+<desc>Brunt Knott</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK9BRU</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40356600" lon="-2.80150600">
+<ele>423.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK10SU</name>
+<cmt>423 nameless summit</cmt>
+<desc>423 nameless summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK10SU</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40622800" lon="-2.81989200">
+<ele>220.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK11BR</name>
+<cmt>Rejoin path, taking bridle way</cmt>
+<desc>Rejoin path, taking bridle way</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK11BR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.41758000" lon="-2.82905600">
+<ele>250.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK12LE</name>
+<cmt>Path veers west</cmt>
+<desc>Path veers west</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK12LE</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.42040700" lon="-2.83620300">
+<ele>159.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK13RO</name>
+<cmt>Kentmere Road</cmt>
+<desc>Kentmere Road</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK13RO</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.43012900" lon="-2.84688300">
+<ele>170.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK14HA</name>
+<cmt>KENTMERE HALL TAKE FP NE</cmt>
+<desc>KENTMERE HALL TAKE FP NE</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK14HA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.43311600" lon="-2.84386100">
+<ele>230.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK15GA</name>
+<cmt>Bridleway to Garburn Pass</cmt>
+<desc>Bridleway to Garburn Pass</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK15GA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.43174200" lon="-2.87021000">
+<ele>450.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK16OF</name>
+<cmt>Turn off track towards Sallows</cmt>
+<desc>Turn off track towards Sallows</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK16OF</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.42859800" lon="-2.86998900">
+<ele>516.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK17SA</name>
+<cmt>Sallows summit</cmt>
+<desc>Sallows summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK17SA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.42835700" lon="-2.87853900">
+<ele>450.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK18MH</name>
+<cmt>MOOR HEAD CONTOUR ROUND</cmt>
+<desc>MOOR HEAD CONTOUR ROUND</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK18MH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.42433600" lon="-2.88754700">
+<ele>483.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK19SH</name>
+<cmt>Sour Howes</cmt>
+<desc>Sour Howes</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK19SH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.41830500" lon="-2.87658300">
+<ele>445.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK20CH</name>
+<cmt>Capple Howe</cmt>
+<desc>Capple Howe</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK20CH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.41636900" lon="-2.88329100">
+<ele>400.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK21WA</name>
+<cmt>Cross over wall</cmt>
+<desc>Cross over wall</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK21WA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.41211500" lon="-2.89335400">
+<ele>250.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK22TR</name>
+<cmt>Join track towards Dubbs Res</cmt>
+<desc>Join track towards Dubbs Res</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK22TR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39598000" lon="-2.88762800">
+<ele>200.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK23SM</name>
+<cmt>Smaller road south</cmt>
+<desc>Smaller road south</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK23SM</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39259900" lon="-2.88901800">
+<ele>200.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK24WE</name>
+<cmt>Right turn  head west</cmt>
+<desc>Right turn  head west</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK24WE</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39225000" lon="-2.89979100">
+<ele>200.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK25FP</name>
+<cmt>Leave road south on FP to orrest head</cmt>
+<desc>Leave road south on FP to orrest head</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK25FP</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.38615600" lon="-2.90350800">
+<ele>180.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK26OR</name>
+<cmt>Orrest Head</cmt>
+<desc>Orrest Head</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK26OR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.38039900" lon="-2.90415100">
+<ele>120.000</ele>
+<time>2009-10-28T20:37:08.500Z</time>
+<name>KK27ST</name>
+<cmt>Station</cmt>
+<desc>Station</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-28T20:38:05.828Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>KK27ST</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

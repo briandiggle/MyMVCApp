@@ -1,0 +1,27 @@
+H  SOFTWARE NAME & VERSION
+I  GPSU 5.02 01 FREEWARE VERSION
+S DateFormat=dd/mm/yyyy
+S Units=M,M
+S SymbolSet=0
+
+H R DATUM
+M E   Ord Srvy Grt Britn 075  5.7360400E+02  1.1960020E-05 375 -111 431
+
+H  COORDINATE SYSTEM
+U  BRITISH GRID
+
+F ID---- Zn East  North T Alt(m)   Comment
+W CH1CAR SD 38834 95980 I     50.0 Park near the shore
+W CH2SWT SD 38394 96155 I    150.0 Turn South West on Track
+W CH3NWT SD 38234 95965 I    150.0 At crossroads take NW track
+W CH4FPW SD 38389 97215 I    230.0 Take FP SW
+W CH5FPN SD 38153 97080 I    230.0 FP turns N
+W CH6YEW SD 38179 97354 I    269.0 Claife Heights summit
+W CH7TRA SD 38324 97885 I    200.0 Continue on track veering NW
+W CH8TRS SD 37654 99005 I    150.0 Turn S on track
+W CH9LAT SD 37539 98700 I    150.0 Possible diversion to Latterbarrow
+W CH10SW SD 37694 98260 I    150.0 Take bridleway towards tarns
+W CH11AR SD 37314 96150 I    150.0 Take bridleyway SE
+W CH12FR SD 37929 95455 I    150.0 Pub on road
+W CH13NO SD 38749 95310 I    100.0 Point on road
+W CH14AR SD 38844 95905 I     50.0 Back at Car

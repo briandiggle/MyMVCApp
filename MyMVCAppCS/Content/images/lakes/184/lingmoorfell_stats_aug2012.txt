@@ -1,0 +1,8 @@
+**  ACTIVE LOG **
+Cartographic Length = 6.767 km
+
+** Speeds in ACTIVE LOG **
+Average Speed: 1.9 km/h
+Maximum Speed: 44.3 km/h
+Minimum Speed: 0.0 km/h
+Total Time: 03:28:17

@@ -1,0 +1,2182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 2.3.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/3 http://www.topografix.com/GPX/Private/TopoGrafix/0/3/topografix.xsd">
+<metadata>
+<time>2007-05-01T10:52:09Z</time>
+<bounds minlat="54.32526827" minlon="-3.31962920" maxlat="54.36839819" maxlon="-3.25264522"/>
+</metadata>
+<wpt lat="54.36704988" lon="-3.27781021">
+<ele>255.11</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE19EN</name>
+<sym>Car</sym>
+<type>Civil</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE19EN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36263790" lon="-3.28573722">
+<ele>311.11</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE18SH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE18SH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.35892690" lon="-3.29907225">
+<ele>239.97</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE17DW</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE17DW</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.35385392" lon="-3.30275919">
+<ele>383.93</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE16SH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE16SH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34914890" lon="-3.30817927">
+<ele>442.09</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE15WP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE15WP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34755190" lon="-3.29871325">
+<ele>477.90</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE14WO</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE14WO</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34577485" lon="-3.29844226">
+<ele>494.00</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE13YO</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE13YO</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33907285" lon="-3.29813825">
+<ele>467.08</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE12TP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE12TP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33452986" lon="-3.30146025">
+<ele>480.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE11TA</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE11TA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.32568578" lon="-3.29437964">
+<ele>694.91</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>WHCACH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WHCACH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.32546491" lon="-3.29486520">
+<ele>573.07</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE10WH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE10WH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33453288" lon="-3.30245527">
+<ele>480.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE9TAR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE9TAR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33687084" lon="-3.30483623">
+<ele>498.09</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE8STP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE8STP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34240491" lon="-3.30593526">
+<ele>339.95</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE7STA</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE7STA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.35324086" lon="-3.31781921">
+<ele>256.07</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>D5BIR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D5BIR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36145287" lon="-3.30653926">
+<ele>239.97</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE4GIL</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE4GIL</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36537685" lon="-3.30360023">
+<ele>305.10</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE3WAT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE3WAT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36838788" lon="-3.29270527">
+<ele>319.04</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE2ROU</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE2ROU</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36805185" lon="-3.27781021">
+<ele>234.93</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE1CAR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE1CAR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34489785" lon="-3.31962920">
+<ele>331.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>D6KNO</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D6KNO</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.32706988" lon="-3.28591920">
+<ele>409.88</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE20HT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE20HT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.32811686" lon="-3.26857519">
+<ele>331.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE21BI</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE21BI</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33116092" lon="-3.26451626">
+<ele>239.97</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE22GI</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE22GI</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.32967590" lon="-3.25264522">
+<ele>369.99</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE23PI</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE23PI</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34088585" lon="-3.26884526">
+<ele>476.94</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE24HF</name>
+<sym>Dot</sym>
+<type>School</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE24HF</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>RINGOFDEVOKEA</name>
+<number>1</number>
+<type>GPS Route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>RINGOFDEVOKEA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<color>ff00ff</color>
+<opacity>1.0</opacity>
+<width>0.400</width>
+<pattern>Solid</pattern>
+</line>
+</extensions>
+<rtept lat="54.36704988" lon="-3.27781021">
+<ele>255.11</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE19EN</name>
+<sym>Car</sym>
+<type>Civil</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE19EN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36263790" lon="-3.28573722">
+<ele>311.11</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE18SH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE18SH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.35892690" lon="-3.29907225">
+<ele>239.97</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE17DW</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE17DW</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.35385392" lon="-3.30275919">
+<ele>383.93</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE16SH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE16SH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34914890" lon="-3.30817927">
+<ele>442.09</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE15WP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE15WP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34755190" lon="-3.29871325">
+<ele>477.90</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE14WO</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE14WO</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34577485" lon="-3.29844226">
+<ele>494.00</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE13YO</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE13YO</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33907285" lon="-3.29813825">
+<ele>467.08</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE12TP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE12TP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33452986" lon="-3.30146025">
+<ele>480.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE11TA</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE11TA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32568578" lon="-3.29437964">
+<ele>694.91</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>WHCACH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WHCACH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32546491" lon="-3.29486520">
+<ele>573.07</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE10WH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE10WH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33453288" lon="-3.30245527">
+<ele>480.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE9TAR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE9TAR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33687084" lon="-3.30483623">
+<ele>498.09</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE8STP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE8STP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34240491" lon="-3.30593526">
+<ele>339.95</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE7STA</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE7STA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.35324086" lon="-3.31781921">
+<ele>256.07</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>D5BIR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D5BIR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36145287" lon="-3.30653926">
+<ele>239.97</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE4GIL</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE4GIL</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36537685" lon="-3.30360023">
+<ele>305.10</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE3WAT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE3WAT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36838788" lon="-3.29270527">
+<ele>319.04</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE2ROU</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE2ROU</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36805185" lon="-3.27781021">
+<ele>234.93</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE1CAR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE1CAR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<rte>
+<name>RINGDEVOKEA1</name>
+<number>1</number>
+<type>GPS Route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>RINGDEVOKEA1</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<color>ff00ff</color>
+<opacity>1.0</opacity>
+<width>0.400</width>
+<pattern>Solid</pattern>
+</line>
+</extensions>
+<rtept lat="54.36805185" lon="-3.27781021">
+<ele>234.93</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE1CAR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE1CAR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36838788" lon="-3.29270527">
+<ele>319.04</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE2ROU</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE2ROU</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36537685" lon="-3.30360023">
+<ele>305.10</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE3WAT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE3WAT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36145287" lon="-3.30653926">
+<ele>239.97</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE4GIL</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE4GIL</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.35324086" lon="-3.31781921">
+<ele>256.07</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>D5BIR</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D5BIR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34489785" lon="-3.31962920">
+<ele>331.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>D6KNO</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D6KNO</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34240491" lon="-3.30593526">
+<ele>339.95</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE7STA</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE7STA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33687084" lon="-3.30483623">
+<ele>498.09</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE8STP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE8STP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33452986" lon="-3.30146025">
+<ele>480.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE11TA</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE11TA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32546491" lon="-3.29486520">
+<ele>573.07</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE10WH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE10WH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32568578" lon="-3.29437964">
+<ele>694.91</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>WHCACH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WHCACH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32706988" lon="-3.28591920">
+<ele>409.88</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE20HT</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE20HT</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32811686" lon="-3.26857519">
+<ele>331.06</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE21BI</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE21BI</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33116092" lon="-3.26451626">
+<ele>239.97</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE22GI</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE22GI</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32967590" lon="-3.25264522">
+<ele>369.99</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE23PI</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE23PI</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34088585" lon="-3.26884526">
+<ele>476.94</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE24HF</name>
+<sym>Dot</sym>
+<type>School</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE24HF</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34577485" lon="-3.29844226">
+<ele>494.00</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE13YO</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE13YO</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34755190" lon="-3.29871325">
+<ele>477.90</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE14WO</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE14WO</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34914890" lon="-3.30817927">
+<ele>442.09</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE15WP</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE15WP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.35385392" lon="-3.30275919">
+<ele>383.93</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE16SH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE16SH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.35892690" lon="-3.29907225">
+<ele>239.97</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE17DW</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE17DW</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36263790" lon="-3.28573722">
+<ele>311.11</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE18SH</name>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE18SH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36704988" lon="-3.27781021">
+<ele>255.11</ele>
+<time>2007-05-01T10:35:52Z</time>
+<name>DE19EN</name>
+<sym>Car</sym>
+<type>Civil</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>DE19EN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<trk>
+<name>28-APR-07</name>
+<type>GPS Tracklog</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>28-APR-07</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<color>000000</color>
+<opacity>1.0</opacity>
+<width>1.000</width>
+<pattern>Trail</pattern>
+<dasharray>
+<dash mark="7.143" space="2.857"/>
+</dasharray>
+<extensions>
+<cased xmlns="http://www.topografix.com/GPX/Private/TopoGrafix/0/3">true</cased>
+</extensions>
+</line>
+</extensions>
+<trkseg>
+<trkpt lat="54.36502934" lon="-3.27364683">
+<ele>263.54</ele>
+<time>2007-04-28T08:23:45Z</time>
+</trkpt>
+<trkpt lat="54.36539412" lon="-3.27433348">
+<ele>259.21</ele>
+<time>2007-04-28T08:26:59Z</time>
+</trkpt>
+<trkpt lat="54.36595202" lon="-3.27480555">
+<ele>257.77</ele>
+<time>2007-04-28T08:27:45Z</time>
+</trkpt>
+<trkpt lat="54.36698199" lon="-3.27740192">
+<ele>246.72</ele>
+<time>2007-04-28T08:30:59Z</time>
+</trkpt>
+<trkpt lat="54.36816216" lon="-3.27789545">
+<ele>250.56</ele>
+<time>2007-04-28T08:32:29Z</time>
+</trkpt>
+<trkpt lat="54.36723948" lon="-3.28077078">
+<ele>256.33</ele>
+<time>2007-04-28T08:36:41Z</time>
+</trkpt>
+<trkpt lat="54.36749697" lon="-3.28420401">
+<ele>274.11</ele>
+<time>2007-04-28T08:43:03Z</time>
+</trkpt>
+<trkpt lat="54.36620951" lon="-3.28433275">
+<ele>263.54</ele>
+<time>2007-04-28T08:45:17Z</time>
+</trkpt>
+<trkpt lat="54.36520100" lon="-3.28379631">
+<ele>257.29</ele>
+<time>2007-04-28T08:47:42Z</time>
+</trkpt>
+<trkpt lat="54.36455727" lon="-3.28407526">
+<ele>257.29</ele>
+<time>2007-04-28T08:49:20Z</time>
+</trkpt>
+<trkpt lat="54.36444998" lon="-3.28431129">
+<ele>254.89</ele>
+<time>2007-04-28T08:49:50Z</time>
+</trkpt>
+<trkpt lat="54.36432124" lon="-3.28428984">
+<ele>252.00</ele>
+<time>2007-04-28T08:50:05Z</time>
+</trkpt>
+<trkpt lat="54.36423541" lon="-3.28390360">
+<ele>250.56</ele>
+<time>2007-04-28T08:50:48Z</time>
+</trkpt>
+<trkpt lat="54.36393500" lon="-3.28426838">
+<ele>264.02</ele>
+<time>2007-04-28T08:52:20Z</time>
+</trkpt>
+<trkpt lat="54.36339856" lon="-3.28433275">
+<ele>280.84</ele>
+<time>2007-04-28T08:54:34Z</time>
+</trkpt>
+<trkpt lat="54.36324835" lon="-3.28495503">
+<ele>284.69</ele>
+<time>2007-04-28T08:56:19Z</time>
+</trkpt>
+<trkpt lat="54.36279774" lon="-3.28499794">
+<ele>301.51</ele>
+<time>2007-04-28T08:59:00Z</time>
+</trkpt>
+<trkpt lat="54.36266900" lon="-3.28626394">
+<ele>321.22</ele>
+<time>2007-04-28T09:19:53Z</time>
+</trkpt>
+<trkpt lat="54.36236859" lon="-3.28634977">
+<ele>313.05</ele>
+<time>2007-04-28T09:21:48Z</time>
+</trkpt>
+<trkpt lat="54.36249733" lon="-3.28544855">
+<ele>312.57</ele>
+<time>2007-04-28T09:23:13Z</time>
+</trkpt>
+<trkpt lat="54.36217547" lon="-3.28553438">
+<ele>291.42</ele>
+<time>2007-04-28T09:24:18Z</time>
+</trkpt>
+<trkpt lat="54.36193944" lon="-3.28643560">
+<ele>281.80</ele>
+<time>2007-04-28T09:25:14Z</time>
+</trkpt>
+<trkpt lat="54.36202527" lon="-3.28690767">
+<ele>283.73</ele>
+<time>2007-04-28T09:25:57Z</time>
+</trkpt>
+<trkpt lat="54.36161757" lon="-3.29027653">
+<ele>252.96</ele>
+<time>2007-04-28T09:30:17Z</time>
+</trkpt>
+<trkpt lat="54.36140299" lon="-3.29070568">
+<ele>249.12</ele>
+<time>2007-04-28T09:31:21Z</time>
+</trkpt>
+<trkpt lat="54.36101676" lon="-3.29042673">
+<ele>246.72</ele>
+<time>2007-04-28T09:35:54Z</time>
+</trkpt>
+<trkpt lat="54.36118842" lon="-3.29079151">
+<ele>242.39</ele>
+<time>2007-04-28T09:35:57Z</time>
+</trkpt>
+<trkpt lat="54.36103821" lon="-3.29031944">
+<ele>245.75</ele>
+<time>2007-04-28T09:36:24Z</time>
+</trkpt>
+<trkpt lat="54.36071635" lon="-3.29051256">
+<ele>243.35</ele>
+<time>2007-04-28T09:37:03Z</time>
+</trkpt>
+<trkpt lat="54.36050177" lon="-3.29038382">
+<ele>239.99</ele>
+<time>2007-04-28T09:37:25Z</time>
+</trkpt>
+<trkpt lat="54.36035157" lon="-3.29068422">
+<ele>245.27</ele>
+<time>2007-04-28T09:38:03Z</time>
+</trkpt>
+<trkpt lat="54.36037303" lon="-3.29124212">
+<ele>247.20</ele>
+<time>2007-04-28T09:38:29Z</time>
+</trkpt>
+<trkpt lat="54.36005116" lon="-3.29231501">
+<ele>245.27</ele>
+<time>2007-04-28T09:39:50Z</time>
+</trkpt>
+<trkpt lat="54.36005116" lon="-3.29276562">
+<ele>248.16</ele>
+<time>2007-04-28T09:40:36Z</time>
+</trkpt>
+<trkpt lat="54.35960055" lon="-3.29377413">
+<ele>245.27</ele>
+<time>2007-04-28T09:41:55Z</time>
+</trkpt>
+<trkpt lat="54.35936451" lon="-3.29527617">
+<ele>250.08</ele>
+<time>2007-04-28T09:43:31Z</time>
+</trkpt>
+<trkpt lat="54.35940743" lon="-3.29619885">
+<ele>251.04</ele>
+<time>2007-04-28T09:44:34Z</time>
+</trkpt>
+<trkpt lat="54.35917140" lon="-3.29630613">
+<ele>240.95</ele>
+<time>2007-04-28T09:46:59Z</time>
+</trkpt>
+<trkpt lat="54.35882807" lon="-3.29828024">
+<ele>234.70</ele>
+<time>2007-04-28T09:49:06Z</time>
+</trkpt>
+<trkpt lat="54.35891390" lon="-3.29928875">
+<ele>237.58</ele>
+<time>2007-04-28T09:50:27Z</time>
+</trkpt>
+<trkpt lat="54.35809851" lon="-3.29913855">
+<ele>260.65</ele>
+<time>2007-04-28T09:55:38Z</time>
+</trkpt>
+<trkpt lat="54.35734749" lon="-3.29965353">
+<ele>293.34</ele>
+<time>2007-04-28T10:00:41Z</time>
+</trkpt>
+<trkpt lat="54.35676814" lon="-3.29963207">
+<ele>296.70</ele>
+<time>2007-04-28T10:08:13Z</time>
+</trkpt>
+<trkpt lat="54.35631753" lon="-3.29997540">
+<ele>326.50</ele>
+<time>2007-04-28T10:11:56Z</time>
+</trkpt>
+<trkpt lat="54.35625315" lon="-3.29982519">
+<ele>330.35</ele>
+<time>2007-04-28T10:12:08Z</time>
+</trkpt>
+<trkpt lat="54.35580254" lon="-3.30049038">
+<ele>329.87</ele>
+<time>2007-04-28T10:13:06Z</time>
+</trkpt>
+<trkpt lat="54.35554505" lon="-3.30134869">
+<ele>342.85</ele>
+<time>2007-04-28T10:14:38Z</time>
+</trkpt>
+<trkpt lat="54.35494423" lon="-3.30126286">
+<ele>357.75</ele>
+<time>2007-04-28T10:16:18Z</time>
+</trkpt>
+<trkpt lat="54.35427905" lon="-3.30214262">
+<ele>383.22</ele>
+<time>2007-04-28T10:19:14Z</time>
+</trkpt>
+<trkpt lat="54.35425759" lon="-3.30244303">
+<ele>390.43</ele>
+<time>2007-04-28T10:20:53Z</time>
+</trkpt>
+<trkpt lat="54.35288430" lon="-3.30224991">
+<ele>382.74</ele>
+<time>2007-04-28T10:25:31Z</time>
+</trkpt>
+<trkpt lat="54.35194016" lon="-3.30265760">
+<ele>379.38</ele>
+<time>2007-04-28T10:28:05Z</time>
+</trkpt>
+<trkpt lat="54.35125351" lon="-3.30403090">
+<ele>388.99</ele>
+<time>2007-04-28T10:30:06Z</time>
+</trkpt>
+<trkpt lat="54.35116768" lon="-3.30458880">
+<ele>389.47</ele>
+<time>2007-04-28T10:30:46Z</time>
+</trkpt>
+<trkpt lat="54.35075999" lon="-3.30508232">
+<ele>400.53</ele>
+<time>2007-04-28T10:37:57Z</time>
+</trkpt>
+<trkpt lat="54.35056687" lon="-3.30553293">
+<ele>410.14</ele>
+<time>2007-04-28T10:38:46Z</time>
+</trkpt>
+<trkpt lat="54.35018063" lon="-3.30591917">
+<ele>425.04</ele>
+<time>2007-04-28T10:40:18Z</time>
+</trkpt>
+<trkpt lat="54.34962273" lon="-3.30752850">
+<ele>434.17</ele>
+<time>2007-04-28T10:43:14Z</time>
+</trkpt>
+<trkpt lat="54.34917212" lon="-3.30827951">
+<ele>441.38</ele>
+<time>2007-04-28T10:45:25Z</time>
+</trkpt>
+<trkpt lat="54.34874297" lon="-3.30579042">
+<ele>425.52</ele>
+<time>2007-04-28T10:53:06Z</time>
+</trkpt>
+<trkpt lat="54.34835673" lon="-3.30467463">
+<ele>431.77</ele>
+<time>2007-04-28T10:54:19Z</time>
+</trkpt>
+<trkpt lat="54.34786320" lon="-3.30358028">
+<ele>439.46</ele>
+<time>2007-04-28T10:56:06Z</time>
+</trkpt>
+<trkpt lat="54.34739113" lon="-3.30289364">
+<ele>443.79</ele>
+<time>2007-04-28T10:57:17Z</time>
+</trkpt>
+<trkpt lat="54.34702635" lon="-3.30338717">
+<ele>451.48</ele>
+<time>2007-04-28T10:58:16Z</time>
+</trkpt>
+<trkpt lat="54.34704781" lon="-3.30119848">
+<ele>467.82</ele>
+<time>2007-04-28T11:02:21Z</time>
+</trkpt>
+<trkpt lat="54.34751988" lon="-3.29978228">
+<ele>481.76</ele>
+<time>2007-04-28T11:04:41Z</time>
+</trkpt>
+<trkpt lat="54.34756279" lon="-3.29864502">
+<ele>491.85</ele>
+<time>2007-04-28T11:10:34Z</time>
+</trkpt>
+<trkpt lat="54.34728385" lon="-3.29838753">
+<ele>483.68</ele>
+<time>2007-04-28T11:16:33Z</time>
+</trkpt>
+<trkpt lat="54.34586764" lon="-3.29804421">
+<ele>474.07</ele>
+<time>2007-04-28T11:19:55Z</time>
+</trkpt>
+<trkpt lat="54.34567452" lon="-3.29853773">
+<ele>492.33</ele>
+<time>2007-04-28T11:32:08Z</time>
+</trkpt>
+<trkpt lat="54.34548140" lon="-3.29797983">
+<ele>475.03</ele>
+<time>2007-04-28T11:33:22Z</time>
+</trkpt>
+<trkpt lat="54.34442997" lon="-3.29774380">
+<ele>462.05</ele>
+<time>2007-04-28T11:35:12Z</time>
+</trkpt>
+<trkpt lat="54.34397936" lon="-3.29725027">
+<ele>460.13</ele>
+<time>2007-04-28T11:36:18Z</time>
+</trkpt>
+<trkpt lat="54.34367896" lon="-3.29649925">
+<ele>459.17</ele>
+<time>2007-04-28T11:37:09Z</time>
+</trkpt>
+<trkpt lat="54.34320689" lon="-3.29617739">
+<ele>458.69</ele>
+<time>2007-04-28T11:37:54Z</time>
+</trkpt>
+<trkpt lat="54.34301377" lon="-3.29549074">
+<ele>456.28</ele>
+<time>2007-04-28T11:38:36Z</time>
+</trkpt>
+<trkpt lat="54.34277773" lon="-3.29521179">
+<ele>455.80</ele>
+<time>2007-04-28T11:39:06Z</time>
+</trkpt>
+<trkpt lat="54.34252024" lon="-3.29572678">
+<ele>461.57</ele>
+<time>2007-04-28T11:39:59Z</time>
+</trkpt>
+<trkpt lat="54.34226275" lon="-3.29555512">
+<ele>459.17</ele>
+<time>2007-04-28T11:40:25Z</time>
+</trkpt>
+<trkpt lat="54.34224129" lon="-3.29534054">
+<ele>458.69</ele>
+<time>2007-04-28T11:40:44Z</time>
+</trkpt>
+<trkpt lat="54.34170485" lon="-3.29570532">
+<ele>449.55</ele>
+<time>2007-04-28T11:42:03Z</time>
+</trkpt>
+<trkpt lat="54.34127570" lon="-3.29566240">
+<ele>443.79</ele>
+<time>2007-04-28T11:43:23Z</time>
+</trkpt>
+<trkpt lat="54.33983803" lon="-3.29699278">
+<ele>454.84</ele>
+<time>2007-04-28T11:46:00Z</time>
+</trkpt>
+<trkpt lat="54.33983803" lon="-3.29750776">
+<ele>459.17</ele>
+<time>2007-04-28T11:47:24Z</time>
+</trkpt>
+<trkpt lat="54.33932305" lon="-3.29819441">
+<ele>464.45</ele>
+<time>2007-04-28T11:49:29Z</time>
+</trkpt>
+<trkpt lat="54.33912993" lon="-3.29806566">
+<ele>466.38</ele>
+<time>2007-04-28T11:49:54Z</time>
+</trkpt>
+<trkpt lat="54.33882952" lon="-3.29851627">
+<ele>467.82</ele>
+<time>2007-04-28T11:50:36Z</time>
+</trkpt>
+<trkpt lat="54.33827162" lon="-3.29834461">
+<ele>464.45</ele>
+<time>2007-04-28T11:51:49Z</time>
+</trkpt>
+<trkpt lat="54.33773518" lon="-3.29922438">
+<ele>473.59</ele>
+<time>2007-04-28T11:53:50Z</time>
+</trkpt>
+<trkpt lat="54.33747769" lon="-3.30104828">
+<ele>484.16</ele>
+<time>2007-04-28T11:58:04Z</time>
+</trkpt>
+<trkpt lat="54.33616877" lon="-3.30113411">
+<ele>475.99</ele>
+<time>2007-04-28T12:23:31Z</time>
+</trkpt>
+<trkpt lat="54.33479548" lon="-3.30224991">
+<ele>480.32</ele>
+<time>2007-04-28T12:26:18Z</time>
+</trkpt>
+<trkpt lat="54.33470965" lon="-3.30229282">
+<ele>479.84</ele>
+<time>2007-04-28T12:26:29Z</time>
+</trkpt>
+<trkpt lat="54.33470965" lon="-3.30207825">
+<ele>479.35</ele>
+<time>2007-04-28T12:26:54Z</time>
+</trkpt>
+<trkpt lat="54.33466673" lon="-3.30235720">
+<ele>481.28</ele>
+<time>2007-04-28T12:27:47Z</time>
+</trkpt>
+<trkpt lat="54.33451653" lon="-3.30237865">
+<ele>481.28</ele>
+<time>2007-04-28T12:29:29Z</time>
+</trkpt>
+<trkpt lat="54.33413029" lon="-3.30295801">
+<ele>482.24</ele>
+<time>2007-04-28T12:30:36Z</time>
+</trkpt>
+<trkpt lat="54.33395863" lon="-3.30302238">
+<ele>483.20</ele>
+<time>2007-04-28T12:30:57Z</time>
+</trkpt>
+<trkpt lat="54.33365822" lon="-3.30267906">
+<ele>483.20</ele>
+<time>2007-04-28T12:31:39Z</time>
+</trkpt>
+<trkpt lat="54.33271409" lon="-3.30300093">
+<ele>490.89</ele>
+<time>2007-04-28T12:33:37Z</time>
+</trkpt>
+<trkpt lat="54.33183432" lon="-3.30240011">
+<ele>494.74</ele>
+<time>2007-04-28T12:35:21Z</time>
+</trkpt>
+<trkpt lat="54.33134079" lon="-3.30278635">
+<ele>497.14</ele>
+<time>2007-04-28T12:38:35Z</time>
+</trkpt>
+<trkpt lat="54.33151246" lon="-3.30218554">
+<ele>495.22</ele>
+<time>2007-04-28T12:39:11Z</time>
+</trkpt>
+<trkpt lat="54.33119059" lon="-3.30094099">
+<ele>491.85</ele>
+<time>2007-04-28T12:42:00Z</time>
+</trkpt>
+<trkpt lat="54.33082581" lon="-3.30042601">
+<ele>483.68</ele>
+<time>2007-04-28T12:42:50Z</time>
+</trkpt>
+<trkpt lat="54.33054686" lon="-3.29931021">
+<ele>482.72</ele>
+<time>2007-04-28T12:47:07Z</time>
+</trkpt>
+<trkpt lat="54.32932377" lon="-3.29748631">
+<ele>491.37</ele>
+<time>2007-04-28T12:50:05Z</time>
+</trkpt>
+<trkpt lat="54.32771445" lon="-3.29639196">
+<ele>523.58</ele>
+<time>2007-04-28T12:54:14Z</time>
+</trkpt>
+<trkpt lat="54.32685614" lon="-3.29544783">
+<ele>541.84</ele>
+<time>2007-04-28T12:58:07Z</time>
+</trkpt>
+<trkpt lat="54.32610512" lon="-3.29510450">
+<ele>561.55</ele>
+<time>2007-04-28T13:00:17Z</time>
+</trkpt>
+<trkpt lat="54.32569743" lon="-3.29433203">
+<ele>571.64</ele>
+<time>2007-04-28T13:02:29Z</time>
+</trkpt>
+<trkpt lat="54.32539702" lon="-3.29499722">
+<ele>574.04</ele>
+<time>2007-04-28T13:05:32Z</time>
+</trkpt>
+<trkpt lat="54.32543994" lon="-3.29491138">
+<ele>576.45</ele>
+<time>2007-04-28T13:07:59Z</time>
+</trkpt>
+<trkpt lat="54.32526827" lon="-3.29482555">
+<ele>526.94</ele>
+<time>2007-04-28T13:09:43Z</time>
+</trkpt>
+<trkpt lat="54.32584763" lon="-3.29488993">
+<ele>570.68</ele>
+<time>2007-04-28T13:45:23Z</time>
+</trkpt>
+<trkpt lat="54.32599783" lon="-3.29523325">
+<ele>562.51</ele>
+<time>2007-04-28T13:47:23Z</time>
+</trkpt>
+<trkpt lat="54.32634116" lon="-3.29551220">
+<ele>546.65</ele>
+<time>2007-04-28T13:48:23Z</time>
+</trkpt>
+<trkpt lat="54.32711363" lon="-3.29559803">
+<ele>546.17</ele>
+<time>2007-04-28T13:49:33Z</time>
+</trkpt>
+<trkpt lat="54.32737113" lon="-3.29607010">
+<ele>518.77</ele>
+<time>2007-04-28T13:52:11Z</time>
+</trkpt>
+<trkpt lat="54.32797194" lon="-3.29658508">
+<ele>510.60</ele>
+<time>2007-04-28T13:53:21Z</time>
+</trkpt>
+<trkpt lat="54.32932377" lon="-3.29746485">
+<ele>485.60</ele>
+<time>2007-04-28T13:56:13Z</time>
+</trkpt>
+<trkpt lat="54.32968855" lon="-3.29806566">
+<ele>480.32</ele>
+<time>2007-04-28T13:58:36Z</time>
+</trkpt>
+<trkpt lat="54.32958127" lon="-3.29864502">
+<ele>476.95</ele>
+<time>2007-04-28T13:59:39Z</time>
+</trkpt>
+<trkpt lat="54.32958127" lon="-3.29847336">
+<ele>478.39</ele>
+<time>2007-04-28T14:02:21Z</time>
+</trkpt>
+<trkpt lat="54.32981730" lon="-3.29823732">
+<ele>475.99</ele>
+<time>2007-04-28T14:02:42Z</time>
+</trkpt>
+<trkpt lat="54.33202744" lon="-3.30184221">
+<ele>486.08</ele>
+<time>2007-04-28T14:07:52Z</time>
+</trkpt>
+<trkpt lat="54.33237076" lon="-3.30184221">
+<ele>485.12</ele>
+<time>2007-04-28T14:08:54Z</time>
+</trkpt>
+<trkpt lat="54.33275700" lon="-3.30300093">
+<ele>488.97</ele>
+<time>2007-04-28T14:10:19Z</time>
+</trkpt>
+<trkpt lat="54.33299304" lon="-3.30327988">
+<ele>487.05</ele>
+<time>2007-04-28T14:11:10Z</time>
+</trkpt>
+<trkpt lat="54.33408738" lon="-3.30360174">
+<ele>476.47</ele>
+<time>2007-04-28T14:13:12Z</time>
+</trkpt>
+<trkpt lat="54.33526755" lon="-3.30351591">
+<ele>485.60</ele>
+<time>2007-04-28T14:15:46Z</time>
+</trkpt>
+<trkpt lat="54.33546067" lon="-3.30383778">
+<ele>491.37</ele>
+<time>2007-04-28T14:17:23Z</time>
+</trkpt>
+<trkpt lat="54.33599711" lon="-3.30398798">
+<ele>492.33</ele>
+<time>2007-04-28T14:18:22Z</time>
+</trkpt>
+<trkpt lat="54.33610440" lon="-3.30426693">
+<ele>492.33</ele>
+<time>2007-04-28T14:18:45Z</time>
+</trkpt>
+<trkpt lat="54.33691979" lon="-3.30493212">
+<ele>496.66</ele>
+<time>2007-04-28T14:21:22Z</time>
+</trkpt>
+<trkpt lat="54.33717728" lon="-3.30430985">
+<ele>487.53</ele>
+<time>2007-04-28T14:30:37Z</time>
+</trkpt>
+<trkpt lat="54.33752060" lon="-3.30420256">
+<ele>475.03</ele>
+<time>2007-04-28T14:31:11Z</time>
+</trkpt>
+<trkpt lat="54.34013844" lon="-3.30435276">
+<ele>373.61</ele>
+<time>2007-04-28T14:39:57Z</time>
+</trkpt>
+<trkpt lat="54.34011698" lon="-3.30398798">
+<ele>376.01</ele>
+<time>2007-04-28T14:40:35Z</time>
+</trkpt>
+<trkpt lat="54.34033156" lon="-3.30398798">
+<ele>372.17</ele>
+<time>2007-04-28T14:41:25Z</time>
+</trkpt>
+<trkpt lat="54.34185505" lon="-3.30448151">
+<ele>361.59</ele>
+<time>2007-04-28T14:45:11Z</time>
+</trkpt>
+<trkpt lat="54.34262753" lon="-3.30531836">
+<ele>348.62</ele>
+<time>2007-04-28T14:46:59Z</time>
+</trkpt>
+<trkpt lat="54.34269190" lon="-3.30576897">
+<ele>345.25</ele>
+<time>2007-04-28T14:47:35Z</time>
+</trkpt>
+<trkpt lat="54.34320689" lon="-3.30624104">
+<ele>346.21</ele>
+<time>2007-04-28T14:53:49Z</time>
+</trkpt>
+<trkpt lat="54.34357167" lon="-3.30628395">
+<ele>351.02</ele>
+<time>2007-04-28T14:54:31Z</time>
+</trkpt>
+<trkpt lat="54.34400082" lon="-3.30707788">
+<ele>353.90</ele>
+<time>2007-04-28T14:55:44Z</time>
+</trkpt>
+<trkpt lat="54.34438706" lon="-3.30737829">
+<ele>364.48</ele>
+<time>2007-04-28T14:56:53Z</time>
+</trkpt>
+<trkpt lat="54.34576035" lon="-3.30619812">
+<ele>372.65</ele>
+<time>2007-04-28T14:59:49Z</time>
+</trkpt>
+<trkpt lat="54.34616805" lon="-3.30675602">
+<ele>375.53</ele>
+<time>2007-04-28T15:00:36Z</time>
+</trkpt>
+<trkpt lat="54.34646845" lon="-3.30754995">
+<ele>374.57</ele>
+<time>2007-04-28T15:01:38Z</time>
+</trkpt>
+<trkpt lat="54.34706927" lon="-3.30815077">
+<ele>377.45</ele>
+<time>2007-04-28T15:02:50Z</time>
+</trkpt>
+<trkpt lat="54.34715510" lon="-3.30881596">
+<ele>375.05</ele>
+<time>2007-04-28T15:04:14Z</time>
+</trkpt>
+<trkpt lat="54.34756279" lon="-3.30941677">
+<ele>384.18</ele>
+<time>2007-04-28T15:05:26Z</time>
+</trkpt>
+<trkpt lat="54.34822798" lon="-3.31089735">
+<ele>370.73</ele>
+<time>2007-04-28T15:07:52Z</time>
+</trkpt>
+<trkpt lat="54.34936524" lon="-3.31190586">
+<ele>332.75</ele>
+<time>2007-04-28T15:13:00Z</time>
+</trkpt>
+<trkpt lat="54.34977294" lon="-3.31250668">
+<ele>324.58</ele>
+<time>2007-04-28T15:14:00Z</time>
+</trkpt>
+<trkpt lat="54.35015917" lon="-3.31345081">
+<ele>314.97</ele>
+<time>2007-04-28T15:15:29Z</time>
+</trkpt>
+<trkpt lat="54.35060978" lon="-3.31381559">
+<ele>301.99</ele>
+<time>2007-04-28T15:16:58Z</time>
+</trkpt>
+<trkpt lat="54.35103894" lon="-3.31355810">
+<ele>296.22</ele>
+<time>2007-04-28T15:17:54Z</time>
+</trkpt>
+<trkpt lat="54.35151101" lon="-3.31400871">
+<ele>282.28</ele>
+<time>2007-04-28T15:20:01Z</time>
+</trkpt>
+<trkpt lat="54.35172558" lon="-3.31435204">
+<ele>279.40</ele>
+<time>2007-04-28T15:20:29Z</time>
+</trkpt>
+<trkpt lat="54.35181141" lon="-3.31508160">
+<ele>263.54</ele>
+<time>2007-04-28T15:21:29Z</time>
+</trkpt>
+<trkpt lat="54.35234786" lon="-3.31626177">
+<ele>247.20</ele>
+<time>2007-04-28T15:22:53Z</time>
+</trkpt>
+<trkpt lat="54.35273409" lon="-3.31673384">
+<ele>251.04</ele>
+<time>2007-04-28T15:23:40Z</time>
+</trkpt>
+<trkpt lat="54.35292721" lon="-3.31759214">
+<ele>259.69</ele>
+<time>2007-04-28T15:24:42Z</time>
+</trkpt>
+<trkpt lat="54.35339928" lon="-3.31767798">
+<ele>259.69</ele>
+<time>2007-04-28T15:25:41Z</time>
+</trkpt>
+<trkpt lat="54.35417176" lon="-3.31641197">
+<ele>254.89</ele>
+<time>2007-04-28T15:29:49Z</time>
+</trkpt>
+<trkpt lat="54.35515881" lon="-3.31542492">
+<ele>257.77</ele>
+<time>2007-04-28T15:31:52Z</time>
+</trkpt>
+<trkpt lat="54.35515881" lon="-3.31497431">
+<ele>263.54</ele>
+<time>2007-04-28T15:32:29Z</time>
+</trkpt>
+<trkpt lat="54.35554505" lon="-3.31424475">
+<ele>268.35</ele>
+<time>2007-04-28T15:33:36Z</time>
+</trkpt>
+<trkpt lat="54.35578108" lon="-3.31413746">
+<ele>268.83</ele>
+<time>2007-04-28T15:34:38Z</time>
+</trkpt>
+<trkpt lat="54.35608149" lon="-3.31364393">
+<ele>268.83</ele>
+<time>2007-04-28T15:36:25Z</time>
+</trkpt>
+<trkpt lat="54.35612441" lon="-3.31327915">
+<ele>271.23</ele>
+<time>2007-04-28T15:36:56Z</time>
+</trkpt>
+<trkpt lat="54.35743332" lon="-3.31242085">
+<ele>259.21</ele>
+<time>2007-04-28T15:39:30Z</time>
+</trkpt>
+<trkpt lat="54.35794831" lon="-3.30956697">
+<ele>245.27</ele>
+<time>2007-04-28T15:44:40Z</time>
+</trkpt>
+<trkpt lat="54.35859204" lon="-3.31012487">
+<ele>248.64</ele>
+<time>2007-04-28T15:45:55Z</time>
+</trkpt>
+<trkpt lat="54.35910702" lon="-3.31008196">
+<ele>244.79</ele>
+<time>2007-04-28T15:46:55Z</time>
+</trkpt>
+<trkpt lat="54.35972930" lon="-3.30924511">
+<ele>248.16</ele>
+<time>2007-04-28T15:48:16Z</time>
+</trkpt>
+<trkpt lat="54.36050177" lon="-3.30774307">
+<ele>248.64</ele>
+<time>2007-04-28T16:03:33Z</time>
+</trkpt>
+<trkpt lat="54.36105967" lon="-3.30744267">
+<ele>245.27</ele>
+<time>2007-04-28T16:04:46Z</time>
+</trkpt>
+<trkpt lat="54.36138154" lon="-3.30664873">
+<ele>237.58</ele>
+<time>2007-04-28T16:06:07Z</time>
+</trkpt>
+<trkpt lat="54.36157465" lon="-3.30664873">
+<ele>234.22</ele>
+<time>2007-04-28T16:07:23Z</time>
+</trkpt>
+<trkpt lat="54.36168194" lon="-3.30624104">
+<ele>237.10</ele>
+<time>2007-04-28T16:07:47Z</time>
+</trkpt>
+<trkpt lat="54.36247588" lon="-3.30591917">
+<ele>242.87</ele>
+<time>2007-04-28T16:09:13Z</time>
+</trkpt>
+<trkpt lat="54.36281920" lon="-3.30540419">
+<ele>244.31</ele>
+<time>2007-04-28T16:10:03Z</time>
+</trkpt>
+<trkpt lat="54.36442853" lon="-3.30467463">
+<ele>287.09</ele>
+<time>2007-04-28T16:21:04Z</time>
+</trkpt>
+<trkpt lat="54.36453581" lon="-3.30430985">
+<ele>290.94</ele>
+<time>2007-04-28T16:21:52Z</time>
+</trkpt>
+<trkpt lat="54.36481476" lon="-3.30430985">
+<ele>298.15</ele>
+<time>2007-04-28T16:22:32Z</time>
+</trkpt>
+<trkpt lat="54.36517954" lon="-3.30394506">
+<ele>304.39</ele>
+<time>2007-04-28T16:23:43Z</time>
+</trkpt>
+<trkpt lat="54.36537266" lon="-3.30351591">
+<ele>305.36</ele>
+<time>2007-04-28T16:29:18Z</time>
+</trkpt>
+<trkpt lat="54.36578036" lon="-3.30377340">
+<ele>307.28</ele>
+<time>2007-04-28T16:32:21Z</time>
+</trkpt>
+<trkpt lat="54.36558724" lon="-3.30360174">
+<ele>310.16</ele>
+<time>2007-04-28T16:34:13Z</time>
+</trkpt>
+<trkpt lat="54.36537266" lon="-3.30291510">
+<ele>299.11</ele>
+<time>2007-04-28T16:34:54Z</time>
+</trkpt>
+<trkpt lat="54.36599494" lon="-3.29963207">
+<ele>279.88</ele>
+<time>2007-04-28T16:39:41Z</time>
+</trkpt>
+<trkpt lat="54.36839819" lon="-3.29272270">
+<ele>324.10</ele>
+<time>2007-04-28T16:51:01Z</time>
+</trkpt>
+<trkpt lat="54.36822653" lon="-3.29057694">
+<ele>306.32</ele>
+<time>2007-04-28T16:54:55Z</time>
+</trkpt>
+<trkpt lat="54.36775446" lon="-3.29001904">
+<ele>294.78</ele>
+<time>2007-04-28T16:55:43Z</time>
+</trkpt>
+<trkpt lat="54.36753989" lon="-3.28883886">
+<ele>288.53</ele>
+<time>2007-04-28T16:56:40Z</time>
+</trkpt>
+<trkpt lat="54.36766863" lon="-3.28639269">
+<ele>274.59</ele>
+<time>2007-04-28T16:58:30Z</time>
+</trkpt>
+<trkpt lat="54.36721802" lon="-3.28087807">
+<ele>251.04</ele>
+<time>2007-04-28T17:03:53Z</time>
+</trkpt>
+<trkpt lat="54.36807633" lon="-3.27785254">
+<ele>239.02</ele>
+<time>2007-04-28T17:07:14Z</time>
+</trkpt>
+<trkpt lat="54.36747551" lon="-3.27738047">
+<ele>235.18</ele>
+<time>2007-04-28T17:08:28Z</time>
+</trkpt>
+<trkpt lat="54.36683178" lon="-3.27731609">
+<ele>238.54</ele>
+<time>2007-04-28T17:09:28Z</time>
+</trkpt>
+<trkpt lat="54.36597348" lon="-3.27484846">
+<ele>250.08</ele>
+<time>2007-04-28T17:11:47Z</time>
+</trkpt>
+<trkpt lat="54.36532975" lon="-3.27422619">
+<ele>255.85</ele>
+<time>2007-04-28T17:13:13Z</time>
+</trkpt>
+<trkpt lat="54.36502934" lon="-3.27358246">
+<ele>261.14</ele>
+<time>2007-04-28T17:14:22Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<extensions>
+</extensions>
+</gpx>

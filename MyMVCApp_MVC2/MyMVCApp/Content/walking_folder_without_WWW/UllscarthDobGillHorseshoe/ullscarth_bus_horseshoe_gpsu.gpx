@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.49992300" minlon="-3.10110100" maxlat="54.51585900" maxlon="-3.04400200"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.51301800" lon="-3.04477000">
+<ele>179.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB1CHU</name>
+<cmt>Wythburn Church Bus Stop</cmt>
+<desc>Wythburn Church Bus Stop</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB1CHU</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50713800" lon="-3.04400200">
+<ele>180.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB2ROA</name>
+<cmt>C Road to West</cmt>
+<desc>C Road to West</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB2ROA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50699100" lon="-3.05056300">
+<ele>185.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB3FP</name>
+<cmt>FP SE Steel End</cmt>
+<desc>FP SE Steel End</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB3FP</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50540300" lon="-3.05237500">
+<ele>190.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB4OFF</name>
+<cmt>Leave FP heading to ridge</cmt>
+<desc>Leave FP heading to ridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB4OFF</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50348400" lon="-3.06409400">
+<ele>508.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL6WFT</name>
+<cmt>Wythburn Fell</cmt>
+<desc>Wythburn Fell</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL6WFT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50056700" lon="-3.06568600">
+<ele>515.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL7WES</name>
+<cmt>Turn and head W to Ullscarth</cmt>
+<desc>Turn and head W to Ullscarth</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL7WES</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.49992300" lon="-3.09551800">
+<ele>726.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL8UST</name>
+<cmt>Ullscarth</cmt>
+<desc>Ullscarth</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL8UST</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50633800" lon="-3.09876300">
+<ele>675.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL9HST</name>
+<cmt>Coldbarrow Fell - High Saddle</cmt>
+<desc>Coldbarrow Fell - High Saddle</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL9HST</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50998400" lon="-3.10110100">
+<ele>656.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL10LS</name>
+<cmt>Coldbarrow Fell - Low Saddle</cmt>
+<desc>Coldbarrow Fell - Low Saddle</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL10LS</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51564900" lon="-3.09280300">
+<ele>480.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL11TA</name>
+<cmt>Blea Tarn</cmt>
+<desc>Blea Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL11TA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51585900" lon="-3.08948700">
+<ele>520.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL12BR</name>
+<cmt>Join Bridleway</cmt>
+<desc>Join Bridleway</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL12BR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51383900" lon="-3.06394600">
+<ele>300.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL13TA</name>
+<cmt>Harop Tarn</cmt>
+<desc>Harop Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL13TA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51199500" lon="-3.05903200">
+<ele>357.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL3BIR</name>
+<cmt>Birk Crag</cmt>
+<desc>Birk Crag</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL3BIR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51101800" lon="-3.05777100">
+<ele>330.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB5FPW</name>
+<cmt>FP Heading West</cmt>
+<desc>FP Heading West</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB5FPW</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51105200" lon="-3.05383300">
+<ele>330.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB6FPS</name>
+<cmt>FP Heading South</cmt>
+<desc>FP Heading South</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB6FPS</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50606800" lon="-3.04814500">
+<ele>180.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB6EAS</name>
+<cmt>Road bends east back to A591</cmt>
+<desc>Road bends east back to A591</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB6EAS</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>ULLSCARTH BUS</name>
+<type>Circular Route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>ULLSCARTH BUS</label_text>
+</label>
+</extensions>
+<rtept lat="54.51301800" lon="-3.04477000">
+<ele>179.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB1CHU</name>
+<cmt>Wythburn Church Bus Stop</cmt>
+<desc>Wythburn Church Bus Stop</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB1CHU</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50713800" lon="-3.04400200">
+<ele>180.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB2ROA</name>
+<cmt>C Road to West</cmt>
+<desc>C Road to West</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB2ROA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50699100" lon="-3.05056300">
+<ele>185.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB3FP</name>
+<cmt>FP SE Steel End</cmt>
+<desc>FP SE Steel End</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB3FP</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50540300" lon="-3.05237500">
+<ele>190.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB4OFF</name>
+<cmt>Leave FP heading to ridge</cmt>
+<desc>Leave FP heading to ridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB4OFF</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50348400" lon="-3.06409400">
+<ele>508.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL6WFT</name>
+<cmt>Wythburn Fell</cmt>
+<desc>Wythburn Fell</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL6WFT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50056700" lon="-3.06568600">
+<ele>515.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL7WES</name>
+<cmt>Turn and head W to Ullscarth</cmt>
+<desc>Turn and head W to Ullscarth</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL7WES</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.49992300" lon="-3.09551800">
+<ele>726.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL8UST</name>
+<cmt>Ullscarth</cmt>
+<desc>Ullscarth</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL8UST</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50633800" lon="-3.09876300">
+<ele>675.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL9HST</name>
+<cmt>Coldbarrow Fell - High Saddle</cmt>
+<desc>Coldbarrow Fell - High Saddle</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL9HST</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50998400" lon="-3.10110100">
+<ele>656.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL10LS</name>
+<cmt>Coldbarrow Fell - Low Saddle</cmt>
+<desc>Coldbarrow Fell - Low Saddle</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL10LS</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51564900" lon="-3.09280300">
+<ele>480.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL11TA</name>
+<cmt>Blea Tarn</cmt>
+<desc>Blea Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL11TA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51585900" lon="-3.08948700">
+<ele>520.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL12BR</name>
+<cmt>Join Bridleway</cmt>
+<desc>Join Bridleway</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL12BR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51383900" lon="-3.06394600">
+<ele>300.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL13TA</name>
+<cmt>Harop Tarn</cmt>
+<desc>Harop Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL13TA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51199500" lon="-3.05903200">
+<ele>357.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UL3BIR</name>
+<cmt>Birk Crag</cmt>
+<desc>Birk Crag</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UL3BIR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51101800" lon="-3.05777100">
+<ele>330.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB5FPW</name>
+<cmt>FP Heading West</cmt>
+<desc>FP Heading West</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB5FPW</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51105200" lon="-3.05383300">
+<ele>330.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB6FPS</name>
+<cmt>FP Heading South</cmt>
+<desc>FP Heading South</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB6FPS</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50606800" lon="-3.04814500">
+<ele>180.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB6EAS</name>
+<cmt>Road bends east back to A591</cmt>
+<desc>Road bends east back to A591</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB6EAS</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50713800" lon="-3.04400200">
+<ele>180.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB2ROA</name>
+<cmt>C Road to West</cmt>
+<desc>C Road to West</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB2ROA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51301800" lon="-3.04477000">
+<ele>179.000</ele>
+<time>2009-11-04T19:58:27.562Z</time>
+<name>UB1CHU</name>
+<cmt>Wythburn Church Bus Stop</cmt>
+<desc>Wythburn Church Bus Stop</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-04T19:59:04.109Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>UB1CHU</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

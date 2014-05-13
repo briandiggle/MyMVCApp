@@ -1,0 +1,10 @@
+Cartographic length: 10.6
+
+** Speeds in 22-SEP-12 **
+Average Speed: 1.2 km/h
+Maximum Speed: 36.7 km/h
+Minimum Speed: 0.0 km/h
+Total Time: 08:49:11
+
+**  22-SEP-12 **
+Cartographic Length = 10.303 km

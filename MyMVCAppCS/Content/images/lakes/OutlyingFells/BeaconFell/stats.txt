@@ -1,0 +1,5 @@
+** Speeds in ACTIVE LOG **
+Average Speed: 2.0 km/h
+Maximum Speed: 11.0 km/h
+Minimum Speed: 0.0 km/h
+Total Time: 03:27:28

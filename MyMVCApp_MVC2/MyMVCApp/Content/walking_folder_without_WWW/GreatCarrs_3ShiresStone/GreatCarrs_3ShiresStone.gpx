@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.82" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/4 http://www.topografix.com/GPX/Private/TopoGrafix/0/4/topografix.xsd">
+<metadata>
+<bounds minlat="54.39878141" minlon="-3.12726391" maxlat="54.41540947" maxlon="-3.11284260"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<active_point xmlns="http://www.topografix.com/GPX/Private/TopoGrafix/0/4" lat="54.35054834" lon="-2.92128376">
+</active_point>
+</extensions>
+</metadata>
+<wpt lat="54.41540947" lon="-3.11284260">
+<ele>393.000</ele>
+<time>2010-07-19T19:50:10.521Z</time>
+<name>3SHIRE</name>
+<sym>Car</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>3 Shires Stone</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40465236" lon="-3.12726391">
+<ele>662.000</ele>
+<time>2010-07-19T19:50:10.521Z</time>
+<name>HELGIP</name>
+<desc>Unmarked summit</desc>
+<sym>Dot</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Hell Gill Pike</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40328940" lon="-3.12596328">
+<ele>692.000</ele>
+<time>2010-07-19T19:50:10.521Z</time>
+<desc>Little Carrs</desc>
+<sym>Dot</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Little Carrs</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39878141" lon="-3.12459207">
+<ele>785.000</ele>
+<time>2010-07-19T19:50:10.521Z</time>
+<name>GREACA</name>
+<desc>Great Carrs - cairn on summit tor</desc>
+<sym>Dot</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Great Carrs</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>GREATCARR 3SH</name>
+<desc>Great Carrs from Three Shires Stone</desc>
+<type>Linear</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+</label>
+</extensions>
+<rtept lat="54.41540947" lon="-3.11284260">
+<ele>393.000</ele>
+<time>2010-07-19T19:50:10.521Z</time>
+<name>3SHIRE</name>
+<sym>Car</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>3 Shires Stone</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40465236" lon="-3.12726391">
+<ele>662.000</ele>
+<time>2010-07-19T19:50:10.521Z</time>
+<name>HELGIP</name>
+<desc>Unmarked summit</desc>
+<sym>Dot</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Hell Gill Pike</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40328940" lon="-3.12596328">
+<ele>692.000</ele>
+<time>2010-07-19T19:50:10.521Z</time>
+<desc>Little Carrs</desc>
+<sym>Dot</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Little Carrs</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39878141" lon="-3.12459207">
+<ele>785.000</ele>
+<time>2010-07-19T19:50:10.521Z</time>
+<name>GREACA</name>
+<desc>Great Carrs - cairn on summit tor</desc>
+<sym>Dot</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-07-19T20:05:34.296Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Great Carrs</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

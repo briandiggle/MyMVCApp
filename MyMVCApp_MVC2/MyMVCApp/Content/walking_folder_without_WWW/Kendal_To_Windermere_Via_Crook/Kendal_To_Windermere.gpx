@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.32683413" minlon="-2.90442216" maxlat="54.38007548" maxlon="-2.74970457"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.32875657" lon="-2.75299543">
+<ele>100.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K1PATH</name>
+<desc>Leave road for start of FP across Kendal Fell</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K1PATH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33480005" lon="-2.77086897">
+<ele>120.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K2A591</name>
+<desc>FP crosses A591</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K2A591</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34168569" lon="-2.78322643">
+<ele>120.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K3CUNS</name>
+<desc>Cunswick scar summit</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K3CUNS</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33665436" lon="-2.78297696">
+<ele>120.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K4DOWN</name>
+<desc>FP Leads W down to bottom of scar</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K4DOWN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33740120" lon="-2.78560580">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K5CTAR</name>
+<desc>Cunswick Tarn</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K5CTAR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33868414" lon="-2.78870642">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K6ASH</name>
+<desc>Enter Ash Spring Wood</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K6ASH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33035218" lon="-2.79154557">
+<ele>73.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K7TJUN</name>
+<desc>Turn W at J Junction</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K7TJUN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.32683413" lon="-2.82038556">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K8FPN</name>
+<desc>Turn North after 73 point</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K8FPN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33393169" lon="-2.82075757">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K9BRID</name>
+<desc>Turn NW onto bridleway heading for beckside</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K9BRID</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33664263" lon="-2.83173142">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K10ROA</name>
+<desc>Turn N on C Road</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K10ROA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34619221" lon="-2.83492409">
+<ele>120.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K11FPW</name>
+<desc>Turn off Road W onto FP</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K11FPW</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34453655" lon="-2.84681236">
+<ele>90.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K12CHU</name>
+<desc>Crook old church</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K12CHU</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34010823" lon="-2.85664230">
+<ele>90.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K13ROA</name>
+<desc>C Road to milldam</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K13ROAD</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34345834" lon="-2.85948086">
+<ele>95.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K14TRA</name>
+<desc>Turn NW towards B5284</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K14TRA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.34996206" lon="-2.86746300">
+<ele>95.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K15DDE</name>
+<desc>Meet road near Damson Dene Hotel</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K15DDE</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36413790" lon="-2.87083986">
+<ele>100.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K16ROA</name>
+<desc>Turn SW on C Road</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K16ROA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36111394" lon="-2.87885523">
+<ele>120.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K17OFF</name>
+<desc>Turn off road towards nameless summit 247</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K17OFF</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36281434" lon="-2.88107691">
+<ele>247.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K18NAM</name>
+<desc>Nameless summit 247</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K18NAM</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36786089" lon="-2.87550540">
+<ele>249.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K19GRA</name>
+<desc>GRandsire summit</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K19GRA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36690859" lon="-2.88285763">
+<ele>200.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K20FP</name>
+<desc>Meet FP heading to SChool Knott</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K20FP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.36905279" lon="-2.88582816">
+<ele>247.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K21SCH</name>
+<desc>School Knott</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K21SCH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.37181767" lon="-2.89358433">
+<ele>150.000</ele>
+<time>2009-10-26T16:46:21Z</time>
+<name>K22WIN</name>
+<desc>Entering the outskirts of windermere</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K22WIN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.37816296" lon="-2.90442216">
+<ele>100.000</ele>
+<time>2009-10-26T16:46:21Z</time>
+<name>K23NEA</name>
+<desc>Near station</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K23NEA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.38007548" lon="-2.90346345">
+<ele>100.000</ele>
+<time>2009-10-26T16:46:21Z</time>
+<name>K24STA</name>
+<desc>Station</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K24STA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.33888789" lon="-2.74970457">
+<ele>100.000</ele>
+<time>2009-10-26T16:57:37Z</time>
+<name>APPRGG</name>
+<desc>22 Applerigg</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>APPRGG</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>KENDALWINDECC</name>
+<type>Low level non-circular walk</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Kendal to Windermere via Crook Church</label_text>
+</label>
+</extensions>
+<rtept lat="54.33888789" lon="-2.74970457">
+<ele>100.000</ele>
+<time>2009-10-26T16:57:37Z</time>
+<name>APPRGG</name>
+<desc>22 Applerigg</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>APPRGG</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32875657" lon="-2.75299543">
+<ele>100.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K1PATH</name>
+<desc>Leave road for start of FP across Kendal Fell</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K1PATH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33480005" lon="-2.77086897">
+<ele>120.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K2A591</name>
+<desc>FP crosses A591</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K2A591</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34168569" lon="-2.78322643">
+<ele>120.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K3CUNS</name>
+<desc>Cunswick scar summit</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K3CUNS</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33665436" lon="-2.78297696">
+<ele>120.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K4DOWN</name>
+<desc>FP Leads W down to bottom of scar</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K4DOWN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33740120" lon="-2.78560580">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K5CTAR</name>
+<desc>Cunswick Tarn</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K5CTAR</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33868414" lon="-2.78870642">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K6ASH</name>
+<desc>Enter Ash Spring Wood</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K6ASH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33035218" lon="-2.79154557">
+<ele>73.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K7TJUN</name>
+<desc>Turn W at J Junction</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K7TJUN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.32683413" lon="-2.82038556">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K8FPN</name>
+<desc>Turn North after 73 point</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K8FPN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33393169" lon="-2.82075757">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K9BRID</name>
+<desc>Turn NW onto bridleway heading for beckside</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K9BRID</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.33664263" lon="-2.83173142">
+<ele>80.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K10ROA</name>
+<desc>Turn N on C Road</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K10ROA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34619221" lon="-2.83492409">
+<ele>120.000</ele>
+<time>2009-10-26T16:24:53Z</time>
+<name>K11FPW</name>
+<desc>Turn off Road W onto FP</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K11FPW</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34453655" lon="-2.84681236">
+<ele>90.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K12CHU</name>
+<desc>Crook old church</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K12CHU</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34010823" lon="-2.85664230">
+<ele>90.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K13ROA</name>
+<desc>C Road to milldam</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K13ROAD</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34345834" lon="-2.85948086">
+<ele>95.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K14TRA</name>
+<desc>Turn NW towards B5284</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K14TRA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.34996206" lon="-2.86746300">
+<ele>95.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K15DDE</name>
+<desc>Meet road near Damson Dene Hotel</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K15DDE</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36413790" lon="-2.87083986">
+<ele>100.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K16ROA</name>
+<desc>Turn SW on C Road</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K16ROA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36111394" lon="-2.87885523">
+<ele>120.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K17OFF</name>
+<desc>Turn off road towards nameless summit 247</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K17OFF</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36281434" lon="-2.88107691">
+<ele>247.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K18NAM</name>
+<desc>Nameless summit 247</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K18NAM</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36786089" lon="-2.87550540">
+<ele>249.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K19GRA</name>
+<desc>GRandsire summit</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K19GRA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36690859" lon="-2.88285763">
+<ele>200.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K20FP</name>
+<desc>Meet FP heading to SChool Knott</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K20FP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.36905279" lon="-2.88582816">
+<ele>247.000</ele>
+<time>2009-10-26T16:35:55Z</time>
+<name>K21SCH</name>
+<desc>School Knott</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K21SCH</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.37181767" lon="-2.89358433">
+<ele>150.000</ele>
+<time>2009-10-26T16:46:21Z</time>
+<name>K22WIN</name>
+<desc>Entering the outskirts of windermere</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K22WIN</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.37816296" lon="-2.90442216">
+<ele>100.000</ele>
+<time>2009-10-26T16:46:21Z</time>
+<name>K23NEA</name>
+<desc>Near station</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K23NEA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.38007548" lon="-2.90346345">
+<ele>100.000</ele>
+<time>2009-10-26T16:46:21Z</time>
+<name>K24STA</name>
+<desc>Station</desc>
+<sym>Waypoint</sym>
+<type>Summit</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-10-26T16:59:18.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>K24STA</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

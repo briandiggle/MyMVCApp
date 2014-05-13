@@ -1,0 +1,39 @@
+No.	Description	Waypoint Name	GPS Ref	Elevation
+1	Ripley bus stopS1BUSSE 28420 6045070m
+2	C road to clintS2ROADSE 26920 5998070m
+3	Take FP ahead at T junctionS3TJUNSE 25590 59890124m
+4	FP South at West House FarmS4FPSSE 24530 60190100m
+5	Right turn onto Nidderdale Way over bridge S5NWAYSE 24340 5969065m
+6	SW turn to Birtswith HouseS6FPSWSE 23550 6023070m
+7	Leave road heading SWS7SWSE 23210 6023090m
+8	NW towards river at The HolmeS8NWAYSE 21600 5954095m
+9	Leave Nidderdale Way heading W towards Darley Mill CentreS9FPWSE 20440  6008080m
+10	Cross FootbridgeS10FBSE 19900 6010085m
+11	Darley Mill CentreS11DARLSE 19300 59780100m
+12	Rejoin Nidderdale Way S12NWAYSE 20120 6028085m
+13	Take FP towards Low Hall WoodS13FPSE 19920 60530 90m
+14	Turn Right at Low Hall towards RiverS14RIGHSE 19820 6139095m
+15	At Summerbridge Bridge, take FP towards Beech treeS15BRIDSE 20010 62300100m
+16	Find Beech Tree At the weir about 20 feet N ish from the N tip of the weir. About 4  or 5 metres from an oak (which has had the climbers cut off) in a W direction.S16BEESE 19880  62576109m
+17	Leave Road taking Bridleway into Birch WoodS17BIRSE 19640 62900100m
+18	Take FP towards Needham cragS18FPSE 19650 62980100m
+19	Turn Left as join bridlewayS19BRISE 20200 63380160m
+20	Take FP direct to C Road S20FPSE 20100 63540165m
+21	Take FP on RHS of C Road S21RHSSE 19880 63900180m
+22	Turn Right onto Nidderdale Way S22NWASE 20100 64230190m
+23	Turn Left leaving Nidderdale Way towards Adams aleS23FPLSE 20400  64190190m
+24	Brimham Rocks visitors centre. Serves light refreshments S24BRISE 20610 65010290m
+25	295m (leave marker)S25295SE 21090 65200295m
+26	Hare HeadsS26HARSE 21400 65300280m
+27	Enter Summer WoodS27SUMSE 22220 64690200m
+28	Turn onto Bridleway to Park house FarmS28BRISE 22610 64450175m
+29	Join Nidderdale wayS29NWASE 23400 63640145m
+30	Turn R to continue on Nidderdale Way S30RIGSE 24180 63400150m
+31	Continue on Nidderdale Way S31FPSSE 25180 62320110m
+32	Hit road near Shaw Mills   
+33	Burnt Yates junction   
+34	Leave road heading S   
+35	Take FP heading E near Deb Well SpringS35DEBSE 26620 61110130m
+36	Left Fork at “Cross” heading towards Park LodgeS36CROSE 27090 60600110m
+37	Rejoin Nidderdale Way S37NWASE 29730 6013070m
+38	Bus Stop!S38BUSSE 28420 6045070m

@@ -1,0 +1,38 @@
+H  SOFTWARE NAME & VERSION
+I  GPSU 5.02 01 FREEWARE VERSION
+S DateFormat=dd/mm/yyyy
+S Units=M,M
+S SymbolSet=0
+
+H R DATUM
+M E   Ord Srvy Grt Britn 075  5.7360400E+02  1.1960020E-05 375 -111 431
+
+H  COORDINATE SYSTEM
+U  BRITISH GRID
+
+F ID---- Zn East  North T Alt(m)   Comment
+W BH1GAT NY 19542 14941 I    115.0 Park at Gatesgarth
+W BH2FPT NY 20585 14164 I    648.0 Fleetwith Pike summit
+W BH3HON NY 21246 14142 I    633.0 At crossroads take NW track
+W BH4INT NY 21622 13641 I    500.0 Join track which leads towards Grey Knotts
+W BH5OFF NY 21567 12811 I    620.0 Leave FP and head direct to Grey Knotts
+W BH6GKT NY 21726 12568 I    697.0 Grey Knotts Summit
+W BH7BRT NY 21486 11933 I    715.0 Brandreth Summit
+W BH8OFF NY 20667 13076 I    494.0 Turn off FP towards Blackbeck tarn
+W BH9TAR NY 20157 12886 I    485.0 Blackbeck tarn
+W BH10HA NY 19337 13151 I    597.0 Haystacks Summit
+W BH11SC NY 18957 13296 I    400.0 Scarth Gap Pass
+W BH12FR NY 18797 13711 I    200.0 Bridleway turns towards Peggys Bridge
+W BH13CA NY 19480 14941 I    115.0 End at Car
+W BH14SE NY 18546 13426 I    561.0 Seat summit
+W BH15HC NY 18046 14005 I    744.0 High Crag summit
+W BH16HW NY 16750 14792 I    806.0 High Stile West Top
+W BH17HS NY 17009 14816 I    807.0 High Stile
+W BH18FP NY 17368 15098 I    650.0 FP Turns east towards Peggys Brigde
+W BH19AR NY 18988 14768 I    102.0 Peggys Bridge
+W BH20GR NY 21467 10720 I    801.0 Green Gable Summit
+W BH21WI NY 21378 10528 I    750.0 Windy Gap
+W BH22GG NY 21108 10344 I    899.0 Great Gable
+W BH23NW NY 20802 10731 I    660.0 NW descent off Great Gable
+W BH24MO NY 20953 12338 I    660.0 Turn North onto Moses Trod
+W BH24AR NY 20997 12186 I    640.0 Turn off Moses Trod towards Blackbeck Tarn

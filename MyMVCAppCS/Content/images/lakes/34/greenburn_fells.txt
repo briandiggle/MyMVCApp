@@ -1,0 +1,26 @@
+I  GPSU 4.15
+M E   Ord Srvy Grt Britn 075  5.7360400E+02  1.1960020E-05 375 -111 431
+U  BRITISH GRID
+
+F ID---- Zn East  North T  Alt(m)   Comment
+W EW2419 NY 27121 04213 C     705.0 Pike of Blisco
+W EW2422 NY 26288 03613 C     701.0 Cold Pike
+W EW2426 NY 25965 04275 C     696.0 Great Knott
+W EW2635 NY 27280 00550 C     802.0 Swirl How
+W EW2637 NY 27078 00950 C     785.0 Great Carrs
+W EW2639 NY 26011 00360 C     773.0 Grey Friar
+W EW2640 NY 28817 01110 C     763.0 Wetherlam
+W EW2641 NY 28290 00755 C     745.0 Black Sails
+W EW3743 NY 28001 04065 C     545.0 Wrynose Fell - Long Crag
+W EW3745 NY 28527 03901 C     535.0 Blake Rigg (Little Langdale)
+W EW3864 SD 27330 99948 C     770.0 Great How (Swirl Band)
+W EW3866 NY 27051 01503 C     692.0 Little Carrs
+W EW3867 NY 26938 01630 C     662.0 Hell Gill Pike
+W EW3871 NY 29510 01694 C     525.0 Birk Fell Man - Birk Fell
+W EW3876 NY 29951 01490 C     441.0 Hawk Rigg
+W EW3879 NY 30022 01705 C     428.0 High Fell
+W EW3881 NY 30103 01175 C     423.0 Blake Rigg (Tilberthwaite)
+W EW3883 NY 30062 01394 C     421.0 Haystacks (Tilberthwaite)
+W EW3886 NY 30282 02166 C     405.0 Great Intake - Low Fell
+W EW3889 SD 30279 99265 C     372.0 Low Wythow
+W EW3890 SD 30309 99818 C     370.0 Brackeny Crag

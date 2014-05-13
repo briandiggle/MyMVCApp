@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/4 http://www.topografix.com/GPX/Private/TopoGrafix/0/4/topografix.xsd">
+<metadata>
+<bounds minlat="54.51316200" minlon="-3.01955200" maxlat="54.53735600" maxlon="-2.94333100"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:14:08.312Z</time>
+<active_point xmlns="http://www.topografix.com/GPX/Private/TopoGrafix/0/4" lat="54.54296365" lon="-2.99914813">
+</active_point>
+</extensions>
+</metadata>
+<wpt lat="54.53646400" lon="-2.94333100">
+<ele>147.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP1BRI</name>
+<cmt>Grisedale Bridge Patterdale</cmt>
+<desc>Grisedale Bridge Patterdale</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP1BRI</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53250900" lon="-2.95483000">
+<ele>180.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP2RIG</name>
+<cmt>Right turn towards Grassthwaite Howe</cmt>
+<desc>Right turn towards Grassthwaite Howe</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP2RIG</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53500800" lon="-2.95705200">
+<ele>220.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP3FPG</name>
+<cmt>FP up grisedale</cmt>
+<desc>FP up grisedale</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP3FPG</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51316200" lon="-2.99685800">
+<ele>370.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP4RUS</name>
+<cmt>Turn West at Rusthwaite Lodge</cmt>
+<desc>Turn West at Rusthwaite Lodge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP4RUS</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51344800" lon="-3.00566900">
+<ele>550.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP5STR</name>
+<cmt>Follow stream on LHS</cmt>
+<desc>Follow stream on LHS</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP5STR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51479700" lon="-3.01095500">
+<ele>650.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP6HPT</name>
+<cmt>Hard Tarn</cmt>
+<desc>Hard Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP6HPT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51741723" lon="-3.00730733">
+<ele>650.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP7RID</name>
+<cmt>Start East Ridge</cmt>
+<desc>Start East Ridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:14:08.312Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP7RID</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51753336" lon="-3.01169748">
+<ele>860.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP8RIT</name>
+<cmt>Top of East Ridge</cmt>
+<desc>Top of East Ridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:12:57.078Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP8RIT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51899300" lon="-3.01544600">
+<ele>891.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP9NET</name>
+<cmt>Nethermost Pike Top</cmt>
+<desc>Nethermost Pike Top</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP9NET</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52153400" lon="-3.01683800">
+<ele>840.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP10BR</name>
+<cmt>Join Path to Helvellyn</cmt>
+<desc>Join Path to Helvellyn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP10BR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52700100" lon="-3.01751400">
+<ele>950.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP11HE</name>
+<cmt>Helvellyn</cmt>
+<desc>Helvellyn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP11HE</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52816200" lon="-3.01955200">
+<ele>920.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP12S1</name>
+<cmt>Swirral Egde path</cmt>
+<desc>Swirral Egde path</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP12S1</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52989300" lon="-3.01673600">
+<ele>850.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP13S2</name>
+<cmt>Swirral Edge middle</cmt>
+<desc>Swirral Edge middle</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP13S2</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53100900" lon="-3.01228200">
+<ele>850.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP14S3</name>
+<cmt>Swirral Edge End</cmt>
+<desc>Swirral Edge End</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP14S3</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53348100" lon="-3.00895900">
+<ele>890.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP15CC</name>
+<cmt>Catstye Cam</cmt>
+<desc>Catstye Cam</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP15CC</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53339300" lon="-3.00662300">
+<ele>850.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP16DE</name>
+<cmt>Start of Descent off Catstye Cam</cmt>
+<desc>Start of Descent off Catstye Cam</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP16DE</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.52962800" lon="-3.00537200">
+<ele>720.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP17TA</name>
+<cmt>Red Tarn FP</cmt>
+<desc>Red Tarn FP</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP17TA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53077800" lon="-2.99126000">
+<ele>700.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP18CH</name>
+<cmt>FP Starts to Birkhouse moor or grisedale</cmt>
+<desc>FP Starts to Birkhouse moor or grisedale</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP18CH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53504200" lon="-2.98528900">
+<ele>718.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP19BM</name>
+<cmt>Birkhouse Moor</cmt>
+<desc>Birkhouse Moor</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP19BM</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53619200" lon="-2.98320000">
+<ele>700.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP20GA</name>
+<cmt>Start descent off Birkhouse Moor</cmt>
+<desc>Start descent off Birkhouse Moor</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP20GA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.53735600" lon="-2.94427900">
+<ele>147.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP21CA</name>
+<cmt>GRISEDALE BRIDGE END</cmt>
+<desc>GRISEDALE BRIDGE END</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP21CA</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>NETHEREASTRID</name>
+<type>Circular Route</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:14:08.312Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NETHER EAST RIDGE</label_text>
+</label>
+</extensions>
+<rtept lat="54.53646400" lon="-2.94333100">
+<ele>147.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP1BRI</name>
+<cmt>Grisedale Bridge Patterdale</cmt>
+<desc>Grisedale Bridge Patterdale</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP1BRI</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53250900" lon="-2.95483000">
+<ele>180.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP2RIG</name>
+<cmt>Right turn towards Grassthwaite Howe</cmt>
+<desc>Right turn towards Grassthwaite Howe</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP2RIG</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53500800" lon="-2.95705200">
+<ele>220.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP3FPG</name>
+<cmt>FP up grisedale</cmt>
+<desc>FP up grisedale</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP3FPG</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51316200" lon="-2.99685800">
+<ele>370.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP4RUS</name>
+<cmt>Turn West at Rusthwaite Lodge</cmt>
+<desc>Turn West at Rusthwaite Lodge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP4RUS</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51344800" lon="-3.00566900">
+<ele>550.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP5STR</name>
+<cmt>Follow stream on LHS</cmt>
+<desc>Follow stream on LHS</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP5STR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51479700" lon="-3.01095500">
+<ele>650.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP6HPT</name>
+<cmt>Hard Tarn</cmt>
+<desc>Hard Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP6HPT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51741723" lon="-3.00730733">
+<ele>650.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP7RID</name>
+<cmt>Start East Ridge</cmt>
+<desc>Start East Ridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:14:08.312Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP7RID</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51753336" lon="-3.01169748">
+<ele>860.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP8RIT</name>
+<cmt>Top of East Ridge</cmt>
+<desc>Top of East Ridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:12:57.078Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP8RIT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51899300" lon="-3.01544600">
+<ele>891.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP9NET</name>
+<cmt>Nethermost Pike Top</cmt>
+<desc>Nethermost Pike Top</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP9NET</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52153400" lon="-3.01683800">
+<ele>840.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP10BR</name>
+<cmt>Join Path to Helvellyn</cmt>
+<desc>Join Path to Helvellyn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP10BR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52700100" lon="-3.01751400">
+<ele>950.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP11HE</name>
+<cmt>Helvellyn</cmt>
+<desc>Helvellyn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP11HE</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52816200" lon="-3.01955200">
+<ele>920.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP12S1</name>
+<cmt>Swirral Egde path</cmt>
+<desc>Swirral Egde path</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP12S1</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52989300" lon="-3.01673600">
+<ele>850.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP13S2</name>
+<cmt>Swirral Edge middle</cmt>
+<desc>Swirral Edge middle</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP13S2</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53100900" lon="-3.01228200">
+<ele>850.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP14S3</name>
+<cmt>Swirral Edge End</cmt>
+<desc>Swirral Edge End</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP14S3</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53348100" lon="-3.00895900">
+<ele>890.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP15CC</name>
+<cmt>Catstye Cam</cmt>
+<desc>Catstye Cam</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP15CC</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53339300" lon="-3.00662300">
+<ele>850.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP16DE</name>
+<cmt>Start of Descent off Catstye Cam</cmt>
+<desc>Start of Descent off Catstye Cam</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP16DE</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.52962800" lon="-3.00537200">
+<ele>720.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP17TA</name>
+<cmt>Red Tarn FP</cmt>
+<desc>Red Tarn FP</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP17TA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53077800" lon="-2.99126000">
+<ele>700.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP18CH</name>
+<cmt>FP Starts to Birkhouse moor or grisedale</cmt>
+<desc>FP Starts to Birkhouse moor or grisedale</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP18CH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53504200" lon="-2.98528900">
+<ele>718.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP19BM</name>
+<cmt>Birkhouse Moor</cmt>
+<desc>Birkhouse Moor</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP19BM</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53619200" lon="-2.98320000">
+<ele>700.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP20GA</name>
+<cmt>Start descent off Birkhouse Moor</cmt>
+<desc>Start descent off Birkhouse Moor</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP20GA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53500800" lon="-2.95705200">
+<ele>220.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP3FPG</name>
+<cmt>FP up grisedale</cmt>
+<desc>FP up grisedale</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP3FPG</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53250900" lon="-2.95483000">
+<ele>180.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP2RIG</name>
+<cmt>Right turn towards Grassthwaite Howe</cmt>
+<desc>Right turn towards Grassthwaite Howe</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP2RIG</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.53735600" lon="-2.94427900">
+<ele>147.000</ele>
+<time>2009-11-05T21:09:54.671Z</time>
+<name>NP21CA</name>
+<cmt>GRISEDALE BRIDGE END</cmt>
+<desc>GRISEDALE BRIDGE END</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-05T21:09:59.250Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>NP21CA</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

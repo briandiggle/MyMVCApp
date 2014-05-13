@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 2.3.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd">
+<metadata>
+<time>2007-04-27T08:37:42Z</time>
+<bounds minlat="54.55992500" minlon="-3.03699200" maxlat="54.59618300" maxlon="-2.93649900"/>
+</metadata>
+<wpt lat="54.58167000" lon="-2.93649900">
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D1CAR</name>
+<cmt>DOCKRAY CAR PARK</cmt>
+<desc>DOCKRAY CAR PARK</desc>
+<sym>Car</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D1CAR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.58126400" lon="-2.94015700">
+<ele>373.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D2BRAC</name>
+<cmt>BRACKEN HOW SUMMIT</cmt>
+<desc>BRACKEN HOW SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D2BRAC</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.57904400" lon="-2.94245800">
+<ele>387.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D3ROUN</name>
+<cmt>ROUND HOW SUMMIT</cmt>
+<desc>ROUND HOW SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D3ROUN</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.57555200" lon="-2.95693500">
+<ele>552.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D4COMM</name>
+<cmt>COMMON FELL SUMMIT</cmt>
+<desc>COMMON FELL SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D4COMM</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.57365000" lon="-2.96215000">
+<ele>545.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D5WATE</name>
+<cmt>WATERMILLOCK COMMON SUMMIT</cmt>
+<desc>WATERMILLOCK COMMON SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D5WATE</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.56879800" lon="-2.96203600">
+<ele>553.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D6SWIN</name>
+<cmt>SWINESIDE KNOTT SUMMIT</cmt>
+<desc>SWINESIDE KNOTT SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D6SWIN</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.56591500" lon="-2.96396300">
+<ele>551.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D7BROW</name>
+<cmt>BROWN HILLS SUMMIT</cmt>
+<desc>BROWN HILLS SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D7BROW</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.56942600" lon="-2.98443300">
+<ele>725.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D8BIRK</name>
+<cmt>BIRKETT FELL SUMMIT</cmt>
+<desc>BIRKETT FELL SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D8BIRK</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.56868100" lon="-2.99310800">
+<ele>756.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D8HART</name>
+<cmt>HARTSIDE SUMMIT</cmt>
+<desc>HARTSIDE SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D8HART</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.55992500" lon="-3.00102900">
+<ele>795.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D9WHIT</name>
+<cmt>WHITE STONES ON GREENSIDE</cmt>
+<desc>WHITE STONES ON GREENSIDE</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D9WHIT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.56127000" lon="-3.01761000">
+<ele>843.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D10STY</name>
+<cmt>STYBARROW DODD SUMMIT</cmt>
+<desc>STYBARROW DODD SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D10STY</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.56689900" lon="-3.02899400">
+<ele>789.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D11WAT</name>
+<cmt>WATSONS DODD SUMMIT</cmt>
+<desc>WATSONS DODD SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D11WAT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.57593000" lon="-3.01955300">
+<ele>857.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D12GRE</name>
+<cmt>GREAT DODD SUMMIT</cmt>
+<desc>GREAT DODD SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D12GRE</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.57458300" lon="-3.02682100">
+<ele>785.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D13LIT</name>
+<cmt>LITTLE DODD SUMMIT</cmt>
+<desc>LITTLE DODD SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D13LIT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.58094100" lon="-3.03699200">
+<ele>663.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D14CAL</name>
+<cmt>CALFHOW PIKE SUMMIT</cmt>
+<desc>CALFHOW PIKE SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D14CAL</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.59366100" lon="-3.03237800">
+<ele>726.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D15CLO</name>
+<cmt>CLOUGH HEAD</cmt>
+<desc>CLOUGH HEAD</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D15CLO</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.59618300" lon="-3.00942500">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D16COA</name>
+<cmt>INTERSECT WITH OLD COACH ROAD</cmt>
+<desc>INTERSECT WITH OLD COACH ROAD</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D16COA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.59564300" lon="-2.97659800">
+<ele>430.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D17WOO</name>
+<cmt>TRACK MEETS PLANTATION</cmt>
+<desc>TRACK MEETS PLANTATION</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D17WOO</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.59038900" lon="-2.97059200">
+<ele>430.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D18LEF</name>
+<cmt>TRACK TURNS LEFT TOWARDS HIGH ROW</cmt>
+<desc>TRACK TURNS LEFT TOWARDS HIGH ROW</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D18LEF</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.58267000" lon="-2.93650000">
+<ele>290.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D19END</name>
+<cmt>CAR</cmt>
+<desc>CAR</desc>
+<sym>Car</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D19END</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>DODDSDOCKRAY</name>
+<desc>Dockray - Bracken How - Round How - Common Fell - Watermillock Common - Swineside Knott - Brown Hills - Birkett Fell - Hart Side - White Stones on Green Side - Stybarrow Dodd - Watson's Dodd - Great Dodd - Little Dodd (St John's Common) - Calfhow Pike - Clough Head - Dockray
+Distance: 13.4 miles     Total Ascent: 1156 metres    </desc>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>THE DODDS FROM DOCKRAY</label_text>
+</label>
+</extensions>
+<rtept lat="54.58167000" lon="-2.93649900">
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D1CAR</name>
+<cmt>DOCKRAY CAR PARK</cmt>
+<desc>DOCKRAY CAR PARK</desc>
+<sym>Car</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D1CAR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.58126400" lon="-2.94015700">
+<ele>373.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D2BRAC</name>
+<cmt>BRACKEN HOW SUMMIT</cmt>
+<desc>BRACKEN HOW SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D2BRAC</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.57904400" lon="-2.94245800">
+<ele>387.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D3ROUN</name>
+<cmt>ROUND HOW SUMMIT</cmt>
+<desc>ROUND HOW SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D3ROUN</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.57555200" lon="-2.95693500">
+<ele>552.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D4COMM</name>
+<cmt>COMMON FELL SUMMIT</cmt>
+<desc>COMMON FELL SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D4COMM</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.57365000" lon="-2.96215000">
+<ele>545.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D5WATE</name>
+<cmt>WATERMILLOCK COMMON SUMMIT</cmt>
+<desc>WATERMILLOCK COMMON SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D5WATE</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.56879800" lon="-2.96203600">
+<ele>553.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D6SWIN</name>
+<cmt>SWINESIDE KNOTT SUMMIT</cmt>
+<desc>SWINESIDE KNOTT SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D6SWIN</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.56591500" lon="-2.96396300">
+<ele>551.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D7BROW</name>
+<cmt>BROWN HILLS SUMMIT</cmt>
+<desc>BROWN HILLS SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D7BROW</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.56942600" lon="-2.98443300">
+<ele>725.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D8BIRK</name>
+<cmt>BIRKETT FELL SUMMIT</cmt>
+<desc>BIRKETT FELL SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D8BIRK</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.56868100" lon="-2.99310800">
+<ele>756.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D8HART</name>
+<cmt>HARTSIDE SUMMIT</cmt>
+<desc>HARTSIDE SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D8HART</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.55992500" lon="-3.00102900">
+<ele>795.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D9WHIT</name>
+<cmt>WHITE STONES ON GREENSIDE</cmt>
+<desc>WHITE STONES ON GREENSIDE</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D9WHIT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.56127000" lon="-3.01761000">
+<ele>843.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D10STY</name>
+<cmt>STYBARROW DODD SUMMIT</cmt>
+<desc>STYBARROW DODD SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D10STY</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.56689900" lon="-3.02899400">
+<ele>789.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D11WAT</name>
+<cmt>WATSONS DODD SUMMIT</cmt>
+<desc>WATSONS DODD SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D11WAT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.57593000" lon="-3.01955300">
+<ele>857.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D12GRE</name>
+<cmt>GREAT DODD SUMMIT</cmt>
+<desc>GREAT DODD SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D12GRE</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.57458300" lon="-3.02682100">
+<ele>785.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D13LIT</name>
+<cmt>LITTLE DODD SUMMIT</cmt>
+<desc>LITTLE DODD SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D13LIT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.58094100" lon="-3.03699200">
+<ele>663.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D14CAL</name>
+<cmt>CALFHOW PIKE SUMMIT</cmt>
+<desc>CALFHOW PIKE SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D14CAL</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.59366100" lon="-3.03237800">
+<ele>726.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D15CLO</name>
+<cmt>CLOUGH HEAD</cmt>
+<desc>CLOUGH HEAD</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D15CLO</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.59618300" lon="-3.00942500">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D16COA</name>
+<cmt>INTERSECT WITH OLD COACH ROAD</cmt>
+<desc>INTERSECT WITH OLD COACH ROAD</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D16COA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.59564300" lon="-2.97659800">
+<ele>430.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D17WOO</name>
+<cmt>TRACK MEETS PLANTATION</cmt>
+<desc>TRACK MEETS PLANTATION</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D17WOO</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.59038900" lon="-2.97059200">
+<ele>430.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D18LEF</name>
+<cmt>TRACK TURNS LEFT TOWARDS HIGH ROW</cmt>
+<desc>TRACK TURNS LEFT TOWARDS HIGH ROW</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D18LEF</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.58267000" lon="-2.93650000">
+<ele>290.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>D19END</name>
+<cmt>CAR</cmt>
+<desc>CAR</desc>
+<sym>Car</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>D19END</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

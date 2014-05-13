@@ -1,0 +1,22 @@
+H  SOFTWARE NAME & VERSION
+I  GPSU 5.07 01 FREEWARE VERSION
+S DateFormat=dd/MM/yyyy
+S Units=M,M
+S SymbolSet=0
+
+H R DATUM
+M E   Ord Srvy Grt Britn 075  5.7360400E+02  1.1960020E-05 375 -111 431
+
+H  COORDINATE SYSTEM
+U  BRITISH GRID
+
+F ID---- Zn East  North T Alt(m)   Comment
+W EW2667 SD 30895 91910 C    335.0 Top O'Selside
+W EW2685 SD 30336 90474 C    263.0 High Light Haw
+W EW2686 SD 27808 90710 C    255.0 Beacon Fell
+W EW2688 SD 30152 90088 C    250.0 Low Light Haw
+W EW3335 SD 29920 89866 C    229.0 nameless (Top o'Selside - Brock Barrow)
+W EW3863 SD 30805 91861 C    334.0 Top O'Selside
+W EW3896 SD 31103 91169 C    322.0 Arnsbarrow Hill
+W EW3898 SD 30955 90827 C    316.0 Stang Hill
+

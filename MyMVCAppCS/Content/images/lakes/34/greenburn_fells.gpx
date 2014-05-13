@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.82" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.38981800" minlon="-3.12707700" maxlat="54.41160356" maxlon="-3.06946905"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.39522000" lon="-3.12154500">
+<ele>802.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW2635</name>
+<cmt>Swirl How</cmt>
+<desc>Swirl How</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Swirl How</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39878600" lon="-3.12475400">
+<ele>785.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW2637</name>
+<cmt>Great Carrs</cmt>
+<desc>Great Carrs</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Great Carrs</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40047000" lon="-3.09801100">
+<ele>763.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW2640</name>
+<cmt>Wetherlam</cmt>
+<desc>Wetherlam</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Wetherlam</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39720600" lon="-3.10604200">
+<ele>745.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW2641</name>
+<cmt>Black Sails</cmt>
+<desc>Black Sails</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Black Sails</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.38981800" lon="-3.12062800">
+<ele>770.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3864</name>
+<cmt>Great How (Swirl Band)</cmt>
+<desc>Great How (Swirl Band)</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T14:14:55Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Great How (Swirl Band)</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40375100" lon="-3.12530600">
+<ele>692.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3866</name>
+<cmt>Little Carrs</cmt>
+<desc>Little Carrs</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Little Carrs</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40487600" lon="-3.12707700">
+<ele>662.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3867</name>
+<cmt>Hell Gill Pike</cmt>
+<desc>Hell Gill Pike</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Hell Gill Pike</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40581400" lon="-3.08747700">
+<ele>525.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3871</name>
+<cmt>Birk Fell Man - Birk Fell</cmt>
+<desc>Birk Fell Man - Birk Fell</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Birk Fell Man - Birk Fell</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40404200" lon="-3.08063600">
+<ele>441.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3876</name>
+<cmt>Hawk Rigg</cmt>
+<desc>Hawk Rigg</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Hawk Rigg</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40598400" lon="-3.07959400">
+<ele>428.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3879</name>
+<cmt>High Fell</cmt>
+<desc>High Fell</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>High Fell</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40123200" lon="-3.07822100">
+<ele>423.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3881</name>
+<cmt>Blake Rigg (Tilberthwaite)</cmt>
+<desc>Blake Rigg (Tilberthwaite)</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Blake Rigg (Tilberthwaite)</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.40319500" lon="-3.07890400">
+<ele>421.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3883</name>
+<cmt>Haystacks (Tilberthwaite)</cmt>
+<desc>Haystacks (Tilberthwaite)</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Haystacks (Tilberthwaite)</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.41016200" lon="-3.07569700">
+<ele>405.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3886</name>
+<cmt>Great Intake - Low Fell</cmt>
+<desc>Great Intake - Low Fell</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T14:11:00Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Great Intake - Low Fell</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39963281" lon="-3.06946905">
+<ele>100.000</ele>
+<time>2011-01-16T19:02:24.714Z</time>
+<name>GH1LTC</name>
+<desc>Low Tilberthwaite CP</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Low Tilberthwaite CP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.41160356" lon="-3.08765448">
+<ele>200.000</ele>
+<time>2011-01-16T19:05:07.855Z</time>
+<name>GH2GRB</name>
+<desc>Cross Greenburn Beck</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GH2GRB</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.41001567" lon="-3.11881344">
+<ele>500.000</ele>
+<time>2011-01-16T19:06:48.995Z</time>
+<name>GH3FPJ</name>
+<desc>Joins FP from Three Shires Stone</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GH3FPJ</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39886573" lon="-3.08192607">
+<ele>400.000</ele>
+<time>2011-01-16T19:13:22.368Z</time>
+<name>STASTE</name>
+<desc>Start of Steel Edge</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:17:47.259Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Start of Steel Edge</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.39292380" lon="-3.09104137">
+<ele>700.000</ele>
+<time>2011-01-16T19:13:22.368Z</time>
+<name>STEELT</name>
+<desc>Tarn at top of Steel Edge</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Tarn at top of Steel Edge</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>GREATCARRGREH</name>
+<type>Mountain Circular</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Great Carrs Greenburn Horshoe</label_text>
+</label>
+</extensions>
+<rtept lat="54.39963281" lon="-3.06946905">
+<ele>100.000</ele>
+<time>2011-01-16T19:02:24.714Z</time>
+<name>GH1LTC</name>
+<desc>Low Tilberthwaite CP</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Low Tilberthwaite CP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40123200" lon="-3.07822100">
+<ele>423.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3881</name>
+<cmt>Blake Rigg (Tilberthwaite)</cmt>
+<desc>Blake Rigg (Tilberthwaite)</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Blake Rigg (Tilberthwaite)</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40319500" lon="-3.07890400">
+<ele>421.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3883</name>
+<cmt>Haystacks (Tilberthwaite)</cmt>
+<desc>Haystacks (Tilberthwaite)</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Haystacks (Tilberthwaite)</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40404200" lon="-3.08063600">
+<ele>441.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3876</name>
+<cmt>Hawk Rigg</cmt>
+<desc>Hawk Rigg</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Hawk Rigg</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40598400" lon="-3.07959400">
+<ele>428.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3879</name>
+<cmt>High Fell</cmt>
+<desc>High Fell</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>High Fell</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40581400" lon="-3.08747700">
+<ele>525.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3871</name>
+<cmt>Birk Fell Man - Birk Fell</cmt>
+<desc>Birk Fell Man - Birk Fell</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Birk Fell Man - Birk Fell</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40047000" lon="-3.09801100">
+<ele>763.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW2640</name>
+<cmt>Wetherlam</cmt>
+<desc>Wetherlam</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Wetherlam</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39720600" lon="-3.10604200">
+<ele>745.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW2641</name>
+<cmt>Black Sails</cmt>
+<desc>Black Sails</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Black Sails</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39522000" lon="-3.12154500">
+<ele>802.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW2635</name>
+<cmt>Swirl How</cmt>
+<desc>Swirl How</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Swirl How</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39878600" lon="-3.12475400">
+<ele>785.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW2637</name>
+<cmt>Great Carrs</cmt>
+<desc>Great Carrs</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Great Carrs</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40375100" lon="-3.12530600">
+<ele>692.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3866</name>
+<cmt>Little Carrs</cmt>
+<desc>Little Carrs</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Little Carrs</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.40487600" lon="-3.12707700">
+<ele>662.000</ele>
+<time>2011-01-16T14:07:41Z</time>
+<name>EW3867</name>
+<cmt>Hell Gill Pike</cmt>
+<desc>Hell Gill Pike</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Hell Gill Pike</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.41001567" lon="-3.11881344">
+<ele>500.000</ele>
+<time>2011-01-16T19:06:48.995Z</time>
+<name>GH3FPJ</name>
+<desc>Joins FP from Three Shires Stone</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GH3FPJ</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.41160356" lon="-3.08765448">
+<ele>200.000</ele>
+<time>2011-01-16T19:05:07.855Z</time>
+<name>GH2GRB</name>
+<desc>Cross Greenburn Beck</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GH2GRB</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.39963281" lon="-3.06946905">
+<ele>100.000</ele>
+<time>2011-01-16T19:02:24.714Z</time>
+<name>GH1LTC</name>
+<desc>Low Tilberthwaite CP</desc>
+<sym>Dot</sym>
+<type>Waypoint</type>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-01-16T19:20:54.587Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Low Tilberthwaite CP</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

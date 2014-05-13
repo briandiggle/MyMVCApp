@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.82" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.45424652" minlon="-3.21635723" maxlat="54.51505661" maxlon="-3.14683509"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2011-06-27T20:54:27.693Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.51359558" lon="-3.16769314">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP1</name>
+<desc>SP1</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP1</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51439285" lon="-3.16282392">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP2</name>
+<desc>SP2</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP2</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51505661" lon="-3.15918708">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP3</name>
+<desc>SP3</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP3</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51325989" lon="-3.15882730">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP4</name>
+<desc>SP4</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP4</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51160431" lon="-3.15965581">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP5</name>
+<desc>SP5</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP5</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51203537" lon="-3.15843225">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP6</name>
+<desc>SP6</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP6</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51082611" lon="-3.15680194">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP7</name>
+<desc>SP7</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP7</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50484848" lon="-3.15812588">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP8</name>
+<desc>SP8</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP8</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50471497" lon="-3.15657783">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP9</name>
+<desc>SP9</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP9</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50222397" lon="-3.14683509">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP10BB</name>
+<desc>SP10BB</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP10BB</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.49633026" lon="-3.15049934">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP11RF</name>
+<desc>SP11RF</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP11RF</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.49224091" lon="-3.15047717">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP12DT</name>
+<desc>SP12DT</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP12DT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48781204" lon="-3.15415049">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP13CD</name>
+<desc>SP13CD</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP13CD</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48826599" lon="-3.15999866">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP14CH</name>
+<desc>SP14CH</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP14CH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48395538" lon="-3.16524839">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP15GL</name>
+<desc>SP15GL</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP15GL</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48129272" lon="-3.16548133">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP16LS</name>
+<desc>SP16LS</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP16LS</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47719955" lon="-3.17047358">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP17RB</name>
+<desc>SP17RB</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP17RB</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47276306" lon="-3.17393661">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP18</name>
+<desc>SP18</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP18</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47273254" lon="-3.17398715">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP19</name>
+<desc>SP19</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP19</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46638489" lon="-3.17922187">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP20HH</name>
+<desc>SP20HH</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP20HH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46250534" lon="-3.18444228">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP21</name>
+<desc>SP21</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP21</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46250534" lon="-3.18444228">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP22</name>
+<desc>SP22</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP22</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46159744" lon="-3.19742632">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP23</name>
+<desc>SP23</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP23</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45969772" lon="-3.19839931">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP24</name>
+<desc>SP24</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP24</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45552826" lon="-3.20016599">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP25IC</name>
+<desc>SP25IC</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP25IC</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45737457" lon="-3.20689964">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP26BC</name>
+<desc>SP26BC</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP26BC</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45424652" lon="-3.21154308">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP27SP</name>
+<desc>SP27SP</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP27SP</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45504761" lon="-3.21425390">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP28</name>
+<desc>SP28</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP28</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45753098" lon="-3.21468735">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP29</name>
+<desc>SP29</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP29</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45835114" lon="-3.21635723">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP30</name>
+<desc>SP30</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP30</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45980835" lon="-3.21470356">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP31</name>
+<desc>SP31</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP31</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46082687" lon="-3.21164823">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP32</name>
+<desc>SP32</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP32</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46236420" lon="-3.20701551">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP33RH</name>
+<desc>SP33RH</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP33RH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46386337" lon="-3.20464087">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP34</name>
+<desc>SP34</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP34</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46570206" lon="-3.20644355">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP35</name>
+<desc>SP35</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP35</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47100449" lon="-3.20346189">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP36</name>
+<desc>SP36</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP36</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47317123" lon="-3.20223999">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP37</name>
+<desc>SP37</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP37</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47339249" lon="-3.19813108">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP38</name>
+<desc>SP38</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP38</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47117615" lon="-3.19503164">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP39</name>
+<desc>SP39</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP39</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47312546" lon="-3.19189930">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP40</name>
+<desc>SP40</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP40</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47684860" lon="-3.19411659">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP41</name>
+<desc>SP41</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP41</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48112869" lon="-3.19141173">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP42</name>
+<desc>SP42</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP42</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48551178" lon="-3.19349456">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP43</name>
+<desc>SP43</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP43</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48791504" lon="-3.19001389">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP44</name>
+<desc>SP44</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP44</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48777390" lon="-3.18275452">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP45</name>
+<desc>SP45</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP45</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.49735260" lon="-3.18364859">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP46</name>
+<desc>SP46</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP46</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.49850082" lon="-3.18260098">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP47</name>
+<desc>SP47</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP47</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.49839783" lon="-3.18079662">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP48</name>
+<desc>SP48</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP48</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.50465775" lon="-3.16872501">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP49</name>
+<desc>SP49</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP49</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51145172" lon="-3.16001177">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP50</name>
+<desc>SP50</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP50</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51487350" lon="-3.15954208">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP51</name>
+<desc>SP51</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP51</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.51338196" lon="-3.16794419">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP52</name>
+<desc>SP52</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP52</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>Scafell Pike from Seatoller</name>
+<number>1</number>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+</label>
+</extensions>
+<rtept lat="54.51359558" lon="-3.16769314">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP1</name>
+<desc>SP1</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP1</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51439285" lon="-3.16282392">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP2</name>
+<desc>SP2</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP2</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51505661" lon="-3.15918708">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP3</name>
+<desc>SP3</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP3</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51325989" lon="-3.15882730">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP4</name>
+<desc>SP4</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP4</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51160431" lon="-3.15965581">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP5</name>
+<desc>SP5</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP5</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51203537" lon="-3.15843225">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP6</name>
+<desc>SP6</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP6</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51082611" lon="-3.15680194">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP7</name>
+<desc>SP7</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP7</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50484848" lon="-3.15812588">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP8</name>
+<desc>SP8</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP8</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50471497" lon="-3.15657783">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP9</name>
+<desc>SP9</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP9</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50222397" lon="-3.14683509">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP10BB</name>
+<desc>SP10BB</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP10BB</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.49633026" lon="-3.15049934">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP11RF</name>
+<desc>SP11RF</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP11RF</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.49224091" lon="-3.15047717">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP12DT</name>
+<desc>SP12DT</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP12DT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48781204" lon="-3.15415049">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP13CD</name>
+<desc>SP13CD</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP13CD</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48826599" lon="-3.15999866">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP14CH</name>
+<desc>SP14CH</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP14CH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48395538" lon="-3.16524839">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP15GL</name>
+<desc>SP15GL</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP15GL</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48129272" lon="-3.16548133">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP16LS</name>
+<desc>SP16LS</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP16LS</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47719955" lon="-3.17047358">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP17RB</name>
+<desc>SP17RB</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP17RB</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47276306" lon="-3.17393661">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP18</name>
+<desc>SP18</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP18</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47273254" lon="-3.17398715">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP19</name>
+<desc>SP19</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP19</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46638489" lon="-3.17922187">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP20HH</name>
+<desc>SP20HH</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP20HH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46250534" lon="-3.18444228">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP21</name>
+<desc>SP21</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP21</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46250534" lon="-3.18444228">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP22</name>
+<desc>SP22</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP22</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46159744" lon="-3.19742632">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP23</name>
+<desc>SP23</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP23</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45969772" lon="-3.19839931">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP24</name>
+<desc>SP24</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP24</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45552826" lon="-3.20016599">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP25IC</name>
+<desc>SP25IC</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP25IC</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45737457" lon="-3.20689964">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP26BC</name>
+<desc>SP26BC</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP26BC</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45424652" lon="-3.21154308">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP27SP</name>
+<desc>SP27SP</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP27SP</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45504761" lon="-3.21425390">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP28</name>
+<desc>SP28</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP28</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45753098" lon="-3.21468735">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP29</name>
+<desc>SP29</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP29</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45835114" lon="-3.21635723">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP30</name>
+<desc>SP30</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP30</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45980835" lon="-3.21470356">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP31</name>
+<desc>SP31</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP31</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46082687" lon="-3.21164823">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP32</name>
+<desc>SP32</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP32</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46236420" lon="-3.20701551">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP33RH</name>
+<desc>SP33RH</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP33RH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46386337" lon="-3.20464087">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP34</name>
+<desc>SP34</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP34</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46570206" lon="-3.20644355">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP35</name>
+<desc>SP35</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP35</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47100449" lon="-3.20346189">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP36</name>
+<desc>SP36</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP36</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47317123" lon="-3.20223999">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP37</name>
+<desc>SP37</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP37</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47339249" lon="-3.19813108">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP38</name>
+<desc>SP38</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP38</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47117615" lon="-3.19503164">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP39</name>
+<desc>SP39</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP39</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47312546" lon="-3.19189930">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP40</name>
+<desc>SP40</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP40</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47684860" lon="-3.19411659">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP41</name>
+<desc>SP41</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP41</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48112869" lon="-3.19141173">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP42</name>
+<desc>SP42</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP42</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48551178" lon="-3.19349456">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP43</name>
+<desc>SP43</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP43</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48791504" lon="-3.19001389">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP44</name>
+<desc>SP44</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP44</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48777390" lon="-3.18275452">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP45</name>
+<desc>SP45</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP45</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.49735260" lon="-3.18364859">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP46</name>
+<desc>SP46</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP46</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.49850082" lon="-3.18260098">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP47</name>
+<desc>SP47</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP47</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.49839783" lon="-3.18079662">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP48</name>
+<desc>SP48</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP48</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.50465775" lon="-3.16872501">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP49</name>
+<desc>SP49</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP49</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51145172" lon="-3.16001177">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP50</name>
+<desc>SP50</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP50</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51487350" lon="-3.15954208">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP51</name>
+<desc>SP51</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP51</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.51338196" lon="-3.16794419">
+<time>2011-06-27T20:40:18Z</time>
+<name>SP52</name>
+<desc>SP52</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SP52</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

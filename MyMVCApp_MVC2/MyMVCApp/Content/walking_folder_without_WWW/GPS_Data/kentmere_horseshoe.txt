@@ -1,0 +1,37 @@
+H  SOFTWARE NAME & VERSION
+I  GPSU 4.94 01 REGISTERED to 'PHIL NEWBY www.haroldstreet.org.uk'
+S DateFormat=dd/mm/yyyy
+S Units=M,M
+S SymbolSet=0
+
+H R DATUM
+M E   Ord Srvy Grt Britn 075  5.7360400E+02  1.1960020E-05 375 -111 431
+
+H  COORDINATE SYSTEM
+U  BRITISH GRID
+
+F ID---- Zn East  North Alt(m)   Comment
+W KENCHS NY 45550 04100    587.0 Kentmere church start - east ridge first
+W FPRIDG NY 47550 04975    587.0 Start of FP on ridge
+W SHIPMA NY 47238 06215    587.0 Shipman Knotts
+W GOATSC NY 47339 06915    626.0 Goat Scar
+W KENTPI NY 46546 07790    730.0 Kentmere Pike
+W HARTFE NY 45968 09327    778.0 Harter Fell (Mardale)
+W MARILL NY 44763 10120    760.0 Mardale Ill Bell
+W HIGHST NY 44076 11050    828.0 High Street
+W THORNC NY 43136 10004    784.0 Thornthwaite Crag
+W FROSWI NY 43519 08525    720.0 Froswick
+W ILLBEL NY 43648 07754    757.0 Ill Bell
+W YOKE   NY 43773 06738    706.0 Yoke
+W GARBUR NY 43750 04400    587.0 Garburn Pass
+W SALLOW NY 43656 03979    516.0 Sallows
+W KENCHE NY 45550 04100    587.0 Kentmere church start - West ridge first
+
+
+
+
+
+
+
+
+

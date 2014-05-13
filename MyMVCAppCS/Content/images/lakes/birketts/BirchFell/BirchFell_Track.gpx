@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.82" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/4 http://www.topografix.com/GPX/Private/TopoGrafix/0/4/topografix.xsd">
+<metadata>
+<bounds minlat="54.28664446" minlon="-2.93334961" maxlat="54.29471255" maxlon="-2.92950869"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2010-06-04T21:27:32.678Z</time>
+</extensions>
+</metadata>
+<trk>
+<name>BIRCHFELL</name>
+<type>GPS Tracklog</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BIRCHFELL</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<color>ff0000</color>
+<opacity>1.00</opacity>
+<width>0.5000</width>
+<pattern>Solid</pattern>
+<extensions>
+<cased xmlns="http://www.topografix.com/GPX/Private/TopoGrafix/0/4">true</cased>
+</extensions>
+</line>
+</extensions>
+<trkseg>
+<trkpt lat="54.29230929" lon="-2.93334961">
+<ele>264.500</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29250241" lon="-2.93311358">
+<ele>264.500</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29359675" lon="-2.93206215">
+<ele>267.384</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29346800" lon="-2.93195486">
+<ele>269.787</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29342509" lon="-2.93184757">
+<ele>279.400</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29383278" lon="-2.93096781">
+<ele>286.610</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29383278" lon="-2.93077469">
+<ele>286.610</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29385424" lon="-2.93083906">
+<ele>286.610</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29389716" lon="-2.93083906">
+<ele>287.091</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29394007" lon="-2.93075323">
+<ele>287.571</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29417611" lon="-2.93062449">
+<ele>291.897</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29421902" lon="-2.93064594">
+<ele>298.627</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29421902" lon="-2.93073177">
+<ele>304.875</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29417611" lon="-2.93079615">
+<ele>310.162</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29419756" lon="-2.93081760">
+<ele>313.047</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29424048" lon="-2.93079615">
+<ele>313.047</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29430485" lon="-2.93071032">
+<ele>313.047</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29428340" lon="-2.93062449">
+<ele>315.450</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29434777" lon="-2.93056011">
+<ele>317.372</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29462672" lon="-2.93058157">
+<ele>317.372</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29451943" lon="-2.93056011">
+<ele>317.853</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29451943" lon="-2.93040991">
+<ele>317.372</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29449797" lon="-2.93032408">
+<ele>318.814</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29447651" lon="-2.93030262">
+<ele>318.334</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29447651" lon="-2.93034554">
+<ele>318.334</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29447651" lon="-2.93002367">
+<ele>319.295</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29449797" lon="-2.93002367">
+<ele>320.256</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29445506" lon="-2.93013096">
+<ele>319.776</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29449797" lon="-2.93017387">
+<ele>319.776</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29449797" lon="-2.93032408">
+<ele>319.776</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29456234" lon="-2.93034554">
+<ele>319.776</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29451943" lon="-2.93053865">
+<ele>320.737</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29458380" lon="-2.93066740">
+<ele>318.334</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29460526" lon="-2.93088198">
+<ele>318.814</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29456234" lon="-2.93103218">
+<ele>315.930</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29469109" lon="-2.93113947">
+<ele>309.682</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29471255" lon="-2.93124676">
+<ele>310.162</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29469109" lon="-2.93135405">
+<ele>314.488</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29458380" lon="-2.93159008">
+<ele>315.450</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29454089" lon="-2.93159008">
+<ele>316.892</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29441214" lon="-2.93171883">
+<ele>317.372</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29439068" lon="-2.93180466">
+<ele>318.334</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29426194" lon="-2.93174028">
+<ele>317.853</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29421902" lon="-2.93167591">
+<ele>317.372</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29406882" lon="-2.93163300">
+<ele>317.372</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29391861" lon="-2.93210506">
+<ele>317.372</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29378987" lon="-2.93221235">
+<ele>316.892</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29366112" lon="-2.93242693">
+<ele>317.372</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29327488" lon="-2.93257713">
+<ele>307.279</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29308177" lon="-2.93184757">
+<ele>302.472</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29310322" lon="-2.93148279">
+<ele>301.991</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29291010" lon="-2.93116093">
+<ele>300.549</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29286719" lon="-2.93098927">
+<ele>300.549</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29269553" lon="-2.93094635">
+<ele>298.146</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29260970" lon="-2.93103218">
+<ele>298.146</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29235220" lon="-2.93150425">
+<ele>296.224</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29215909" lon="-2.93167591">
+<ele>289.014</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29203034" lon="-2.93186903">
+<ele>286.130</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29175139" lon="-2.93163300">
+<ele>275.555</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29170847" lon="-2.93135405">
+<ele>274.113</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29164410" lon="-2.93122530">
+<ele>273.632</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29157973" lon="-2.93060303">
+<ele>272.190</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29149390" lon="-2.93019533">
+<ele>271.710</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29082871" lon="-2.93008804">
+<ele>273.152</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29022790" lon="-2.93019533">
+<ele>263.058</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28992749" lon="-2.93010950">
+<ele>255.848</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28960562" lon="-2.93034554">
+<ele>264.500</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28932667" lon="-2.93064594">
+<ele>266.903</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28911210" lon="-2.93081760">
+<ele>262.097</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28898335" lon="-2.93077469">
+<ele>258.251</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28894043" lon="-2.93017387">
+<ele>248.638</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28885460" lon="-2.93000221">
+<ele>246.715</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28853274" lon="-2.92985201">
+<ele>239.986</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28833962" lon="-2.92968035">
+<ele>236.141</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28825379" lon="-2.92950869">
+<ele>233.738</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28801775" lon="-2.92953014">
+<ele>235.180</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28776026" lon="-2.92970181">
+<ele>233.257</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28745986" lon="-2.92978764">
+<ele>233.257</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28718091" lon="-2.92998076">
+<ele>228.450</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28709507" lon="-2.92987347">
+<ele>221.241</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28703070" lon="-2.92983055">
+<ele>219.318</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28694487" lon="-2.92985201">
+<ele>217.395</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28664446" lon="-2.92957306">
+<ele>217.395</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<trk>
+<name>BIRCHFELL</name>
+<type>GPS Tracklog</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BIRCHFELL</label_text>
+<text xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<font>
+<family generic="sans-serif">
+<face>Arial</face>
+</family>
+</font>
+</text>
+</label>
+<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+<color>ff0000</color>
+<opacity>1.00</opacity>
+<width>0.5000</width>
+<pattern>Solid</pattern>
+<extensions>
+<cased xmlns="http://www.topografix.com/GPX/Private/TopoGrafix/0/4">true</cased>
+</extensions>
+</line>
+</extensions>
+<trkseg>
+<trkpt lat="54.28913355" lon="-2.93096781">
+<ele>247.677</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28932667" lon="-2.93088198">
+<ele>243.351</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28936959" lon="-2.93077469">
+<ele>248.638</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28945542" lon="-2.93071032">
+<ele>248.638</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28960562" lon="-2.93049574">
+<ele>257.290</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28969145" lon="-2.93040991">
+<ele>261.135</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28979874" lon="-2.93036699">
+<ele>261.616</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.28990603" lon="-2.93025970">
+<ele>265.942</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29003478" lon="-2.93025970">
+<ele>265.461</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29020644" lon="-2.93038845">
+<ele>265.461</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29035664" lon="-2.93036699">
+<ele>261.135</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29170847" lon="-2.93167591">
+<ele>267.865</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29170847" lon="-2.93171883">
+<ele>269.307</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29160119" lon="-2.93098927">
+<ele>274.113</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29160119" lon="-2.93079615">
+<ele>276.036</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29181576" lon="-2.93073177">
+<ele>273.152</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29155827" lon="-2.93103218">
+<ele>276.997</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29179431" lon="-2.93159008">
+<ele>276.997</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29183722" lon="-2.93152571">
+<ele>268.345</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29207325" lon="-2.93197632">
+<ele>275.074</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29226637" lon="-2.93244839">
+<ele>282.284</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29235220" lon="-2.93259859">
+<ele>283.246</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29241658" lon="-2.93266296">
+<ele>282.765</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29250241" lon="-2.93251276">
+<ele>285.649</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29250241" lon="-2.93238401">
+<ele>288.533</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29267407" lon="-2.93219090">
+<ele>288.052</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29280282" lon="-2.93231964">
+<ele>290.936</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29286719" lon="-2.93231964">
+<ele>293.820</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29299593" lon="-2.93201923">
+<ele>298.627</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29306031" lon="-2.93193340">
+<ele>301.030</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29318905" lon="-2.93180466">
+<ele>303.914</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29340363" lon="-2.93169737">
+<ele>310.162</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+<trkpt lat="54.29353238" lon="-2.93186903">
+<ele>314.488</ele>
+<time>1901-12-13T20:45:52Z</time>
+</trkpt>
+</trkseg>
+</trk>
+<extensions>
+</extensions>
+</gpx>

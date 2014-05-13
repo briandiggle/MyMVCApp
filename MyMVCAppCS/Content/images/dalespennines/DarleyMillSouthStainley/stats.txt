@@ -1,0 +1,15 @@
+Trackmaker:
+
+**  ACTIVE LOG **
+Cartographic Length = 16.867 km
+
+** Speeds in ACTIVE LOG **
+Average Speed: 3.6 km/h
+Maximum Speed: 33.4 km/h
+Minimum Speed: 0.1 km/h
+Total Time: 04:37:45
+
+
+
+Anquet maps: 16.64Km
+341 m ascent

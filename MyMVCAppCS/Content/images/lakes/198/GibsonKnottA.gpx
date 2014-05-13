@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 2.3.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd">
+<metadata>
+<time>2006-09-13T08:38:42Z</time>
+<bounds minlat="54.45044500" minlon="-3.11987400" maxlat="54.49892700" maxlon="-3.01786600"/>
+</metadata>
+<wpt lat="54.46092500" lon="-3.07867900">
+<ele>541.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>BLEART</name>
+<cmt>BLEA RIGG</cmt>
+<desc>BLEA RIGG</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BLEART</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48454100" lon="-3.07903800">
+<ele>537.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>CALFCT</name>
+<cmt>Calf Crag</cmt>
+<desc>Calf Crag</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>CALFCT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.49892700" lon="-3.11987400">
+<ele>525.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>EAGLET</name>
+<cmt>Eagle Crag</cmt>
+<desc>Eagle Crag</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>EAGLET</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48165100" lon="-3.05719800">
+<ele>420.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GIBSOT</name>
+<cmt>Gibson Knott</cmt>
+<desc>Gibson Knott</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GIBSOT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47480100" lon="-3.04080200">
+<ele>405.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HELMCT</name>
+<cmt>Helm Crag</cmt>
+<desc>Helm Crag</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELMCT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47595100" lon="-3.11149900">
+<ele>762.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HIGHRT</name>
+<cmt>High Raise Langdale</cmt>
+<desc>High Raise Langdale</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HIGHRT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46233600" lon="-3.10455700">
+<ele>697.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>PAVEYT</name>
+<cmt>Pavey Ark</cmt>
+<desc>Pavey Ark</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>PAVEYT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47045800" lon="-3.10286300">
+<ele>736.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>SERGET</name>
+<cmt>Sergeant Man</cmt>
+<desc>Sergeant Man</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SERGET</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45044500" lon="-3.04289900">
+<ele>395.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>SILVHT</name>
+<cmt>Silver How</cmt>
+<desc>Silver How</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SILVHT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.49067200" lon="-3.05128700">
+<ele>553.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>STEELT</name>
+<cmt>Steel Fell</cmt>
+<desc>Steel Fell</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STEELT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47429400" lon="-3.07614500">
+<ele>550.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TARNCT</name>
+<cmt>Tarn Crag Easedale</cmt>
+<desc>Tarn Crag Easedale</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TARNCT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47484800" lon="-3.08250200">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TARNCP</name>
+<cmt>TARN CRAG PATH</cmt>
+<desc>TARN CRAG PATH</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TARNCP</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47402100" lon="-3.07048900">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TARCEA</name>
+<cmt>TARN C DESCENT A</cmt>
+<desc>TARN C DESCENT A</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TARCEA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47341500" lon="-3.06981000">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TARCEB</name>
+<cmt>TARN C DESCENT B</cmt>
+<desc>TARN C DESCENT B</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TARCEB</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46944200" lon="-3.06581800">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>EASDTO</name>
+<cmt>EASED-E T O-FLOW</cmt>
+<desc>EASED-E T O-FLOW</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>EASDTO</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46857600" lon="-3.04982500">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>SMILGB</name>
+<cmt>SOURMILK GILL B</cmt>
+<desc>SOURMILK GILL B</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SMILGB</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46444500" lon="-3.03480000">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>EASDRD</name>
+<cmt>EASEDALE ROAD</cmt>
+<desc>EASEDALE ROAD</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>EASDRD</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45948700" lon="-3.02389200">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GRASGR</name>
+<cmt>GRASMERE GREEN</cmt>
+<desc>GRASMERE GREEN</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GRASGR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45539400" lon="-3.01786600">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TOWNEN</name>
+<cmt>TOWN END G-MERE</cmt>
+<desc>TOWN END G-MERE</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TOWNEN</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46785100" lon="-3.04005500">
+<ele>250.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HELMCS</name>
+<cmt>START OF HELM CRAG ASCENT</cmt>
+<desc>START OF HELM CRAG ASCENT</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELMCS</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48233600" lon="-3.08935200">
+<ele>480.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>WALLIN</name>
+<cmt>WALL INTERSECTION ON PATH FROM CALF CRAG TO GREENUP EDGE</cmt>
+<desc>WALL INTERSECTION ON PATH FROM CALF CRAG TO GREENUP EDGE</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WALLIN</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48525600" lon="-3.10440300">
+<ele>450.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GREENU</name>
+<cmt>GREENUP EDGE  BRIDLEWAY INTERSECTION</cmt>
+<desc>GREENUP EDGE  BRIDLEWAY INTERSECTION</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GREENU</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48071800" lon="-3.10922000">
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HIGHWH</name>
+<cmt>HIGH WHITE STONES SUMMIT</cmt>
+<desc>HIGH WHITE STONES SUMMIT</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HIGHWH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46611600" lon="-3.09401300">
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TOBELL</name>
+<cmt>POINT WHERE DESCENT TO EASDALE TARN CAN BE MADE, AVOIDING BLEA RIGG</cmt>
+<desc>POINT WHERE DESCENT TO EASDALE TARN CAN BE MADE, AVOIDING BLEA RIGG</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TOBELL</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47175600" lon="-3.05620200">
+<ele>300.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TARNPE</name>
+<cmt>END OF DESCENT OFF TARN CRAG</cmt>
+<desc>END OF DESCENT OFF TARN CRAG</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TARNPE</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>GIBSONKNOTT A</name>
+<type>walk</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Gibson Knott A walk</label_text>
+</label>
+</extensions>
+<rtept lat="54.45539400" lon="-3.01786600">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TOWNEN</name>
+<cmt>TOWN END G-MERE</cmt>
+<desc>TOWN END G-MERE</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TOWNEN</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45948700" lon="-3.02389200">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GRASGR</name>
+<cmt>GRASMERE GREEN</cmt>
+<desc>GRASMERE GREEN</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GRASGR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46444500" lon="-3.03480000">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>EASDRD</name>
+<cmt>EASEDALE ROAD</cmt>
+<desc>EASEDALE ROAD</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>EASDRD</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46785100" lon="-3.04005500">
+<ele>250.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HELMCS</name>
+<cmt>START OF HELM CRAG ASCENT</cmt>
+<desc>START OF HELM CRAG ASCENT</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELMCS</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47480100" lon="-3.04080200">
+<ele>405.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HELMCT</name>
+<cmt>Helm Crag</cmt>
+<desc>Helm Crag</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELMCT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48165100" lon="-3.05719800">
+<ele>420.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GIBSOT</name>
+<cmt>Gibson Knott</cmt>
+<desc>Gibson Knott</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GIBSOT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48454100" lon="-3.07903800">
+<ele>537.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>CALFCT</name>
+<cmt>Calf Crag</cmt>
+<desc>Calf Crag</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>CALFCT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48233600" lon="-3.08935200">
+<ele>480.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>WALLIN</name>
+<cmt>WALL INTERSECTION ON PATH FROM CALF CRAG TO GREENUP EDGE</cmt>
+<desc>WALL INTERSECTION ON PATH FROM CALF CRAG TO GREENUP EDGE</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WALLIN</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48525600" lon="-3.10440300">
+<ele>450.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GREENU</name>
+<cmt>GREENUP EDGE  BRIDLEWAY INTERSECTION</cmt>
+<desc>GREENUP EDGE  BRIDLEWAY INTERSECTION</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GREENU</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48071800" lon="-3.10922000">
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HIGHWH</name>
+<cmt>HIGH WHITE STONES SUMMIT</cmt>
+<desc>HIGH WHITE STONES SUMMIT</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HIGHWH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47595100" lon="-3.11149900">
+<ele>762.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HIGHRT</name>
+<cmt>High Raise Langdale</cmt>
+<desc>High Raise Langdale</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HIGHRT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47045800" lon="-3.10286300">
+<ele>736.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>SERGET</name>
+<cmt>Sergeant Man</cmt>
+<desc>Sergeant Man</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SERGET</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46611600" lon="-3.09401300">
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TOBELL</name>
+<cmt>POINT WHERE DESCENT TO EASDALE TARN CAN BE MADE, AVOIDING BLEA RIGG</cmt>
+<desc>POINT WHERE DESCENT TO EASDALE TARN CAN BE MADE, AVOIDING BLEA RIGG</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TOBELL</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46092500" lon="-3.07867900">
+<ele>541.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>BLEART</name>
+<cmt>BLEA RIGG</cmt>
+<desc>BLEA RIGG</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BLEART</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46944200" lon="-3.06581800">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>EASDTO</name>
+<cmt>EASED-E T O-FLOW</cmt>
+<desc>EASED-E T O-FLOW</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>EASDTO</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46857600" lon="-3.04982500">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>SMILGB</name>
+<cmt>SOURMILK GILL B</cmt>
+<desc>SOURMILK GILL B</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SMILGB</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46785100" lon="-3.04005500">
+<ele>250.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>HELMCS</name>
+<cmt>START OF HELM CRAG ASCENT</cmt>
+<desc>START OF HELM CRAG ASCENT</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>HELMCS</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46444500" lon="-3.03480000">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>EASDRD</name>
+<cmt>EASEDALE ROAD</cmt>
+<desc>EASEDALE ROAD</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>EASDRD</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45948700" lon="-3.02389200">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GRASGR</name>
+<cmt>GRASMERE GREEN</cmt>
+<desc>GRASMERE GREEN</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GRASGR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45539400" lon="-3.01786600">
+<ele>400.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>TOWNEN</name>
+<cmt>TOWN END G-MERE</cmt>
+<desc>TOWN END G-MERE</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>TOWNEN</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 2.3.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd">
+<metadata>
+<time>2007-08-08T09:32:10Z</time>
+<bounds minlat="54.20557800" minlon="-2.40911800" maxlat="54.23940300" maxlon="-2.36147500"/>
+</metadata>
+<wpt lat="54.22773700" lon="-2.40293200">
+<ele>736.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>WHERTP</name>
+<cmt>WHERNSIDE SUMMIT</cmt>
+<desc>WHERNSIDE SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WHERTP</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.23682300" lon="-2.40041200">
+<ele>660.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>FPNEKN</name>
+<cmt>FOOTPATH NE FROM NEAR KNOUTBERRY HILL</cmt>
+<desc>FOOTPATH NE FROM NEAR KNOUTBERRY HILL</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>FPNEKN</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.23940300" lon="-2.38079700">
+<ele>530.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GRAINH</name>
+<cmt>GRAIN HEAD</cmt>
+<desc>GRAIN HEAD</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GRAINH</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.22973300" lon="-2.36889600">
+<ele>530.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>AQUEDU</name>
+<cmt>AQUEDUCT</cmt>
+<desc>AQUEDUCT</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>AQUEDU</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.20557900" lon="-2.36147500">
+<ele>285.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>STAEND</name>
+<cmt>END</cmt>
+<desc>END</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STAEND</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.20557800" lon="-2.36178200">
+<ele>285.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>STASTA</name>
+<cmt>STATION START</cmt>
+<desc>STATION START</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STASTA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.21058400" lon="-2.37071900">
+<ele>285.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>VIADUC</name>
+<cmt>RIBBLEHEAD VIADUCT</cmt>
+<desc>RIBBLEHEAD VIADUCT</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>VIADUC</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.21241500" lon="-2.38867600">
+<ele>285.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>IVESCA</name>
+<cmt>IVESCAR</cmt>
+<desc>IVESCAR</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>IVESCA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.20662000" lon="-2.40165300">
+<ele>310.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>BROADR</name>
+<cmt>BROADRAKE TURN UP FELL</cmt>
+<desc>BROADRAKE TURN UP FELL</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BROADR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.21729000" lon="-2.40911800">
+<ele>600.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>RIDGE</name>
+<cmt>RIDGE OF WHERNSIDE</cmt>
+<desc>RIDGE OF WHERNSIDE</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>RIDGE</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>WHERNSIDE</name>
+<desc>whernside from ribblehead station</desc>
+<type>route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>whernside from ribblehead station</label_text>
+</label>
+</extensions>
+<rtept lat="54.20557900" lon="-2.36147500">
+<ele>285.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>STAEND</name>
+<cmt>END</cmt>
+<desc>END</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STAEND</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.21058400" lon="-2.37071900">
+<ele>285.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>VIADUC</name>
+<cmt>RIBBLEHEAD VIADUCT</cmt>
+<desc>RIBBLEHEAD VIADUCT</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>VIADUC</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.21241500" lon="-2.38867600">
+<ele>285.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>IVESCA</name>
+<cmt>IVESCAR</cmt>
+<desc>IVESCAR</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>IVESCA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.20662000" lon="-2.40165300">
+<ele>310.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>BROADR</name>
+<cmt>BROADRAKE TURN UP FELL</cmt>
+<desc>BROADRAKE TURN UP FELL</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BROADR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.21729000" lon="-2.40911800">
+<ele>600.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>RIDGE</name>
+<cmt>RIDGE OF WHERNSIDE</cmt>
+<desc>RIDGE OF WHERNSIDE</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>RIDGE</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.22773700" lon="-2.40293200">
+<ele>736.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>WHERTP</name>
+<cmt>WHERNSIDE SUMMIT</cmt>
+<desc>WHERNSIDE SUMMIT</desc>
+<sym>Summit</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WHERTP</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.23682300" lon="-2.40041200">
+<ele>660.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>FPNEKN</name>
+<cmt>FOOTPATH NE FROM NEAR KNOUTBERRY HILL</cmt>
+<desc>FOOTPATH NE FROM NEAR KNOUTBERRY HILL</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>FPNEKN</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.23940300" lon="-2.38079700">
+<ele>530.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>GRAINH</name>
+<cmt>GRAIN HEAD</cmt>
+<desc>GRAIN HEAD</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>GRAINH</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.22973300" lon="-2.36889600">
+<ele>530.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>AQUEDU</name>
+<cmt>AQUEDUCT</cmt>
+<desc>AQUEDUCT</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>AQUEDU</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.20557900" lon="-2.36147500">
+<ele>285.00</ele>
+<time>1970-01-01T00:00:00.000Z</time>
+<name>STAEND</name>
+<cmt>END</cmt>
+<desc>END</desc>
+<sym>Waypoint</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>STAEND</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

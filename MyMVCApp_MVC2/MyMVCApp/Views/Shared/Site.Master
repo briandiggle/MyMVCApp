@@ -1,0 +1,61 @@
+﻿<%@ Master Language="VB" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%--The line below is a workaround for a VB / ASPX designer bug--%>
+<%= ""%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../Scripts/jquery-1.4.1.js"></script>
+<asp:ContentPlaceHolder ID="ViewSpecificHead" runat="server" />
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1><% If ViewData("AT_WORK") = "False" Then%><%= Html.ActionLink("Brian's Walking Site", "Index", "Walks")%>
+                    <% Else%> <%= Html.ActionLink("MVC2", "Index", "Walks")%>
+                    <% End If %>
+                </h1>
+            </div>
+            
+            <div id="menucontainer">
+                <ul id="menu">    
+                    <li><%= Html.ActionLink("Progress", "Index", "Progress")%></li>     
+                    <li><%= Html.ActionLink("Ascents", "Index", "HillAscent", New With {.OrderBy = "DateDesc"}, New With {.dummy = 0})%></li>                    
+                    <li><%= Html.ActionLink("Markers", "Index", "Marker")%></li>                    
+                    <li><%= Html.ActionLink("Hill Classes", "HillClasses", "Walks")%></li>
+                    <li><%= Html.ActionLink("Wainwrights", "HillsInClassification", "Walks", New With {.id = "W"}, New With {.dummy = 0})%></li>
+                    <li><%= Html.ActionLink("Outlying", "HillsInClassification", "Walks", New With {.id = "WO"}, New With {.dummy = 0})%> </li> 
+                    <li><%= Html.ActionLink("Birketts", "HillsInClassification", "Walks", New With {.id = "B"}, New With {.dummy = 0})%></li>
+                    <li><%= Html.ActionLink("Walks", "WalksByDate", "Walks", New With {.OrderBy = "DateDesc"}, New With {.dummy = 0})%></li>
+                    <li><%= Html.ActionLink("Add Walk", "Create", "Walks")%></li> 
+                    <li><%= Html.ActionLink("Search", "Index", "Search")%></li> 
+                </ul>
+            </div>
+        </div>
+        
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        
+        <div id="footer">
+             <%= Html.ActionLink("Progress", "Index", "Progress")%> | 
+             <%= Html.ActionLink("Ascents", "Index", "HillAscent", New With {.OrderBy = "DateAsc"}, New With {.dummy = 0})%> |
+             <%=Html.ActionLink("Walking Areas", "Index", "Walks")%> |
+             <%= Html.ActionLink("Walks", "WalksByDate", "Walks", New With {.OrderBy = "DateAsc"}, New With {.dummy = 0})%> |
+             <%=Html.ActionLink("Hill Classifications", "HillClasses", "Walks")%> |
+             <%= Html.ActionLink("Wainwrights", "HillsInClassification", "Walks", New With {.id = "W"}, New With {.dummy = 0})%> |
+             <%= Html.ActionLink("Birketts", "HillsInClassification", "Walks", New With {.id = "B"}, New With {.dummy = 0})%> |
+             <%= Html.ActionLink("Wainwright Outlying", "HillsInClassification", "Walks", New With {.id = "WO"}, New With {.dummy = 0})%> | 
+             <%= Html.ActionLink("All Hills", "HillsInClassification", "Walks", New With {.id = Nothing}, New With {.dummy = 0})%> | 
+             <%= Html.ActionLink("Markers","Index","Marker") %> |
+             <%= Html.ActionLink("Search", "Index", "Search")%>
+             <p>@2010,2011 BWD</p>
+         </div>
+    </div>
+</body>
+</html>

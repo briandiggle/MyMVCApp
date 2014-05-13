@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.42853300" minlon="-2.96798500" maxlat="54.48540800" maxlon="-2.93255600"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.42853300" lon="-2.96042700">
+<ele>50.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH1GAL</name>
+<cmt>Gale Rigg House</cmt>
+<desc>Gale Rigg House</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH1GAL</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.43625300" lon="-2.96053000">
+<ele>50.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH2ROA</name>
+<cmt>Start of Road towards High Sweden Bridge</cmt>
+<desc>Start of Road towards High Sweden Bridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH2ROA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45231500" lon="-2.95813000">
+<ele>230.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH3BRI</name>
+<cmt>High Sweden Bridge</cmt>
+<desc>High Sweden Bridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH3BRI</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45120100" lon="-2.96257700">
+<ele>280.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH4WKT</name>
+<cmt>Footpath North</cmt>
+<desc>Footpath North</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH4WKT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46207800" lon="-2.96798500">
+<ele>508.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH5LPT</name>
+<cmt>Low Pike</cmt>
+<desc>Low Pike</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH5LPT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47093900" lon="-2.96689800">
+<ele>656.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH6HPT</name>
+<cmt>High Pike</cmt>
+<desc>High Pike</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH6HPT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48540800" lon="-2.96696100">
+<ele>792.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH7DOV</name>
+<cmt>Dove Crag</cmt>
+<desc>Dove Crag</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH7DOV</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.48190700" lon="-2.94718400">
+<ele>623.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH8LHA</name>
+<cmt>Little Hart Crag</cmt>
+<desc>Little Hart Crag</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH8LHA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47780100" lon="-2.94591600">
+<ele>530.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH9SCA</name>
+<cmt>Scandale Pass</cmt>
+<desc>Scandale Pass</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH9SCA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.47058000" lon="-2.93255600">
+<ele>776.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH10RS</name>
+<cmt>Red Screes</cmt>
+<desc>Red Screes</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH10RS</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.46512900" lon="-2.94006900">
+<ele>700.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH11RC</name>
+<cmt>Raven Crag</cmt>
+<desc>Raven Crag</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH11RC</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.45940400" lon="-2.94240600">
+<ele>615.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH12SP</name>
+<cmt>Snarker Pike</cmt>
+<desc>Snarker Pike</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH12SP</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.43734000" lon="-2.94806700">
+<ele>250.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH13ST</name>
+<cmt>The Struggle</cmt>
+<desc>The Struggle</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH13ST</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.43363800" lon="-2.96162600">
+<ele>70.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH14AM</name>
+<cmt>Ambleside</cmt>
+<desc>Ambleside</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH14AM</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.42854900" lon="-2.95843900">
+<ele>50.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH16GA</name>
+<cmt>Gale Rigg House</cmt>
+<desc>Gale Rigg House</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH16GA</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>SCANDALEHORSE</name>
+<type>Circular Route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SCANDALE HORSESHOE</label_text>
+</label>
+</extensions>
+<rtept lat="54.42853300" lon="-2.96042700">
+<ele>50.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH1GAL</name>
+<cmt>Gale Rigg House</cmt>
+<desc>Gale Rigg House</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH1GAL</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.43625300" lon="-2.96053000">
+<ele>50.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH2ROA</name>
+<cmt>Start of Road towards High Sweden Bridge</cmt>
+<desc>Start of Road towards High Sweden Bridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH2ROA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45231500" lon="-2.95813000">
+<ele>230.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH3BRI</name>
+<cmt>High Sweden Bridge</cmt>
+<desc>High Sweden Bridge</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH3BRI</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45120100" lon="-2.96257700">
+<ele>280.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH4WKT</name>
+<cmt>Footpath North</cmt>
+<desc>Footpath North</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH4WKT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46207800" lon="-2.96798500">
+<ele>508.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH5LPT</name>
+<cmt>Low Pike</cmt>
+<desc>Low Pike</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH5LPT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47093900" lon="-2.96689800">
+<ele>656.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH6HPT</name>
+<cmt>High Pike</cmt>
+<desc>High Pike</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH6HPT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48540800" lon="-2.96696100">
+<ele>792.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH7DOV</name>
+<cmt>Dove Crag</cmt>
+<desc>Dove Crag</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH7DOV</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.48190700" lon="-2.94718400">
+<ele>623.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH8LHA</name>
+<cmt>Little Hart Crag</cmt>
+<desc>Little Hart Crag</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH8LHA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47780100" lon="-2.94591600">
+<ele>530.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH9SCA</name>
+<cmt>Scandale Pass</cmt>
+<desc>Scandale Pass</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH9SCA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.47058000" lon="-2.93255600">
+<ele>776.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH10RS</name>
+<cmt>Red Screes</cmt>
+<desc>Red Screes</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH10RS</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.46512900" lon="-2.94006900">
+<ele>700.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH11RC</name>
+<cmt>Raven Crag</cmt>
+<desc>Raven Crag</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH11RC</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.45940400" lon="-2.94240600">
+<ele>615.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH12SP</name>
+<cmt>Snarker Pike</cmt>
+<desc>Snarker Pike</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH12SP</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.43734000" lon="-2.94806700">
+<ele>250.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH13ST</name>
+<cmt>The Struggle</cmt>
+<desc>The Struggle</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH13ST</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.43363800" lon="-2.96162600">
+<ele>70.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH14AM</name>
+<cmt>Ambleside</cmt>
+<desc>Ambleside</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH14AM</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.42854900" lon="-2.95843900">
+<ele>50.000</ele>
+<time>2009-11-03T19:56:45.249Z</time>
+<name>SH16GA</name>
+<cmt>Gale Rigg House</cmt>
+<desc>Gale Rigg House</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-03T19:57:02.437Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>SH16GA</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

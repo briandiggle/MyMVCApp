@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.82" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.24133384" minlon="-2.98699060" maxlat="54.24954940" maxlon="-2.97406891"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2012-06-01T20:44:25.764Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.24893093" lon="-2.98575766">
+<name>BB1</name>
+<desc>BB1</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB1</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24954940" lon="-2.98431437">
+<name>BB2</name>
+<desc>BB2</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB2</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24945616" lon="-2.98197161">
+<name>BB3</name>
+<desc>BB3</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB3</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24801904" lon="-2.97909822">
+<name>WP0016</name>
+<desc>WP0016</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WP0016</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24760031" lon="-2.97809074">
+<name>BB4</name>
+<desc>BB4</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB4</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24610449" lon="-2.97690435">
+<name>BB5</name>
+<desc>BB5</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB5</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24428286" lon="-2.97432923">
+<name>BB6</name>
+<desc>BB6</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB6</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24300422" lon="-2.97406891">
+<name>BB7</name>
+<desc>BB7</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB7</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24133384" lon="-2.97778903">
+<name>BB8</name>
+<desc>BB8</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB8</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24317036" lon="-2.97852301">
+<name>BB9</name>
+<desc>BB9</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB9</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24358659" lon="-2.97983724">
+<name>BB10</name>
+<desc>BB10</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB10</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24294072" lon="-2.98189356">
+<name>BB11</name>
+<desc>BB11</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB11</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24479876" lon="-2.97998107">
+<name>BB12</name>
+<desc>BB12</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB12</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24612354" lon="-2.98285160">
+<name>BB13</name>
+<desc>BB13</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB13</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24593243" lon="-2.98699060">
+<name>BB14</name>
+<desc>BB14</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB14</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.24881735" lon="-2.98590843">
+<name>BB15</name>
+<desc>BB15</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB15</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>Route 0005</name>
+<number>6</number>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+</label>
+</extensions>
+<rtept lat="54.24893093" lon="-2.98575766">
+<name>BB1</name>
+<desc>BB1</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB1</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24954940" lon="-2.98431437">
+<name>BB2</name>
+<desc>BB2</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB2</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24945616" lon="-2.98197161">
+<name>BB3</name>
+<desc>BB3</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB3</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24801904" lon="-2.97909822">
+<name>WP0016</name>
+<desc>WP0016</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>WP0016</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24760031" lon="-2.97809074">
+<name>BB4</name>
+<desc>BB4</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB4</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24610449" lon="-2.97690435">
+<name>BB5</name>
+<desc>BB5</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB5</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24428286" lon="-2.97432923">
+<name>BB6</name>
+<desc>BB6</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB6</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24300422" lon="-2.97406891">
+<name>BB7</name>
+<desc>BB7</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB7</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24133384" lon="-2.97778903">
+<name>BB8</name>
+<desc>BB8</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB8</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24317036" lon="-2.97852301">
+<name>BB9</name>
+<desc>BB9</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB9</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24358659" lon="-2.97983724">
+<name>BB10</name>
+<desc>BB10</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB10</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24294072" lon="-2.98189356">
+<name>BB11</name>
+<desc>BB11</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB11</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24479876" lon="-2.97998107">
+<name>BB12</name>
+<desc>BB12</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB12</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24612354" lon="-2.98285160">
+<name>BB13</name>
+<desc>BB13</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB13</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24593243" lon="-2.98699060">
+<name>BB14</name>
+<desc>BB14</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB14</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.24881735" lon="-2.98590843">
+<name>BB15</name>
+<desc>BB15</desc>
+<sym>Dot</sym>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BB15</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Utility 4.20 - http:/www.gpsu.co.uk"
+  xmlns="http://www.topografix.com/GPX/1/1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+<wpt lat="54.227737" lon="-2.402932"><ele>736</ele><name>WHERTP</name><cmt>WHERNSIDE SUMMIT</cmt><desc>WHERNSIDE SUMMIT</desc><sym>Summit</sym></wpt>
+<wpt lat="54.236823" lon="-2.400412"><ele>660</ele><name>FPNEKN</name><cmt>FOOTPATH NE FROM NEAR KNOUTBERRY HILL</cmt><desc>FOOTPATH NE FROM NEAR KNOUTBERRY HILL</desc><sym>Waypoint</sym></wpt>
+<wpt lat="54.239403" lon="-2.380797"><ele>530</ele><name>GRAINH</name><cmt>GRAIN HEAD</cmt><desc>GRAIN HEAD</desc><sym>Waypoint</sym></wpt>
+<wpt lat="54.229733" lon="-2.368896"><ele>530</ele><name>AQUEDU</name><cmt>AQUEDUCT</cmt><desc>AQUEDUCT</desc><sym>Waypoint</sym></wpt>
+<wpt lat="54.205579" lon="-2.361475"><ele>285</ele><name>STAEND</name><cmt>END</cmt><desc>END</desc><sym>Waypoint</sym></wpt>
+<wpt lat="54.205579" lon="-2.361475"><ele>285</ele><name>STASTA</name><cmt>STATION START</cmt><desc>STATION START</desc><sym>Waypoint</sym></wpt>
+<wpt lat="54.210584" lon="-2.370719"><ele>285</ele><name>VIADUC</name><cmt>RIBBLEHEAD VIADUCT</cmt><desc>RIBBLEHEAD VIADUCT</desc><sym>Waypoint</sym></wpt>
+<wpt lat="54.212415" lon="-2.388676"><ele>285</ele><name>IVESCA</name><cmt>IVESCAR</cmt><desc>IVESCAR</desc><sym>Waypoint</sym></wpt>
+<wpt lat="54.206620" lon="-2.401653"><ele>310</ele><name>BROADR</name><cmt>BROADRAKE TURN UP FELL</cmt><desc>BROADRAKE TURN UP FELL</desc><sym>Waypoint</sym></wpt>
+<wpt lat="54.217290" lon="-2.409118"><ele>600</ele><name>RIDGE</name><cmt>RIDGE OF WHERNSIDE</cmt><desc>RIDGE OF WHERNSIDE</desc><sym>Waypoint</sym></wpt>
+
+</gpx>

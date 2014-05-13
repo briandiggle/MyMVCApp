@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="EasyGPS 3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/gpx_overlay/0/3 http://www.topografix.com/GPX/gpx_overlay/0/3/gpx_overlay.xsd http://www.topografix.com/GPX/gpx_modified/0/1 http://www.topografix.com/GPX/gpx_modified/0/1/gpx_modified.xsd">
+<metadata>
+<bounds minlat="54.28181900" minlon="-3.14421000" maxlat="54.30686000" maxlon="-3.11099500"/>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+</extensions>
+</metadata>
+<wpt lat="54.28194000" lon="-3.14421000">
+<ele>50.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW1CAR</name>
+<cmt>Park near giants grave on woodland fell road</cmt>
+<desc>Park near giants grave on woodland fell road</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW1CAR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.28580000" lon="-3.13706600">
+<ele>248.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW2BLA</name>
+<cmt>Blawith Knott</cmt>
+<desc>Blawith Knott</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW2BLA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.29166300" lon="-3.12819300">
+<ele>150.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW3CAI</name>
+<cmt>Two ancient cairns</cmt>
+<desc>Two ancient cairns</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW3CAI</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.29702400" lon="-3.11904400">
+<ele>223.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW4WKT</name>
+<cmt>Wool Knott 223</cmt>
+<desc>Wool Knott 223</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW4WKT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.30173900" lon="-3.11748100">
+<ele>163.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW5TAR</name>
+<cmt>Beacon Tarn 163</cmt>
+<desc>Beacon Tarn 163</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW5TAR</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.30686000" lon="-3.11099500">
+<ele>255.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW6BFT</name>
+<cmt>Beacon Fell summit</cmt>
+<desc>Beacon Fell summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW6BFT</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.30320100" lon="-3.11498500">
+<ele>200.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW7BTE</name>
+<cmt>East side of Beacon Tarn</cmt>
+<desc>East side of Beacon Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW7BTE</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.29847100" lon="-3.11616300">
+<ele>150.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW8CWA</name>
+<cmt>Join cumbria way</cmt>
+<desc>Join cumbria way</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW8CWA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.28951100" lon="-3.11799500">
+<ele>150.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW9LEA</name>
+<cmt>Leave cumbria way heading towards Tottlebank height</cmt>
+<desc>Leave cumbria way heading towards Tottlebank height</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW9LEA</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.28700100" lon="-3.12405600">
+<ele>236.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW10TB</name>
+<cmt>Tottlebank height</cmt>
+<desc>Tottlebank height</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW10TB</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.28581500" lon="-3.13553000">
+<ele>248.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW11BK</name>
+<cmt>Blawith knott</cmt>
+<desc>Blawith knott</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW11BK</label_text>
+</label>
+</extensions>
+</wpt>
+<wpt lat="54.28181900" lon="-3.14274700">
+<ele>150.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW12CA</name>
+<cmt>End at Car</cmt>
+<desc>End at Car</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW12CA</label_text>
+</label>
+</extensions>
+</wpt>
+<rte>
+<name>BLAWITH FELLS</name>
+<type>Circular Route</type>
+<extensions>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>Blawith Fells</label_text>
+</label>
+</extensions>
+<rtept lat="54.28194000" lon="-3.14421000">
+<ele>50.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW1CAR</name>
+<cmt>Park near giants grave on woodland fell road</cmt>
+<desc>Park near giants grave on woodland fell road</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW1CAR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.28580000" lon="-3.13706600">
+<ele>248.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW2BLA</name>
+<cmt>Blawith Knott</cmt>
+<desc>Blawith Knott</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW2BLA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.29166300" lon="-3.12819300">
+<ele>150.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW3CAI</name>
+<cmt>Two ancient cairns</cmt>
+<desc>Two ancient cairns</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW3CAI</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.29702400" lon="-3.11904400">
+<ele>223.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW4WKT</name>
+<cmt>Wool Knott 223</cmt>
+<desc>Wool Knott 223</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW4WKT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.30173900" lon="-3.11748100">
+<ele>163.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW5TAR</name>
+<cmt>Beacon Tarn 163</cmt>
+<desc>Beacon Tarn 163</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW5TAR</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.30686000" lon="-3.11099500">
+<ele>255.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW6BFT</name>
+<cmt>Beacon Fell summit</cmt>
+<desc>Beacon Fell summit</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW6BFT</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.30320100" lon="-3.11498500">
+<ele>200.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW7BTE</name>
+<cmt>East side of Beacon Tarn</cmt>
+<desc>East side of Beacon Tarn</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW7BTE</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.29847100" lon="-3.11616300">
+<ele>150.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW8CWA</name>
+<cmt>Join cumbria way</cmt>
+<desc>Join cumbria way</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW8CWA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.28951100" lon="-3.11799500">
+<ele>150.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW9LEA</name>
+<cmt>Leave cumbria way heading towards Tottlebank height</cmt>
+<desc>Leave cumbria way heading towards Tottlebank height</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW9LEA</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.28700100" lon="-3.12405600">
+<ele>236.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW10TB</name>
+<cmt>Tottlebank height</cmt>
+<desc>Tottlebank height</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW10TB</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.28581500" lon="-3.13553000">
+<ele>248.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW11BK</name>
+<cmt>Blawith knott</cmt>
+<desc>Blawith knott</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW11BK</label_text>
+</label>
+</extensions>
+</rtept>
+<rtept lat="54.28181900" lon="-3.14274700">
+<ele>150.000</ele>
+<time>2009-11-02T12:59:41.250Z</time>
+<name>BW12CA</name>
+<cmt>End at Car</cmt>
+<desc>End at Car</desc>
+<sym>Waypoint</sym>
+<extensions>
+<time xmlns="http://www.topografix.com/GPX/gpx_modified/0/1">2009-11-02T12:59:44.687Z</time>
+<label xmlns="http://www.topografix.com/GPX/gpx_overlay/0/3">
+<label_text>BW12CA</label_text>
+</label>
+</extensions>
+</rtept>
+</rte>
+<extensions>
+</extensions>
+</gpx>

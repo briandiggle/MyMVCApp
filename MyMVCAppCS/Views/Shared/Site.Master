@@ -55,7 +55,7 @@
              <%= Html.ActionLink("All Hills", "HillsInClassification", "Walks", New With {.id = Nothing}, New With {.dummy = 0})%> | 
              <%= Html.ActionLink("Markers","Index","Marker") %> |
              <%= Html.ActionLink("Search", "Index", "Search")%>
-             <p>@2010,2011 BWD, C# version 2013</p>
+             <p>@2010,2011 BWD, C# version 2013, 2014</p>
          </div>
     </div>
 </body>

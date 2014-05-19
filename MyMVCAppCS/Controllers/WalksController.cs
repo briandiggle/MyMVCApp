@@ -257,7 +257,7 @@ namespace MyMVCAppCS.Controllers
             IOrderedQueryable<Walk> IQWalks;
    
             // ---Use the walking repository to get a list of all the walks----
-            // ---Set up the ordering of the walks------
+            // ---Set up the ordering of the walks ------
             if ((OrderBy == "DateAsc")) {
                 IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkDate);
                 ViewData["OrderBy"] = "Date";

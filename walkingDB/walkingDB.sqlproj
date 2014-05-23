@@ -14,7 +14,7 @@
     </RootPath>
     <RootNamespace>walkingDB</RootNamespace>
     <AssemblyName>walkingDB</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -23,6 +23,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -57,5 +59,35 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Walks.sql" />
+    <Build Include="dbo\Tables\Marker_Observation.sql" />
+    <Build Include="dbo\Tables\Class.sql" />
+    <Build Include="dbo\Tables\Classlink.sql" />
+    <Build Include="dbo\Tables\Marker.sql" />
+    <Build Include="dbo\Tables\Areas.sql" />
+    <Build Include="dbo\Tables\Arealink.sql" />
+    <Build Include="dbo\Tables\MarylynParentChild.sql" />
+    <Build Include="dbo\Tables\Hills.sql" />
+    <Build Include="dbo\Tables\Walk_AssociatedFiles.sql" />
+    <Build Include="dbo\Tables\HillAscent.sql" />
+    <Build Include="dbo\Tables\Walk_AssociatedFile_Types.sql" />
+    <Build Include="dbo\Tables\Marker_Status.sql" />
+    <Build Include="dbo\Tables\AreaTypes.sql" />
+    <Build Include="dbo\Tables\WalkTypes.sql" />
+    <Build Include="Security\IIS APPPOOL_ASP.NET v4.0.sql" />
+    <Build Include="Security\IIS APPPOOL_ASP_1.NET v4.0.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\sp_ClearWalksData.sql" />
+    <Build Include="dbo\Stored Procedures\sp_DeleteWalk.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetMyProgress.sql" />
+    <Build Include="dbo\Stored Procedures\sp_GetMyProgressByClassType.sql" />
+    <Build Include="dbo\Stored Procedures\sp_InsertAreaTypes.sql" />
+    <Build Include="Security\Permissions.sql" />
   </ItemGroup>
 </Project>

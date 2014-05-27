@@ -11,7 +11,7 @@ declare @Areatype char(1)
 declare @areaname nvarchar(100)
 
 Declare areascursor cursor for
-  select arearef,areaname from areas
+  select Arearef,Areaname from Areas
 
 open areascursor
 
@@ -23,9 +23,9 @@ Begin
     Set @Areatype = substring(@Arearef,1,1)
 	print 'Area: ' + @areaname + ' ref: ' + @Arearef + '  type: ' + @Areatype
 
-	update areas
-       set areatype=@Areatype
-    where areaname=@areaname
+	update Areas
+       set AreaType=@Areatype
+    where Areaname=@areaname
 
     fetch next from areascursor into @Arearef,@areaname
 

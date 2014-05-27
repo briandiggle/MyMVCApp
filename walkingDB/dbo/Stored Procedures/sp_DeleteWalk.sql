@@ -11,10 +11,10 @@ CREATE PROCEDURE [dbo].[sp_DeleteWalk]
 AS
 BEGIN
 
-delete from walk_associatedfiles where walkid=@WalkID
-delete from marker where walkid=@WalkID
-delete from hillascent where walkid=@WalkID
-delete from walks where walkid=@WalkID
+delete from Walk_AssociatedFiles where WalkID=@WalkID
+delete from Marker where WalkID=@WalkID
+delete from HillAscent where WalkID=@WalkID
+delete from Walks where WalkID=@WalkID
 
 
 END

@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{17bc08bc-dc56-4a32-9280-cac951f2e669}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -25,6 +25,7 @@
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <GenerateCreateScript>True</GenerateCreateScript>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -83,11 +84,13 @@
     <Build Include="Security\IIS APPPOOL_ASP.NET v4.0.sql" />
     <Build Include="Security\IIS APPPOOL_ASP_1.NET v4.0.sql" />
     <Build Include="Security\RoleMemberships.sql" />
-    <Build Include="dbo\Stored Procedures\sp_ClearWalksData.sql" />
     <Build Include="dbo\Stored Procedures\sp_DeleteWalk.sql" />
     <Build Include="dbo\Stored Procedures\sp_GetMyProgress.sql" />
     <Build Include="dbo\Stored Procedures\sp_GetMyProgressByClassType.sql" />
     <Build Include="dbo\Stored Procedures\sp_InsertAreaTypes.sql" />
     <Build Include="Security\Permissions.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="walkingDB.publish.xml" />
   </ItemGroup>
 </Project>

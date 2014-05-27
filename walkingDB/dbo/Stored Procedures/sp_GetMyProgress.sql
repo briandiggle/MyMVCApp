@@ -6,8 +6,8 @@ declare @classref varchar(5)
 declare @classname varchar(30)
 
 set @sortseq=1
-set @classref = (select classref from class where sortseq = @sortseq)
-set @classname = (select classname from class where sortseq = @sortseq)
+set @classref = (select Classref from Class where SortSeq = @sortseq)
+set @classname = (select Classname from Class where SortSeq = @sortseq)
 
 create table #myprogress (
 NumberClimbed int,
@@ -18,24 +18,24 @@ ClassName varchar(30) )
 while @sortseq is not null
 begin
 
-	set @sortseq = (select min(sortseq) from class where sortseq > @sortseq)
-	set @classref = (select classref from class where sortseq = @sortseq)
-	set @classname = (select classname from class where sortseq = @sortseq)
+	set @sortseq = (select min(SortSeq) from Class where sortseq > @sortseq)
+	set @classref = (select Classref from Class where sortseq = @sortseq)
+	set @classname = (select Classname from Class where sortseq = @sortseq)
 	
-	insert into #myprogress(numberclimbed, totalhills, classref, classname)
+	insert into #myprogress(NumberClimbed, TotalHills, ClassRef, ClassName)
 	  select 
 		(select count(Hillnumber)
-		from hills
-		where firstclimbeddate is not null
-		and hillnumber in ( select hillnumber from classlink where classref=@classref))
+		from Hills
+		where FirstClimbedDate is not null
+		and Hillnumber in ( select Hillnumber from Classlink where Classref=@classref))
 
 		
 	, 
 		
 		(
 		select count(Hillnumber)
-		from hills
-		where  hillnumber in ( select hillnumber from classlink where classref=@classref )
+		from Hills
+		where  Hillnumber in ( select Hillnumber from Classlink where Classref=@classref )
 		) 
 	,
 
@@ -46,7 +46,7 @@ begin
 
 end
 
-select * from #myprogress order by classname asc
+select * from #myprogress order by ClassName asc
 
 
 drop table #myprogress

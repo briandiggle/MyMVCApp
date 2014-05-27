@@ -6,9 +6,9 @@ declare @sortseq int
 declare @classref varchar(5)
 declare @classname varchar(30)
 
-set @sortseq=( select min(sortseq) from class where classtype=@ClassType)
-set @classref = (select classref from class where sortseq = @sortseq  and classtype=@ClassType)
-set @classname = (select classname from class where sortseq = @sortseq and classtype=@ClassType)
+set @sortseq=( select min(SortSeq) from Class where ClassType=@ClassType)
+set @classref = (select Classref from Class where SortSeq = @sortseq  and classtype=@ClassType)
+set @classname = (select Classname from Class where Sortseq = @sortseq and classtype=@ClassType)
 
 print 'sortseq =' + cast(@sortseq as varchar(5)) + ' classref=' + @classref + ' classname=' + @classname
 
@@ -25,33 +25,33 @@ begin
 	insert into #myprogress(NumberClimbed, TotalHills, ClassRef, ClassName)
 	  select 
 		(select count(Hillnumber)
-		from hills
-		where firstclimbeddate is not null
-		and hillnumber in ( select hillnumber from classlink where classref=@classref))
+		from Hills
+		where FirstClimbedDate is not null
+		and Hillnumber in ( select Hillnumber from Classlink where Classref=@classref))
 
 		
 	, 
 		
 		(
 		select count(Hillnumber)
-		from hills
-		where  hillnumber in ( select hillnumber from classlink where classref=@classref )
+		from Hills
+		where  Hillnumber in ( select Hillnumber from Classlink where Classref=@classref )
 		) 
 	,
 
 	@classref,
 	@classname
 
-    set @sortseq = (select min(sortseq) from class where sortseq > @sortseq and classtype=@ClassType)
-	set @classref = (select classref from class where sortseq = @sortseq and classtype=@ClassType)
-	set @classname = (select classname from class where sortseq = @sortseq and classtype=@ClassType)
+    set @sortseq = (select min(SortSeq) from Class where SortSeq > @sortseq and ClassType=@ClassType)
+	set @classref = (select Classref from Class where SortSeq = @sortseq and ClassType=@ClassType)
+	set @classname = (select Classname from Class where SortSeq = @sortseq and ClassType=@ClassType)
 	
 	print 'sortseq =' + cast(@sortseq as varchar(5)) + ' classref=' + @classref + ' classname=' + @classname
 
 
 end
 
-select * from #myprogress order by classname asc
+select * from #myprogress order by ClassName asc
 
 
 drop table #myprogress

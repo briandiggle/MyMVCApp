@@ -549,7 +549,7 @@ namespace MyMVCAppCS.Controllers
 
         public JsonResult CheckFileInWebrootJSON(string imagepath)
         {
-            bool bIsInPath = imagepath.StartsWith(this.Server.MapPath("/"));
+           var  bIsInPath = imagepath.StartsWith(this.Server.MapPath("/"));
 
             var oRes = new { isinpath = bIsInPath.ToString() };
 

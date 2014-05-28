@@ -263,7 +263,7 @@
 
                 if (oResults.isinpath == "False") {
                     alert('The file you chose is not in the web site root.');
-                    /*      reset_html('auxilliary_filesdiv1'); */
+                    reset_html('auxilliary_filesdiv1');
                 } else {
                     $('#auxilliary_filesdiv2').show();
                 }
@@ -436,7 +436,7 @@
                                     $("#markers_added").val(mi + ":" + oResults.markerid);
                                     $("#MarkerModalDialogForm").dialog('close');
                                 } else {
-                                    $(".validateMarkerFormTips") = "An error occurred when inserting the new marker: " + status;
+                                    $(".validateMarkerFormTips").val = "An error occurred when inserting the new marker: " + status;
                                 }
                                 allFields.val('').removeClass('ui-state-error');
                             });
@@ -610,6 +610,9 @@ function injectareaid() {
             <div class="editor-field">
                 <%: Html.TextAreaFor(Function(model) model.WalkDescription, 8, 100, New With {.class = "formtextarea"})%>
             </div>&nbsp;
+
+<!-- Section: Add Walk Images---------------------------------------------------------------------->
+
             <div class="editor-label">
                <label for="images_path"><strong>Walk images</strong><br />Full path and name prefix of images </label>E.g. <pre>C:\DEV\MyMVCApp\MyMVCApp\Content\images\lakes\202\SilverHow_8December2009_</pre>
            </div>
@@ -619,16 +622,26 @@ function injectareaid() {
            </div>       
            <div class="editor-field" id="walkimages">
            </div>&nbsp;
+
+<!-- Section: Add Additional (Auxilliary) Files----------------------------------------------------->
+
            <div class="editor-label">
              <strong>Additional Files</strong>
+               <br />Full path and name prefix of images E.g. <pre>C:\DEV\MyMVCApp\MyMVCApp\Content\images\lakes\202\SilverHow_8December2009_Track.gpx</pre>
            </div>
+                         
            <% Dim selectlist As System.Collections.Generic.IEnumerable(Of System.Web.Mvc.SelectListItem) = ViewData("Associated_File_Types")%>
            <% For iAuxCounter = 1 To 6%>
            <div class="editor-field" id="auxilliary_filesdiv<%=iAuxCounter %>"> 
-            <strong><%: iAuxCounter%></strong> <input type="file" id="auxilliary_file<%=iAuxCounter %>" name="auxilliary_file<%=iAuxCounter %>" size="80"/> <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString, selectlist)%>
-               <input type="text" id="auxilliary_caption<%=iAuxCounter %>" name="auxilliary_caption<%=iAuxCounter%>" size="40" /><br />
+                <strong><%: iAuxCounter%></strong> 
+                <input type="text" id="auxilliary_file<%=iAuxCounter %>" name="auxilliary_file<%=iAuxCounter %>" size="80"/> 
+                <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString, selectlist)%>
+                Caption: <input type="text" id="auxilliary_caption<%=iAuxCounter %>" name="auxilliary_caption<%=iAuxCounter%>" size="40" /><br />
            </div>
            <% Next%>
+
+<!-- Section: Walk Type------------------------------------------------------------------------------>
+
            &nbsp;
           <div class="editor-label">
                 <label for="WalkTypes"><strong>Walk Type</strong></label>
@@ -668,7 +681,7 @@ function injectareaid() {
                <label for="MetresOfAscent"><strong>Metres of Ascent</strong></label>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.MetresOfAscent) %>
+                <%: Html.TextBoxFor(Function(model) model.MetresOfAscent)%>
             </div>&nbsp;
                       
             <div class="editor-label">

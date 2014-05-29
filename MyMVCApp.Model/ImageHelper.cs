@@ -8,8 +8,7 @@ namespace MyMVCAppCS.Models
     using System.Drawing;
     using System.IO;
     using System.Text;
-    using System.Web.Hosting;
-
+ 
     public static class ImageHelper
     {
         public static string BuildImgTag(string imagePathFromAppRoot)
@@ -22,8 +21,6 @@ namespace MyMVCAppCS.Models
 
             int width = image.Width/ 8;
             int height = image.Height/ 8;
-
-            var x = 0;
 
             var oStringBuilder = new StringBuilder();
 

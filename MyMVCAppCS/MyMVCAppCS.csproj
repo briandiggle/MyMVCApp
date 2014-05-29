@@ -97,8 +97,9 @@
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
@@ -151,26 +152,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ImageHelper.cs" />
-    <Compile Include="Models\ImageSearchEngine.cs" />
-    <Compile Include="Models\ImageSearchFormParser.cs" />
-    <Compile Include="Models\ImageSearchResults.cs" />
-    <Compile Include="Models\ImageSearchSummary.cs" />
-    <Compile Include="Models\ImageSelector.cs" />
-    <Compile Include="Models\ISearchFormParser.cs" />
-    <Compile Include="Models\ISearchSummary.cs" />
-    <Compile Include="Models\PaginatedList.cs" />
-    <Compile Include="Models\PaginatedListMVC.cs" />
-    <Compile Include="Models\CommonSelectLists.cs" />
-    <Compile Include="Models\SearchOperator.cs" />
-    <Compile Include="Models\SearchTermGenerator.cs" />
-    <Compile Include="Models\WalkSearchResults.cs" />
-    <Compile Include="Models\WalkSearchSummary.cs" />
-    <Compile Include="Models\WalkSearchEngine.cs" />
-    <Compile Include="Models\WalkSearchFormParser.cs" />
-    <Compile Include="Models\SearchTerm.cs" />
-    <Compile Include="Models\SearchTermSelection.cs" />
-    <Compile Include="Models\WalkSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\HillSearchViewModel.cs" />
     <Compile Include="ViewModels\ImageSearchViewModel.cs" />
@@ -396,6 +377,10 @@
     <ProjectReference Include="..\MyMVCApp.DAL\MyMVCApp.DAL.csproj">
       <Project>{FFE8E713-2EB6-4216-AD01-2C1D3D5FC340}</Project>
       <Name>MyMVCApp.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyMVCApp.Model\MyMVCApp.Model.csproj">
+      <Project>{80ea68f0-01b3-4061-ac3e-11c36169669a}</Project>
+      <Name>MyMVCApp.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -92,6 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="walkingDB.publish.xml" />
-    <None Include="walkingDB_1.publish.xml" />
+    <None Include="walkingDB_DEV.publish.xml" />
   </ItemGroup>
 </Project>

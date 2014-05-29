@@ -37,36 +37,36 @@ namespace MyMVCAppCS.Controllers
             string strAreaTypeName = "";
             ViewData["CountryName"] = strCountryName;
 
-            IQueryable<Area> IQWalkingAreas;
+            IQueryable<Area> iqWalkingAreas;
 
             if ( strAreaType.Equals(""))
             {
-                IQWalkingAreas = this.repository.GetAllWalkingAreas(strCountryCode);
+                iqWalkingAreas = this.repository.GetAllWalkingAreas(strCountryCode);
             }
             else
             {
-                IQWalkingAreas = this.repository.GetAllWalkingAreas(strCountryCode, strAreaType);
+                iqWalkingAreas = this.repository.GetAllWalkingAreas(strCountryCode, strAreaType);
                 strAreaTypeName = repository.GetWalkAreaTypeNameFromType(strAreaType);
             }
             ViewData["AreaTypeName"] = strAreaTypeName;
 
-            return this.View(IQWalkingAreas);
+            return this.View(iqWalkingAreas);
 
         }
 
 
         public ActionResult HillClasses()
         {
-            var IQHillClasses =
+            var iqHillClasses =
                 this.repository.GetAllHillClassifications().OrderBy(classification => classification.Classname);
 
-            return this.View(IQHillClasses);
+            return this.View(iqHillClasses);
         }
 
         /// <summary>
-        /// HillsByARea
+        /// Show a list of hills by areas
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="id">ID of area show</param>
         /// <param name="OrderBy"></param>
         /// <param name="page"></param>
         /// <returns></returns>
@@ -74,59 +74,59 @@ namespace MyMVCAppCS.Controllers
         {
            // var IQHillsInWalkingArea = this.repository.FindHillsByArea(id);
 
-            IQueryable<Hill> IQHillsInWalkingArea;
+            IQueryable<Hill> iqHillsInWalkingArea;
 
             if ((OrderBy == "NameAsc"))
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.Hillname);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.Hillname);
                 ViewData["OrderBy"] = "Name";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "NameDesc"))
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.Hillname);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.Hillname);
                 ViewData["OrderBy"] = "Name";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "MetresAsc"))
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.Metres);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.Metres);
                 ViewData["OrderBy"] = "Metres";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "MetresDesc"))
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.Metres);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.Metres);
                 ViewData["OrderBy"] = "Metres";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "FirstAscentDesc"))
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.FirstClimbedDate);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.FirstClimbedDate);
                 ViewData["OrderBy"] = "FirstAscent";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "FirstAscentAsc"))
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.FirstClimbedDate);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.FirstClimbedDate);
                 ViewData["OrderBy"] = "FirstAscent";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "NumberAscentDesc"))
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.NumberOfAscents);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.NumberOfAscents);
                 ViewData["OrderBy"] = "NumberAscent";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "NumberAscentAsc"))
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.NumberOfAscents);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.NumberOfAscents);
                 ViewData["OrderBy"] = "NumberAscent";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else
             {
-                IQHillsInWalkingArea = repository.FindHillsByArea(id);
+                iqHillsInWalkingArea = repository.FindHillsByArea(id);
                 ViewData["OrderBy"] = "Name";
                 ViewData["OrderAscDesc"] = "Asc";
             }
@@ -138,7 +138,7 @@ namespace MyMVCAppCS.Controllers
             ViewData["AreaName"] = strAreaName;
 
             // ----Create a paginated list of hills----------------
-            PaginatedListMVC<Hill> iqPaginatedHills = new PaginatedListMVC<Hill>(IQHillsInWalkingArea,
+            PaginatedListMVC<Hill> iqPaginatedHills = new PaginatedListMVC<Hill>(iqHillsInWalkingArea,
                                                                                 page,
                                                                                 pageSize,
                                                                                 Url.RouteUrl("Default", new { action="HillsByArea", controller="Walks"}),
@@ -166,7 +166,7 @@ namespace MyMVCAppCS.Controllers
     //  Descr   : Return a list of hills with classification as specified by id parameter
     //            optional page parameter provides pagination.
     // --------------------------------------------------------------------------------------
-    public ActionResult HillsInClassification(string id, string OrderBy="NameAsc", int page=1) 
+    public ActionResult HillsInClassification(string id, string orderBy="NameAsc", int page=1) 
     {
     
         if ((id == null)) 
@@ -181,42 +181,42 @@ namespace MyMVCAppCS.Controllers
         // ---Use the walking repository to get a list of all the hills in the specified classification----
         IQueryable<Hill> IQHillsInClassificaton;
       
-        if ((OrderBy == "NameAsc")) {
+        if ((orderBy == "NameAsc")) {
             IQHillsInClassificaton = repository.GetHillsByClassification(id).OrderBy(hill =>hill.Hillname);
             ViewData["OrderBy"] = "Name";
             ViewData["OrderAscDesc"] = "Asc";
         }
-        else if ((OrderBy == "NameDesc")) {
+        else if ((orderBy == "NameDesc")) {
             IQHillsInClassificaton = repository.GetHillsByClassification(id).OrderByDescending(hill => hill.Hillname);
             ViewData["OrderBy"] = "Name";
             ViewData["OrderAscDesc"] = "Desc";
         }
-        else if ((OrderBy == "MetresAsc")) {
+        else if ((orderBy == "MetresAsc")) {
             IQHillsInClassificaton = repository.GetHillsByClassification(id).OrderBy(hill => hill.Metres);
             ViewData["OrderBy"] = "Metres";
             ViewData["OrderAscDesc"] = "Asc";
         }
-        else if ((OrderBy == "MetresDesc")) {
+        else if ((orderBy == "MetresDesc")) {
             IQHillsInClassificaton = repository.GetHillsByClassification(id).OrderByDescending(hill => hill.Metres);
             ViewData["OrderBy"] = "Metres";
             ViewData["OrderAscDesc"] = "Desc";
         }
-        else if ((OrderBy == "FirstAscentDesc")) {
+        else if ((orderBy == "FirstAscentDesc")) {
             IQHillsInClassificaton = repository.GetHillsByClassification(id).OrderByDescending(hill => hill.FirstClimbedDate);
             ViewData["OrderBy"] = "FirstAscent";
             ViewData["OrderAscDesc"] = "Desc";
         }
-        else if ((OrderBy == "FirstAscentAsc")) {
+        else if ((orderBy == "FirstAscentAsc")) {
             IQHillsInClassificaton = repository.GetHillsByClassification(id).OrderBy(hill => hill.FirstClimbedDate);
             ViewData["OrderBy"] = "FirstAscent";
             ViewData["OrderAscDesc"] = "Asc";
         }
-        else if ((OrderBy == "NumberAscentDesc")) {
+        else if ((orderBy == "NumberAscentDesc")) {
             IQHillsInClassificaton = repository.GetHillsByClassification(id).OrderByDescending(hill => hill.NumberOfAscents);
             ViewData["OrderBy"] = "NumberAscent";
             ViewData["OrderAscDesc"] = "Desc";
         }
-        else if ((OrderBy == "NumberAscentAsc")) {
+        else if ((orderBy == "NumberAscentAsc")) {
             IQHillsInClassificaton = repository.GetHillsByClassification(id).OrderBy(hill => hill.NumberOfAscents);
             ViewData["OrderBy"] = "NumberAscent";
             ViewData["OrderAscDesc"] = "Asc";
@@ -239,7 +239,7 @@ namespace MyMVCAppCS.Controllers
                                                                             pageSize,
                                                                             Url.RouteUrl("Default", new { action="HillsInClassification", controller="Walks"}),
                                                                             maxPageLinks,
-                                                                            "?OrderBy" + OrderBy); 
+                                                                            "?OrderBy" + orderBy); 
      
      
         // -----Pass the paginated list of hills to the view. The view expects a paginated list as its model-----
@@ -254,92 +254,92 @@ namespace MyMVCAppCS.Controllers
         // --------------------------------------------------------------------------------------
         public ActionResult WalksByDate(string OrderBy, int page=1) {
             
-            IOrderedQueryable<Walk> IQWalks;
+            IOrderedQueryable<Walk> iqWalks;
    
             // ---Use the walking repository to get a list of all the walks----
             // ---Set up the ordering of the walks ------
             if ((OrderBy == "DateAsc")) {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkDate);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkDate);
                 ViewData["OrderBy"] = "Date";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "DateDesc")) {
-                IQWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkDate);
+                iqWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkDate);
                 ViewData["OrderBy"] = "Date";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "TitleAsc")) {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkTitle);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkTitle);
                 ViewData["OrderBy"] = "Title";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "TitleDesc")) {
-                IQWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkTitle);
+                iqWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkTitle);
                 ViewData["OrderBy"] = "Title";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "AreaAsc")) {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkAreaName);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkAreaName);
                 ViewData["OrderBy"] = "Area";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "AreaDesc")) {
-                IQWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkAreaName);
+                iqWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkAreaName);
                 ViewData["OrderBy"] = "Area";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "LengthAsc")) {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.CartographicLength);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.CartographicLength);
                 ViewData["OrderBy"] = "Length";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "LengthDesc")) {
-                IQWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.CartographicLength);
+                iqWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.CartographicLength);
                 ViewData["OrderBy"] = "Length";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "AscentAsc")) {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.MetresOfAscent);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.MetresOfAscent);
                 ViewData["OrderBy"] = "Ascent";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "AscentDesc")) {
-                IQWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.MetresOfAscent);
+                iqWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.MetresOfAscent);
                 ViewData["OrderBy"] = "Ascent";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "TotalTimeAsc")) {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkTotalTime);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkTotalTime);
                 ViewData["OrderBy"] = "TotalTime";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "TotalTimeDesc")) {
-                IQWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkTotalTime);
+                iqWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkTotalTime);
                 ViewData["OrderBy"] = "TotalTime";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "MovAvgAsc")) {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.MovingAverageKmh);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.MovingAverageKmh);
                 ViewData["OrderBy"] = "MovAvg";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "MovAvgDesc")) {
-                IQWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.MovingAverageKmh);
+                iqWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.MovingAverageKmh);
                 ViewData["OrderBy"] = "MovAvg";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else if ((OrderBy == "OvlAvgAsc")) {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkAverageSpeedKmh);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkAverageSpeedKmh);
                 ViewData["OrderBy"] = "OvlAvg";
                 ViewData["OrderAscDesc"] = "Asc";
             }
             else if ((OrderBy == "OvlAvgDesc")) {
-                IQWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkAverageSpeedKmh);
+                iqWalks = repository.FindAllWalks().OrderByDescending(walk =>walk.WalkAverageSpeedKmh);
                 ViewData["OrderBy"] = "OvlAvg";
                 ViewData["OrderAscDesc"] = "Desc";
             }
             else {
-                IQWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkDate);
+                iqWalks = repository.FindAllWalks().OrderBy(walk =>walk.WalkDate);
                 ViewData["OrderBy"] = "Date";
                 ViewData["OrderAscDesc"] = "Desc";
             }
@@ -348,7 +348,7 @@ namespace MyMVCAppCS.Controllers
             int maxPageLinks = Int32.Parse(WebConfigurationManager.AppSettings["PAGINATION_MAX_PAGE_LINKS"]);
 
             // ----Create a paginated list of the walks----------------
-            PaginatedListMVC<Walk> IQPaginatedWalks = new PaginatedListMVC<Walk>(IQWalks, page, pageSize, Url.Action("WalksByDate", "Walks", new {OrderBy = ViewData["OrderBy"].ToString() + ViewData["OrderAscDesc"].ToString()}), maxPageLinks, "");
+            PaginatedListMVC<Walk> IQPaginatedWalks = new PaginatedListMVC<Walk>(iqWalks, page, pageSize, Url.Action("WalksByDate", "Walks", new {OrderBy = ViewData["OrderBy"].ToString() + ViewData["OrderAscDesc"].ToString()}), maxPageLinks, "");
 
             // -----Pass the paginated list of walks to the view. The view expects a paginated list as its model-----
             return View(IQPaginatedWalks);

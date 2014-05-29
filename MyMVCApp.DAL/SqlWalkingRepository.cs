@@ -10,13 +10,13 @@
     public class SqlWalkingRepository : IWalkingRepository
     {
 
-        WalkingDB myWalkingDB;
+        WalkingDataContext myWalkingDB;
 
         //----Declare our constructor - 
 
         public SqlWalkingRepository()
         {
-	        this.myWalkingDB = new WalkingDB();
+	        this.myWalkingDB = new WalkingDataContext();
 
         }
 

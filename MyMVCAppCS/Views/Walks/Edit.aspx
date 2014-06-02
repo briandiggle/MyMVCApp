@@ -56,7 +56,7 @@
         $("#WalkAreaName").result(function (event, data, formatted) {
 
             if (data) {
-                iCountb = iCount + 1
+                iCountb = iCount + 1;
                 $("#WalkAreaID").val(data[1]);
             }
 
@@ -130,7 +130,7 @@
         /*----Associate AJAX callback processing for each of the autocomplete widgets----------*/
         $("#VisitedSummit1").result(function (event, data, formatted) {
             if (data) {
-                iCountb = iCount + 1
+                iCountb = iCount + 1;
                 $("#VisitedSummit1HillID").val(data[1]);
                 $("#DivVisitedSummit2").show();
             }
@@ -138,7 +138,7 @@
 
         $("#VisitedSummit2").result(function (event, data, formatted) {
             if (data) {
-                iCountb = iCount + 1
+                iCountb = iCount + 1;
                 $("#VisitedSummit2HillID").val(data[1]);
                 $("#DivVisitedSummit3").show();
             }
@@ -475,7 +475,7 @@
                                     $("#markers_added").val(mi + ":" + oResults.markerid);
                                     $("#MarkerModalDialogForm").dialog('close');
                                 } else {
-                                    $(".validateMarkerFormTips") = "An error occurred when inserting the new marker: " + status;
+                                    $(".validateMarkerFormTips").val = "An error occurred when inserting the new marker: " + status;
                                 }
                                 allFields.val('').removeClass('ui-state-error');
                             });
@@ -638,6 +638,8 @@
                 <%: Html.TextBoxFor(Function(model) model.WalkConditions, New With {.size = 80})%>
             </div>&nbsp;   
              
+<!--Section: Summits Visited----------------------------------------------------------------------------------------->
+
            <div class="editor-label">
                 <strong><%: Html.Label("Summits Visited")%></strong>
             </div>     
@@ -651,6 +653,9 @@
                 <%: Html.TextBox("VisitedSummit" + iHillVisitedCounter.ToString, "", New With {.size = 80})%> <%: Html.Hidden("VisitedSummit" + iHillVisitedCounter.ToString + "HillID")%>
             </div>
             <% Next%>
+
+<!-- Section: Markers Created---------------------------------------------------------------------------------------------------->            
+
             <%  Dim oWalkMarkersAlreadyCreated As List(Of MyMVCApp.DAL.Marker) = ViewData("WalkMarkersAlreadyCreated")
                 If oWalkMarkersAlreadyCreated.Count > 0 Then %>&nbsp;
             <div class="editor-label"><strong>Markers created for this walk</strong></div>    
@@ -668,10 +673,13 @@
                 <td><%= oWalkMarker.Location_Description.Replace(ControlChars.Lf, "<br />")%></td>
             </tr>
             <% Next %>
-              </table>
+            </table>
            
             </div>    
            <%   End If  %>
+            
+<!--- Section: Create New Marker ----------------------------------------------------------------------------------------->            
+
           &nbsp;<div class="editor-field" id="WalkMarkers">
             <button id="CreateMarkerButton" type="button">Create New Marker</button><input type="hidden" id="markers_added" name="markers_added" value=""/>
           </div>  &nbsp;                                                      
@@ -681,6 +689,8 @@
             <div class="editor-field">
                 <%: Html.TextAreaFor(Function(model) model.WalkDescription, 8, 100, New With {.class = "formtextarea"})%>
             </div>&nbsp;
+            
+<!--- Section: New Images ------------------------------------------------------------------------------------------------->
             <div class="editor-label">
                 <strong>New Images</strong>
                <label for="images_path">Full path and name prefix of images </label>E.g. <pre>C:\DEV\MyMVCApp\MyMVCApp\Content\images\lakes\202\SilverHow_8December2009_</pre>
@@ -689,7 +699,10 @@
                 <input type="text" name="images_path" id="images_path" size="80" maxlength="160"  value="" />
                 <input type="button" name="getimages" id="getimages" value="Get images" />
            </div>   &nbsp;    
-           <div class="editor-field" id="walkimages">
+            
+<!--- Section: Existing Images --------------------------------------------------------------------------------------------->
+           
+            <div class="editor-field" id="walkimages">
            <% 
                Dim iExistingImageCount As Integer = 1
                For Each oWalkImage In Model.Walk_AssociatedFiles.Where(Function(af) af.Walk_AssociatedFile_Type.Equals("Image"))
@@ -719,17 +732,17 @@
             <input id="numexistingimages" type="hidden" name="numexistingimages" value="<%= iExistingImageCount-1 %>" />
            </div>
            <br />
+            
+<!--- Edit Existing Additional files------------------------------------------------------------------------------------------>
+
            <div class="editor-label">
-             <strong>Additional Files</strong>
+             <strong>Edit Existing Additional Files</strong>
            </div>
            <% Dim selectlist As IEnumerable(Of SelectListItem) = ViewData("Associated_File_Types")%>
 
            <% 
                Dim IQAuxilliaryFiles As IEnumerable(Of MyMVCApp.DAL.Walk_AssociatedFile) = ViewData("Auxilliary_Files")
-               
-          
-                   
-           
+
                For iAuxCounter = 1 To IQAuxilliaryFiles.Count%>
            <div class="editor-field" id="existing_auxilliary_filesdiv<%=iAuxCounter %>"> 
                <%= IQAuxilliaryFiles(iAuxCounter - 1).Walk_AssociatedFile_Name%> ( <%: IQAuxilliaryFiles(iAuxCounter - 1).Walk_AssociatedFile_Type%> ) <em><%: IQAuxilliaryFiles(iAuxCounter-1).Walk_AssociatedFile_Caption %></em>
@@ -741,13 +754,27 @@
            Next
       
            %>
+            
+<!---- Add new additional files------------------------------------------------------------------------------------------>            
+
+           <div class="editor-label">
+               <strong>Add New Additional Files</strong><br />
+               <br />Full path and name prefix of additional file E.g. <pre>C:\DEV\MyMVCApp\MyMVCApp\Content\images\lakes\202\SilverHow_8December2009_Track.gpx</pre>
+           </div>
+
            <% For iAuxCounter = 1 To 6%>
-           <div class="editor-field" id="auxilliary_filesdiv<%=iAuxCounter %>"> 
-                <input type="file" id="auxilliary_file<%=iAuxCounter %>" name="auxilliary_file<%=iAuxCounter %>" size="80"/> <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString, selectlist)%>
+            
+           <div class="editor-field" id="auxilliary_filesdiv<%=iAuxCounter %>">
+               <strong><%: iAuxCounter%></strong>  
+                <input type="text" id="auxilliary_file<%=iAuxCounter %>" name="auxilliary_file<%=iAuxCounter %>" size="80"/> 
+               <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString, selectlist)%>
                 <input type="text" id="auxilliary_caption<%=iAuxCounter %>" name="auxilliary_caption<%=iAuxCounter%>" size="40" /><br />
            </div>
            <% Next%>
            &nbsp;
+            
+<!--- Section: Other walk statistics--------------------------------------------------------------------------------->
+
             <div class="editor-label">
                <label for="Start Point"><strong>Start Point</strong></label>
              </div>

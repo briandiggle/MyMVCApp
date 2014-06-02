@@ -123,7 +123,7 @@
                 return strLine;
             }
             strLine = (oArea.Areaname + (", Type:" 
-                        + (oArea.AreaType.ToString() + (", Ref:" + oArea.Arearef))));
+                        + (oArea.AreaType.ToString() + (", Ref:" + oArea.Arearef.ToString().TrimEnd()))));
             return strLine;
         }
     

@@ -55,7 +55,6 @@
         $("#WalkAreaName").result(function (event, data, formatted) {
 
             if (data) {
-                iCountb = iCount + 1
                 $("#WalkAreaID").val(data[1]);
             }
 
@@ -88,110 +87,124 @@
         /*----Associate AJAX callback processing for each of the autocomplete widgets----------*/
         /*----TODO: Refactor to one generic callback function----*/
 
-        //$("#VisitedSummit1").result(
-        //    function (event, data, formatted)
-        //    {
-        //        if (data) {
-        //            iCountb = iCount + 1;
-        //        $("#VisitedSummit1HillID").val(data[1]);
-        //        $("#DivVisitedSummit2").show();
-        //    }
-        //});
+        //for (var iHillVisited = 1; iHillVisited <= 15; iHillVisited = iHillVisited + 1) {
 
-        //$("#VisitedSummit2").result(function (event, data, formatted) {
-        //    if (data) {
-        //        iCountb = iCount + 1;
-        //        $("#VisitedSummit2HillID").val(data[1]);
-        //        $("#DivVisitedSummit3").show();
-        //    }
-        //});
+        //    $("#VisitedSummit" + iHillVisited).result(
+        //        function (event, data, formatted)
+        //        {
+        //            if (data) {
+                       
+        //            $("#VisitedSummit" + iHillVisited + "HillID").val(data[1]);
+        //            $("#DivVisitedSummit" + (iHillVisited+1)).show();
+        //        }
+        //    });
 
-        //$("#VisitedSummit3").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit3HillID").val(data[1]);
-        //        $("#DivVisitedSummit4").show();
-        //    }
-        //});
+        //}
 
-        //$("#VisitedSummit4").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit4HillID").val(data[1]);
-        //        $("#DivVisitedSummit5").show();
-        //    }
-        //});
+        $("#VisitedSummit1").result(
+            function (event, data, formatted)
+            {
+                if (data) {
+                    iCountb = iCount + 1;
+                $("#VisitedSummit1HillID").val(data[1]);
+                $("#DivVisitedSummit2").show();
+            }
+        });
 
-        //$("#VisitedSummit5").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit5HillID").val(data[1]);
-        //        $("#DivVisitedSummit6").show();
-        //    }
-        //});
+        $("#VisitedSummit2").result(function (event, data, formatted) {
+            if (data) {
+                iCountb = iCount + 1;
+                $("#VisitedSummit2HillID").val(data[1]);
+                $("#DivVisitedSummit3").show();
+            }
+        });
 
-        //$("#VisitedSummit6").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit6HillID").val(data[1]);
-        //        $("#DivVisitedSummit7").show();
-        //    }
-        //});
+        $("#VisitedSummit3").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit3HillID").val(data[1]);
+                $("#DivVisitedSummit4").show();
+            }
+        });
 
-        //$("#VisitedSummit7").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit7HillID").val(data[1]);
-        //        $("#DivVisitedSummit8").show();
-        //    }
-        //});
+        $("#VisitedSummit4").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit4HillID").val(data[1]);
+                $("#DivVisitedSummit5").show();
+            }
+        });
 
-        //$("#VisitedSummit8").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit8HillID").val(data[1]);
-        //        $("#DivVisitedSummit9").show();
-        //    }
-        //});
+        $("#VisitedSummit5").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit5HillID").val(data[1]);
+                $("#DivVisitedSummit6").show();
+            }
+        });
 
-        //$("#VisitedSummit9").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit9HillID").val(data[1]);
-        //        $("#DivVisitedSummit10").show();
-        //    }
-        //});
+        $("#VisitedSummit6").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit6HillID").val(data[1]);
+                $("#DivVisitedSummit7").show();
+            }
+        });
 
-        //$("#VisitedSummit10").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit10HillID").val(data[1]);
-        //        $("#DivVisitedSummit11").show();
-        //    }
-        //});
+        $("#VisitedSummit7").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit7HillID").val(data[1]);
+                $("#DivVisitedSummit8").show();
+            }
+        });
 
-        //$("#VisitedSummit11").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit11HillID").val(data[1]);
-        //        $("#DivVisitedSummit12").show();
-        //    }
-        //});
-        //$("#VisitedSummit12").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit12HillID").val(data[1]);
-        //        $("#DivVisitedSummit13").show();
-        //    }
-        //});
-        //$("#VisitedSummit13").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit13HillID").val(data[1]);
-        //        $("#DivVisitedSummit14").show();
-        //    }
-        //});
-        //$("#VisitedSummit14").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit14HillID").val(data[1]);
-        //        $("#DivVisitedSummit115").show();
-        //    }
-        //});
+        $("#VisitedSummit8").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit8HillID").val(data[1]);
+                $("#DivVisitedSummit9").show();
+            }
+        });
 
-        //$("#VisitedSummit15").result(function (event, data, formatted) {
-        //    if (data) {
-        //        $("#VisitedSummit15HillID").val(data[1]);
-        //    }
-        //});
+        $("#VisitedSummit9").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit9HillID").val(data[1]);
+                $("#DivVisitedSummit10").show();
+            }
+        });
+
+        $("#VisitedSummit10").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit10HillID").val(data[1]);
+                $("#DivVisitedSummit11").show();
+            }
+        });
+
+        $("#VisitedSummit11").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit11HillID").val(data[1]);
+                $("#DivVisitedSummit12").show();
+            }
+        });
+        $("#VisitedSummit12").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit12HillID").val(data[1]);
+                $("#DivVisitedSummit13").show();
+            }
+        });
+        $("#VisitedSummit13").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit13HillID").val(data[1]);
+                $("#DivVisitedSummit14").show();
+            }
+        });
+        $("#VisitedSummit14").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit14HillID").val(data[1]);
+                $("#DivVisitedSummit115").show();
+            }
+        });
+
+        $("#VisitedSummit15").result(function (event, data, formatted) {
+            if (data) {
+                $("#VisitedSummit15HillID").val(data[1]);
+            }
+        });
 
 
 
@@ -637,7 +650,7 @@ function injectareaid() {
 
            <div class="editor-label">
              <strong>Additional Files</strong>
-               <br />Full path and name prefix of images E.g. <pre>C:\DEV\MyMVCApp\MyMVCApp\Content\images\lakes\202\SilverHow_8December2009_Track.gpx</pre>
+               <br />Full path and name prefix of additional file E.g. <pre>C:\DEV\MyMVCApp\MyMVCApp\Content\images\lakes\202\SilverHow_8December2009_Track.gpx</pre>
            </div>
                          
            <% Dim selectlist As System.Collections.Generic.IEnumerable(Of System.Web.Mvc.SelectListItem) = ViewData("Associated_File_Types")%>
@@ -661,13 +674,13 @@ function injectareaid() {
             </div>&nbsp;
 
             <div class="editor-label">
-               <label for="Start Point"><strong>Start Point</strong></label>
+                <%: Html.LabelFor(Function(model) model.WalkStartPoint)%>
              </div>
             <div class="editor-field">
                 <%: Html.TextBoxFor(Function(model) model.WalkStartPoint, New With {.size = 80, .maxlength = 100})%>
             </div>&nbsp;
             <div class="editor-label">
-                <label for="WalkEndPoint"><strong>End Point</strong></label>
+                   <%: Html.LabelFor(Function(model) model.WalkEndPoint)%>
             </div>
             <div class="editor-field">
                 <%: Html.TextBoxFor(Function(model) model.WalkEndPoint, New With {.size = 80, .maxlength = 100})%>

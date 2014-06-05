@@ -54,11 +54,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddWalk_FirefoxTests.cs" />
+    <Compile Include="AddWalkFirefoxTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="SeleniumUITestSuite\WalkingSeleniumTestSuite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SeleniumUITestSuite\AddWalk_CircularWalk_StartSameAsEnd.html" />
+    <Content Include="SeleniumUITestSuite\AddWalk_ImageMarkerCheckbox.html" />
+    <Content Include="SeleniumUITestSuite\AddWalk_ImageMarker_AutoSuggestion.html" />
+    <Content Include="SeleniumUITestSuite\AddWalk_OverallSpeed_AutoCalculation.html" />
+    <Content Include="SeleniumUITestSuite\AddWalk_WalkArea_Autocomplete.html" />
+    <Content Include="SeleniumUITestSuite\Add_Walk_AddImages.html" />
+    <Content Include="SeleniumUITestSuite\TestCase.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

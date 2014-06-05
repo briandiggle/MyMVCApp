@@ -8,8 +8,14 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumTests
 {
+    using System.Threading;
+
+    /// <summary>
+    /// Uses Selenium 2 (Webdriver) and NUNit
+    /// the tests in here which exercize jQuery autocomplete have not been implemented correctly
+    /// </summary>
     [TestFixture]
-    public class AddWalk_Firefox
+    public class AddWalkFirefoxTests
     {
         private IWebDriver driver;
         private StringBuilder verificationErrors;
@@ -67,9 +73,26 @@ namespace SeleniumTests
             // click | link=Add Walk | 
             driver.FindElement(By.LinkText("Add Walk")).Click();
             // sendKeys | id=WalkAreaName | iona
-            driver.FindElement(By.Id("WalkAreaName")).SendKeys("iona");
-            // click | css=li.ac_even | 
-            driver.FindElement(By.CssSelector("li.ac_even")).Click();
+
+            driver.FindElement(By.Id("WalkAreaName")).Click();
+            driver.FindElement(By.Id("WalkAreaName")).SendKeys("sca");
+
+
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
+            IWebElement myDynamicElement = wait.Until<IWebElement>((d) =>
+            {
+                return d.FindElement(By.ClassName("ac_results"));
+            });
+
+           
+            driver.FindElement(By.ClassName("ac_results")).SendKeys(Keys.ArrowDown);
+
+        
+            driver.FindElement(By.ClassName("ac_results")).SendKeys(Keys.Enter);
+
+
+            Thread.Sleep(1000);
             // assertValue | id=WalkAreaName | Iona, Type:I, Ref:I44
             Assert.AreEqual("Iona, Type:I, Ref:I44", driver.FindElement(By.Id("WalkAreaName")).GetAttribute("value"));
             // assertValue | id=WalkAreaID | I44

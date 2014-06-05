@@ -219,25 +219,25 @@
 
             $.get('/Walks/CheckImages', { imagepath: $("#images_path").val() }, function (oResults) {
 
-                for (iCount = 1; iCount <= oResults.imagesfound; iCount = iCount + 1) {
-                    $("#walkimages").append('<br/><b>Image ' + iCount + '</b><br/><input type="text" name="imageImageCaption' + iCount + '" size="100" />&nbsp;Marker? <input type="checkbox" id="imageismarker' + iCount + '" name="imageismarker' + iCount + '"/>');
+                for (var iImageCount = 1; iImageCount <= oResults.imagesfound; iImageCount = iImageCount + 1) {
+                    $("#walkimages").append('<br/><b>Image ' + iImageCount + '</b><br/><input type="text" id="imageImageCaption' + iImageCount + '" name="imageImageCaption' + iImageCount + '" size="100" />&nbsp;Marker? <input type="checkbox" id="imageismarker' + iImageCount + '" name="imageismarker' + iImageCount + '"/>');
 
                     if (oResults.atwork == "True") {
-                        $("#walkimages").append("&nbsp;" + oResults.filenameprefix + iCount + '.jpg</br>');
+                        $("#walkimages").append("&nbsp;" + oResults.filenameprefix + iImageCount + '.jpg</br>');
                     } else {
-                        $("#walkimages").append('<br/><img src="' + oResults.path + iCount + '.jpg" border="1" />');
+                        $("#walkimages").append('<br/><img src="' + oResults.path + iImageCount + '.jpg" border="1" />');
                     }
-                    $('#walkimages').append('<input type="hidden" name="imagerelpath' + iCount + '" value="' + oResults.path + iCount + '.jpg"/><br/>');
+                    $('#walkimages').append('<input type="hidden" id="imagerelpath' + iImageCount + '" name="imagerelpath' + iImageCount + '" value="' + oResults.path + iImageCount + '.jpg"/><br/>');
 
                     /*---Inject an event handler, using .live, for the newly added imageismarker checkbox which will fire only when the checkbox is checked---------*/
-                    $('#imageismarker' + iCount + ":checked").live('click', { imagenumber: iCount }, function (e) {
+                    $('#imageismarker' + iImageCount + ":checked").live('click', { imagenumber: iImageCount }, function (e) {
 
                         $(this).after('<span id="imagemarkerdetails' + e.data.imagenumber + '"></span>');
                         $('#imagemarkerdetails' + e.data.imagenumber).append('<br/>Marker name: ');
 
                         /*----Insert the autocomplete for the newly added marker node------*/
-                        var input = $('<input type="text" size="50" name="imagemarkername' + e.data.imagenumber + '" id="imagemarkername' + e.data.imagenumber + '" /> Not Found? <input type="checkbox" id="imagemarkernotfound' + e.data.imagenumber + '" name="imagemarkernotfound' + e.data.imagenumber + '" /></span>');
-                        input.autocomplete("/Walks/MarkerSuggestions", {
+                        var markerinput = $('<input type="text" size="50" name="imagemarkername' + e.data.imagenumber + '" id="imagemarkername' + e.data.imagenumber + '" /> Not Found? <input type="checkbox" id="imagemarkernotfound' + e.data.imagenumber + '" name="imagemarkernotfound' + e.data.imagenumber + '" /></span>');
+                        markerinput.autocomplete("/Walks/MarkerSuggestions", {
                             width: 500,
                             max: 20,
                             mustMatch: true,
@@ -246,7 +246,7 @@
                             extraParams: { imagenumber: e.data.imagenumber }
                         });
                         /*----Define callback processing for the image of marker------*/
-                        input.result(function (event, data, formatted) {
+                        markerinput.result(function (event, data) {
 
                             if (data) {
                                 $("#imagemarkerid" + data[2]).val(data[1]);
@@ -254,7 +254,7 @@
 
                         });
 
-                        $('#imagemarkerdetails' + e.data.imagenumber).append(input);
+                        $('#imagemarkerdetails' + e.data.imagenumber).append(markerinput);
                         $('#imagemarkerdetails' + e.data.imagenumber).append('<input type="hidden" id="imagemarkerid' + e.data.imagenumber + '" name="imagemarkerid' + e.data.imagenumber + '" />');
 
 
@@ -262,7 +262,7 @@
 
                     /*---Inject an event handler, using .live, for the newly added imageismarker checkbox which will fire only when the checkbox is un-checked---------*/
 
-                    $('#imageismarker' + iCount + ":not(:checked)").live('click', { imagenumber: iCount }, function (e) {
+                    $('#imageismarker' + iImageCount + ":not(:checked)").live('click', { imagenumber: iImageCount }, function (e) {
                         $('#imagemarkerdetails' + e.data.imagenumber).remove();
 
                     });
@@ -591,6 +591,9 @@ function injectareaid() {
             <div class="editor-field">
                 <%: Html.TextBoxFor(Function(model) model.WalkTitle, New With {.size = 80})%>
             </div>&nbsp;
+
+<!--- Section: Walk Area with jQuery Autocomplete ----------------------------------------------------------------------------->
+
           <div class="editor-label">
                 <label for="WalkAreaName"><strong>Walk Area</strong></label>
             </div>

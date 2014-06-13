@@ -12,6 +12,7 @@ namespace MyMVCAppCS.Controllers
     using MyMVCApp.DAL;
 
     using MyMVCAppCS.Models;
+    using MyMVCAppCS.ViewModels;
 
     public class WalksController : Controller
     {
@@ -457,9 +458,7 @@ namespace MyMVCAppCS.Controllers
         public JsonResult CreateMarker(string mtitle, string mdesc, string mdate, int mhillid=0, string mgps="" , int mwalkid=0)
         {
       
-            var oNewMarker = new Marker();
-            oNewMarker.MarkerTitle = mtitle;
-            oNewMarker.Location_Description = mdesc;
+            var oNewMarker = new Marker { MarkerTitle = mtitle, Location_Description = mdesc };
             try
             {
                 oNewMarker.DateLeft = DateTime.Parse((mdate + " 00:00:00"));
@@ -492,18 +491,21 @@ namespace MyMVCAppCS.Controllers
         //  MarkerSuggestions
         //  Used as the AJAX server side for an autocomplete function on a client side textbox
         // -----------------------
-        public ActionResult MarkerSuggestions(string q, string imagenumber="") {
+        public JsonResult MarkerSuggestions(string term) {
             
-            var oSB = new StringBuilder();
-        
-            var IQMarkers = repository.FindMarkersByNameLike(q);
+            var markeroptions = new List<AutocompleteSuggestionOption>();
+            var IQMarkers = repository.FindMarkersByNameLike(term);
             
             foreach (Marker item in IQMarkers) {
-                oSB.AppendLine((WalkingStick.FormatMarkerAsLine(item) + ("|" 
-                                + (item.MarkerID.ToString().Trim() + ("|" + imagenumber)))));
+                markeroptions.Add(new AutocompleteSuggestionOption
+                                  {
+                                      label = WalkingStick.FormatMarkerAsLine(item) + ("|" + (item.MarkerID.ToString().Trim())),
+                                      value = WalkingStick.FormatMarkerAsLine(item) + ("|" + (item.MarkerID.ToString().Trim()))
+                                  });
+               
             }
-            ViewData["markernamesuggestions"] = oSB.ToString();
-            return PartialView();
+
+            return Json(markeroptions , JsonRequestBehavior.AllowGet);
         }
 
         // ------------------------------------------------------------------------------------------------
@@ -556,20 +558,27 @@ namespace MyMVCAppCS.Controllers
             return Json(oRes, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult WalkAreaSuggestions(string q, string options="")
-        {
-            var oSB = new StringBuilder();
 
-            var IQWalkAreas = this.repository.FindWalkAreasByNameLike(q);
+        /// <summary>
+        /// Called from Create walk and Edit walk jQuery UI autocomplete widget
+        /// </summary>
+        /// <param name="term">at least two characters of the walk area</param>
+        /// <param name="options"></param>
+        /// <returns>JSON formatted results</returns>
+        public JsonResult WalkAreaSuggestions(string term, string options="")
+        {
+            var IQWalkAreas = this.repository.FindWalkAreasByNameLike(term);
+
+            var areaoptions = new List<AutocompleteSuggestionOption>();
 
             foreach (Area item in IQWalkAreas)
             {
-                oSB.AppendLine(WalkingStick.FormatWalkAreaAsLine(item) + "|" + item.Arearef);
+                areaoptions.Add(new AutocompleteSuggestionOption { label = WalkingStick.FormatWalkAreaAsLine(item), value = WalkingStick.FormatWalkAreaAsLine(item) + " | " + item.Arearef });
             }
 
-            ViewData["areanamesuggestions"] = oSB.ToString();
+            var myjson=  Json(areaoptions, JsonRequestBehavior.AllowGet);
 
-            return this.PartialView();
+            return myjson;
         }
 
 
@@ -616,29 +625,31 @@ namespace MyMVCAppCS.Controllers
         }
 
 
-        public ActionResult HillSuggestions(string q, string areaid="")
+        public JsonResult HillSuggestions(string term, string areaid="")
         {
-            StringBuilder oSB = new StringBuilder();
+            var hillsuggestions = new List<AutocompleteSuggestionOption>();
 
             IQueryable<Hill> IQHillsAboveHeight;
 
             if (areaid.Equals("") && areaid.Length <2)
             {
-                IQHillsAboveHeight = this.repository.FindHillsByNameLike(q);
+                IQHillsAboveHeight = this.repository.FindHillsByNameLike(term);
             }
             else
             {
-                IQHillsAboveHeight = this.repository.FindHillsInAreaByNameLike(q, areaid);
+                IQHillsAboveHeight = this.repository.FindHillsInAreaByNameLike(term, areaid);
             }
 
             foreach (Hill item in IQHillsAboveHeight)
             {
-                oSB.AppendLine(WalkingStick.FormatHillSummaryAsLine(item) + "|" + item.Hillnumber.ToString());
+                var optionlabel = WalkingStick.FormatHillSummaryAsLine(item);
+                var optionvalue = optionlabel + "|" + item.Hillnumber.ToString();
+   
+                hillsuggestions.Add(new AutocompleteSuggestionOption { label = optionlabel, value = optionvalue});
             }
 
-            ViewData["suggestions"] = oSB.ToString();
+            return Json(hillsuggestions, JsonRequestBehavior.AllowGet);
 
-            return this.PartialView();
         }
 
 

@@ -425,14 +425,17 @@ table.optionstable th
 
 .markertable
 {
-	font-size: 0.8em;
+	font-size: 11px;
+    margin: 4px;
 	background-color: #ebebeb;
 	border: 1px;
+    border-color: #555555;
 }
 
 .markertable td
 {
-	 height:12px;
+    border: 1px solid #555555;
+	height:12px;
 }
 
 .alignright

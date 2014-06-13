@@ -5,40 +5,152 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ViewSpecificHead" runat="server">
-<link type="text/css" href="../../Content/smoothness/jquery.ui.all.css" rel="Stylesheet" />
-<link type="text/css" href="../../Content/jquery.autocomplete.css" rel="stylesheet" />
-<link type="text/css" href="../../Content/autocomplete_thickbox.css" rel="stylesheet" />
-<script type='text/javascript' src="../../Scripts/Autocomplete/lib/jquery.bgiframe.min.js"></script>
-<script type='text/javascript' src="../../Scripts/Autocomplete/lib/jquery.ajaxQueue.js"></script>
-<script type='text/javascript' src="../../Scripts/Autocomplete/thickbox-compressed.js"></script>
-<script type='text/javascript' src="../../Scripts/Autocomplete/jquery.autocomplete.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.core.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.widget.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.datepicker.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.mouse.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.button.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.draggable.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.position.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.resizable.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.dialog.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.effects.core.js"></script>
-<script type="text/javascript" src="../../Scripts/jquery.validate.js"></script>
-
+<link type="text/css" href="../../Content/themes/base/jquery.ui.all.css" rel="Stylesheet" />
+<script type="text/javascript" src="../../Scripts/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../../Scripts/jquery-ui-1.10.4.js"></script>
+    <script type="text/javascript" src="../../Scripts/jquery.validate.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
 <script type="text/javascript">
 
-    $().ready(function () {
-
-        /*----Associate an autocomplete AJAX based widget with the walk area name textbox------*/
-        $("#WalkAreaName").autocomplete("/Walks/WalkAreaSuggestions", {
-            width: 500,
-            max: 20,
-            minChars: 2,
-            selectFirst: false
+  
+    $(function () {
+     
+        /*----Associate an autocomplete with the marker left on hill box which will make an AJAX call-----*/
+        $("#MarkerLeftOnHill").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: "/Walks/HillSuggestions",
+                    dataType: "json",
+                    data: {
+                        term: request.term,
+                        areaid: $("#WalkAreaID").val()
+                    },
+                    success: function (data) {
+                        response(data);
+                    }
+                });
+            },
+            minLength: 2,
+            appendTo: "#MarkerModalDialogForm",
+            select: function (event, ui) {
+                var hillid = extractid(ui.item.value);
+                $("#MarkerLeftOnHillId").val(hillid);
+            }
         });
+
+        //---This function is used to populate the hidden html field WalkAreaID which is used by the summit autocomplete to narrow suggestions to the right area
+        function extractareaid(walkareaname) {
+     
+            if (walkareaname.indexOf("|") > 0) {
+                var myloc = walkareaname.indexOf("|");
+                $("#WalkAreaID").val(walkareaname.substring(myloc + 1).trim());
+            }
+        }
+
+        $("#WalkAreaName").autocomplete({
+            source: "/Walks/WalkAreaSuggestions",
+            minLength: 2,
+            select: function(event, ui) {
+                extractareaid(ui.item.value);
+            }
+        });
+
+        /*----Associate an autocomplete widget with each of the hill visited text boxes. Each hill visited text box has an----*/
+        /*----matching hidden field which will hold a selected hill id-------*/
+
+        for (var iSummitVisitCount = 1; iSummitVisitCount <= 15; iSummitVisitCount = iSummitVisitCount + 1) {
+            
+            $("#VisitedSummit" + iSummitVisitCount).autocomplete({
+                source: function(request, response) {
+                    $.ajax({
+                        url: "/Walks/HillSuggestions",
+                        dataType: "json",
+                        data: {
+                            term: request.term,
+                            areaid: $("#WalkAreaID").val()
+                        },
+                        success: function(data) {
+                            response(data);
+                        }
+                    });
+
+                },
+                minLength: 2,
+                select: function (event, ui) {
+                    var summitnumber = extractnumber("VisitedSummit",event.target.id);
+                    var hillid = extractid(ui.item.value);
+                    $("#DivVisitedSummit" + (parseInt(summitnumber) + 1)).show();
+                    $("#VisitedSummit" + (parseInt(summitnumber) + 1)).focus();
+                    $("#VisitedSummit" + summitnumber + "HillID").val(hillid);
+                }
+            });
+            
+            if (iSummitVisitCount > 1) {
+                $("#DivVisitedSummit" + iSummitVisitCount).hide();
+            }
+        }
+
+        //*------Implementation of association of marker with image---------
+        //*------Associate an autocomplete jQuery UI widget with all DOM elements with class "markersuggestions"---------
+        $(document).on("keydown.autocomplete", ".markersuggestions", function (e) {
+
+            $(this).autocomplete({
+                source: "/Walks/MarkerSuggestions",
+                minLength: 2,
+                select: function (event, ui) {
+                    var imagenumber = extractnumber("imagemarkername",event.target.id);
+                    var markerid = extractid(ui.item.value);
+                    $("#imagemarkerid" + imagenumber).val(markerid);
+                }
+            });
+
+        });
+
+  
+        $(document).on("click", ".imageismarker:checked", function(e) {
+            var markerimage = extractnumber("imageismarker", e.target.id);
+            $("#imagemarkerdetails" + markerimage).show();
+        });
+
+        //*-----The Json results from the autocomplete remote source contain also the hill or marker ID. 
+        //*-----This function extracts the ID from this and returns it
+
+        function extractnumber(removestr, sourcestring) {
+            return sourcestring.replace(removestr, "");
+        }
+
+
+        function extractid(elementname) {
+            if (elementname.indexOf("|") > 0) {
+                var myloc = elementname.indexOf("|");
+                return elementname.substring(myloc + 1).trim();
+            }
+            return "";
+        }
+
+        /*----Associate a AJAX call (AJAJ in fact as it returns JSON) with the blur event of the auxilliary_file1 */
+        /*----How to write a generic handler?------------------------------*/
+
+        $('.auxilliaryfileclass').change(function (e) {
+
+            var auxilliaryfilenumber = extractnumber("auxilliary_file",e.target.id);
+
+            $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file' + auxilliaryfilenumber).val() }, function (oResults, status) {
+                if (oResults.isinpath == "False") {
+                    alert('The file you chose is not in the web site root.');
+                    // reset_html('auxilliary_filesdiv1');
+                } else {
+                    $('#auxilliary_filesdiv' + (parseInt(auxilliaryfilenumber) + 1)).show();
+                }
+            });
+
+        });
+    });
+
+    $(document).ready(function () {
 
         /*---Calculate the overall speed where possible-------*/
         $("#CartographicLength").focusout(function () {
@@ -51,162 +163,15 @@
             calculateOverallSpeed();
         });
 
-        /*----Define callback processing for the walk area name autocomplete AJAX widget------*/
-        $("#WalkAreaName").result(function (event, data, formatted) {
-
-            if (data) {
-                $("#WalkAreaID").val(data[1]);
-            }
-
-        });
-
         /*---Empty the autocomplete text field on click----*/
         $('#WalkAreaName').click(function () {
             $('#WalkAreaName').val("");
         });
 
-        for (iCount = 2; iCount <= 6; iCount = iCount + 1) {
-            $('#auxilliary_filesdiv' + iCount).hide();
+        /*----Hide the currently unused auxilliary file sections------*/
+        for (var iAuxFileCount = 2; iAuxFileCount <= 6; iAuxFileCount = iAuxFileCount + 1) {
+            $('#auxilliary_filesdiv' + iAuxFileCount).hide();
         }
-
-        /*----Associate an autocomplete widget with each of the hill visited text boxes. Each hill visited text box has an----*/
-        /*----matching hidden field which will hold a selected hill id-------*/
-        for (var iCount = 1; iCount <= 15; iCount = iCount + 1) {
-            $("#VisitedSummit" + iCount).autocomplete("/Walks/HillSuggestions", {
-                width: 500,
-                max: 20,
-                minChars: 2,
-                extraParams: { areaid: function () { return $("#WalkAreaID").val(); } }
-            });
-
-            if (iCount > 1) {
-                $("#DivVisitedSummit" + iCount).hide();
-            }
-        }
-
-        /*----Associate AJAX callback processing for each of the autocomplete widgets----------*/
-        /*----TODO: Refactor to one generic callback function----*/
-
-        //for (var iHillVisited = 1; iHillVisited <= 15; iHillVisited = iHillVisited + 1) {
-
-        //    $("#VisitedSummit" + iHillVisited).result(
-        //        function (event, data, formatted)
-        //        {
-        //            if (data) {
-                       
-        //            $("#VisitedSummit" + iHillVisited + "HillID").val(data[1]);
-        //            $("#DivVisitedSummit" + (iHillVisited+1)).show();
-        //        }
-        //    });
-
-        //}
-
-        $("#VisitedSummit1").result(
-            function (event, data, formatted)
-            {
-                if (data) {
-                    iCountb = iCount + 1;
-                $("#VisitedSummit1HillID").val(data[1]);
-                $("#DivVisitedSummit2").show();
-            }
-        });
-
-        $("#VisitedSummit2").result(function (event, data, formatted) {
-            if (data) {
-                iCountb = iCount + 1;
-                $("#VisitedSummit2HillID").val(data[1]);
-                $("#DivVisitedSummit3").show();
-            }
-        });
-
-        $("#VisitedSummit3").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit3HillID").val(data[1]);
-                $("#DivVisitedSummit4").show();
-            }
-        });
-
-        $("#VisitedSummit4").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit4HillID").val(data[1]);
-                $("#DivVisitedSummit5").show();
-            }
-        });
-
-        $("#VisitedSummit5").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit5HillID").val(data[1]);
-                $("#DivVisitedSummit6").show();
-            }
-        });
-
-        $("#VisitedSummit6").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit6HillID").val(data[1]);
-                $("#DivVisitedSummit7").show();
-            }
-        });
-
-        $("#VisitedSummit7").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit7HillID").val(data[1]);
-                $("#DivVisitedSummit8").show();
-            }
-        });
-
-        $("#VisitedSummit8").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit8HillID").val(data[1]);
-                $("#DivVisitedSummit9").show();
-            }
-        });
-
-        $("#VisitedSummit9").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit9HillID").val(data[1]);
-                $("#DivVisitedSummit10").show();
-            }
-        });
-
-        $("#VisitedSummit10").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit10HillID").val(data[1]);
-                $("#DivVisitedSummit11").show();
-            }
-        });
-
-        $("#VisitedSummit11").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit11HillID").val(data[1]);
-                $("#DivVisitedSummit12").show();
-            }
-        });
-        $("#VisitedSummit12").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit12HillID").val(data[1]);
-                $("#DivVisitedSummit13").show();
-            }
-        });
-        $("#VisitedSummit13").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit13HillID").val(data[1]);
-                $("#DivVisitedSummit14").show();
-            }
-        });
-        $("#VisitedSummit14").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit14HillID").val(data[1]);
-                $("#DivVisitedSummit115").show();
-            }
-        });
-
-        $("#VisitedSummit15").result(function (event, data, formatted) {
-            if (data) {
-                $("#VisitedSummit15HillID").val(data[1]);
-            }
-        });
-
-
 
         /*----Associate a datepicker widget ( from jQuery/UI/DatePicker ) with the WalkDate text box----*/
         $(function () {
@@ -220,135 +185,25 @@
             $.get('/Walks/CheckImages', { imagepath: $("#images_path").val() }, function (oResults) {
 
                 for (var iImageCount = 1; iImageCount <= oResults.imagesfound; iImageCount = iImageCount + 1) {
-                    $("#walkimages").append('<br/><b>Image ' + iImageCount + '</b><br/><input type="text" id="imageImageCaption' + iImageCount + '" name="imageImageCaption' + iImageCount + '" size="100" />&nbsp;Marker? <input type="checkbox" id="imageismarker' + iImageCount + '" name="imageismarker' + iImageCount + '"/>');
+                    $("#walkimages").append('<br/><b>Image ' + iImageCount + '</b><br/><input type="text" id="imageImageCaption' + iImageCount + '" name="imageImageCaption' + iImageCount + '" size="100" />&nbsp;Marker? <input type="checkbox" class="imageismarker" id="imageismarker' + iImageCount + '" name="imageismarker' + iImageCount + '"/>');
 
                     if (oResults.atwork == "True") {
                         $("#walkimages").append("&nbsp;" + oResults.filenameprefix + iImageCount + '.jpg</br>');
                     } else {
                         $("#walkimages").append('<br/><img src="' + oResults.path + iImageCount + '.jpg" border="1" />');
                     }
-                    $('#walkimages').append('<input type="hidden" id="imagerelpath' + iImageCount + '" name="imagerelpath' + iImageCount + '" value="' + oResults.path + iImageCount + '.jpg"/><br/>');
+                    $("#walkimages").append('<input type="hidden" id="imagerelpath' + iImageCount + '" name="imagerelpath' + iImageCount + '" value="' + oResults.path + iImageCount + '.jpg"/><br/>');
 
-                    /*---Inject an event handler, using .live, for the newly added imageismarker checkbox which will fire only when the checkbox is checked---------*/
-                    $('#imageismarker' + iImageCount + ":checked").live('click', { imagenumber: iImageCount }, function (e) {
+                    //----Add a hidden marker section, revealed when clicking the "imageismarker" checkbox-----------
+                    var markermarkup = '<span id="imagemarkerdetails' + iImageCount + '">' +
+                        '<br/>Marker name: ' + '<input type="text" size="50" name="imagemarkername' + iImageCount + '" id="imagemarkername' + iImageCount + '" class="markersuggestions" />' +
+                        '<input type="hidden" id="imagemarkerid' + iImageCount + '" name="imagemarkerid' + iImageCount + '" />' +
+                        'Not Found? <input type="checkbox" id="imagemarkernotfound' + iImageCount + '" name="imagemarkernotfound' + iImageCount + '" /></span>';
 
-                        $(this).after('<span id="imagemarkerdetails' + e.data.imagenumber + '"></span>');
-                        $('#imagemarkerdetails' + e.data.imagenumber).append('<br/>Marker name: ');
-
-                        /*----Insert the autocomplete for the newly added marker node------*/
-                        var markerinput = $('<input type="text" size="50" name="imagemarkername' + e.data.imagenumber + '" id="imagemarkername' + e.data.imagenumber + '" /> Not Found? <input type="checkbox" id="imagemarkernotfound' + e.data.imagenumber + '" name="imagemarkernotfound' + e.data.imagenumber + '" /></span>');
-                        markerinput.autocomplete("/Walks/MarkerSuggestions", {
-                            width: 500,
-                            max: 20,
-                            mustMatch: true,
-                            minChars: 2,
-                            selectFirst: false,
-                            extraParams: { imagenumber: e.data.imagenumber }
-                        });
-                        /*----Define callback processing for the image of marker------*/
-                        markerinput.result(function (event, data) {
-
-                            if (data) {
-                                $("#imagemarkerid" + data[2]).val(data[1]);
-                            }
-
-                        });
-
-                        $('#imagemarkerdetails' + e.data.imagenumber).append(markerinput);
-                        $('#imagemarkerdetails' + e.data.imagenumber).append('<input type="hidden" id="imagemarkerid' + e.data.imagenumber + '" name="imagemarkerid' + e.data.imagenumber + '" />');
-
-
-                    });
-
-                    /*---Inject an event handler, using .live, for the newly added imageismarker checkbox which will fire only when the checkbox is un-checked---------*/
-
-                    $('#imageismarker' + iImageCount + ":not(:checked)").live('click', { imagenumber: iImageCount }, function (e) {
-                        $('#imagemarkerdetails' + e.data.imagenumber).remove();
-
-                    });
-
+                    $("#walkimages").append(markermarkup);
+                    $("#imagemarkerdetails" + iImageCount).hide();
                 }
                 $("#images_path").focus();
-            });
-
-        });
-
-        /*----Associate a AJAX call (AJAJ in fact as it returns JSON) with the blur event of the auxilliary_file1 */
-        /*----How to write a generic handler?------------------------------*/
-
-        $('#auxilliary_file1').change(function () {
-            $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file1').val() }, function (oResults, status) {
-
-                if (oResults.isinpath == "False") {
-                    alert('The file you chose is not in the web site root.');
-                    reset_html('auxilliary_filesdiv1');
-                } else {
-                    $('#auxilliary_filesdiv2').show();
-                }
-            });
-
-        });
-
-
-        $('#auxilliary_file2').change(function () {
-            $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file2').val() }, function (oResults, status) {
-
-                if (oResults.isinpath == "False") {
-                    alert('The file you chose is not in the web site root.');
-                    /*      reset_html('auxilliary_filesdiv1'); */
-                } else {
-                    $('#auxilliary_filesdiv3').show();
-                }
-            });
-
-        });
-
-        $('#auxilliary_file3').change(function () {
-            $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file3').val() }, function (oResults, status) {
-
-                if (oResults.isinpath == "False") {
-                    alert('The file you chose is not in the web site root.');
-                    /*      reset_html('auxilliary_filesdiv1'); */
-                } else {
-                    $('#auxilliary_filesdiv4').show();
-                }
-            });
-
-        });
-
-        $('#auxilliary_file4').change(function () {
-            $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file4').val() }, function (oResults, status) {
-
-                if (oResults.isinpath == "False") {
-                    alert('The file you chose is not in the web site root.');
-                    /*      reset_html('auxilliary_filesdiv1'); */
-                } else {
-                    $('#auxilliary_filesdiv5').show();
-                }
-            });
-
-        });
-
-        $('#auxilliary_file5').change(function () {
-            $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file5').val() }, function (oResults, status) {
-
-                if (oResults.isinpath == "False") {
-                    alert('The file you chose is not in the web site root.');
-                    /*      reset_html('auxilliary_filesdiv1'); */
-                } else {
-                    $('#auxilliary_filesdiv6').show();
-                }
-            });
-
-        });
-
-        $('#auxilliary_file6').change(function () {
-            $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file6').val() }, function (oResults, status) {
-
-                if (oResults.isinpath == "False") {
-                    alert('The file you chose is not in the web site root.');
-                    /*      reset_html('auxilliary_filesdiv1'); */
-                }
             });
 
         });
@@ -360,11 +215,6 @@
             }
 
         });
-
-        /*-----Clever gizmo needed to reset the contents of a form input field by resetting the html content of the encapsulating div-----*/
-        function reset_html(id) {
-            $('#' + id).html($('#' + id).html());
-        }
 
         /*----Now follows...the modal form for marker creation------------------------*/
         var markertitle = $("#MarkerTitle"),
@@ -397,19 +247,6 @@
 
         }
 
-        function checkRegexp(o, regexp, n) {
-
-            if (!(regexp.test(o.val()))) {
-                o.addClass('ui-state-error');
-                updateTips(n);
-                return false;
-            } else {
-                return true;
-            }
-
-        }
-
-
         function calculateOverallSpeed() {
             if ($("#CartographicLength").val() != "" && ($("#total_time_hours").val() != "" || $("#total_time_mins").val() != "")) {
 
@@ -429,14 +266,14 @@
         /*----Add a modal form which is used to capture the data for a new marker. Using jQuery/UI/Dialog---------*/
         $("#MarkerModalDialogForm").dialog({
             autoOpen: false,
-            height: 400,
+            height: 430,
             width: 500,
-            modal: true,
+            zIndex: 10000000,  //To ensure that the drop-down of suggestions appears in front of everything else
+            modal: false,
             buttons: {
                 'Create Marker': function () {
-                    var bValid = true;
                     allFields.removeClass('ui-state-error');
-
+                    var bValid = true;
                     bValid = bValid && checkLength(markertitle, "marker title", 5, 80);
                     bValid = bValid && checkLength(markerdescription, "description", 6, 1000);
                     bValid = bValid && checkLength(markerdateleft, "date left", 5, 18);
@@ -449,7 +286,7 @@
                                 if (status == "success") {
                                     $('#WalkMarkers').append('<br/><table class="markertable"><tr><td colspan="2"><strong>Marker Created</strong></td></tr>' +
 							        '<tr><td><em>Title:</em></td><td>' + markertitle.val() + '</td></tr><tr><td><em>Date Left:</em></td><td>' +
-							        markerdateleft.val() + '</td></tr><tr><td>Description:</td><td>' + nl2br(markerdescription.val()) + '</td></tr></table>');
+							        markerdateleft.val() + '</td></tr><tr><td>Description:</td><td>' + markerdescription.val().replace(/(?:\r\n|\r|\n)/g, '<br />') + '</td></tr></table>');
                                     var mi = $("#markers_added").val();
                                     $("#markers_added").val(mi + ":" + oResults.markerid);
                                     $("#MarkerModalDialogForm").dialog('close');
@@ -485,20 +322,6 @@
         /*----Associate a date picker with the marker left date----*/
         $("#MarkerDateLeft").datepicker({ dateFormat: 'dd MM yy' });
 
-        /*----Associate an autocomplete with the marker left on hill box which will make an AJAX call-----*/
-        $("#MarkerLeftOnHill").autocomplete("/Walks/HillSuggestions", {
-            width: 500,
-            max: 20,
-            mustmatch: true,
-            minchars: 2,
-            selectfirst: false
-        });
-        /*----Deal with the AJAX call back which holds the Hill ID also----*/
-        $("#MarkerLeftOnHill").result(function (event, data, formatted) {
-            if (data) {
-                $("#MarkerLeftOnHillId").val(data[1]);
-            }
-        });
         /*----Set up form validation with the jQuery Validation plugin-------*/
         $("#createwalkform").validate({
             rules: {
@@ -552,28 +375,12 @@
         });
     });
 
-function nl2br(text){
-    text = escape(text);	
-    if(text.indexOf('%0D%0A') > -1){
-    		re_nlchar = /%0D%0A/g ;
-   	}else if(text.indexOf('%0A') > -1){
-    		re_nlchar = /%0A/g ;
-   	}else if(text.indexOf('%0D') > -1){
-      re_nlchar = /%0D/g;
-    } else {
-      re_nlchar = text
-  }
-  return unescape(text.replace(re_nlchar, '<br />'));
-}
-
-function injectareaid() {
-    return $("#WalkAreaID").val();
-}
 </script>
     <h2>Add Walk</h2>
 
     <%-- The following line works around an ASP.NET compiler warning --%>
     <%: ""%>
+
     <% Using Html.BeginForm("Create", "Walks", FormMethod.Post, New With {.id = "createwalkform", .name = "createwalkform"})%>
         <%: Html.ValidationSummary(True) %>
         <fieldset>
@@ -604,7 +411,7 @@ function injectareaid() {
                 <label for="WalkSummary"><strong>Walk Summary</strong></label>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkSummary, New With {.size = 80, .maxlength = 1000})%> Auto: <input type="checkbox" name="summary_auto" id="summary_auto" checked />
+                <%: Html.TextBoxFor(Function(model) model.WalkSummary, New With {.size = 80, .maxlength = 1000})%> Auto: <input type="checkbox" name="summary_auto" id="summary_auto" checked="checked" />
             </div>&nbsp;    
           <div class="editor-label">
                 <label for="WalkConditions"><strong>Walk Conditions</strong></label>
@@ -643,7 +450,7 @@ function injectareaid() {
                <label for="images_path"><strong>Walk images</strong><br />Full path and name prefix of images </label>E.g. <pre>C:\DEV\MyMVCApp\MyMVCApp\Content\images\lakes\202\SilverHow_8December2009_</pre>
            </div>
            <div class="editor-field">
-                <input type="text" name="images_path" id="images_path" size="80" maxlength="160" />
+                <input type="text" name="images_path" id="images_path" size="80" maxlength="160" value="C:\Dev\MyMVCApp\MyMVCAppCS\Content\images\dalespennines\EccupRound\EccupRound_7January2010_"/>
                 <input type="button" name="getimages" id="getimages" value="Get images" />
            </div>       
            <div class="editor-field" id="walkimages">
@@ -660,7 +467,7 @@ function injectareaid() {
            <% For iAuxCounter = 1 To 6%>
            <div class="editor-field" id="auxilliary_filesdiv<%=iAuxCounter %>"> 
                 <strong><%: iAuxCounter%></strong> 
-                <input type="text" id="auxilliary_file<%=iAuxCounter %>" name="auxilliary_file<%=iAuxCounter %>" size="80"/> 
+                <input type="text" id="auxilliary_file<%=iAuxCounter %>" name="auxilliary_file<%=iAuxCounter %>" size="80" class="auxilliaryfileclass" /> 
                 <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString, selectlist)%>
                 Caption: <input type="text" id="auxilliary_caption<%=iAuxCounter %>" name="auxilliary_caption<%=iAuxCounter%>" size="40" /><br />
            </div>
@@ -694,7 +501,6 @@ function injectareaid() {
             <div class="editor-field">
                 <%: Html.TextBoxFor(Function(model) model.WalkCompanions, New With {.size = 50, .maxlength = 50})%>
             </div>&nbsp;          
-  
             
             <div class="editor-label">
             <label for="CartographicLength"><strong>Cartographic Length</strong></label>
@@ -739,6 +545,8 @@ function injectareaid() {
 
  
     <% End Using %>
+    
+  <!--Section: New Marker Pop-up Form------------------------------------------------------------> 
 
      <div id="MarkerModalDialogForm" title="Create New Marker">
         <p class="validateMarkerFormTips">*Required fields</p>

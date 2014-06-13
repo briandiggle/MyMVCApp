@@ -75,7 +75,7 @@ namespace MyMVCApp.DAL
     #endregion
 		
 		public WalkingDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["walkingLIVE"].ConnectionString, mappingSource)
+				base(global::MyMVCApp.DAL.Properties.Settings.Default.walkingDEV, mappingSource)
 		{
 			OnCreated();
 		}

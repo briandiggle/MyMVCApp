@@ -1,4 +1,17 @@
-﻿$(function () {
+﻿/*-------------------------------------------------------------------------------------------------------------------------------
+/
+/ Script: CreateEditWalk.js
+/
+/ Description: Script which implements client side logic to support creation and editing of walks
+/
+/ Dependencies:
+/    1. jQuery 2.1.1
+/    2. jQuery UI 1.10.4
+/    3. jQuery Validation Plug-in v1.12.0
+/
+/-----------------------------------------------------------------------------------------------------------------------------*/
+
+$(function () {
 
     /*----Associate an autocomplete with the marker left on hill box which will make an AJAX call-----*/
     $("#MarkerLeftOnHill").autocomplete({
@@ -43,6 +56,8 @@
     /*----Associate an autocomplete widget with each of the hill visited text boxes. Each hill visited text box has an----*/
     /*----matching hidden field which will hold a selected hill id-------*/
 
+    var numberofascents = 0;    // Used by Edit walk to make sure existing ascents are not hidden
+
     for (var iSummitVisitCount = 1; iSummitVisitCount <= 15; iSummitVisitCount = iSummitVisitCount + 1) {
 
         $("#VisitedSummit" + iSummitVisitCount).autocomplete({
@@ -70,36 +85,58 @@
             }
         });
 
-        if (iSummitVisitCount > 1) {
-            $("#DivVisitedSummit" + iSummitVisitCount).hide();
+        // Keep a note of the number of ascents
+        if ($("#VisitedSummit" + iSummitVisitCount + "HillID").val().length > 0) {
+            numberofascents++;
         }
+    }
+
+    // Leave the next unused ascent textbox visible for editing, hide all the rest
+    for (var ascentstohide = numberofascents + 2; ascentstohide <= 15; ascentstohide++) {
+        $("#DivVisitedSummit" + ascentstohide).hide();
     }
 
     //*------Implementation of association of marker with image---------
     //*------Associate an autocomplete jQuery UI widget with all DOM elements with class "markersuggestions"---------
-    $(document).on("keydown.autocomplete", ".markersuggestions", function (e) {
+    $(document).on("keydown.autocomplete", ".markersuggestions", function () {
 
         $(this).autocomplete({
             source: "/Walks/MarkerSuggestions",
             minLength: 2,
             select: function (event, ui) {
-                var imagenumber = extractnumber("imagemarkername", event.target.id);
+                var elementroot = event.target.id.replace(/[0-9]/g, '');
+                var imagenumber = extractnumber(elementroot, event.target.id);
                 var markerid = extractid(ui.item.value);
-                $("#imagemarkerid" + imagenumber).val(markerid);
+                if (elementroot.contains("existing")) {
+                    $("#existingimagemarkerid" + imagenumber).val(markerid);
+                } else {
+                    $("#imagemarkerid" + imagenumber).val(markerid);
+                }
             }
         });
 
     });
 
-
+    //*---When the "image is marker" checkbox is clicked, reveal the marker details span------
     $(document).on("click", ".imageismarker:checked", function (e) {
-        var markerimage = extractnumber("imageismarker", e.target.id);
-        $("#imagemarkerdetails" + markerimage).show();
+        var elementroot = e.target.id.replace(/[0-9]/g, '');
+        var markerimage = extractnumber(elementroot, e.target.id);
+        if (elementroot.contains("existing")) {
+            $("#existingimagemarkerdetails" + markerimage).show();
+        } else {
+            $("#imagemarkerdetails" + markerimage).show();
+        }
+       
+    });
+
+    //*----Hide marker details span for existing images when "Marker?" checkbox is not checked-----
+    $(".imageismarker:not(:checked)").each(function(index) {
+        var existingimagenumber = extractnumber("existingimageismarker", this.id);
+        $("#existingimagemarkerdetails" + existingimagenumber).hide();
     });
 
     //*-----The Json results from the autocomplete remote source contain also the hill or marker ID. 
     //*-----This function extracts the ID from this and returns it
-
     function extractnumber(removestr, sourcestring) {
         return sourcestring.replace(removestr, "");
     }
@@ -120,10 +157,9 @@
 
         var auxilliaryfilenumber = extractnumber("auxilliary_file", e.target.id);
 
-        $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file' + auxilliaryfilenumber).val() }, function (oResults, status) {
+        $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file' + auxilliaryfilenumber).val() }, function (oResults) {
             if (oResults.isinpath == "False") {
                 alert('The file you chose is not in the web site root.');
-                // reset_html('auxilliary_filesdiv1');
             } else {
                 $('#auxilliary_filesdiv' + (parseInt(auxilliaryfilenumber) + 1)).show();
             }
@@ -255,8 +291,8 @@ $(document).ready(function () {
         buttons: {
             'Create Marker': function () {
                 allFields.removeClass('ui-state-error');
-                var bValid = true;
-                bValid = bValid && checkLength(markertitle, "marker title", 5, 80);
+                var bValid;
+                bValid = checkLength(markertitle, "marker title", 5, 80);
                 bValid = bValid && checkLength(markerdescription, "description", 6, 1000);
                 bValid = bValid && checkLength(markerdateleft, "date left", 5, 18);
 
@@ -297,15 +333,15 @@ $(document).ready(function () {
         });
 
     /*----Create event for main button click----*/
-    $('#createwalkbutton').button().click(function () {
-        $('#createwalkform').submit();
+    $('#submitwalkbutton').button().click(function () {
+        $('#walkform').submit();
     });
 
     /*----Associate a date picker with the marker left date----*/
     $("#MarkerDateLeft").datepicker({ dateFormat: 'dd MM yy' });
 
     /*----Set up form validation with the jQuery Validation plugin-------*/
-    $("#createwalkform").validate({
+    $("#walkform").validate({
         rules: {
             WalkDescription: {
                 minlength: 10,

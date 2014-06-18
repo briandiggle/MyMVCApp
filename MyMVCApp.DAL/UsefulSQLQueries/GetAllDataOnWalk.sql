@@ -12,4 +12,9 @@ select * from Walks where WalkID=@walkid
 
 select * from Marker where WalkID=@walkid
 
+---------------
+select * from Walks
+
+select * from Marker where MarkerID=185
+
 

@@ -8,7 +8,7 @@
 <link type="text/css" href="../../Content/themes/base/jquery.ui.all.css" rel="Stylesheet" />
 <script type="text/javascript" src="../../Scripts/jquery-2.1.1.js"></script>
 <script type="text/javascript" src="../../Scripts/jquery-ui-1.10.4.js"></script>
-    <script type="text/javascript" src="../../Scripts/jquery.validate.js"></script>
+<script type="text/javascript" src="../../Scripts/jquery.validate.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -19,7 +19,7 @@
     <%-- The following line works around an ASP.NET compiler warning --%>
     <%: ""%>
 
-    <% Using Html.BeginForm("Create", "Walks", FormMethod.Post, New With {.id = "createwalkform", .name = "createwalkform"})%>
+    <% Using Html.BeginForm("Create", "Walks", FormMethod.Post, New With {.id = "walkform", .name = "walkform"})%>
         <%: Html.ValidationSummary(True) %>
         <fieldset>
             
@@ -177,7 +177,7 @@
             
            <div id="walksubmit">
            <br />
-                <input type="button" id="createwalkbutton" value=" Add New Walk " />
+                <input type="button" id="submitwalkbutton" value=" Add New Walk " />
           </div>
         </fieldset>
 

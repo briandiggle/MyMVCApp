@@ -120,10 +120,14 @@
                 <% End If %>
             </td>
             <td>
-                <%: item.Walk.WalkTitle %>
+                <% If Not IsNothing(item.Walk) Then
+                        Response.Write(item.Walk.WalkTitle)
+                    End If%>
             </td>
             <td>
-             <%: item.Walk.Area.Areaname%>                
+                    <% If Not IsNothing(item.Walk) Then
+                            Response.Write(item.Walk.Area.Areaname)
+                        End If%>
             </td>
             <td>
                 <%: String.Format("{0:D}", item.DateLeft) %>

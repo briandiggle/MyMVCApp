@@ -3513,6 +3513,7 @@ namespace MyMVCApp.DAL
 			}
 		}
 		
+        [DisplayName("Walk Date")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkDate", DbType="DateTime NOT NULL")]
 		public System.DateTime WalkDate
 		{
@@ -3532,7 +3533,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Walk Description")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkDescription", DbType="Text", UpdateCheck=UpdateCheck.Never)]
 		public string WalkDescription
 		{
@@ -3552,7 +3554,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Walk Title")]		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkTitle", DbType="NVarChar(100)")]
 		public string WalkTitle
 		{
@@ -3572,7 +3575,9 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+
+        [DisplayName("Walk Summary")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkSummary", DbType="NVarChar(1000)")]
 		public string WalkSummary
 		{
@@ -3592,7 +3597,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Walk Start Location")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkStartPoint", DbType="NVarChar(100)")]
 		public string WalkStartPoint
 		{
@@ -3612,7 +3618,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Walk End Location")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkEndPoint", DbType="NVarChar(100)")]
 		public string WalkEndPoint
 		{
@@ -3632,7 +3639,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Walk Type")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkType", DbType="NVarChar(30) NOT NULL", CanBeNull=false)]
 		public string WalkType
 		{
@@ -3656,7 +3664,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Walk Area")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkAreaName", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
 		public string WalkAreaName
 		{
@@ -3680,7 +3689,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Cartographic Length (Km)")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CartographicLength", DbType="Float")]
 		public System.Nullable<double> CartographicLength
 		{
@@ -3700,7 +3710,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Metres of Ascent")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MetresOfAscent", DbType="SmallInt")]
 		public System.Nullable<short> MetresOfAscent
 		{
@@ -3720,7 +3731,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Walk done with")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkCompanions", DbType="NVarChar(50)")]
 		public string WalkCompanions
 		{
@@ -3740,7 +3752,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Total Time")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkTotalTime", DbType="Int")]
 		public System.Nullable<int> WalkTotalTime
 		{
@@ -3760,7 +3773,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Average Speed (Kmh)")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkAverageSpeedKmh", DbType="Float")]
 		public System.Nullable<double> WalkAverageSpeedKmh
 		{
@@ -3780,7 +3794,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Moving Average (Kmh)")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MovingAverageKmh", DbType="Float")]
 		public System.Nullable<double> MovingAverageKmh
 		{
@@ -3800,7 +3815,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Conditions During Walk")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WalkConditions", DbType="NVarChar(200)")]
 		public string WalkConditions
 		{
@@ -3820,7 +3836,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Hills Ascended During Walk")]
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Walk_HillAscent", Storage="_HillAscents", ThisKey="WalkID", OtherKey="WalkID")]
 		public EntitySet<HillAscent> HillAscents
 		{

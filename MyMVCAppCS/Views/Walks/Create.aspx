@@ -24,44 +24,44 @@
         <fieldset>
             
             <div class="editor-label">
-                <label for="WalkDate"><strong>Walk Date</strong></label>
+                 <%: Html.LabelFor(Function(walk) walk.WalkDate)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkDate, New With {.size = 40})%>
+                <%: Html.TextBoxFor(Function(walk) walk.WalkDate, New With {.size = 40})%>
             </div>&nbsp;
 
           <div class="editor-label">
-                <label for="WalkTitle"><strong>Walk Title</strong></label>
+                 <%: Html.LabelFor(Function(walk) walk.WalkTitle)%>
            </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkTitle, New With {.size = 80})%>
+                <%: Html.TextBoxFor(Function(walk) walk.WalkTitle, New With {.size = 80})%>
             </div>&nbsp;
 
 <!--- Section: Walk Area with jQuery Autocomplete ----------------------------------------------------------------------------->
 
           <div class="editor-label">
-                <label for="WalkAreaName"><strong>Walk Area</strong></label>
-            </div>
+                  <%: Html.LabelFor(Function(walk) walk.WalkAreaName)%>
+           </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkAreaName, New With {.size = 80})%> <%: Html.Hidden("WalkAreaID")%>
+                <%: Html.TextBoxFor(Function(walk) walk.WalkAreaName, New With {.size = 80})%> <%: Html.Hidden("WalkAreaID")%>
              </div>&nbsp;                      
            <div class="editor-label">
-                <label for="WalkSummary"><strong>Walk Summary</strong></label>
+                  <%: Html.LabelFor(Function(walk) walk.WalkSummary)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkSummary, New With {.size = 80, .maxlength = 1000})%> Auto: <input type="checkbox" name="summary_auto" id="summary_auto" checked="checked" />
+                <%: Html.TextBoxFor(Function(walk) walk.WalkSummary, New With {.size = 80, .maxlength = 1000})%> Auto: <input type="checkbox" name="summary_auto" id="summary_auto" checked="checked" />
             </div>&nbsp;    
-          <div class="editor-label">
-                <label for="WalkConditions"><strong>Walk Conditions</strong></label>
+            <div class="editor-label">
+                  <%: Html.LabelFor(Function(walk) walk.WalkConditions)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkConditions, New With {.size = 80})%>
+                <%: Html.TextBoxFor(Function(walk) walk.WalkConditions, New With {.size = 80})%>
             </div>&nbsp;
              
 <!-- Section: Summits Visited --------------------------------------------------------------------------------------------------->            
 
            <div class="editor-label">
-                <strong><%: Html.Label("Summits Visited")%></strong>
+                  <%: Html.LabelFor(Function(walk) walk.HillAscents)%>
             </div>        
             <% For iHillVisitedCounter As Integer = 1 To 15%>   
            <div class="editor-field" id="DivVisitedSummit<%= iHillVisitedCounter.ToString %>">
@@ -76,10 +76,10 @@
             <button id="CreateMarkerButton" type="button">Create New Marker</button><input type="hidden" id="markers_added" name="markers_added" value=""/>
           </div>&nbsp;                                                   
             <div class="editor-label">
-                 <label for="WalkDescription"><strong>Walk Description</strong></label>
+                  <%: Html.LabelFor(Function(walk) walk.WalkDescription)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextAreaFor(Function(model) model.WalkDescription, 8, 100, New With {.class = "formtextarea"})%>
+                <%: Html.TextAreaFor(Function(walk) walk.WalkDescription, 8, 100, New With {.class = "formtextarea"})%>
             </div>&nbsp;
 
 <!-- Section: Add Walk Images---------------------------------------------------------------------->
@@ -101,7 +101,7 @@
                <br />Full path and name prefix of additional file E.g. <pre>C:\Dev\MyMVCApp\MyMVCAppCS\Content\images\lakes\1\ScafellPike _23_March_2014.gpx</pre>
            </div>
                          
-           <% Dim selectlist As System.Collections.Generic.IEnumerable(Of System.Web.Mvc.SelectListItem) = ViewData("Associated_File_Types")%>
+           <% Dim selectlist As IEnumerable(Of SelectListItem) = ViewData("Associated_File_Types")%>
            <% For iAuxCounter = 1 To 6%>
            <div class="editor-field" id="auxilliary_filesdiv<%=iAuxCounter %>"> 
                 <strong><%: iAuxCounter%></strong> 
@@ -114,65 +114,65 @@
 <!-- Section: Walk Type------------------------------------------------------------------------------>
 
            &nbsp;
-          <div class="editor-label">
-                <label for="WalkTypes"><strong>Walk Type</strong></label>
+            <div class="editor-label">
+                 <%: Html.LabelFor(Function(walk) walk.WalkType)%>
             </div>
             <div class="editor-field">
                 <%= Html.DropDownList("WalkTypes")%>
             </div>&nbsp;
 
             <div class="editor-label">
-                <%: Html.LabelFor(Function(model) model.WalkStartPoint)%>
+                <%: Html.LabelFor(Function(walk) walk.WalkStartPoint)%>
              </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkStartPoint, New With {.size = 80, .maxlength = 100})%>
+                <%: Html.TextBoxFor(Function(walk) walk.WalkStartPoint, New With {.size = 80, .maxlength = 100})%>
             </div>&nbsp;
             <div class="editor-label">
-                   <%: Html.LabelFor(Function(model) model.WalkEndPoint)%>
+                   <%: Html.LabelFor(Function(walk) walk.WalkEndPoint)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkEndPoint, New With {.size = 80, .maxlength = 100})%>
+                <%: Html.TextBoxFor(Function(walk) walk.WalkEndPoint, New With {.size = 80, .maxlength = 100})%>
             </div>&nbsp;     
            <div class="editor-label">
-               <label for="WalkCompanions"><strong>With</strong></label>
+                  <%: Html.LabelFor(Function(walk) walk.WalkCompanions)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkCompanions, New With {.size = 50, .maxlength = 50})%>
+                <%: Html.TextBoxFor(Function(walk) walk.WalkCompanions, New With {.size = 50, .maxlength = 50})%>
             </div>&nbsp;          
             
             <div class="editor-label">
-            <label for="CartographicLength"><strong>Cartographic Length</strong></label>
+                 <%: Html.LabelFor(Function(walk) walk.CartographicLength)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.CartographicLength) %>
+                <%: Html.TextBoxFor(Function(walk) walk.CartographicLength)%>
             </div>&nbsp;
             
             <div class="editor-label">
-               <label for="MetresOfAscent"><strong>Metres of Ascent</strong></label>
+                 <%: Html.LabelFor(Function(walk) walk.MetresOfAscent)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.MetresOfAscent)%>
+                <%: Html.TextBoxFor(Function(walk) walk.MetresOfAscent)%>
             </div>&nbsp;
                       
             <div class="editor-label">
-               <label for="WalkTotalTime"><strong>Total Time</strong></label>
+                 <%: Html.LabelFor(Function(walk) walk.WalkTotalTime)%>
             </div>
             <div class="editor-field">
                 Hours: <input type="text" name="total_time_hours" size="3" maxlength="3" id="total_time_hours"/> Mins:<input type="text" name="total_time_mins" size="3" maxlength="2" id="total_time_mins"/>
             </div>&nbsp;
             
             <div class="editor-label">
-               <label for="WalkAverageSpeedKmh"><strong>Overall Speed (Km/h)</strong></label>
+                <%: Html.LabelFor(Function(walk) walk.WalkAverageSpeedKmh)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.WalkAverageSpeedKmh) %>
+                <%: Html.TextBoxFor(Function(walk) walk.WalkAverageSpeedKmh)%>
             </div>&nbsp;
             
             <div class="editor-label">
-              <label for="MovingAverageKmh"><strong>Moving Average (Km/h)</strong></label>
+                 <%: Html.LabelFor(Function(walk) walk.MovingAverageKmh)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.MovingAverageKmh) %>
+                <%: Html.TextBoxFor(Function(walk) walk.MovingAverageKmh)%>
             </div>&nbsp;
             
            <div id="walksubmit">
@@ -191,16 +191,16 @@
        <form>
              <fieldset>
                 <label for="MarkerTitle">Title</label>*<br />
-                <input type="text" name="MarkerTitle" id="MarkerTitle"  size="50" class="text ui-widget-content ui-corner-all" /><br />
-                <label for="GPSReference">GPS Reference</label><br />
-                <input type="text" name="MarkerGPSReference" id="MarkerGPSReference" size="14" maxlength="14" class="text ui-widget-content ui-corner-all" /><br />
+                <input type="text" name="MarkerTitle" id="MarkerTitle"  size="50" class="text-box ui-widget-content ui-corner-all" /><br />
+                <label for="MarkerGPSReference">GPS Reference</label><br />
+                <input type="text" name="MarkerGPSReference" id="MarkerGPSReference" size="14" maxlength="14" class="text-box ui-widget-content ui-corner-all" /><br />
                 <label for="MarkerLeftOnHill">Hill</label><br />
-                <input type="text" name="MarkerLeftOnHill" id="MarkerLeftOnHill" size="50" class="text ui-widget-content ui-corner-all" /><br />
+                <input type="text" name="MarkerLeftOnHill" id="MarkerLeftOnHill" size="50" class="text-box ui-widget-content ui-corner-all" /><br />
                 <input type="hidden" name="MarkerLeftOnHillId" id="MarkerLeftOnHillId" />
                 <label for="MarkerDescription">Description</label><br />
                 <textarea rows="4" cols="60" name="MarkerDescription" id="MarkerDescription" class="text-box ui-widget-content ui-corner-all"></textarea><br />
                 <label for="MarkerDateLeft">Date Left</label>*<br />
-                <input type="text" name="MarkerDateLeft" id="MarkerDateLeft" class="text ui-widget-content ui-corner-all" />
+                <input type="text" name="MarkerDateLeft" id="MarkerDateLeft" class="text-box ui-widget-content ui-corner-all" />
              </fieldset>
         </form>  
  

@@ -1,4 +1,9 @@
 ﻿
+/*--------------------------------------------------------------------------------------------------------------
+|   File:    Site.cs
+|
+|   Main stylesheet for walking application
+-----------------------------------------------------------------------------------------------------------------*/
 body
 {
     background-color: #ffffff;
@@ -36,8 +41,7 @@ p, ul
     line-height: 1.6em;
 }
 
-/* HEADINGS   
-----------------------------------------------------------*/
+/*------------------HEADINGS----------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6
 {
     font-size: 1.5em;
@@ -90,8 +94,8 @@ page width. Or, you can specify an exact pixel width. */
 #header
 {
     position: relative;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
     color: #293955;
     padding: 0;
 }
@@ -130,8 +134,8 @@ page width. Or, you can specify an exact pixel width. */
 {
 	color: #aaaaaa;
 }
-/* TAB MENU   
-----------------------------------------------------------*/
+
+/*--------------TAB MENU----------------------------------------------------------*/
 ul#menu
 {
     border-bottom: 1px #5C87B2 dotted;
@@ -175,7 +179,6 @@ ul#menu li a:hover
 ul#menu li a:active
 {
 	background-color: #fff;
-  /*  background-color: #a6e2a6; */
     text-decoration: none;
 }
 
@@ -185,8 +188,7 @@ ul#menu li.selected a
     color: #000;
 }
 
-/* FORM LAYOUT ELEMENTS   
-----------------------------------------------------------*/
+/*----------FORM LAYOUT ELEMENTS----------------------------------------------------------*/
 
 fieldset 
 {
@@ -212,8 +214,7 @@ input[type="text"]
     border: 1px solid #CCC;
 }
 
-/* TABLE
-----------------------------------------------------------*/
+/*--------TABLE----------------------------------------------------------*/
 
 table 
 {
@@ -235,8 +236,7 @@ table th
   border: solid 1px #e8eef4;   
 }
 
-/* MISC  
-----------------------------------------------------------*/
+/*----------MISC--------------------------------------------------------------------*/
 .clear
 {
     clear: both;
@@ -260,8 +260,8 @@ div#title
 }
 
 
-/* Styles for validation helpers
------------------------------------------------------------*/
+/*-----------Styles for validation helpers
+    -----------------------------------------------------------*/
 .field-validation-error
 {
     color: #ff0000;
@@ -289,14 +289,14 @@ div#title
     display: none;
 }
 
-/* Styles for editor and display helpers
-----------------------------------------------------------*/
+/*---------Styles for editor and display helpers-----------------------------------------------*/
 .display-label,
 .editor-label,
 .display-field,
 .editor-field
 {
     margin: 0.5em 0;
+    font-weight: bold;
 }
 
 .text-box
@@ -365,7 +365,7 @@ table.datatable th
 	border-style: none;
 	border-color: gray;
 	background-color: white;
-	-moz-border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0 0 0 0;
 	background-color:#d1d6f4;
 }
 
@@ -373,7 +373,7 @@ table.optionstable
 {
 	width: 100%;
 	border-width: 1px;
-	border-spacing: 0px;
+	border-spacing: 0;
 	border-style: none;
 	border-color: gray;
 	border-collapse: separate;
@@ -514,3 +514,12 @@ td.searchform
 {
     border: 1px solid #CCC;
 }
+
+/*------------Classes for identification of groups of elements, with no associated style. In Create/Edit Walk--------------------------*/
+
+.validateMarkerFormTips {}
+.auxilliaryfileclass {}
+.existingimagemarkerdetails {}
+.markersuggestions {}
+.imageismarker {}
+

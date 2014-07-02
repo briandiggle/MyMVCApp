@@ -144,6 +144,7 @@
   <ItemGroup>
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Controllers\ConfigController.cs" />
     <Compile Include="Controllers\HillAscentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MarkerController.cs" />
@@ -154,6 +155,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionSingleton.cs" />
+    <Compile Include="UsageLocation.cs" />
+    <Compile Include="ViewModels\ConfigViewModel.cs" />
     <Compile Include="ViewModels\HillSearchViewModel.cs" />
     <Compile Include="ViewModels\ImageSearchViewModel.cs" />
     <Compile Include="ViewModels\WalkSearchViewModel.cs" />
@@ -233,6 +237,7 @@
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="TestAutocompleteDynamic.html" />
+    <Content Include="Views\Config\Index.aspx" />
     <Content Include="Views\HillAscent\Index.aspx" />
     <Content Include="Views\Marker\Details.aspx" />
     <Content Include="Views\Marker\Edit.aspx" />
@@ -261,7 +266,6 @@
     <Content Include="Views\Walks\WalkAreaSuggestions.ascx" />
     <Content Include="Views\Walks\WalkingAreasByCountry.aspx" />
     <Content Include="Views\Walks\WalksByDate.aspx" />
-    <Content Include="Views\Walks\WalkSuggestions.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -289,7 +293,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

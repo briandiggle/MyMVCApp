@@ -74,6 +74,10 @@ namespace MyMVCApp.DAL
     partial void DeleteWalk(Walk instance);
     #endregion
 		
+        /// <summary>
+        /// This is where the switch is made between DEV and LIVE db instances
+        /// TODO: make this an application variable which can be changed at runtime
+        /// </summary>
 		public WalkingDataContext() : 
 				base(global::MyMVCApp.DAL.Properties.Settings.Default.walkingDEV, mappingSource)
 		{
@@ -2233,6 +2237,7 @@ namespace MyMVCApp.DAL
 			}
 		}
 		
+        [DisplayName("Marker Title")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MarkerTitle", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
 		public string MarkerTitle
 		{
@@ -2252,7 +2257,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Hill on which marker was left")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Hillnumber", DbType="SmallInt")]
 		public System.Nullable<short> Hillnumber
 		{
@@ -2276,7 +2282,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("GPS Reference of marker location")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GPS_Reference", DbType="NChar(14)")]
 		public string GPS_Reference
 		{
@@ -2296,7 +2303,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Description of marker locaton")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Location_Description", DbType="Text", UpdateCheck=UpdateCheck.Never)]
 		public string Location_Description
 		{
@@ -2340,7 +2348,8 @@ namespace MyMVCApp.DAL
 				}
 			}
 		}
-		
+
+        [DisplayName("Date Marker was set up")]
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DateLeft", DbType="DateTime NOT NULL")]
 		public System.DateTime DateLeft
 		{

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCApp.DAL.Marker)" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyMVCApp.DAL.Marker>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Marker: <%: Model.MarkerTitle %>
@@ -21,15 +21,15 @@
         </tr>
        <tr>
             <td>Left on Hill</td>
-            <td><% If Not IsNothing(Model.Hill) Then Response.Write(Model.Hill.Hillname)%></td>
+            <td><% if (Model.Hill != null) { Response.Write(Model.Hill.Hillname); } %></td>
         </tr>
         <tr>
             <td>Left on walk</td>
-            <td><% If Not IsNothing(Model.WalkID) Then
-                      Response.Write(Html.ActionLink(Model.Walk.WalkTitle, "Details", "Walks", New With {.id = Model.WalkID}))
-                    Else
-                        Response.Write("No walk associated with marker")
-                    End If
+            <td><% if ( Model.WalkID != null) {
+                      Response.Write(Html.ActionLink(Model.Walk.WalkTitle, "Details", "Walks", new{ id = Model.WalkID}, null));
+                    } else {
+                        Response.Write("No walk associated with marker");
+                    }
                  %></td>
         </tr>
         <tr>
@@ -43,7 +43,7 @@
 
         <tr>
             <td>Description</td>
-            <td><%: Replace(Model.Location_Description, vbCrLf, "<br />")%></td>
+            <td><%: Model.Location_Description.Replace(Environment.NewLine, "<br />")%></td>
         </tr>        
         </table>       
         <h2>Observations</h2>
@@ -54,45 +54,59 @@
            <th>Walk</th>
            <th>Description</th>
         </tr>
-        <%  For Each oMarkerObs As MyMVCApp.DAL.Marker_Observation In Model.Marker_Observations%>
+        <%  foreach (MyMVCApp.DAL.Marker_Observation oMarkerObs in Model.Marker_Observations)  {%>
         <tr>
             <td><%: String.Format("{0:D}", oMarkerObs.DateOfObservation)%></td>
-            <td><% If oMarkerObs.FoundFlag Then
-                        Response.Write(" Found ")
-                    Else
-                        Response.Write("Not yet re-found")
+            <td><% if (oMarkerObs.FoundFlag ) {
+                        Response.Write(" Found ");
+                    } else {
+                        Response.Write("Not yet re-found");
                         
-                    End If%></td>
-            <td><%: Html.ActionLink(oMarkerObs.Walk.WalkTitle, "Details", "Walks", New With {.id = oMarkerObs.WalkID}, Nothing)%></td>
+                    }%></td>
+            <td><%: Html.ActionLink(oMarkerObs.Walk.WalkTitle, "Details", "Walks", new{ id = oMarkerObs.WalkID}, null)%></td>
             <td><%: oMarkerObs.ObservationText %></td>
         </tr>        
-        <%  Next%>
+        <% } %>
         </table>
         <h2>Images</h2>
         <table class="datatable">
-        <%  For Each oAssocFile As MyMVCApp.DAL.Walk_AssociatedFile In Model.Walk_AssociatedFiles%>
+        <% if (Model.Walk_AssociatedFiles.Count == 0)
+           {
+        %>
+            <tr><td>There are no images of the marker</td></tr>    
+        <%
+           }
+           else
+           {
+
+
+               foreach (MyMVCApp.DAL.Walk_AssociatedFile oAssocFile in Model.Walk_AssociatedFiles)
+               { %>
         <tr>
-            <td><%: oAssocFile.Walk.WalkDate.Day.ToString%> <%: MonthName(oAssocFile.Walk.WalkDate.Month)%> <%: oAssocFile.Walk.WalkDate.Year.ToString%> : <em><%: oAssocFile.Walk_AssociatedFile_Caption%></em></td>
+            <td><%: oAssocFile.Walk.WalkDate.Day.ToString() %> <%: oAssocFile.Walk.WalkDate.ToString("MMMM") %> <%: oAssocFile.Walk.WalkDate.Year.ToString() %> : <em><%: oAssocFile.Walk_AssociatedFile_Caption %></em></td>
         </tr>
         <tr>
-            <td><%  If ViewData("AT_WORK") = "True" Then
-                        Response.Write(oAssocFile.Walk_AssociatedFile_Name)
-                    Else %>
-
+            <td><% if (SessionSingleton.Current.UsageLocation.Equals("At Work"))
+                   {
+                       Response.Write(oAssocFile.Walk_AssociatedFile_Name);
+                   }
+                   else
+                   { %>
                    <img src="<%: oAssocFile.Walk_AssociatedFile_Name %>" alt="<%: oAssocFile.Walk_AssociatedFile_Caption %>" width="400"/>
-                  <%  End If %>
+                  <% } %>
              
              </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
         </tr>        
-        <%  Next%>
+        <%      }
+           } %>
     </table>
     </fieldset>
     <p>
 
-        <%: Html.ActionLink("Edit", "Edit", New With {.id = Model.MarkerID})%> |
+        <%: Html.ActionLink("Edit", "Edit", new { id = Model.MarkerID})%> |
         <%: Html.ActionLink("Back to List", "Index") %>
     </p>
 

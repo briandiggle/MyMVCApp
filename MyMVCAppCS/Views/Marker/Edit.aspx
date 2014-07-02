@@ -1,27 +1,13 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCApp.DAL.Marker)" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyMVCApp.DAL.Marker>" %>
 <%@ Import Namespace="MyMVCAppCS.Models" %>
 <%@ Import Namespace="MyMVCApp.DAL" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Edit Marker
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ViewSpecificHead" runat="server">
-<link type="text/css" href="../../Content/smoothness/jquery.ui.all.css" rel="Stylesheet" />
-<link type="text/css" href="../../Content/jquery.autocomplete.css" rel="stylesheet" />
-<link type="text/css" href="../../Content/autocomplete_thickbox.css" rel="stylesheet" />
-<script type='text/javascript' src="../../Scripts/Autocomplete/lib/jquery.bgiframe.min.js"></script>
-<script type='text/javascript' src="../../Scripts/Autocomplete/lib/jquery.ajaxQueue.js"></script>
-<script type='text/javascript' src="../../Scripts/Autocomplete/thickbox-compressed.js"></script>
-<script type='text/javascript' src="../../Scripts/Autocomplete/jquery.autocomplete.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.core.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.widget.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.datepicker.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.mouse.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.button.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.draggable.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.position.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.resizable.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.ui.dialog.js"></script>
-<script type="text/javascript" src="../../Scripts/ui/jquery.effects.core.js"></script>
+<link type="text/css" href="../../Content/themes/base/jquery.ui.all.css" rel="Stylesheet" />
+<script type="text/javascript" src="../../Scripts/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../../Scripts/jquery-ui-1.10.4.js"></script>
 <script type="text/javascript" src="../../Scripts/jquery.validate.js"></script>
 </asp:Content>
 
@@ -29,27 +15,32 @@
 <script type="text/javascript">
 
     $().ready(function () {
+
+        function extractid(elementname) {
+            if (elementname.indexOf("|") > 0) {
+                var myloc = elementname.indexOf("|");
+                return elementname.substring(myloc + 1).trim();
+            }
+            return "";
+        }
+
         /*----Associate an autocomplete AJAX based widget with the left on hill textbox------*/
-        $("#LeftOnHillName").autocomplete("/Walks/HillSuggestions", {
-            width: 500,
-            max: 20,
-            minChars: 2
-        });
-        $("#LeftOnHillName").result(function (event, data, formatted) {
-            if (data) {
-                $("#Hillnumber").val(data[1]);
+        $("#LeftOnHillName").autocomplete({
+            source: "/Walks/HillSuggestions",
+            minLength: 2,
+            select: function (event, ui) {
+                var hillid = extractid(ui.item.value);
+                $("#Hillnumber").val(hillid);
             }
         });
 
         /*----Associate an autocomplete AJAX based widget with the walk name textbox------*/
-        $("#MarkerLeftOnWalkName").autocomplete("/Walks/WalkSuggestions", {
-            width: 500,
-            max: 20,
-            minChars: 2
-        });
-        $("#MarkerLeftOnWalkName").result(function (event, data, formatted) {
-            if (data) {
-                $("#WalkID").val(data[1]);
+        $("#MarkerLeftOnWalkName").autocomplete({
+            source: "/Walks/WalkSuggestions",
+            minLength: 2,
+            select: function (event, ui) {
+                var walkid = extractid(ui.item.value);
+                $("#WalkID").val(walkid);
             }
         });
 
@@ -98,69 +89,71 @@
     <%-- The following line works around an ASP.NET compiler warning --%>
     <%: ""%>
 
-    <%  Using Html.BeginForm("Edit", "Marker", FormMethod.Post, New With {.id = "editmarkerform", .name = "editmarkerform"})%>
-        <%: Html.ValidationSummary(True) %>
+    <%  using (Html.BeginForm("Edit", "Marker", FormMethod.Post, new { id = "editmarkerform", name = "editmarkerform"}))
+        {
+        %>
+        <%: Html.ValidationSummary(true) %>
         <fieldset>
           
             
             <div class="editor-field">
-                <%: Html.HiddenFor(Function(model) model.MarkerID)%>
+                <%: Html.HiddenFor(marker => marker.MarkerID)%>
             </div>&nbsp;
             
             <div class="editor-label">
                 <strong>Marker Title</strong>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.MarkerTitle, New With {.size = 80})%>
-                <%: Html.ValidationMessageFor(Function(model) model.MarkerTitle) %>
+                <%: Html.TextBoxFor(marker => marker.MarkerTitle, new { size = 80})%>
+                <%: Html.ValidationMessageFor(marker => marker.MarkerTitle) %>
             </div>&nbsp;
             
             <div class="editor-label">
                 <strong>Left on Hill</strong>
             </div>
             <div class="editor-field">
-                <%: Html.HiddenFor(Function(model) model.Hillnumber)%>
+                <%: Html.HiddenFor(marker => marker.Hillnumber)%>
                 <input type="text" name="LeftOnHillName" id="LeftOnHillName" size="80" value="<%= MyMVCApp.DAL.WalkingStick.FormatHillSummaryAsLine(Model.Hill)%>" />
             </div>&nbsp;
             
             <div class="editor-label">
-                <strong><%: Html.LabelFor(Function(model) model.GPS_Reference) %></strong>
+                <strong><%: Html.LabelFor(marker => marker.GPS_Reference) %></strong>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(model) model.GPS_Reference) %>
+                <%: Html.TextBoxFor(marker => marker.GPS_Reference) %>
             </div>&nbsp;
             
             <div class="editor-label">
                 <strong>Description</strong>
             </div>
             <div class="editor-field">
-                <%: Html.TextAreaFor(Function(model) model.Location_Description, 8, 90, New With {.dummy = 0})%>
+                <%: Html.TextAreaFor(marker => marker.Location_Description, 8, 90, new { dummy = 0})%>
             </div>&nbsp;
             
             <div class="editor-label">
                 <strong>Left on Walk</strong>
             </div>
             <div class="editor-field">
-                <%: Html.HiddenFor(Function(model) model.WalkID)%>
+                <%: Html.HiddenFor(marker => marker.WalkID)%>
                 <input type="text" name="MarkerLeftOnWalkName" id="MarkerLeftOnWalkName" value="<%= MyMVCApp.DAL.WalkingStick.FormatWalkAsLine(Model.Walk)%>"size="80"/>
             </div>&nbsp;
             
             <div class="editor-label">
-                <strong><%: Html.LabelFor(Function(model) model.DateLeft) %></strong>
+                <strong><%: Html.LabelFor(marker => marker.DateLeft) %></strong>
             </div>
             <div class="editor-field">
                 <input type="text" name="DateLeft" id="DateLeft"  size="40" maxlength="40" value="<%= String.Format("{0:D}", Model.DateLeft)%>" />
             </div>&nbsp;
-            <% Dim selectlistMarkerStatusOptions As System.Collections.Generic.IEnumerable(Of System.Web.Mvc.SelectListItem) = ViewData("Marker_Statii")%>
+            <% var selectlistMarkerStatusOptions  = ViewData["Marker_Statii"]%>
 
             <div class="editor-label">
-                <strong><%: Html.LabelFor(Function(model) model.Status) %></strong>
+                <strong><%: Html.LabelFor(marker => marker.Status) %></strong>
             </div>
             <div class="editor-field">
                 <select name="Status">
-                <%  For Each oStatus As Marker_Status In ViewData("Marker_Status")%>
-                      <option value="<%= oStatus.Marker_Status1%>" <% If oStatus.Marker_Status1.Equals(Model.Status) Then Response.Write(" selected") %>><%= oStatus.Marker_Status1%></option>
-                <%    Next%>
+                <% foreach ( Marker_Status oStatus in (IEnumerable)this.ViewData["Marker_Status"]) { %>
+                      <option value="<%= oStatus.Marker_Status1%>" <% if (oStatus.Marker_Status1.Equals(Model.Status)) { Response.Write(" selected"); } %>><%= oStatus.Marker_Status1%></option>
+                <%  } %>
                 </select>
                
             </div>&nbsp;
@@ -171,7 +164,7 @@
           </div>
         </fieldset>
 
-    <% End Using %>
+    <% } %>
 
     <div>
         <%: Html.ActionLink("Back to Markers List", "Index") %>

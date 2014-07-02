@@ -73,7 +73,6 @@ $(function () {
                         response(data);
                     }
                 });
-
             },
             minLength: 2,
             select: function (event, ui) {

@@ -10,7 +10,6 @@
 
     <table class="datatable">
        <tr><td colspan="5"><%= Model.PageNavigationLinks%></td></tr>
-        
         <tr>
             <th>No.</th>
             <th><%  if (ViewData["OrderBy"] == "Date")

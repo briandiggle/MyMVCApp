@@ -5,6 +5,8 @@ using System.Web.Routing;
 
 namespace MyMVCAppCS
 {
+    using System;
+
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 
@@ -42,6 +44,15 @@ namespace MyMVCAppCS
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes(RouteTable.Routes);
+
         }
+
+        protected void Session_Start(object sender, EventArgs e)
+        {
+            // event is raised each time a new session is created     
+      //      SessionSingleton.Current.UsageLocation = "At Home";
+
+        }
+
     }
 }

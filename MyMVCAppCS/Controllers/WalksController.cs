@@ -6,14 +6,13 @@ namespace MyMVCAppCS.Controllers
 {
     using System;
     using System.Collections.Generic;
-    using System.Text;
     using System.Web.Configuration;
 
     using MyMVCApp.DAL;
-
     using MyMVCAppCS.Models;
     using MyMVCAppCS.ViewModels;
 
+    [OutputCache(NoStore = true, Duration = 0, VaryByParam = "None")]
     public class WalksController : Controller
     {
    
@@ -28,6 +27,8 @@ namespace MyMVCAppCS.Controllers
         // GET: /Walks/
         public ActionResult Index()
         {
+            SessionSingleton.Current.UsageLocation = "At Work";
+
             ViewData["MVCVersion"] = typeof(Controller).Assembly.CodeBase;
             return View();
         }
@@ -510,19 +511,19 @@ namespace MyMVCAppCS.Controllers
 
         // ------------------------------------------------------------------------------------------------
         //  WalkSuggestions
-        //  Used as the AJAX server side for an autocomplete function on a client side textbox
+        //  Used as the AJAX server side for an autocomplete function on a client side textbox - Create Marker
         // -----------------------
-        public ActionResult WalkSuggestions(string q) 
+        public JsonResult WalkSuggestions(string term) 
         {
-            var oSB = new StringBuilder();
-            var IQWalks = repository.FindWalksByTitleLike(q);
+            var IQWalks = repository.FindWalksByTitleLike(term);
 
-            foreach (Walk item in IQWalks) 
+            List<AutocompleteSuggestionOption> suggestedWalks = new List<AutocompleteSuggestionOption>();
+            foreach (Walk oWalk in IQWalks)
             {
-                oSB.AppendLine((WalkingStick.FormatWalkAsLine(item) + ("|" + item.WalkID.ToString().Trim())));
+                var walkTitle = WalkingStick.FormatWalkAsLine(oWalk);
+                suggestedWalks.Add(new AutocompleteSuggestionOption { label = walkTitle, value= walkTitle + " | " + oWalk.WalkID.ToString()});
             }
-            ViewData["walksuggestions"] = oSB.ToString();
-            return PartialView();
+            return Json(suggestedWalks, JsonRequestBehavior.AllowGet);
         }
 
         // -------------------------------------------------------------------------------------

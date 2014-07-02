@@ -15,7 +15,7 @@
 
         <div id="header">
             <div id="title">
-                <h1><% If ViewData("AT_WORK") = "False" Then%><%= Html.ActionLink("Brian's Walking Site", "Index", "Walks")%>
+                <h1><% If SessionSingleton.Current.UsageLocation = "At Home" Then%><%= Html.ActionLink("Brian's Walking Site", "Index", "Walks")%>
                     <% Else%> <%= Html.ActionLink("MVC4", "Index", "Walks")%>
                     <% End If %>
                 </h1>
@@ -53,7 +53,9 @@
              <%= Html.ActionLink("Wainwright Outlying", "HillsInClassification", "Walks", New With {.id = "WO"}, New With {.dummy = 0})%> | 
              <%= Html.ActionLink("All Hills", "HillsInClassification", "Walks", New With {.id = Nothing}, New With {.dummy = 0})%> | 
              <%= Html.ActionLink("Markers","Index","Marker") %> |
-             <%= Html.ActionLink("Search", "Index", "Search")%>
+             <%= Html.ActionLink("Search", "Index", "Search")%> |
+             <%= Html.ActionLink("Config", "Index", "Config")%>
+
              <p>@2010,2011 BWD, C# version 2013, 2014</p>
          </div>
     </div>

@@ -1,15 +1,14 @@
 ﻿// -----------------------------------------------------------------------
 // <copyright file="IWalkingRepository.cs" company="Callcredit Information Group">
-// TODO: Update copyright text.
+//   
 // </copyright>
 // -----------------------------------------------------------------------
 
 namespace MyMVCApp.DAL
 {
-    using System;
+
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
 
     /// <summary>
     /// Interface defining Walking Repository

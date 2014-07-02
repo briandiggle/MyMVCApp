@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCApp.DAL.Walk)" %>
+<%@ Import Namespace="MyMVCApp.Model" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	<%: Model.WalkTitle %>, <%: String.Format("{0:D}", Model.WalkDate)%>
@@ -109,7 +110,7 @@
 
         If oFile.Walk_AssociatedFile_Type = "Image - Altitude Profile" Then
             
-            If ViewData("AT_WORK") = "False" Then%>
+            If SessionSingleton.Current.UsageLocation = WalkingConstants.AT_HOME Then%>
         <div>&nbsp;<br /><strong>Altitude Profile <em><%: oFile.Walk_AssociatedFile_Caption %></em></strong><br /><img src="<%= oFile.Walk_AssociatedFile_Name %>" border="1" alt="Altitude Profile" /></div>    
         <% Else%>
        <div>&nbsp;<br /><strong>Altitude Profile <em><%: oFile.Walk_AssociatedFile_Caption %></em></strong><br /><%= oFile.Walk_AssociatedFile_Name %></div>
@@ -139,9 +140,9 @@ Next
     
    Dim iCounter As Integer = 1
    For Each oFile As MyMVCApp.DAL.Walk_AssociatedFile In Model.Walk_AssociatedFiles
-       If oFile.Walk_AssociatedFile_Type = "Image" AndAlso ViewData("AT_WORK") = "True" Then%>
+       If oFile.Walk_AssociatedFile_Type = "Image" AndAlso SessionSingleton.Current.UsageLocation = WalkingConstants.AT_WORK Then%>
         <div><br /><em><%= iCounter.ToString%>. <%= oFile.Walk_AssociatedFile_Caption %></em><br /><%= oFile.Walk_AssociatedFile_Name %></div>    
-    <%  ElseIf oFile.Walk_AssociatedFile_Type = "Image" AndAlso ViewData("AT_WORK") = "False" Then%>
+    <%  ElseIf oFile.Walk_AssociatedFile_Type = "Image" AndAlso SessionSingleton.Current.UsageLocation = WalkingConstants.AT_HOME Then%>
        <div>&nbsp;<br /><%= iCounter.ToString%>. <em><%= oFile.Walk_AssociatedFile_Caption %></em><br /><img src="<%= oFile.Walk_AssociatedFile_Name %>" border="1" alt="<%= oFile.Walk_AssociatedFile_Caption %>" /></div>    
  <% 
  End If

@@ -138,7 +138,7 @@ namespace MyMVCAppCS.Controllers
 
             oMarker = this.repository.GetMarkerDetails(id);
 
-            var markerStatii = this.repository.GetAllMarkerStatusOptions();
+            var markerStatii = this.repository.GetAllMarkerStatusOptions().AsEnumerable();
 
             ViewData["Marker_Status"] = markerStatii;
 

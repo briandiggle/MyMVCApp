@@ -117,13 +117,13 @@
         <% End If%>
    <% 
    ElseIf oFile.Walk_AssociatedFile_Type = "Image - Map" Then
-       If ViewData("AT_WORK") = "False" Then%>
+       If SessionSingleton.Current.UsageLocation = WalkingConstants.AT_HOME Then%>
          <div>&nbsp;<br /><strong>Map of Walk Area <em><%: oFile.Walk_AssociatedFile_Caption %></em></strong><br /><img src="<%= oFile.Walk_AssociatedFile_Name %>" border="1" alt="Map of walk area" /></div>    
    <%  Else %>    
           <div>&nbsp;<br /><strong>Map of Walk Area <em><%: oFile.Walk_AssociatedFile_Caption %></em></strong><br /><%= oFile.Walk_AssociatedFile_Name %></div>    
    <%  End If
    ElseIf oFile.Walk_AssociatedFile_Type = "Image - Map with track" Then
-       If ViewData("AT_WORK") = "False" Then%>
+       If SessionSingleton.Current.UsageLocation = WalkingConstants.AT_HOME Then%>
           <div>&nbsp;<br /><strong>Map with track overlay <em><%: oFile.Walk_AssociatedFile_Caption %></em></strong><br /><img src="<%= oFile.Walk_AssociatedFile_Name %>" border="1" alt="Map with track overlay" /></div>    
    <%  Else%>
           <div>&nbsp;<br /><strong>Map with track overlay <em><%: oFile.Walk_AssociatedFile_Caption %></em></strong><br /><%= oFile.Walk_AssociatedFile_Name %></div>    

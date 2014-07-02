@@ -363,7 +363,6 @@ namespace MyMVCAppCS.Controllers
             string strTotalTime = WalkingStick.ConvertTotalTimeToString(oWalk.WalkTotalTime, false);
 
             ViewData["TotalTime"] = strTotalTime;
-            ViewData["AT_WORK"] = WebConfigurationManager.AppSettings["atwork"];
 
             return this.View(oWalk);
         }
@@ -383,7 +382,6 @@ namespace MyMVCAppCS.Controllers
             ViewData["Model"] = oWalk;
             ViewData["Auxilliary_Files"] = oAuxilliaryFiles.AsEnumerable();
             ViewData["WalkMarkersAlreadyCreated"] = oWalkMarkers;
-            ViewData["AT_WORK"] = WebConfigurationManager.AppSettings["atwork"];
 
             return this.View(oWalk);
         }

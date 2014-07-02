@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCApp.DAL.Walk)" %>
+<%@ Import Namespace="MyMVCApp.Model" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Edit <%= Model.WalkTitle%>
@@ -146,7 +147,7 @@
                 Not Found? <input type="checkbox" id="existingimagemarkernotfound<%=iExistingImageCount.ToString %>" name="existingimagemarkernotfound<%=iExistingImageCount.ToString %>" />
            <input type="hidden" id="existingimagemarkerid<%=iExistingImageCount.ToString %>" name="existingimagemarkerid<%=iExistingImageCount.ToString %>" value="<%=oWalkImage.Walk_AssociatedFile_MarkerID.Tostring %>"/>
             </span>
-            <% If ViewData("AT_WORK") = "True" Then%>       
+            <% If SessionSingleton.Current.UsageLocation = WalkingConstants.AT_WORK Then%>       
                    &nbsp;<%= MyMVCApp.DAL.WalkingStick.ExtractFileNameFromPath(oWalkImage.Walk_AssociatedFile_Name)%><br />
             <% Else %>
                    <br/><img src="<%= oWalkImage.Walk_AssociatedFile_Name %>" class="walkimage" alt="existing image"/>

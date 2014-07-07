@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of IEnumerable (Of MyMVCApp.DAL.Class))" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MyMVCApp.DAL.Class>>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Hill Classifications
@@ -14,22 +14,25 @@
         </tr>
 
     <%  
-        Dim iCounter As Integer = 1
-        For Each item In Model
-            If iCounter = 1 Then
-                Response.Write("<tr>")
-            End If
+        int iCounter = 1;
+        foreach(MyMVCApp.DAL.Class hillclass in Model)
+        {
+            if (iCounter == 1)
+            {
+                Response.Write("<tr>");
+            }
             %>
             <td>
-                <%=Html.ActionLink(item.Classname, "HillsInClassification", New With {.id = item.Classref})%> 
+                <%=Html.ActionLink(hillclass.Classname, "HillsInClassification", new {id = hillclass.Classref})%> 
             </td>
     <% 
-        iCounter = iCounter + 1
-        If iCounter = 4 Then
-            Response.Write("</tr>")
-            iCounter = 1
-        End If
-    Next%>
+        iCounter++;
+        if (iCounter == 4) 
+        {
+            Response.Write("</tr>");
+            iCounter = 1;
+        }
+    }%>
 
     </table>
 

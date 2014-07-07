@@ -7,6 +7,8 @@ namespace MyMVCAppCS
 {
     using System;
 
+    using MyMVCApp.Model;
+
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 
@@ -35,7 +37,7 @@ namespace MyMVCAppCS
             routes.MapRoute(
                      "Default",
                      "{controller}/{action}/{id}",
-                     new { controller = "Walks", action = "Edit", id = 319 });
+                     new { controller = "Walks", action = "Index" });
 
         }
 
@@ -50,8 +52,7 @@ namespace MyMVCAppCS
         protected void Session_Start(object sender, EventArgs e)
         {
             // event is raised each time a new session is created     
-      //      SessionSingleton.Current.UsageLocation = "At Home";
-
+            SessionSingleton.Current.UsageLocation = WalkingConstants.AT_HOME;
         }
 
     }

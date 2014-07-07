@@ -1,3 +1,3 @@
-﻿<%@ Control Language="VB" Inherits="System.Web.Mvc.ViewUserControl" %>
-<%= viewdata("checkresults") %>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
+<%= ViewData["checkresults"] %>
 

@@ -1,2 +1,2 @@
-﻿<%@ Control Language="VB" Inherits="System.Web.Mvc.ViewUserControl" %>
-<%= ViewData("areanamesuggestions")%>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
+<%= ViewData["areanamesuggestions"]%>

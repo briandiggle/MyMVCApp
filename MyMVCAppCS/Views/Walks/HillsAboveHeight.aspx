@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of IEnumerable (Of MyMVCApp.DAL.Hill))" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MyMVCApp.DAL.Hill>>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	HillsAboveHeight
@@ -82,96 +82,97 @@
                 Longitude
             </th>
             <th>
-                HillClimbed
+                Number of Ascents
             </th>
             <th>
                 HillClimbedDate
             </th>
         </tr>
 
-    <% For Each item In Model%>
+    <% foreach (MyMVCApp.DAL.Hill hill in Model)
+       {%>
     
         <tr>
             <td>
-                <%= Html.ActionLink("Edit", "Edit", New With {.id = item.Hillnumber})%> |
-                <%= Html.ActionLink("Details", "Details", New With {.id = item.Hillnumber})%>
+                <%= Html.ActionLink("Edit", "Edit", new {id = hill.Hillnumber})%> |
+                <%= Html.ActionLink("Details", "Details", new {id = hill.Hillnumber})%>
              
             </td>
             <td>
-                <%= Html.Encode(item.Hillnumber) %>
+                <%= Html.Encode(hill.Hillnumber) %>
             </td>
             <td>
-                <%= Html.Encode(item.Hillname) %>
+                <%= Html.Encode(hill.Hillname) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:F}", item._Section)) %>
+                <%= Html.Encode(String.Format("{0:F}", hill._Section)) %>
             </td>
             <td>
-                <%= Html.Encode(item.Classification) %>
+                <%= Html.Encode(hill.Classification) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:F}", item.Metres)) %>
+                <%= Html.Encode(String.Format("{0:F}", hill.Metres)) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:F}", item.Feet)) %>
+                <%= Html.Encode(String.Format("{0:F}", hill.Feet)) %>
             </td>
             <td>
-                <%= Html.Encode(item.Gridref) %>
+                <%= Html.Encode(hill.Gridref) %>
             </td>
             <td>
-                <%= Html.Encode(item.Gridref10) %>
+                <%= Html.Encode(hill.Gridref10) %>
             </td>
             <td>
-                <%= Html.Encode(item.Colgridref) %>
+                <%= Html.Encode(hill.Colgridref) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:F}", item.Colheight)) %>
+                <%= Html.Encode(String.Format("{0:F}", hill.Colheight)) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:F}", item.Drop)) %>
+                <%= Html.Encode(String.Format("{0:F}", hill.Drop)) %>
             </td>
             <td>
-                <%= Html.Encode(item.Feature) %>
+                <%= Html.Encode(hill.Feature) %>
             </td>
             <td>
-                <%= Html.Encode(item.Observations) %>
+                <%= Html.Encode(hill.Observations) %>
             </td>
             <td>
-                <%= Html.Encode(item.Survey) %>
+                <%= Html.Encode(hill.Survey) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:g}", item.Revision)) %>
+                <%= Html.Encode(String.Format("{0:g}", hill.Revision)) %>
             </td>
             <td>
-                <%= Html.Encode(item.Comments) %>
+                <%= Html.Encode(hill.Comments) %>
             </td>
             <td>
-                <%= Html.Encode(item.Map) %>
+                <%= Html.Encode(hill.Map) %>
             </td>
             <td>
-                <%= Html.Encode(item.Map25) %>
+                <%= Html.Encode(hill.Map25) %>
             </td>
             <td>
-                <%= Html.Encode(item.Xcoord) %>
+                <%= Html.Encode(hill.Xcoord) %>
             </td>
             <td>
-                <%= Html.Encode(item.Ycoord) %>
+                <%= Html.Encode(hill.Ycoord) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:F}", item.Latitude)) %>
+                <%= Html.Encode(String.Format("{0:F}", hill.Latitude)) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:F}", item.Longitude)) %>
+                <%= Html.Encode(String.Format("{0:F}", hill.Longitude)) %>
             </td>
             <td>
-                <%= Html.Encode(item.HillClimbed) %>
+                <%= Html.Encode(hill.NumberOfAscents) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:g}", item.HillClimbedDate)) %>
+                <%= Html.Encode(String.Format("{0:g}", hill.FirstClimbedDate)) %>
             </td>
         </tr>
     
-    <% Next%>
+    <% } %>
 
     </table>
 

@@ -1,12 +1,13 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCAppCS.Models.PaginatedListMVC (Of MyMVCApp.DAL.Hill))" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyMVCAppCS.Models.PaginatedListMVC<MyMVCApp.DAL.Hill>>" %>
+<%@ Import Namespace="MyMVCApp.DAL" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Hills in <%= ViewData("AreaName")%>
+	Hills in <%= ViewData["AreaName"]%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h2>Hills in <%= ViewData("AreaName")%></h2>
+    <h2>Hills in <%= ViewData["AreaName"]%></h2>
 
      <table class="datatable">
      <tr>
@@ -19,34 +20,42 @@
     </tr>
     <tr>
             <th>
-             <%  If ViewData("OrderBy") = "Name" Then
-                    Response.Write("<strong>")
-                    If ViewData("OrderAscDesc") = "Asc" Then
-                         Response.Write(Html.ActionLink("Name <Asc>", "HillsByArea", New With {.OrderBy = "NameDesc"}))
-                    Else
-                         Response.Write(Html.ActionLink("Name <Desc>", "HillsByArea", New With {.OrderBy = "NameAsc"}))
-                    End If
-                    Response.Write("</strong>")
-                Else
-                     Response.Write(Html.ActionLink("Name", "HillsByArea", New With {.OrderBy = "NameDesc"}))
-                End If
+             <%  if ( ViewData["OrderBy"].Equals("Name")) 
+                 {
+                    Response.Write("<strong>");
+                    if ( ViewData["OrderAscDesc"].Equals("Asc"))
+                    {
+                        Response.Write(Html.ActionLink("Name <Asc>", "HillsByArea", new { OrderBy = "NameDesc" }));
+                    } else
+                    {
+                        Response.Write(Html.ActionLink("Name <Desc>", "HillsByArea", new { OrderBy = "NameAsc" }));
+                    }
+                    Response.Write("</strong>");
+                } else
+                {
+                     Response.Write(Html.ActionLink("Name", "HillsByArea", new { OrderBy = "NameDesc" }));
+                }
                  %>
             </th>
             <th>
-                Classification
+                Classif (ication
             </th>
             <th>
-              <%  If ViewData("OrderBy") = "Metres" Then
-                    Response.Write("<strong>")
-                    If ViewData("OrderAscDesc") = "Asc" Then
-                          Response.Write(Html.ActionLink("Metres <Asc>", "HillsByArea", New With {.OrderBy = "MetresDesc"}))
-                    Else
-                          Response.Write(Html.ActionLink("Metres <Desc>", "HillsByArea", New With {.OrderBy = "MetresAsc"}))
-                    End If
-                    Response.Write("</strong>")
-                Else
-                      Response.Write(Html.ActionLink("Metres", "HillsByArea", New With {.OrderBy = "MetresDesc"}))
-                End If
+              <%  if ( ViewData["OrderBy"].Equals("Metres"))
+                  {
+                    Response.Write("<strong>");
+                    if ( ViewData["OrderAscDesc"].Equals("Asc"))
+                    {
+                        Response.Write(Html.ActionLink("Metres <Asc>", "HillsByArea", new { OrderBy = "MetresDesc" }));
+                    } else
+                    {
+                        Response.Write(Html.ActionLink("Metres <Desc>", "HillsByArea", new { OrderBy = "MetresAsc" }));
+                    }
+                    Response.Write("</strong>");
+                  } else
+                {
+                      Response.Write(Html.ActionLink("Metres", "HillsByArea", new { OrderBy = "MetresDesc" }));
+                }
              %>
             </th>
             <th>
@@ -60,17 +69,21 @@
                 Drop
             </th>
             <th>
-                <%  If ViewData("OrderBy") = "FirstAscent" Then
-                       Response.Write("<strong>")
-                       If ViewData("OrderAscDesc") = "Asc" Then
-                            Response.Write(Html.ActionLink("Date Climbed <Asc>", "HillsByArea", New With {.OrderBy = "FirstAscentDesc"}))
-                       Else
-                            Response.Write(Html.ActionLink("Date Climbed <Desc>", "HillsByArea", New With {.OrderBy = "FirstAscentAsc"}))
-                       End If
-                       Response.Write("</strong>")
-                   Else
-                        Response.Write(Html.ActionLink("Date Climbed", "HillsByArea", New With {.OrderBy = "FirstAscentDesc"}))
-                   End If
+                <%  if ( ViewData["OrderBy"].Equals("FirstAscent"))
+                    {
+                        Response.Write("<strong>");
+                       if ( ViewData["OrderAscDesc"].Equals("Asc"))
+                       {
+                           Response.Write(Html.ActionLink("Date Climbed <Asc>", "HillsByArea", new { OrderBy = "FirstAscentDesc" }));
+                       } else
+                       {
+                           Response.Write(Html.ActionLink("Date Climbed <Desc>", "HillsByArea", new { OrderBy = "FirstAscentAsc" }));
+                       }
+                       Response.Write("</strong>");
+                    } else
+                    {
+                        Response.Write(Html.ActionLink("Date Climbed", "HillsByArea", new { OrderBy = "FirstAscentDesc" }));
+                    }
              %>
             </th>
             <th>
@@ -78,46 +91,50 @@
             </th>
         </tr>
 
-   <%  Dim iHillNumberInClassification = ((Model.PageIndex - 1) * Model.PageSize) + 1
-        
-        For Each item In Model%>
+   <%   int iHillNumberInClassification = ((Model.PageIndex - 1) * Model.PageSize) + 1;
+
+        foreach (Hill item in Model)
+        { %>
     
-        <tr style="background-color: <%= MyMVCApp.DAL.WalkingStick.NumberOfAscentsAsColour(item.NumberOfAscents) %>">
+        <tr style="background-color: <%= WalkingStick.NumberOfAscentsAsColour(item.NumberOfAscents) %>">
             <td>
-                <%=Html.ActionLink(item.Hillname, "HillDetails", New With {.id = item.Hillnumber})%>
+                <%= Html.ActionLink(item.Hillname, "HillDetails", new { id = item.Hillnumber }) %>
             </td>
   
             <td>
-               <%= MyMVCApp.DAL.WalkingStick.HillClassesToLinks(item.Classification)%>
+               <%= WalkingStick.HillClassesToLinks(item.Classification) %>
             </td>
             <td>
-                <%= Html.Encode(String.Format("{0:#}", item.Metres))%>
+                <%= Html.Encode(String.Format("{0:#}", item.Metres)) %>
             </td>
             <td>
-                 <%= Html.Encode(String.Format("{0:#}", item.Feet))%>
+                 <%= Html.Encode(String.Format("{0:#}", item.Feet)) %>
            </td>
  
             <td>
-                <%  If Not IsNothing(item.Gridref10) AndAlso item.Gridref10.Length > 0 Then
-                        Response.Write(Html.Encode(item.Gridref10))
-                    Else
-                        Response.Write(Html.Encode(item.Gridref))
-                    End If
+                <% if (!string.IsNullOrEmpty(item.Gridref10))
+                   {
+                       Response.Write(Html.Encode(item.Gridref10));
+                   }
+                   else
+                   {
+                       Response.Write(Html.Encode(item.Gridref));
+                   }
                 %>
             </td>
   
             <td>
-                <%= Html.Encode(String.Format("{0:#}", item.Drop))%>
+                <%= Html.Encode(String.Format("{0:#}", item.Drop)) %>
             </td>
             <td>
-               <%= Html.Encode(String.Format("{0:D}", item.FirstClimbedDate))%>
+               <%= Html.Encode(String.Format("{0:D}", item.FirstClimbedDate)) %>
              </td>
              <td>
-                <%= Html.Encode(String.Format("{0:#}", item.NumberOfAscents))%>
+                <%= Html.Encode(String.Format("{0:#}", item.NumberOfAscents)) %>
              </td>
         </tr>
     
-    <% Next%>
+    <%  } %>
 
     </table>
 

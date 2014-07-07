@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" ValidateRequest="False" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCAppCS.ViewModels.WalkSearchViewModel)" %>
+﻿<%@ Page Title="" Language="C#" ValidateRequest="False" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyMVCAppCS.ViewModels.WalkSearchViewModel>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Search walking database

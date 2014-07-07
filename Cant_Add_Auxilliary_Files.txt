@@ -1,0 +1,27 @@
+Adding files in add walk
+------------------------
+
+What Happens
+============
+The "Additional files" area does not allow you to choose a file which is present in the local filesystem, inside the web root.
+
+When "Choose file" is clicked:
+1) the jQuery .change handler is fired.
+2) AJAX method /Walks/CheckFileInWebrootJSON is called, supplying the path to the file in the imagepath parameter
+3) However, the supplied path is tampered with by Chrome - the real path is substituted with "fakepath".
+4) Because "fakepath" is outside the web root, the file is not added.
+
+Problem
+=======
+Security settings in chrome and ie now mean that the use of the file html input type is no longer useful.
+http://stackoverflow.com/questions/4851595/how-to-resolve-the-c-fakepath
+
+The following string is sent as the AJAX request:#
+http://localhost:4845/Walks/CheckFileInWebrootJSON?imagepath=C%3A%5Cfakepath%5Cpuig_caragoler_title.jpg
+
+
+Solution
+========
+Use the method of attaching files which is used by adding images.
+
+Create a "Check image" JSON method.

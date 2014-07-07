@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" Inherits="System.Web.Mvc.ViewMasterPage" %>
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
 <%--The line below is a workaround for a VB / ASPX designer bug--%>
 <%= ""%>
 
@@ -15,23 +15,23 @@
 
         <div id="header">
             <div id="title">
-                <h1><% If SessionSingleton.Current.UsageLocation = "At Home" Then%><%= Html.ActionLink("Brian's Walking Site", "Index", "Walks")%>
-                    <% Else%> <%= Html.ActionLink("MVC4", "Index", "Walks")%>
-                    <% End If %>
+                <h1><% if (SessionSingleton.Current.UsageLocation.Equals("At Home")) { %><%= Html.ActionLink("Brian's Walking Site", "Index", "Walks")%>
+                    <% } else {%> <%= Html.ActionLink("MVC4", "Index", "Walks")%>
+                    <% } %>
                 </h1>
             </div>
             
             <div id="menucontainer">
                 <ul id="menu">    
                     <li><%= Html.ActionLink("Progress", "Index", "Progress")%></li>     
-                    <li><%= Html.ActionLink("Ascents", "Index", "HillAscent", New With {.OrderBy = "DateDesc"}, New With {.dummy = 0})%></li>                    
+                    <li><%= Html.ActionLink("Ascents", "Index", "HillAscent", new {OrderBy = "DateDesc"}, new {dummy = 0})%></li>                    
                     <li><%= Html.ActionLink("Markers", "Index", "Marker")%></li>                    
                     <li><%= Html.ActionLink("Hill Classes", "HillClasses", "Walks")%></li>
                     <li><%= Html.ActionLink("Hill Areas", "Index", "Walks")%></li>
-                    <li><%= Html.ActionLink("Wainwrights", "HillsInClassification", "Walks", New With {.id = "W"}, New With {.dummy = 0})%></li>
-                    <li><%= Html.ActionLink("Outlying", "HillsInClassification", "Walks", New With {.id = "WO"}, New With {.dummy = 0})%> </li> 
-                    <li><%= Html.ActionLink("Birketts", "HillsInClassification", "Walks", New With {.id = "B"}, New With {.dummy = 0})%></li>
-                    <li><%= Html.ActionLink("Walks", "WalksByDate", "Walks", New With {.OrderBy = "DateDesc"}, New With {.dummy = 0})%></li>
+                    <li><%= Html.ActionLink("Wainwrights", "HillsInClassification", "Walks", new {id = "W"}, new {dummy = 0})%></li>
+                    <li><%= Html.ActionLink("Outlying", "HillsInClassification", "Walks", new {id = "WO"}, new {dummy = 0})%> </li> 
+                    <li><%= Html.ActionLink("Birketts", "HillsInClassification", "Walks", new {id = "B"}, new {dummy = 0})%></li>
+                    <li><%= Html.ActionLink("Walks", "WalksByDate", "Walks", new {OrderBy = "DateDesc"}, new {dummy = 0})%></li>
                     <li><%= Html.ActionLink("Add Walk", "Create", "Walks")%></li> 
                     <li><%= Html.ActionLink("Search", "Index", "Search")%></li>
                 </ul>
@@ -44,14 +44,14 @@
         
         <div id="footer">
              <%= Html.ActionLink("Progress", "Index", "Progress")%> | 
-             <%= Html.ActionLink("Ascents", "Index", "HillAscent", New With {.OrderBy = "DateAsc"}, New With {.dummy = 0})%> |
+             <%= Html.ActionLink("Ascents", "Index", "HillAscent", new {OrderBy = "DateAsc"}, new {dummy = 0})%> |
              <%=Html.ActionLink("Walking Areas", "Index", "Walks")%> |
-             <%= Html.ActionLink("Walks", "WalksByDate", "Walks", New With {.OrderBy = "DateAsc"}, New With {.dummy = 0})%> |
+             <%= Html.ActionLink("Walks", "WalksByDate", "Walks", new {OrderBy = "DateAsc"}, new {dummy = 0})%> |
              <%=Html.ActionLink("Hill Classifications", "HillClasses", "Walks")%> |
-             <%= Html.ActionLink("Wainwrights", "HillsInClassification", "Walks", New With {.id = "W"}, New With {.dummy = 0})%> |
-             <%= Html.ActionLink("Birketts", "HillsInClassification", "Walks", New With {.id = "B"}, New With {.dummy = 0})%> |
-             <%= Html.ActionLink("Wainwright Outlying", "HillsInClassification", "Walks", New With {.id = "WO"}, New With {.dummy = 0})%> | 
-             <%= Html.ActionLink("All Hills", "HillsInClassification", "Walks", New With {.id = Nothing}, New With {.dummy = 0})%> | 
+             <%= Html.ActionLink("Wainwrights", "HillsInClassification", "Walks", new {id = "W"}, new {dummy = 0})%> |
+             <%= Html.ActionLink("Birketts", "HillsInClassification", "Walks", new {id = "B"}, new {dummy = 0})%> |
+             <%= Html.ActionLink("Wainwright Outlying", "HillsInClassification", "Walks", new {id = "WO"}, new {dummy = 0})%> | 
+             <%= Html.ActionLink("All Hills", "HillsInClassification", "Walks", new {id = String.Empty}, new {dummy = 0})%> | 
              <%= Html.ActionLink("Markers","Index","Marker") %> |
              <%= Html.ActionLink("Search", "Index", "Search")%> |
              <%= Html.ActionLink("Config", "Index", "Config")%>

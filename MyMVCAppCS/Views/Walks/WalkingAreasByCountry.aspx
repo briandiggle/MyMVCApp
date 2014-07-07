@@ -1,12 +1,13 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of IEnumerable (Of MyMVCApp.DAL.Area))" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<MyMVCApp.DAL.Area>>" %>
+<%@ Import Namespace="MyMVCApp.DAL" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Walking Areas in <%= ViewData("CountryName")%>
+	Walking Areas in <%= ViewData["CountryName"]%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h2><% If ViewData("AreaTypeName") <> "" Then Response.Write(ViewData("AreaTypeName"))%> Walking Areas In <%= ViewData("CountryName")%></h2>
+    <h2><% if (ViewData["AreaTypeName"] != String.Empty) { Response.Write(ViewData["AreaTypeName"])%> Walking Areas In <%= ViewData["CountryName"]%></h2>
     
     <table>
         <tr>
@@ -21,21 +22,22 @@
    
         </tr>
 
-    <% For Each item In Model%>
+    <% foreach (Area hillArea in Model)
+        {%>
     
         <tr>
            <td>
-                <%= Html.Encode(item.arearef) %>
+                <%= Html.Encode(hillArea.Arearef) %>
             </td>        
             <td>
-                <%=Html.ActionLink(item.Areaname, "HillsByArea", New With {.id = item.Arearef.Trim})%>
+                <%=Html.ActionLink(hillArea.Areaname, "HillsByArea", new {id = hillArea.Arearef.Trim()})%>
             </td>
             <td>
-                <%= Html.Encode(item.AreaType) %>
+                <%= Html.Encode(hillArea.AreaType) %>
             </td>
         </tr>
     
-    <% Next%>
+    <% } %>
 
     </table>
 

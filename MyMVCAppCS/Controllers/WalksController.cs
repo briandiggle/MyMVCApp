@@ -157,7 +157,7 @@ namespace MyMVCAppCS.Controllers
 
             var oHillAscents = this.repository.GetHillAscents(id).OrderBy(hill => hill.AscentDate);
 
-            ViewData["HillAscents"] = oHillAscents.AsEnumerable();
+            ViewData["HillAscents"] = oHillAscents.AsEnumerable().ToList();
             return this.View(oHillDetails);
 
         }

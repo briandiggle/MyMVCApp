@@ -37,7 +37,7 @@ namespace MyMVCAppCS
             routes.MapRoute(
                      "Default",
                      "{controller}/{action}/{id}",
-                     new { controller = "Walks", action = "Index" });
+                     new { controller = "Walks", action = "Index", id= UrlParameter.Optional });
 
         }
 

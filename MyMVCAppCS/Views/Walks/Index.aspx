@@ -37,7 +37,7 @@
     <p><%= Html.ActionLink("Southern Uplands", "WalkingAreasByCountry", new {strCountryCode = "SC", strAreaType = "D"})%></p>
 
     <h3><em>All Hills</em></h3>
-    <p><%= Html.ActionLink("All Hills", "HillsInClassification", "Walks", new {id = null}, new {dummy = 0})%></p>
+    <p><%= Html.ActionLink("All Hills", "HillsInClassification", "Walks", new {id = string.Empty}, new {dummy = 0})%></p>
 
 </td>
 <td class="aligntop">

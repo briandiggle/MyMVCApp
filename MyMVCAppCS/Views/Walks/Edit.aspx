@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCApp.DAL.Walk)" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyMVCApp.DAL.Walk>" %>
 <%@ Import Namespace="MyMVCApp.Model" %>
+<%@ Import Namespace="MyMVCApp.DAL" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Edit <%= Model.WalkTitle%>
@@ -15,68 +16,74 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <script type="text/javascript" src="../../Scripts/CreateEditWalk.js"></script>
  
-    <h2>Edit <em><%=Model.WalkTitle()%></em></h2>
+    <h2>Edit <em><%=Model.WalkTitle%></em></h2>
 
     <%-- The following line works around an ASP.NET compiler warning --%>
     <%: ""%>
-    <% Using Html.BeginForm("Edit", "Walks", FormMethod.Post, New With {.id = "walkform", .name = "walkform"})%>
-        <%: Html.ValidationSummary(True) %>
+    <% using (Html.BeginForm("Edit", "Walks", FormMethod.Post, new { id = "walkform", name = "walkform" }))
+       { %>
+        <%: Html.ValidationSummary(true) %>
         <fieldset>
             
             <div class="editor-label">
-              <%: Html.LabelFor(Function(walk) walk.WalkDate)%>
+              <%: Html.LabelFor(walk => walk.WalkDate) %>
             </div>
             <div class="editor-field">
-               <%: Html.TextBoxFor(Function(walk) walk.WalkDate, "{0:dd MMMM yyyy}", New With {.size = 40})%>                
+               <%: Html.TextBoxFor(walk => walk.WalkDate, "{0:dd MMMM yyyy}", new { size = 40 }) %>                
             </div>
             &nbsp;
           <div class="editor-label">
-                  <%: Html.LabelFor(Function(walk) walk.WalkTitle)%>
+                  <%: Html.LabelFor(walk => walk.WalkTitle) %>
            </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkTitle, New With {.size = 80})%>
+                <%: Html.TextBoxFor(walk => walk.WalkTitle, new { size = 80 }) %>
             </div>&nbsp;
 <!---Section: Walk Area-------------------------------------------------------------------------------->
           <div class="editor-label">
-                    <%: Html.LabelFor(Function(walk) walk.WalkAreaName)%>
+                    <%: Html.LabelFor(walk => walk.WalkAreaName) %>
 
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkAreaName, New With {.size = 80})%> <%: Html.Hidden("WalkAreaID", Model.Area.Arearef)%>
+                <%: Html.TextBoxFor(walk => walk.WalkAreaName, new { size = 80 }) %> <%: Html.Hidden("WalkAreaID", Model.Area.Arearef) %>
              </div>&nbsp;                  
            <div class="editor-label">
-                   <%: Html.LabelFor(Function(walk) walk.WalkSummary)%>
+                   <%: Html.LabelFor(walk => walk.WalkSummary) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkSummary, New With {.size = 80})%> Auto: <input type="checkbox" name="summary_auto" id="summary_auto" checked />
+                <%: Html.TextBoxFor(walk => walk.WalkSummary, new { size = 80 }) %> Auto: <input type="checkbox" name="summary_auto" id="summary_auto" checked />
             </div>&nbsp;      
           <div class="editor-label">
-                   <%: Html.LabelFor(Function(walk) walk.WalkConditions)%>
+                   <%: Html.LabelFor(walk => walk.WalkConditions) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkConditions, New With {.size = 80})%>
+                <%: Html.TextBoxFor(walk => walk.WalkConditions, new { size = 80 }) %>
             </div>&nbsp;   
              
 <!--Section: Summits Visited----------------------------------------------------------------------------------------->
 
            <div class="editor-label">
-                <strong><%: Html.Label("Summits Visited")%></strong>
+                <strong><%: Html.Label("Summits Visited") %></strong>
             </div>     
-            <% For iHillAscentsCounter = 1 To Model.HillAscents.Count%>
-             <div class="editor-field" id="DivVisitedSummit<%= iHillAscentsCounter.ToString%>">
-                <%: Html.TextBox("VisitedSummit" + iHillAscentsCounter.ToString, MyMVCApp.DAL.WalkingStick.FormatHillSummaryAsLine(Model.HillAscents(iHillAscentsCounter - 1).Hill) + " ", New With {.size = 80})%> <%: Html.Hidden("VisitedSummit" + iHillAscentsCounter.ToString + "HillID", Model.HillAscents(iHillAscentsCounter - 1).Hillnumber.ToString)%>
+            <% for (int iHillAscentsCounter = 1; iHillAscentsCounter <= Model.HillAscents.Count; iHillAscentsCounter++)
+               { %>
+             <div class="editor-field" id="DivVisitedSummit<%= iHillAscentsCounter.ToString() %>">
+                <%: Html.TextBox("VisitedSummit" + iHillAscentsCounter, WalkingStick.FormatHillSummaryAsLine(Model.HillAscents[iHillAscentsCounter - 1].Hill) + " ", new { size = 80 }) %> 
+                <%: Html.Hidden("VisitedSummit" + iHillAscentsCounter + "HillID", Model.HillAscents[iHillAscentsCounter - 1].Hillnumber.ToString()) %>
             </div>
-            <% Next%>      
-             <% For iHillVisitedCounter As Integer = Model.HillAscents.Count + 1 To 15%>   
-            <div class="editor-field" id="DivVisitedSummit<%= iHillVisitedCounter.ToString %>">
-                <%: Html.TextBox("VisitedSummit" + iHillVisitedCounter.ToString, "", New With {.size = 80})%> <%: Html.Hidden("VisitedSummit" + iHillVisitedCounter.ToString + "HillID")%>
+            <% } %>      
+             <% for (int iHillVisitedCounter = Model.HillAscents.Count + 1; iHillVisitedCounter <= 15; iHillVisitedCounter++)
+                {
+             %>   
+            <div class="editor-field" id="DivVisitedSummit<%= iHillVisitedCounter.ToString() %>">
+                <%: Html.TextBox("VisitedSummit" + iHillVisitedCounter, "", new { size = 80 }) %> <%: Html.Hidden("VisitedSummit" + iHillVisitedCounter + "HillID") %>
             </div>
-            <% Next%>
+            <% } %>
 
 <!-- Section: Markers Created---------------------------------------------------------------------------------------------------->            
 
-            <%  Dim oWalkMarkersAlreadyCreated As List(Of MyMVCApp.DAL.Marker) = ViewData("WalkMarkersAlreadyCreated")
-                If oWalkMarkersAlreadyCreated.Count > 0 Then %>&nbsp;
+            <% List<Marker> oWalkMarkersAlreadyCreated = (List<Marker>)ViewData["WalkMarkersAlreadyCreated"];
+               if (oWalkMarkersAlreadyCreated.Count > 0)
+               { %>&nbsp;
             <div class="editor-label"><strong>Markers created for this walk</strong></div>    
             <div class="editor-field">
             <table>
@@ -85,17 +92,19 @@
                 <th>GPS Reference</th>
                 <th>Description</th>
             </tr>
-            <% For Each oWalkMarker As MyMVCApp.DAL.Marker In oWalkMarkersAlreadyCreated%>
+            <% foreach (Marker oWalkMarker in oWalkMarkersAlreadyCreated)
+               {
+            %>
             <tr>
-                <td><%= oWalkMarker.MarkerTitle%></td>
-                <td><%= oWalkMarker.GPS_Reference%></td>
-                <td><%= oWalkMarker.Location_Description.Replace(ControlChars.Lf, "<br />")%></td>
+                <td><%= oWalkMarker.MarkerTitle %></td>
+                <td><%= oWalkMarker.GPS_Reference %></td>
+                <td><%= oWalkMarker.Location_Description.Replace(Environment.NewLine, "<br />") %></td>
             </tr>
-            <% Next %>
+            <% } %>
             </table>
            
             </div>    
-           <%   End If  %>
+           <% } %>
             
 <!--- Section: Create New Marker ----------------------------------------------------------------------------------------->            
 
@@ -103,10 +112,10 @@
             <button id="CreateMarkerButton" type="button">Create New Marker</button><input type="hidden" id="markers_added" name="markers_added" value=""/>
           </div>  &nbsp;                                                      
             <div class="editor-label">
-                  <%: Html.LabelFor(Function(walk) walk.WalkDescription)%>
+                  <%:Html.LabelFor(walk => walk.WalkDescription)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextAreaFor(Function(walk) walk.WalkDescription, 8, 100, New With {.class = "formtextarea"})%>
+                <%: Html.TextAreaFor(walk => walk.WalkDescription, 8, 100, null) %>
             </div>&nbsp;
             
 <!--- Section: New Images ------------------------------------------------------------------------------------------------->
@@ -122,40 +131,47 @@
 <!--- Section: Existing Images --------------------------------------------------------------------------------------------->
            
             <div class="editor-field" id="walkimages">
-           <% 
-               Dim iExistingImageCount As Integer = 1
-               For Each oWalkImage In Model.Walk_AssociatedFiles.Where(Function(af) af.Walk_AssociatedFile_Type.Equals("Image"))
-                   
-                   If iExistingImageCount = 1 Then
-                       Response.Write("<strong>Existing Images</strong><br />")
-                   End If%>
+           <%
+               int iExistingImageCount = 1;
+               foreach (Walk_AssociatedFile oWalkImage in Model.Walk_AssociatedFiles.Where(af => af.Walk_AssociatedFile_Type.Equals("Image")))
+               {
+                   if (iExistingImageCount == 1)
+                   {
+                       Response.Write("<strong>Existing Images</strong><br />");
+                   } %>
 
-            <br/>Image <%= iExistingImageCount.ToString%> Delete? <input type="checkbox" id="deletexistingimage<%= iExistingImageCount.ToString %>" name="deletexistingimage<%= iExistingImageCount.ToString %>" /><br/>
-                <input type="text" name="existingimagecaption<%=iExistingImageCount.ToString %>" value="<%= oWalkImage.Walk_AssociatedFile_Caption %>" size="100" />              
-            <input type="hidden" name="existingimagename<%= iExistingImageCount.ToString %>" value="<%= oWalkImage.Walk_AssociatedFile_Name %>" />&nbsp;
+            <br/>Image <%= iExistingImageCount.ToString() %> Delete? <input type="checkbox" id="deletexistingimage<%= iExistingImageCount.ToString() %>" name="deletexistingimage<%= iExistingImageCount.ToString() %>" /><br/>
+            <input type="text" name="existingimagecaption<%= iExistingImageCount.ToString() %>" value="<%= oWalkImage.Walk_AssociatedFile_Caption %>" size="100" />              
+            <input type="hidden" name="existingimagename<%= iExistingImageCount.ToString() %>" value="<%= oWalkImage.Walk_AssociatedFile_Name %>" />&nbsp;
                 
             Marker? 
-            <% If Not IsNothing(oWalkImage.Walk_AssociatedFile_MarkerID) Then%>           
-            <input type="checkbox" id="existingimageismarker<%=iExistingImageCount.ToString %>" name="existingimageismarker<%=iExistingImageCount.ToString %>" checked class="imageismarker"/>
-            <% Else%>
-             <input type="checkbox" id="existingimageismarker<%=iExistingImageCount.ToString %>" name="existingimageismarker<%=iExistingImageCount.ToString %>"  class="imageismarker"/>
-            <% End If %>
-              <span id="existingimagemarkerdetails<%=iExistingImageCount.ToString %>" class="existingimagemarkerdetails">        
+            <% if (oWalkImage.Walk_AssociatedFile_MarkerID != null)
+               { %>           
+            <input type="checkbox" id="existingimageismarker<%= iExistingImageCount.ToString() %>" name="existingimageismarker<%= iExistingImageCount.ToString() %>" checked class="imageismarker"/>
+            <% }
+               else
+               { %>
+             <input type="checkbox" id="existingimageismarker<%= iExistingImageCount.ToString() %>" name="existingimageismarker<%= iExistingImageCount.ToString() %>"  class="imageismarker"/>
+            <% } %>
+              <span id="existingimagemarkerdetails<%= iExistingImageCount.ToString() %>" class="existingimagemarkerdetails">        
     
                <br/>Marker name: 
-               <input type="text" size="50" name="existingimagemarkername<%=iExistingImageCount.ToString %>" id="existingimagemarkername<%=iExistingImageCount.ToString %>" value="<%= MyMVCApp.DAL.WalkingStick.FormatMarkerAsLine(oWalkImage.Marker) %>" class="markersuggestions"/>
-                Not Found? <input type="checkbox" id="existingimagemarkernotfound<%=iExistingImageCount.ToString %>" name="existingimagemarkernotfound<%=iExistingImageCount.ToString %>" />
-           <input type="hidden" id="existingimagemarkerid<%=iExistingImageCount.ToString %>" name="existingimagemarkerid<%=iExistingImageCount.ToString %>" value="<%=oWalkImage.Walk_AssociatedFile_MarkerID.Tostring %>"/>
+               <input type="text" size="50" name="existingimagemarkername<%= iExistingImageCount.ToString() %>" id="existingimagemarkername<%= iExistingImageCount.ToString() %>" value="<%= WalkingStick.FormatMarkerAsLine(oWalkImage.Marker) %>" class="markersuggestions"/>
+                Not Found? <input type="checkbox" id="existingimagemarkernotfound<%= iExistingImageCount.ToString()%>" name="existingimagemarkernotfound<%= iExistingImageCount.ToString() %>" />
+           <input type="hidden" id="existingimagemarkerid<%= iExistingImageCount.ToString() %>" name="existingimagemarkerid<%= iExistingImageCount.ToString() %>" value="<%= oWalkImage.Walk_AssociatedFile_MarkerID.ToString() %>"/>
             </span>
-            <% If SessionSingleton.Current.UsageLocation = WalkingConstants.AT_WORK Then%>       
-                   &nbsp;<%= MyMVCApp.DAL.WalkingStick.ExtractFileNameFromPath(oWalkImage.Walk_AssociatedFile_Name)%><br />
-            <% Else %>
+            <% if (SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_WORK))
+               { %>       
+                   &nbsp;<%= MyMVCApp.DAL.WalkingStick.ExtractFileNameFromPath(oWalkImage.Walk_AssociatedFile_Name) %><br />
+            <% }
+               else
+               { %>
                    <br/><img src="<%= oWalkImage.Walk_AssociatedFile_Name %>" class="walkimage" alt="existing image"/>
-            <%  End If
-                iExistingImageCount = iExistingImageCount + 1
-            Next            
+            <% }
+               iExistingImageCount = iExistingImageCount + 1;
+               }
             %>
-            <input id="numexistingimages" type="hidden" name="numexistingimages" value="<%= iExistingImageCount-1 %>" />
+            <input id="numexistingimages" type="hidden" name="numexistingimages" value="<%=iExistingImageCount - 1%>" />
            </div>
            <br />
             
@@ -164,21 +180,18 @@
            <div class="editor-label">
              <strong>Edit Existing Additional Files</strong>
            </div>
-           <% Dim selectlist As IEnumerable(Of SelectListItem) = ViewData("Associated_File_Types")%>
+           <% List<SelectListItem> selectlist = (List<SelectListItem>)ViewData["Associated_File_Types"];
+              List<Walk_AssociatedFile> IQAuxilliaryFiles =(List<Walk_AssociatedFile>)ViewData["Auxilliary_Files"];
 
-           <% 
-               Dim IQAuxilliaryFiles As IEnumerable(Of MyMVCApp.DAL.Walk_AssociatedFile) = ViewData("Auxilliary_Files")
-
-               For iAuxCounter = 1 To IQAuxilliaryFiles.Count%>
-           <div class="editor-field" id="existing_auxilliary_filesdiv<%=iAuxCounter %>"> 
-               <%= IQAuxilliaryFiles(iAuxCounter - 1).Walk_AssociatedFile_Name%> ( <%: IQAuxilliaryFiles(iAuxCounter - 1).Walk_AssociatedFile_Type%> ) <em><%: IQAuxilliaryFiles(iAuxCounter-1).Walk_AssociatedFile_Caption %></em>
-               Delete? <input type="checkbox" name="delexisting_auxilliary_file<%=iAuxCounter %>" /> <input type="hidden" name="existingauxfilename<%= iAuxCounter.ToString %>" value="<%=IQAuxilliaryFiles(iAuxCounter - 1).Walk_AssociatedFile_Name  %>" />
-               <input type="hidden" name="existingauxfiletype<%= iAuxCounter.ToString %>" value="<%= IQAuxilliaryFiles(iAuxCounter - 1).Walk_AssociatedFile_Type %>" />
+              for (int iAuxCounter = 1; iAuxCounter <= IQAuxilliaryFiles.Count; iAuxCounter++)
+              { %>
+           <div class="editor-field" id="existing_auxilliary_filesdiv<%= iAuxCounter %>"> 
+               <%= IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Name %> ( <%: IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Type %> ) <em><%: IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Caption %></em>
+               Delete? <input type="checkbox" name="delexisting_auxilliary_file<%= iAuxCounter %>" /> <input type="hidden" name="existingauxfilename<%= iAuxCounter.ToString() %>" value="<%= IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Name %>" />
+               <input type="hidden" name="existingauxfiletype<%= iAuxCounter.ToString() %>" value="<%= IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Type %>" />
            </div>
-           <% 
-                          
-           Next
-      
+           <%
+              }
            %>
             
 <!---- Add new additional files------------------------------------------------------------------------------------------>            
@@ -188,73 +201,76 @@
                <br />Full path and name prefix of additional file E.g. <pre>C:\Dev\MyMVCApp\MyMVCAppCS\Content\images\dalespennines\70\dd_map.jpg</pre>
            </div>
 
-           <% For iAuxCounter = 1 To 6%>
+           <% for (int iAuxCounter = 1; iAuxCounter <= 6; iAuxCounter++)
+              {
+           %>
             
-           <div class="editor-field" id="auxilliary_filesdiv<%=iAuxCounter %>">
-               <strong><%: iAuxCounter%></strong>  
-                <input type="text" id="auxilliary_file<%=iAuxCounter %>" name="auxilliary_file<%=iAuxCounter %>" size="80"/> 
-               <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString, selectlist)%>
-                <input type="text" id="auxilliary_caption<%=iAuxCounter %>" name="auxilliary_caption<%=iAuxCounter%>" size="40" /><br />
+           <div class="editor-field" id="auxilliary_filesdiv<%= iAuxCounter %>">
+               <strong><%: iAuxCounter %></strong>  
+                <input type="text" id="auxilliary_file<%= iAuxCounter %>" name="auxilliary_file<%= iAuxCounter %>" size="80"/> 
+               <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString(), selectlist) %>
+                <input type="text" id="auxilliary_caption<%= iAuxCounter %>" name="auxilliary_caption<%= iAuxCounter %>" size="40" /><br />
            </div>
-           <% Next%>
+           <% } %>
            &nbsp;
             
 <!--- Section: Other walk statistics--------------------------------------------------------------------------------->
 
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.WalkStartPoint)%>
+                <%:Html.LabelFor(walk => walk.WalkStartPoint)%>
              </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkStartPoint, New With {.size = 80, .maxlength = 100})%>
+                <%: Html.TextBoxFor(walk => walk.WalkStartPoint, new { size = 80, maxlength = 100 }) %>
             </div>&nbsp;
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.WalkEndPoint)%>
+                <%: Html.LabelFor(walk => walk.WalkEndPoint) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkEndPoint, New With {.size = 80, .maxlength = 100})%>
+                <%: Html.TextBoxFor(walk => walk.WalkEndPoint, new { size = 80, maxlength = 100 }) %>
             </div>  &nbsp;       
            <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.WalkCompanions)%>
+                <%: Html.LabelFor(walk => walk.WalkCompanions) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkCompanions, New With {.size = 50, .maxlength = 50})%>
+                <%: Html.TextBoxFor(walk => walk.WalkCompanions, new { size = 50, maxlength = 50 }) %>
             </div>  &nbsp;             
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.WalkType)%>
+                <%: Html.LabelFor(walk => walk.WalkType) %>
             </div>
             <div class="editor-field">
-                <%= Html.DropDownList("WalkTypes")%>
+                <%= Html.DropDownList("WalkTypes") %>
             </div>&nbsp;
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.CartographicLength)%>
+                <%: Html.LabelFor(walk => walk.CartographicLength) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.CartographicLength)%>
+                <%: Html.TextBoxFor(walk => walk.CartographicLength) %>
             </div>&nbsp;
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.MetresOfAscent)%>
+                <%: Html.LabelFor(walk => walk.MetresOfAscent) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.MetresOfAscent)%>
+                <%: Html.TextBoxFor(walk => walk.MetresOfAscent) %>
             </div>&nbsp;
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.WalkTotalTime)%>
+                <%: Html.LabelFor(walk => walk.WalkTotalTime) %>
             </div>
             <div class="editor-field">
-                Hours: <input type="text" name="total_time_hours" size="3" maxlength="3" value="<%= (model.WalkTotalTime \ 60).ToString %>" id="total_time_hours"/> Mins:<input type="text" name="total_time_mins" size="3" maxlength="2" value="<%= (Model.WalkTotalTime Mod 60).ToString %>" id="total_time_mins"/>
+                Hours: <input type="text" name="total_time_hours" size="3" maxlength="3" value="<%= (Model.WalkTotalTime/60).ToString() %>" id="total_time_hours"/> 
+                Mins:<input type="text" name="total_time_mins" size="3" maxlength="2" value="<%= Model.WalkTotalTime.ToString() %>" id="total_time_mins"/>
             </div>&nbsp;
             
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.WalkAverageSpeedKmh)%>
+                <%: Html.LabelFor(walk => walk.WalkAverageSpeedKmh) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkAverageSpeedKmh)%>
+                <%: Html.TextBoxFor(walk => walk.WalkAverageSpeedKmh) %>
             </div>&nbsp;
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.MovingAverageKmh)%>
+                <%: Html.LabelFor(walk => walk.MovingAverageKmh) %>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.MovingAverageKmh)%>
+                <%: Html.TextBoxFor(walk => walk.MovingAverageKmh) %>
             </div>
            <div id="walksubmit">
            <br />
@@ -263,7 +279,7 @@
         </fieldset>
 
  
-    <% End Using %>
+    <% } %>
 
      <div id="MarkerModalDialogForm" title="Create New Marker">
         <p class="validateMarkerFormTips">*Required fields</p>
@@ -280,7 +296,7 @@
                 <textarea rows="4" cols="60" name="MarkerDescription" id="MarkerDescription" class="text-box ui-widget-content ui-corner-all"></textarea><br />
                 <label for="MarkerDateLeft">Date Left</label>*<br />
                 <input type="text" name="MarkerDateLeft" id="MarkerDateLeft" class="text-box ui-widget-content ui-corner-all" />
-                <input type="hidden" name="NewMarkerWalkID" id="NewMarkerWalkID" value="<%= model.WalkID %>"/>
+                <input type="hidden" name="NewMarkerWalkID" id="NewMarkerWalkID" value="<%= Model.WalkID %>"/>
              </fieldset>
         </form>  
  

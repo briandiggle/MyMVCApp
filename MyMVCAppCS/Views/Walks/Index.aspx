@@ -57,6 +57,8 @@
 </td>
 </tr>
 <tr><td colspan="4">MVC Version: <%= ViewData["MVCVersion"]%></td></tr>
+<tr><td colspan="4">UsageLocation: <%= SessionSingleton.Current.UsageLocation%></td></tr>
+
 </table>
 
 

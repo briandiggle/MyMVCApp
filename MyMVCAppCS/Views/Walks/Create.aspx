@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCApp.DAL.Walk)" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyMVCApp.DAL.Walk>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Add New Walk
@@ -19,55 +19,58 @@
     <%-- The following line works around an ASP.NET compiler warning --%>
     <%: ""%>
 
-    <% Using Html.BeginForm("Create", "Walks", FormMethod.Post, New With {.id = "walkform", .name = "walkform"})%>
-        <%: Html.ValidationSummary(True) %>
+    <% using (Html.BeginForm("Create", "Walks", FormMethod.Post, new {id = "walkform", name = "walkform"}))
+       {%>
+        <%: Html.ValidationSummary(true) %>
         <fieldset>
             
             <div class="editor-label">
-                 <%: Html.LabelFor(Function(walk) walk.WalkDate)%>
+                 <%: Html.LabelFor(walk => walk.WalkDate)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkDate, New With {.size = 40})%>
+                <%: Html.TextBoxFor(walk => walk.WalkDate, new {size = 40})%>
             </div>&nbsp;
 
           <div class="editor-label">
-                 <%: Html.LabelFor(Function(walk) walk.WalkTitle)%>
+                 <%: Html.LabelFor(walk => walk.WalkTitle)%>
            </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkTitle, New With {.size = 80})%>
+                <%: Html.TextBoxFor(walk => walk.WalkTitle, new {size = 80})%>
             </div>&nbsp;
 
 <!--- Section: Walk Area with jQuery Autocomplete ----------------------------------------------------------------------------->
 
           <div class="editor-label">
-                  <%: Html.LabelFor(Function(walk) walk.WalkAreaName)%>
+                  <%: Html.LabelFor(walk => walk.WalkAreaName)%>
            </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkAreaName, New With {.size = 80})%> <%: Html.Hidden("WalkAreaID")%>
+                <%: Html.TextBoxFor(walk => walk.WalkAreaName, new {size = 80})%> <%: Html.Hidden("WalkAreaID")%>
              </div>&nbsp;                      
            <div class="editor-label">
-                  <%: Html.LabelFor(Function(walk) walk.WalkSummary)%>
+                  <%: Html.LabelFor(walk => walk.WalkSummary)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkSummary, New With {.size = 80, .maxlength = 1000})%> Auto: <input type="checkbox" name="summary_auto" id="summary_auto" checked="checked" />
+                <%: Html.TextBoxFor(walk => walk.WalkSummary, new {size = 80, maxlength = 1000})%> Auto: <input type="checkbox" name="summary_auto" id="summary_auto" checked="checked" />
             </div>&nbsp;    
             <div class="editor-label">
-                  <%: Html.LabelFor(Function(walk) walk.WalkConditions)%>
+                  <%: Html.LabelFor(walk => walk.WalkConditions)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkConditions, New With {.size = 80})%>
+                <%: Html.TextBoxFor(walk => walk.WalkConditions, new {size = 80})%>
             </div>&nbsp;
              
 <!-- Section: Summits Visited --------------------------------------------------------------------------------------------------->            
 
            <div class="editor-label">
-                  <%: Html.LabelFor(Function(walk) walk.HillAscents)%>
+                  <%: Html.LabelFor(walk => walk.HillAscents)%>
             </div>        
-            <% For iHillVisitedCounter As Integer = 1 To 15%>   
-           <div class="editor-field" id="DivVisitedSummit<%= iHillVisitedCounter.ToString %>">
-                <%: Html.TextBox("VisitedSummit" + iHillVisitedCounter.ToString, "", New With {.size = 80})%> <%: Html.Hidden("VisitedSummit" + iHillVisitedCounter.ToString + "HillID")%>
+            <% for (int iHillVisitedCounter = 1; iHillVisitedCounter <= 15; iHillVisitedCounter++)
+            { 
+                   %>   
+           <div class="editor-field" id="DivVisitedSummit<%= iHillVisitedCounter.ToString() %>">
+                <%: Html.TextBox("VisitedSummit" + iHillVisitedCounter.ToString(), "", new {size = 80})%> <%: Html.Hidden("VisitedSummit" + iHillVisitedCounter + "HillID")%>
             </div>
-            <% Next%>
+            <% }%>
             &nbsp;
             
 <!-- Section: Add New Marker ---------------------------------------------------------------------------------------------------->
@@ -76,10 +79,10 @@
             <button id="CreateMarkerButton" type="button">Create New Marker</button><input type="hidden" id="markers_added" name="markers_added" value=""/>
           </div>&nbsp;                                                   
             <div class="editor-label">
-                  <%: Html.LabelFor(Function(walk) walk.WalkDescription)%>
+                  <%: Html.LabelFor(walk => walk.WalkDescription)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextAreaFor(Function(walk) walk.WalkDescription, 8, 100, New With {.class = "formtextarea"})%>
+                <%: Html.TextAreaFor(walk => walk.WalkDescription, 8, 100, new {@class = "formtextarea"})%>
             </div>&nbsp;
 
 <!-- Section: Add Walk Images---------------------------------------------------------------------->
@@ -101,78 +104,79 @@
                <br />Full path and name prefix of additional file E.g. <pre>C:\Dev\MyMVCApp\MyMVCAppCS\Content\images\lakes\1\ScafellPike _23_March_2014.gpx</pre>
            </div>
                          
-           <% Dim selectlist As IEnumerable(Of SelectListItem) = ViewData("Associated_File_Types")%>
-           <% For iAuxCounter = 1 To 6%>
-           <div class="editor-field" id="auxilliary_filesdiv<%=iAuxCounter %>"> 
-                <strong><%: iAuxCounter%></strong> 
-                <input type="text" id="auxilliary_file<%=iAuxCounter %>" name="auxilliary_file<%=iAuxCounter %>" size="80" class="auxilliaryfileclass" /> 
-                <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString, selectlist)%>
-                Caption: <input type="text" id="auxilliary_caption<%=iAuxCounter %>" name="auxilliary_caption<%=iAuxCounter%>" size="40" /><br />
+           <% List<SelectListItem> selectlist = (List<SelectListItem>)ViewData["Associated_File_Types"]%>
+           <% for (int iAuxCounter = 1; iAuxCounter <= 6; iAuxCounter++)
+              { %>
+           <div class="editor-field" id="auxilliary_filesdiv<%= iAuxCounter %>"> 
+                <strong><%: iAuxCounter %></strong> 
+                <input type="text" id="auxilliary_file<%= iAuxCounter %>" name="auxilliary_file<%= iAuxCounter %>" size="80" class="auxilliaryfileclass" /> 
+                <%: Html.DropDownList("auxilliary_filetype" + iAuxCounter, selectlist) %>
+                Caption: <input type="text" id="auxilliary_caption<%= iAuxCounter %>" name="auxilliary_caption<%= iAuxCounter %>" size="40" /><br />
            </div>
-           <% Next%>
+           <% }  %>
 
 <!-- Section: Walk Type------------------------------------------------------------------------------>
 
            &nbsp;
             <div class="editor-label">
-                 <%: Html.LabelFor(Function(walk) walk.WalkType)%>
+                 <%: Html.LabelFor(walk => walk.WalkType)%>
             </div>
             <div class="editor-field">
                 <%= Html.DropDownList("WalkTypes")%>
             </div>&nbsp;
 
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.WalkStartPoint)%>
+                <%: Html.LabelFor(walk => walk.WalkStartPoint)%>
              </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkStartPoint, New With {.size = 80, .maxlength = 100})%>
+                <%: Html.TextBoxFor(walk => walk.WalkStartPoint, new {size = 80, maxlength = 100})%>
             </div>&nbsp;
             <div class="editor-label">
-                   <%: Html.LabelFor(Function(walk) walk.WalkEndPoint)%>
+                   <%: Html.LabelFor(walk => walk.WalkEndPoint)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkEndPoint, New With {.size = 80, .maxlength = 100})%>
+                <%: Html.TextBoxFor(walk => walk.WalkEndPoint, new {size = 80, maxlength = 100})%>
             </div>&nbsp;     
            <div class="editor-label">
-                  <%: Html.LabelFor(Function(walk) walk.WalkCompanions)%>
+                  <%: Html.LabelFor(walk => walk.WalkCompanions)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkCompanions, New With {.size = 50, .maxlength = 50})%>
+                <%: Html.TextBoxFor(walk => walk.WalkCompanions, new {size = 50, maxlength = 50})%>
             </div>&nbsp;          
             
             <div class="editor-label">
-                 <%: Html.LabelFor(Function(walk) walk.CartographicLength)%>
+                 <%: Html.LabelFor(walk => walk.CartographicLength)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.CartographicLength)%>
+                <%: Html.TextBoxFor(walk => walk.CartographicLength)%>
             </div>&nbsp;
             
             <div class="editor-label">
-                 <%: Html.LabelFor(Function(walk) walk.MetresOfAscent)%>
+                 <%: Html.LabelFor(walk => walk.MetresOfAscent)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.MetresOfAscent)%>
+                <%: Html.TextBoxFor(walk => walk.MetresOfAscent)%>
             </div>&nbsp;
                       
             <div class="editor-label">
-                 <%: Html.LabelFor(Function(walk) walk.WalkTotalTime)%>
+                 <%: Html.LabelFor(walk => walk.WalkTotalTime)%>
             </div>
             <div class="editor-field">
                 Hours: <input type="text" name="total_time_hours" size="3" maxlength="3" id="total_time_hours"/> Mins:<input type="text" name="total_time_mins" size="3" maxlength="2" id="total_time_mins"/>
             </div>&nbsp;
             
             <div class="editor-label">
-                <%: Html.LabelFor(Function(walk) walk.WalkAverageSpeedKmh)%>
+                <%: Html.LabelFor(walk => walk.WalkAverageSpeedKmh)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.WalkAverageSpeedKmh)%>
+                <%: Html.TextBoxFor(walk => walk.WalkAverageSpeedKmh)%>
             </div>&nbsp;
             
             <div class="editor-label">
-                 <%: Html.LabelFor(Function(walk) walk.MovingAverageKmh)%>
+                 <%: Html.LabelFor(walk => walk.MovingAverageKmh)%>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(Function(walk) walk.MovingAverageKmh)%>
+                <%: Html.TextBoxFor(walk => walk.MovingAverageKmh)%>
             </div>&nbsp;
             
            <div id="walksubmit">
@@ -182,7 +186,7 @@
         </fieldset>
 
  
-    <% End Using %>
+    <% } %>
     
   <!--Section: New Marker Pop-up Form------------------------------------------------------------> 
 

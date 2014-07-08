@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage(Of MyMVCAppCS.Models.PaginatedListMVC (Of MyMVCApp.DAL.Walk))" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyMVCAppCS.Models.PaginatedListMVC<MyMVCApp.DAL.Walk>>" %>
+<%@ Import Namespace="MyMVCApp.DAL" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Walks By Date
@@ -18,136 +19,165 @@
     <table class="datatable">
         <tr>
             <th></th>
-            <th><%  If ViewData("OrderBy") = "Date" Then
-                        Response.Write("<strong>")
-                        If ViewData("OrderAscDesc") = "Asc" Then
-                            Response.Write(Html.ActionLink("Date <Asc>", "WalksByDate", New With {.OrderBy = "DateDesc"}))
-                        Else
-                            Response.Write(Html.ActionLink("Date <Desc>", "WalksByDate", New With {.OrderBy = "DateAsc"}))
-                        End If
-                        Response.Write("</strong>")
-                    Else
-                        Response.Write(Html.ActionLink("Date", "WalksByDate", New With {.OrderBy = "DateDesc"}))
-                    End If
+            <th><%  if (ViewData["OrderBy"].Equals("Date"))
+                    {
+                        Response.Write("<strong>");
+                        if (ViewData["OrderAscDesc"].Equals("Asc"))
+                        {
+                            Response.Write(Html.ActionLink("Date <Asc>", "WalksByDate", new { OrderBy = "DateDesc" }));
+                        } else
+                        {
+                            Response.Write(Html.ActionLink("Date <Desc>", "WalksByDate", new { OrderBy = "DateAsc" }));
+                        }
+                        Response.Write("</strong>");
+                    } else
+                    {
+                        Response.Write(Html.ActionLink("Date", "WalksByDate", new { OrderBy = "DateDesc" }));
+                    }
                  %>
             </th>
             <th>
-               <%  If ViewData("OrderBy") = "Title" Then
-                       Response.Write("<strong>")
-                       If ViewData("OrderAscDesc") = "Asc" Then
-                           Response.Write(Html.ActionLink("Title <Asc>", "WalksByDate", New With {.OrderBy = "TitleDesc"}))
-                       Else
-                           Response.Write(Html.ActionLink("Title <Desc>", "WalksByDate", New With {.OrderBy = "TitleAsc"}))
-                       End If
-                       Response.Write("</strong>")
-                   Else
-                       Response.Write(Html.ActionLink("Title", "WalksByDate", New With {.OrderBy = "TitleAsc"}))
-                   End If
+               <%  if (ViewData["OrderBy"].Equals("Title"))
+                   {
+                       Response.Write("<strong>");
+                       if (ViewData["OrderAscDesc"].Equals("Asc"))
+                       {
+                           Response.Write(Html.ActionLink("Title <Asc>", "WalksByDate", new { OrderBy = "TitleDesc" }));
+                       } else
+                       {
+                           Response.Write(Html.ActionLink("Title <Desc>", "WalksByDate", new { OrderBy = "TitleAsc" }));
+                       }
+                       Response.Write("</strong>");
+                   } else
+                   {
+                       Response.Write(Html.ActionLink("Title", "WalksByDate", new { OrderBy = "TitleAsc" }));
+                   }
                  %>
             </th>
 
             <th>
-               <%  If ViewData("OrderBy") = "Area" Then
-                       Response.Write("<strong>")
-                       If ViewData("OrderAscDesc") = "Asc" Then
-                           Response.Write(Html.ActionLink("Area <Asc>", "WalksByDate", New With {.OrderBy = "AreaDesc"}))
-                       Else
-                           Response.Write(Html.ActionLink("Area <Desc>", "WalksByDate", New With {.OrderBy = "AreaAsc"}))
-                       End If
-                       Response.Write("</strong>")
-                   Else
-                       Response.Write(Html.ActionLink("Area", "WalksByDate", New With {.OrderBy = "AreaAsc"}))
-                   End If
+               <%  if (ViewData["OrderBy"].Equals("Area"))
+                   {
+                       Response.Write("<strong>");
+                       if (ViewData["OrderAscDesc"].Equals("Asc"))
+                       {
+                           Response.Write(Html.ActionLink("Area <Asc>", "WalksByDate", new { OrderBy = "AreaDesc" }));
+                       } else
+                       {
+                           Response.Write(Html.ActionLink("Area <Desc>", "WalksByDate", new { OrderBy = "AreaAsc" }));
+                       }
+                       Response.Write("</strong>");
+                   } else
+                   {
+                       Response.Write(Html.ActionLink("Area", "WalksByDate", new { OrderBy = "AreaAsc" }));
+                   }
                  %>
             </th>
             <th>
-                <%  If ViewData("OrderBy") = "Length" Then
-                        Response.Write("<strong>")
-                        If ViewData("OrderAscDesc") = "Asc" Then
-                            Response.Write(Html.ActionLink("Length <Asc>", "WalksByDate", New With {.OrderBy = "LengthDesc"}))
-                        Else
-                            Response.Write(Html.ActionLink("Length <Desc>", "WalksByDate", New With {.OrderBy = "LengthAsc"}))
-                        End If
-                        Response.Write("</strong>")
-                    Else
-                        Response.Write(Html.ActionLink("Length", "WalksByDate", New With {.OrderBy = "LengthDesc"}))
-                    End If
+                <%  if (ViewData["OrderBy"].Equals("Length"))
+                    {
+                        Response.Write("<strong>");
+                        if (ViewData["OrderAscDesc"].Equals("Asc"))
+                        {
+                            Response.Write(Html.ActionLink("Length <Asc>", "WalksByDate", new { OrderBy = "LengthDesc" }));
+                        } else
+                        {
+                            Response.Write(Html.ActionLink("Length <Desc>", "WalksByDate", new { OrderBy = "LengthAsc" }));
+                        }
+                        Response.Write("</strong>");
+                    } else
+                    {
+                        Response.Write(Html.ActionLink("Length", "WalksByDate", new { OrderBy = "LengthDesc" }));
+                    }
                  %>
             </th>
            <th>
-                <%  If ViewData("OrderBy") = "Ascent" Then
-                        Response.Write("<strong>")
-                        If ViewData("OrderAscDesc") = "Asc" Then
-                            Response.Write(Html.ActionLink("Ascent <Asc>", "WalksByDate", New With {.OrderBy = "AscentDesc"}))
-                        Else
-                            Response.Write(Html.ActionLink("Ascent <Desc>", "WalksByDate", New With {.OrderBy = "AscentAsc"}))
-                        End If
-                        Response.Write("</strong>")
-                    Else
-                        Response.Write(Html.ActionLink("Ascent", "WalksByDate", New With {.OrderBy = "AscentAsc"}))
-                    End If
+                <%  if (ViewData["OrderBy"].Equals("Ascent"))
+                    {
+                        Response.Write("<strong>");
+                        if (ViewData["OrderAscDesc"].Equals("Asc"))
+                        {
+                            Response.Write(Html.ActionLink("Ascent <Asc>", "WalksByDate", new { OrderBy = "AscentDesc" }));
+                        } else
+                        {
+                            Response.Write(Html.ActionLink("Ascent <Desc>", "WalksByDate", new { OrderBy = "AscentAsc" }));
+                        }
+                        Response.Write("</strong>");
+                    } else
+                    {
+                        Response.Write(Html.ActionLink("Ascent", "WalksByDate", new { OrderBy = "AscentAsc" }));
+                    }
                  %>
             </th>
            <th>
-                <%  If ViewData("OrderBy") = "TotalTime" Then
-                        Response.Write("<strong>")
-                        If ViewData("OrderAscDesc") = "Asc" Then
-                            Response.Write(Html.ActionLink("TotalTime <Asc>", "WalksByDate", New With {.OrderBy = "TotalTimeDesc"}))
-                        Else
-                            Response.Write(Html.ActionLink("TotalTime <Desc>", "WalksByDate", New With {.OrderBy = "TotalTimeAsc"}))
-                        End If
-                        Response.Write("</strong>")
-                    Else
-                        Response.Write(Html.ActionLink("TotalTime", "WalksByDate", New With {.OrderBy = "TotalTimeAsc"}))
-                    End If
+                <%  if (ViewData["OrderBy"].Equals("TotalTime"))
+                    {
+                        Response.Write("<strong>");
+                        if (ViewData["OrderAscDesc"].Equals("Asc"))
+                        {
+                            Response.Write(Html.ActionLink("TotalTime <Asc>", "WalksByDate", new { OrderBy = "TotalTimeDesc" }));
+                        } else
+                        {
+                            Response.Write(Html.ActionLink("TotalTime <Desc>", "WalksByDate", new { OrderBy = "TotalTimeAsc" }));
+                        }
+                        Response.Write("</strong>");
+                    } else
+                    {
+                        Response.Write(Html.ActionLink("TotalTime", "WalksByDate", new { OrderBy = "TotalTimeAsc" }));
+                    }
                  %>
             </th>
           <th>
-                <%  If ViewData("OrderBy") = "OvlAvg" Then
-                        Response.Write("<strong>")
-                        If ViewData("OrderAscDesc") = "Asc" Then
-                            Response.Write(Html.ActionLink("OvlAvg <Asc>", "WalksByDate", New With {.OrderBy = "OvlAvgDesc"}))
-                        Else
-                            Response.Write(Html.ActionLink("OvlAvg <Desc>", "WalksByDate", New With {.OrderBy = "OvlAvgAsc"}))
-                        End If
-                        Response.Write("</strong>")
-                    Else
-                        Response.Write(Html.ActionLink("OvlAvg", "WalksByDate", New With {.OrderBy = "OvlAvgAsc"}))
-                    End If
+                <%  if (ViewData["OrderBy"].Equals("OvlAvg"))
+                    {
+                        Response.Write("<strong>");
+                        if (ViewData["OrderAscDesc"].Equals("Asc"))
+                        {
+                            Response.Write(Html.ActionLink("OvlAvg <Asc>", "WalksByDate", new { OrderBy = "OvlAvgDesc" }));
+                        } else
+                        {
+                            Response.Write(Html.ActionLink("OvlAvg <Desc>", "WalksByDate", new { OrderBy = "OvlAvgAsc" }));
+                        }
+                        Response.Write("</strong>");
+                    } else
+                    {
+                        Response.Write(Html.ActionLink("OvlAvg", "WalksByDate", new { OrderBy = "OvlAvgAsc" }));
+                    }
                  %>
             </th>
         </tr>
 
-    <% For Each item In Model%>
-    
+    <% foreach (Walk item in Model)
+       {
+    %>
         <tr>
             <td>
-                <%: Html.ActionLink("Edit", "Edit", New With {.id = item.WalkID})%>
+                <%: Html.ActionLink("Edit", "Edit", new { id = item.WalkID }) %>
              </td>
             <td>
-                <%: String.Format("{0:D}", item.WalkDate)%>
+                <%: String.Format("{0:D}", item.WalkDate) %>
             </td>
             <td>
-                <%: Html.ActionLink(item.WalkTitle, "Details", New With {.id = item.WalkID})%>
+                <%: Html.ActionLink(item.WalkTitle, "Details", new { id = item.WalkID }) %>
             </td>
             <td>               
-            <%: Html.ActionLink(item.WalkAreaName, "HillsByArea", New With {.id = item.Area.Arearef.Trim})%>
+            <%: Html.ActionLink(item.WalkAreaName, "HillsByArea", new { id = item.Area.Arearef.Trim() }) %>
             </td>
             <td>
-                <%: item.CartographicLength%>
+                <%: item.CartographicLength %>
             </td>
           <td>
-                <%: item.MetresOfAscent%>
+                <%: item.MetresOfAscent %>
             </td>
          <td>
-                <%: MyMVCApp.DAL.WalkingStick.ConvertTotalTimeToString(item.WalkTotalTime, True)%>
+                <%: WalkingStick.ConvertTotalTimeToString(item.WalkTotalTime, true) %>
             </td>      
             <td>
-                <%: item.WalkAverageSpeedKmh%>
+                <%: item.WalkAverageSpeedKmh %>
             </td>                                 
         </tr>
     
-    <% Next%>
+    <% }  %>
        <tr>
             <td colspan="8"></td>
        </tr>

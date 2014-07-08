@@ -27,8 +27,6 @@ namespace MyMVCAppCS.Controllers
         // GET: /Walks/
         public ActionResult Index()
         {
-            SessionSingleton.Current.UsageLocation = "At Work";
-
             ViewData["MVCVersion"] = typeof(Controller).Assembly.CodeBase;
             return View();
         }
@@ -386,6 +384,11 @@ namespace MyMVCAppCS.Controllers
             return this.View(oWalk);
         }
 
+        // -------------------------------------------------------------------------------------
+        //  Function: Create  (GET)
+        //  URL     : /Walks/Create
+        //  Descr   : Create Walk form
+        // --------------------------------------------------------------------------------------
         public ActionResult Create()
         {
             Walk oWalk = new Walk();
@@ -393,7 +396,7 @@ namespace MyMVCAppCS.Controllers
             var oWalkTypes = this.repository.GetWalkTypes();
 
             ViewData["WalkTypes"] = new SelectList(oWalkTypes, "WalkTypeString", "WalkTypeString");
-            ViewData["Associated_File_Types"] = new SelectList(oAssociated_File_Types, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1");
+            ViewData["Associated_File_Types"] = new SelectList(oAssociated_File_Types, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1").ToList();
             ViewData["Model"] = oWalk;
 
             return this.View();

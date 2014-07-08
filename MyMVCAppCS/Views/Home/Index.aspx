@@ -7,6 +7,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: ViewData["Message"] %></h2>
     <p>
-        AtWork=<%: SessionSingleton.Current.UsageLocation %>
+        Usage Location=<%: SessionSingleton.Current.UsageLocation %>
     </p>
 </asp:Content>

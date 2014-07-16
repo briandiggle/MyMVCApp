@@ -36,10 +36,10 @@ namespace MyMVCAppCS.Controllers
             {
                 iqHillAscents = repository.GetAllHillAscents().OrderBy(ascent =>ascent.AscentDate).ThenBy(ascent =>ascent.AscentID);
                 ViewData["OrderAscDesc"] = "Asc";
+                ViewData["OrderBy"] = "Date";
             }
             else if ((OrderBy == "DateDesc")) {
                 iqHillAscents = repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.AscentDate).ThenByDescending(ascent =>ascent.AscentID);
-                ViewData["OrderBy"] = "Date";
                 ViewData["OrderBy"] = "Date";
                 ViewData["OrderAscDesc"] = "Desc";
             }
@@ -81,7 +81,7 @@ namespace MyMVCAppCS.Controllers
             }
             // ----Create a paginated list of the walks----------------
 
-            PaginatedListMVC<HillAscent> IQPaginatedAscents = new PaginatedListMVC<HillAscent>(iqHillAscents,page, HILLASCENTS_PAGE_SIZE, Url.Action("Index","HillAscent", new {OrderBy = ViewData["OrderBy"].ToString() + ViewData["OrderAscDesc"].ToString()}),MAX_PAGINATION_LINKS,"");
+            PaginatedListMVC<HillAscent> IQPaginatedAscents = new PaginatedListMVC<HillAscent>(iqHillAscents,page, HILLASCENTS_PAGE_SIZE, Url.Action("Index","HillAscent", new {OrderBy = ViewData["OrderBy"] + ViewData["OrderAscDesc"].ToString()}),MAX_PAGINATION_LINKS,"");
       
             return View(IQPaginatedAscents);
         }

@@ -237,8 +237,8 @@
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="TestAutocompleteDynamic.html" />
-    <Content Include="Views\Config\Index.aspx" />
-    <Content Include="Views\HillAscent\Index.aspx" />
+    <None Include="Views\Config\Index.cshtml" />
+    <None Include="Views\HillAscent\Index.cshtml" />
     <Content Include="Views\Marker\Details.aspx" />
     <Content Include="Views\Marker\Edit.aspx" />
     <Content Include="Views\Marker\Index.aspx" />
@@ -283,7 +283,7 @@
     <Content Include="Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <None Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Index.aspx" />
+    <None Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.aspx" />
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Web.config">

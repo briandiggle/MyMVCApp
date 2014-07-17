@@ -236,14 +236,13 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="TestAutocompleteDynamic.html" />
     <None Include="Views\Config\Index.cshtml" />
     <None Include="Views\HillAscent\Index.cshtml" />
     <Content Include="Views\Marker\Details.aspx" />
     <Content Include="Views\Marker\Edit.aspx" />
     <Content Include="Views\Marker\Index.aspx" />
     <Content Include="Views\Marker\Create.aspx" />
-    <Content Include="Views\Progress\Index.aspx" />
+    <None Include="Views\Progress\Index.cshtml" />
     <Content Include="Views\Search\AscentSearch.aspx" />
     <Content Include="Views\Search\HillSearch.aspx" />
     <Content Include="Views\Search\ImageSearch.aspx" />

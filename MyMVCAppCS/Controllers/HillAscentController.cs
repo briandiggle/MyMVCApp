@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
 
 namespace MyMVCAppCS.Controllers
 {
     using MyMVCApp.DAL;
-
     using MyMVCAppCS.Models;
 
     public class HillAscentController : Controller
     {
-        private IWalkingRepository repository;
+        private readonly IWalkingRepository repository;
 
         private const int HILLASCENTS_PAGE_SIZE = 50;
-
         private const int MAX_PAGINATION_LINKS = 10;
 
         public HillAscentController()
@@ -23,67 +18,70 @@ namespace MyMVCAppCS.Controllers
             this.repository = new SqlWalkingRepository();
         }
 
-        //
-        // GET: /HillAscent/
-
-        public ActionResult Index(string OrderBy, int page= 1) 
+        /// <summary>
+        /// Display a list of paginated list of hill ascents
+        /// </summary>
+        /// <param name="orderBy">Field to order by - Date/Hill/Metres/Walk</param>
+        /// <param name="page">Current page number in list</param>
+        /// <returns></returns>
+        public ActionResult Index(string orderBy, int page= 1) 
         {
             IQueryable<HillAscent> iqHillAscents;
 
             // ---Use the walking repository to get a list of all the hill ascents----
             // ---Set up the ordering of the hill ascents------
-            if ((OrderBy == "DateAsc")) 
+            switch (orderBy)
             {
-                iqHillAscents = repository.GetAllHillAscents().OrderBy(ascent =>ascent.AscentDate).ThenBy(ascent =>ascent.AscentID);
-                ViewData["OrderAscDesc"] = "Asc";
-                ViewData["OrderBy"] = "Date";
+                case "DateAsc":
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderBy(ascent =>ascent.AscentDate).ThenBy(ascent =>ascent.AscentID);
+                    this.ViewData["OrderAscDesc"] = "Asc";
+                    this.ViewData["OrderBy"] = "Date";
+                    break;
+                case "DateDesc":
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.AscentDate).ThenByDescending(ascent =>ascent.AscentID);
+                    this.ViewData["OrderBy"] = "Date";
+                    this.ViewData["OrderAscDesc"] = "Desc";
+                    break;
+                case "HillAsc":
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderBy(ascent =>ascent.Hill.Hillname);
+                    this.ViewData["OrderBy"] = "Hill";
+                    this.ViewData["OrderAscDesc"] = "Asc";
+                    break;
+                case "HillDesc":
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.Hill.Hillname);
+                    this.ViewData["OrderBy"] = "Hill";
+                    this.ViewData["OrderAscDesc"] = "Desc";
+                    break;
+                case "MetresAsc":
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderBy(ascent =>ascent.Hill.Metres);
+                    this.ViewData["OrderBy"] = "Metres";
+                    this.ViewData["OrderAscDesc"] = "Asc";
+                    break;
+                case "MetresDesc":
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.Hill.Metres);
+                    this.ViewData["OrderBy"] = "Metres";
+                    this.ViewData["OrderAscDesc"] = "Desc";
+                    break;
+                case "WalkAsc":
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderBy(ascent =>ascent.Walk.WalkTitle);
+                    this.ViewData["OrderBy"] = "Walk";
+                    this.ViewData["OrderAscDesc"] = "Asc";
+                    break;
+                case "WalkDesc":
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.Walk.WalkTitle);
+                    this.ViewData["OrderBy"] = "Walk";
+                    this.ViewData["OrderAscDesc"] = "Desc";
+                    break;
+                default:
+                    this.ViewData["OrderBy"] = "Date";
+                    this.ViewData["OrderAscDesc"] = "Asc";
+                    iqHillAscents = this.repository.GetAllHillAscents().OrderBy(ascent =>ascent.AscentDate).ThenBy(ascent =>ascent.AscentID);
+                    break;
             }
-            else if ((OrderBy == "DateDesc")) {
-                iqHillAscents = repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.AscentDate).ThenByDescending(ascent =>ascent.AscentID);
-                ViewData["OrderBy"] = "Date";
-                ViewData["OrderAscDesc"] = "Desc";
-            }
-            else if ((OrderBy == "HillAsc")) {
-                iqHillAscents = repository.GetAllHillAscents().OrderBy(ascent =>ascent.Hill.Hillname);
-                ViewData["OrderBy"] = "Hill";
-                ViewData["OrderAscDesc"] = "Asc";
-            }
-            else if ((OrderBy == "HillDesc")) {
-                iqHillAscents = repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.Hill.Hillname);
-                ViewData["OrderBy"] = "Hill";
-                ViewData["OrderAscDesc"] = "Desc";
-            }
-            else if ((OrderBy == "MetresAsc")) {
-                iqHillAscents = repository.GetAllHillAscents().OrderBy(ascent =>ascent.Hill.Metres);
-                ViewData["OrderBy"] = "Metres";
-                ViewData["OrderAscDesc"] = "Asc";
-            }
-            else if ((OrderBy == "MetresDesc")) {
-                iqHillAscents = repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.Hill.Metres);
-                ViewData["OrderBy"] = "Metres";
-                ViewData["OrderAscDesc"] = "Desc";
-            }
-            else if ((OrderBy == "WalkAsc")) {
-                iqHillAscents = repository.GetAllHillAscents().OrderBy(ascent =>ascent.Walk.WalkTitle);
-                ViewData["OrderBy"] = "Walk";
-                ViewData["OrderAscDesc"] = "Asc";
-            }
-            else if ((OrderBy == "WalkDesc")) {
-                iqHillAscents = repository.GetAllHillAscents().OrderByDescending(ascent =>ascent.Walk.WalkTitle);
-                ViewData["OrderBy"] = "Walk";
-                ViewData["OrderAscDesc"] = "Desc";
-            }
-            else {
-                // ----Default to order by date ascending----
-                ViewData["OrderBy"] = "Date";
-                ViewData["OrderAscDesc"] = "Asc";
-                iqHillAscents = repository.GetAllHillAscents().OrderBy(ascent =>ascent.AscentDate).ThenBy(ascent =>ascent.AscentID);
-            }
-            // ----Create a paginated list of the walks----------------
 
-            PaginatedListMVC<HillAscent> IQPaginatedAscents = new PaginatedListMVC<HillAscent>(iqHillAscents,page, HILLASCENTS_PAGE_SIZE, Url.Action("Index","HillAscent", new {OrderBy = ViewData["OrderBy"] + ViewData["OrderAscDesc"].ToString()}),MAX_PAGINATION_LINKS,"");
-      
-            return View(IQPaginatedAscents);
+            // ----Create a paginated list of the walks----------------
+            var iqPaginatedAscents = new PaginatedListMVC<HillAscent>(iqHillAscents,page, HILLASCENTS_PAGE_SIZE, Url.Action("Index","HillAscent", new {OrderBy = ViewData["OrderBy"] + ViewData["OrderAscDesc"].ToString()}),MAX_PAGINATION_LINKS,"");
+            return View(iqPaginatedAscents);
         }
     }
 }

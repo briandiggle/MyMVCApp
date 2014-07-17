@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace MyMVCAppCS.Models
+﻿
+namespace MyMVCApp.Model
 {
     using System.Drawing;
-    using System.IO;
     using System.Text;
- 
+    using System.Web;
+
     public static class ImageHelper
     {
         public static string BuildImgTag(string imagePathFromAppRoot)
@@ -25,7 +21,7 @@ namespace MyMVCAppCS.Models
             var oStringBuilder = new StringBuilder();
 
             oStringBuilder.Append(@"<a href=""" + imagePathFromAppRoot + @""">");
-            oStringBuilder.Append(@"<img src=""" + imagePathFromAppRoot + @""" width=" + width.ToString() + " height=" + height.ToString() + " />");
+            oStringBuilder.Append(@"<img src=""" + imagePathFromAppRoot + @""" width=" + width + " height=" + height + " />");
             oStringBuilder.Append("</a>");
 
             return oStringBuilder.ToString();

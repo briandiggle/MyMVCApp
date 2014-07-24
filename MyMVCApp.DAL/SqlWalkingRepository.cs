@@ -692,7 +692,7 @@
         {
             marker.MarkerTitle = oForm["MarkerTitle"];
             marker.DateLeft = DateTime.Parse(oForm["DateLeft"]);
-            marker.GPS_Reference = oForm["GPS_Reference"];
+            marker.GPS_Reference = oForm["GPS_Reference"].Trim();
             try 
             {
                 marker.Hillnumber = Int16.Parse(oForm["Hillnumber"]);

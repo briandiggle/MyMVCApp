@@ -238,10 +238,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <None Include="Views\Config\Index.cshtml" />
     <None Include="Views\HillAscent\Index.cshtml" />
-    <Content Include="Views\Marker\Details.aspx" />
-    <Content Include="Views\Marker\Edit.aspx" />
-    <Content Include="Views\Marker\Index.aspx" />
-    <Content Include="Views\Marker\Create.aspx" />
+    <None Include="Views\Marker\Details.cshtml" />
+    <None Include="Views\Marker\Edit.cshtml" />
+    <None Include="Views\Marker\Index.cshtml" />
+    <None Include="Views\Marker\Create.cshtml" />
     <None Include="Views\Progress\Index.cshtml" />
     <None Include="Views\Search\AscentSearch.cshtml" />
     <None Include="Views\Search\HillSearch.cshtml" />

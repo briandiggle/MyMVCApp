@@ -1,17 +1,17 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MyMVCApp.DAL.Marker>" %>
-<%@ Import Namespace="MyMVCAppCS.Models" %>
-<%@ Import Namespace="MyMVCApp.DAL" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Edit Marker
-</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="ViewSpecificHead" runat="server">
+﻿@using System.Collections
+@using MyMVCApp.DAL
+@model MyMVCApp.DAL.Marker
+
+@{ViewBag.Title = "Edit Marker"; }
+
+@section ViewSpecificHead
+{
 <link type="text/css" href="../../Content/themes/base/jquery.ui.all.css" rel="Stylesheet" />
 <script type="text/javascript" src="../../Scripts/jquery-2.1.1.js"></script>
 <script type="text/javascript" src="../../Scripts/jquery-ui-1.10.4.js"></script>
 <script type="text/javascript" src="../../Scripts/jquery.validate.js"></script>
-</asp:Content>
+}
 
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 <script type="text/javascript">
 
     $().ready(function () {
@@ -83,77 +83,78 @@
 
 </script>
 
+<h2>Edit Marker</h2>
 
-    <h2>Edit Marker</h2>
-
-    <%-- The following line works around an ASP.NET compiler warning --%>
-    <%: ""%>
-
-    <%  using (Html.BeginForm("Edit", "Marker", FormMethod.Post, new { id = "editmarkerform", name = "editmarkerform"}))
-        {
-        %>
-        <%: Html.ValidationSummary(true) %>
+@using (Html.BeginForm("Edit", "Marker", FormMethod.Post, new { id = "editmarkerform", name = "editmarkerform"}))
+{
+       @Html.ValidationSummary(true)
         <fieldset>
-          
-            
             <div class="editor-field">
-                <%: Html.HiddenFor(marker => marker.MarkerID)%>
+                @Html.HiddenFor(marker => marker.MarkerID)
             </div>&nbsp;
             
             <div class="editor-label">
                 <strong>Marker Title</strong>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(marker => marker.MarkerTitle, new { size = 80})%>
-                <%: Html.ValidationMessageFor(marker => marker.MarkerTitle) %>
+                @Html.TextBoxFor(marker => marker.MarkerTitle, new { size = 80})
+                @Html.ValidationMessageFor(marker => marker.MarkerTitle)
             </div>&nbsp;
             
             <div class="editor-label">
                 <strong>Left on Hill</strong>
             </div>
             <div class="editor-field">
-                <%: Html.HiddenFor(marker => marker.Hillnumber)%>
-                <input type="text" name="LeftOnHillName" id="LeftOnHillName" size="80" value="<%= MyMVCApp.DAL.WalkingStick.FormatHillSummaryAsLine(Model.Hill)%>" />
+                @Html.HiddenFor(marker => marker.Hillnumber)
+                <input type="text" name="LeftOnHillName" id="LeftOnHillName" size="80" value="@MyMVCApp.DAL.WalkingStick.FormatHillSummaryAsLine(Model.Hill)" />
             </div>&nbsp;
             
             <div class="editor-label">
-                <strong><%: Html.LabelFor(marker => marker.GPS_Reference) %></strong>
+                <strong>@Html.LabelFor(marker => marker.GPS_Reference)</strong>
             </div>
             <div class="editor-field">
-                <%: Html.TextBoxFor(marker => marker.GPS_Reference) %>
+                @Html.TextBoxFor(marker => marker.GPS_Reference)
             </div>&nbsp;
             
             <div class="editor-label">
                 <strong>Description</strong>
             </div>
             <div class="editor-field">
-                <%: Html.TextAreaFor(marker => marker.Location_Description, 8, 90, new { dummy = 0})%>
+                @Html.TextAreaFor(marker => marker.Location_Description, 8, 90, new { dummy = 0})
             </div>&nbsp;
             
             <div class="editor-label">
                 <strong>Left on Walk</strong>
             </div>
             <div class="editor-field">
-                <%: Html.HiddenFor(marker => marker.WalkID)%>
-                <input type="text" name="MarkerLeftOnWalkName" id="MarkerLeftOnWalkName" value="<%= MyMVCApp.DAL.WalkingStick.FormatWalkAsLine(Model.Walk)%>"size="80"/>
+                @Html.HiddenFor(marker => marker.WalkID)
+                <input type="text" name="MarkerLeftOnWalkName" id="MarkerLeftOnWalkName" value="@MyMVCApp.DAL.WalkingStick.FormatWalkAsLine(Model.Walk)"size="80"/>
             </div>&nbsp;
             
             <div class="editor-label">
-                <strong><%: Html.LabelFor(marker => marker.DateLeft) %></strong>
+                <strong>@Html.LabelFor(marker => marker.DateLeft)</strong>
             </div>
             <div class="editor-field">
-                <input type="text" name="DateLeft" id="DateLeft"  size="40" maxlength="40" value="<%= String.Format("{0:D}", Model.DateLeft)%>" />
+                <input type="text" name="DateLeft" id="DateLeft"  size="40" maxlength="40" value="@String.Format("{0:D}", Model.DateLeft)" />
             </div>&nbsp;
-            <% var selectlistMarkerStatusOptions  = ViewData["Marker_Statii"]%>
+            @{ var selectlistMarkerStatusOptions = ViewData["Marker_Statii"]; }
 
             <div class="editor-label">
-                <strong><%: Html.LabelFor(marker => marker.Status) %></strong>
+                <strong>@Html.LabelFor(marker => marker.Status)</strong>
             </div>
             <div class="editor-field">
                 <select name="Status">
-                <% foreach ( Marker_Status oStatus in (IEnumerable)this.ViewData["Marker_Status"]) { %>
-                      <option value="<%= oStatus.Marker_Status1%>" <% if (oStatus.Marker_Status1.Equals(Model.Status)) { Response.Write(" selected"); } %>><%= oStatus.Marker_Status1%></option>
-                <%  } %>
+                @{
+                    foreach (Marker_Status oStatus in (IEnumerable)this.ViewData["Marker_Status"])
+                    {
+                        <option value="@oStatus.Marker_Status1" @{
+                                                                    if (oStatus.Marker_Status1.Equals(Model.Status))
+                                                                    {
+                                                                       @: selected
+                                                                    }
+                                                                } > @oStatus.Marker_Status1</option>
+                    }
+                }
                 </select>
                
             </div>&nbsp;
@@ -164,10 +165,10 @@
           </div>
         </fieldset>
 
-    <% } %>
+     } 
 
     <div>
-        <%: Html.ActionLink("Back to Markers List", "Index") %>
+        @Html.ActionLink("Back to Markers List", "Index")
     </div>
 
-</asp:Content>
+

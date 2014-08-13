@@ -12,11 +12,13 @@ namespace MyMVCAppCS.Controllers
     using MyMVCAppCS.Models;
     using MyMVCAppCS.ViewModels;
 
+#region "Page Actions"
+
     [OutputCache(NoStore = true, Duration = 0, VaryByParam = "None")]
     public class WalksController : Controller
     {
    
-        private IWalkingRepository repository;
+        private readonly IWalkingRepository repository;
 
         public WalksController()
         {
@@ -67,58 +69,58 @@ namespace MyMVCAppCS.Controllers
         /// Show a list of hills by areas
         /// </summary>
         /// <param name="id">ID of area show</param>
-        /// <param name="OrderBy"></param>
+        /// <param name="orderBy"></param>
         /// <param name="page"></param>
         /// <returns></returns>
-        public ActionResult HillsByArea(string id, string OrderBy = "NameAsc", int page = 1)
+        public ActionResult HillsByArea(string id, string orderBy = "NameAsc", int page = 1)
         {
            // var IQHillsInWalkingArea = this.repository.FindHillsByArea(id);
 
             IQueryable<Hill> iqHillsInWalkingArea;
 
-            if ((OrderBy == "NameAsc"))
+            if ((orderBy == "NameAsc"))
             {
                 iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.Hillname);
                 ViewData["OrderBy"] = "Name";
                 ViewData["OrderAscDesc"] = "Asc";
             }
-            else if ((OrderBy == "NameDesc"))
+            else if ((orderBy == "NameDesc"))
             {
                 iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.Hillname);
                 ViewData["OrderBy"] = "Name";
                 ViewData["OrderAscDesc"] = "Desc";
             }
-            else if ((OrderBy == "MetresAsc"))
+            else if ((orderBy == "MetresAsc"))
             {
                 iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.Metres);
                 ViewData["OrderBy"] = "Metres";
                 ViewData["OrderAscDesc"] = "Asc";
             }
-            else if ((OrderBy == "MetresDesc"))
+            else if ((orderBy == "MetresDesc"))
             {
                 iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.Metres);
                 ViewData["OrderBy"] = "Metres";
                 ViewData["OrderAscDesc"] = "Desc";
             }
-            else if ((OrderBy == "FirstAscentDesc"))
+            else if ((orderBy == "FirstAscentDesc"))
             {
                 iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.FirstClimbedDate);
                 ViewData["OrderBy"] = "FirstAscent";
                 ViewData["OrderAscDesc"] = "Desc";
             }
-            else if ((OrderBy == "FirstAscentAsc"))
+            else if ((orderBy == "FirstAscentAsc"))
             {
                 iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.FirstClimbedDate);
                 ViewData["OrderBy"] = "FirstAscent";
                 ViewData["OrderAscDesc"] = "Asc";
             }
-            else if ((OrderBy == "NumberAscentDesc"))
+            else if ((orderBy == "NumberAscentDesc"))
             {
                 iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderByDescending(hill => hill.NumberOfAscents);
                 ViewData["OrderBy"] = "NumberAscent";
                 ViewData["OrderAscDesc"] = "Desc";
             }
-            else if ((OrderBy == "NumberAscentAsc"))
+            else if ((orderBy == "NumberAscentAsc"))
             {
                 iqHillsInWalkingArea = repository.FindHillsByArea(id).OrderBy(hill => hill.NumberOfAscents);
                 ViewData["OrderBy"] = "NumberAscent";
@@ -143,7 +145,7 @@ namespace MyMVCAppCS.Controllers
                                                                                 pageSize,
                                                                                 Url.RouteUrl("Default", new { action="HillsByArea", controller="Walks"}),
                                                                                 maxPageLinks,
-                                                                                "?OrderBy" + OrderBy);
+                                                                                "?OrderBy" + orderBy);
 
             // -----Pass the paginated list of hills to the view. The view expects a paginated list as its model-----
             return View(iqPaginatedHills);
@@ -348,7 +350,7 @@ namespace MyMVCAppCS.Controllers
             int maxPageLinks = Int32.Parse(WebConfigurationManager.AppSettings["PAGINATION_MAX_PAGE_LINKS"]);
 
             // ----Create a paginated list of the walks----------------
-            PaginatedListMVC<Walk> IQPaginatedWalks = new PaginatedListMVC<Walk>(iqWalks, page, pageSize, Url.Action("WalksByDate", "Walks", new {OrderBy = ViewData["OrderBy"].ToString() + ViewData["OrderAscDesc"].ToString()}), maxPageLinks, "");
+            var IQPaginatedWalks = new PaginatedListMVC<Walk>(iqWalks, page, pageSize, Url.Action("WalksByDate", "Walks", new {OrderBy = ViewData["OrderBy"].ToString() + ViewData["OrderAscDesc"].ToString()}), maxPageLinks, "");
 
             // -----Pass the paginated list of walks to the view. The view expects a paginated list as its model-----
             return View(IQPaginatedWalks);
@@ -369,14 +371,14 @@ namespace MyMVCAppCS.Controllers
         public ActionResult Edit(int id)
         {
             Walk oWalk = this.repository.GetWalkDetails(id);
-            var oAssociated_File_Types = this.repository.GetAssociatedFileTypes();
+            var oAssociatedFileTypes = this.repository.GetAssociatedFileTypes();
             var oAuxilliaryFiles = this.repository.GetWalkAuxilliaryFiles(id);
 
             var oWalkTypes = this.repository.GetWalkTypes();
             var oWalkMarkers = this.repository.GetMarkersCreatedOnWalk(id);
 
             ViewData["WalkTypes"] = new SelectList(oWalkTypes, "WalkTypeString", "WalkTypeString");
-            ViewData["Associated_File_Types"] = new SelectList(oAssociated_File_Types, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1");
+            ViewData["Associated_File_Types"] = new SelectList(oAssociatedFileTypes, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1");
             ViewData["Model"] = oWalk;
             ViewData["Auxilliary_Files"] = oAuxilliaryFiles.AsEnumerable();
             ViewData["WalkMarkersAlreadyCreated"] = oWalkMarkers;
@@ -392,11 +394,11 @@ namespace MyMVCAppCS.Controllers
         public ActionResult Create()
         {
             Walk oWalk = new Walk();
-            var oAssociated_File_Types = this.repository.GetAssociatedFileTypes();
+            var oAssociatedFileTypes = this.repository.GetAssociatedFileTypes();
             var oWalkTypes = this.repository.GetWalkTypes();
 
             ViewData["WalkTypes"] = new SelectList(oWalkTypes, "WalkTypeString", "WalkTypeString");
-            ViewData["Associated_File_Types"] = new SelectList(oAssociated_File_Types, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1").ToList();
+            ViewData["Associated_File_Types"] = new SelectList(oAssociatedFileTypes, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1").ToList();
             ViewData["Model"] = oWalk;
 
             return this.View();
@@ -429,14 +431,14 @@ namespace MyMVCAppCS.Controllers
             
             // ---Add hill ascents-----------------
             arHillAscents = WalkingStick.FillHillAscentsFromFormVariables(iWalkID, Request.Form);
-            iRetval = repository.AddWalkSummitsVisited(arHillAscents);
+            repository.AddWalkSummitsVisited(arHillAscents);
           
             // ---Add the associated files-----
             arAssociatedFiles = WalkingStick.FillHillAssociatedFilesFromFormVariables(iWalkID, Request.Form, Server.MapPath("/"));
-            iRetval = repository.AddWalkAssociatedFiles(arAssociatedFiles);
+            repository.AddWalkAssociatedFiles(arAssociatedFiles);
            
             // ---update any markers created by ajax call with walk id, and add any marker observations----------------
-            iRetval = repository.AssociateMarkersWithWalk(Request.Form, iWalkID);
+            repository.AssociateMarkersWithWalk(Request.Form, iWalkID);
             if ((walk.HillAscents.Count > 0))
             {
                 return RedirectToAction("HillsByArea", new { id = oWalk.Area.Arearef.Trim(), page = 1 });
@@ -453,13 +455,40 @@ namespace MyMVCAppCS.Controllers
         }
 
 
+        // -------------------------------------------------------------------------------------
+        //  Function: Edit  (POST)
+        //  URL     : /Walks/Edit/Id
+        //  Descr   : 1. Get the existing id into a walk object
+        //            2. Based on the form variables, update the walk object and submit chnages
+        // --------------------------------------------------------------------------------------
+        [AcceptVerbs(HttpVerbs.Post)]
+        public ActionResult Edit(int id, FormCollection formValues)
+        {
+            Walk oWalk = this.repository.GetWalkDetails(id);
+            repository.UpdateWalkDetails(oWalk, Request.Form, Server.MapPath("/"));
+
+            // ---update any markers created by ajax call with walk id, and add any marker observations----------------
+            // iRetval = _repository.AssociateMarkersWithWalk(Request.Form, iWalkID)
+
+            if ((oWalk.HillAscents.Count > 0))
+            {
+                return RedirectToAction("HillsByArea", new { id = oWalk.Area.Arearef.Trim(), page = 1 });
+            }
+
+            return RedirectToAction("WalksByDate", new { OrderBy = "DateDesc" });
+        }
+
+#endregion
+
+#region "AJAX actions"
+
         // -----------------------------------------------------------------------------------------------------
         //  CreateMarker
         //  Server side of AJAX call, using JSON as data format, to insert a new marker.
         // -------------------------------------
-        public JsonResult CreateMarker(string mtitle, string mdesc, string mdate, int mhillid=0, string mgps="" , int mwalkid=0)
+        public JsonResult CreateMarker(string mtitle, string mdesc, string mdate, int mhillid = 0, string mgps = "", int mwalkid = 0)
         {
-      
+
             var oNewMarker = new Marker { MarkerTitle = mtitle, Location_Description = mdesc };
             try
             {
@@ -493,61 +522,41 @@ namespace MyMVCAppCS.Controllers
         //  MarkerSuggestions
         //  Used as the AJAX server side for an autocomplete function on a client side textbox
         // -----------------------
-        public JsonResult MarkerSuggestions(string term) {
-            
+        public JsonResult MarkerSuggestions(string term)
+        {
+
             var markeroptions = new List<AutocompleteSuggestionOption>();
             var IQMarkers = repository.FindMarkersByNameLike(term);
-            
-            foreach (Marker item in IQMarkers) {
+
+            foreach (Marker item in IQMarkers)
+            {
                 markeroptions.Add(new AutocompleteSuggestionOption
-                                  {
-                                      label = WalkingStick.FormatMarkerAsLine(item) + ("|" + (item.MarkerID.ToString().Trim())),
-                                      value = WalkingStick.FormatMarkerAsLine(item) + ("|" + (item.MarkerID.ToString().Trim()))
-                                  });
-               
+                {
+                    label = WalkingStick.FormatMarkerAsLine(item) + ("|" + (item.MarkerID.ToString().Trim())),
+                    value = WalkingStick.FormatMarkerAsLine(item) + ("|" + (item.MarkerID.ToString().Trim()))
+                });
+
             }
 
-            return Json(markeroptions , JsonRequestBehavior.AllowGet);
+            return Json(markeroptions, JsonRequestBehavior.AllowGet);
         }
+
 
         // ------------------------------------------------------------------------------------------------
         //  WalkSuggestions
         //  Used as the AJAX server side for an autocomplete function on a client side textbox - Create Marker
         // -----------------------
-        public JsonResult WalkSuggestions(string term) 
+        public JsonResult WalkSuggestions(string term)
         {
             var IQWalks = repository.FindWalksByTitleLike(term);
 
-            List<AutocompleteSuggestionOption> suggestedWalks = new List<AutocompleteSuggestionOption>();
+            var suggestedWalks = new List<AutocompleteSuggestionOption>();
             foreach (Walk oWalk in IQWalks)
             {
                 var walkTitle = WalkingStick.FormatWalkAsLine(oWalk);
-                suggestedWalks.Add(new AutocompleteSuggestionOption { label = walkTitle, value= walkTitle + " | " + oWalk.WalkID.ToString()});
+                suggestedWalks.Add(new AutocompleteSuggestionOption { label = walkTitle, value = walkTitle + " | " + oWalk.WalkID.ToString() });
             }
             return Json(suggestedWalks, JsonRequestBehavior.AllowGet);
-        }
-
-        // -------------------------------------------------------------------------------------
-        //  Function: Edit  (POST)
-        //  URL     : /Walks/Edit/Id
-        //  Descr   : 1. Get the existing id into a walk object
-        //            2. Based on the form variables, update the walk object and submit chnages
-        // --------------------------------------------------------------------------------------
-        [AcceptVerbs(HttpVerbs.Post)]
-        public ActionResult Edit(int id, FormCollection formValues)
-        {
-            Walk oWalk = this.repository.GetWalkDetails(id);
-            repository.UpdateWalkDetails(oWalk, Request.Form, Server.MapPath("/"));
-
-            // ---update any markers created by ajax call with walk id, and add any marker observations----------------
-            // iRetval = _repository.AssociateMarkersWithWalk(Request.Form, iWalkID)
-
-            if ((oWalk.HillAscents.Count > 0))
-            {
-                return RedirectToAction("HillsByArea", new { id = oWalk.Area.Arearef.Trim(), page = 1 });
-            }
-
-            return RedirectToAction("WalksByDate", new { OrderBy = "DateDesc" });
         }
 
 
@@ -610,7 +619,6 @@ namespace MyMVCAppCS.Controllers
                 catch (Exception) {
             }
 
-     
             string strRootPath = Server.MapPath("/").Replace("\\", "/");
 
             // -----Check that the path specified is valid------------------------
@@ -645,15 +653,15 @@ namespace MyMVCAppCS.Controllers
             foreach (Hill item in IQHillsAboveHeight)
             {
                 var optionlabel = WalkingStick.FormatHillSummaryAsLine(item);
-                var optionvalue = optionlabel + "|" + item.Hillnumber.ToString();
+                var optionvalue = optionlabel + "|" + item.Hillnumber;
    
                 hillsuggestions.Add(new AutocompleteSuggestionOption { label = optionlabel, value = optionvalue});
             }
 
             return Json(hillsuggestions, JsonRequestBehavior.AllowGet);
-
         }
 
+#endregion
 
     }
 }

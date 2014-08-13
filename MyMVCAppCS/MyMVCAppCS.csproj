@@ -251,12 +251,10 @@
     <None Include="Views\Search\WalkSearch.cshtml" />
     <Content Include="Views\Walks\CheckImages.ascx" />
     <Content Include="Views\Walks\Create.aspx" />
-    <Content Include="Views\Walks\Details.aspx" />
-    <Content Include="Views\Walks\DisplayFormDetails.aspx" />
+    <None Include="Views\Walks\Details.cshtml" />
     <Content Include="Views\Walks\Edit.aspx" />
-    <Content Include="Views\Walks\HillClasses.aspx" />
-    <Content Include="Views\Walks\HillDetails.aspx" />
-    <Content Include="Views\Walks\HillsAboveHeight.aspx" />
+    <None Include="Views\Walks\HillClasses.cshtml" />
+    <None Include="Views\Walks\HillDetails.cshtml" />
     <Content Include="Views\Walks\HillsByArea.aspx" />
     <Content Include="Views\Walks\HillsInClassification.aspx" />
     <Content Include="Views\Walks\HillSuggestions.ascx" />

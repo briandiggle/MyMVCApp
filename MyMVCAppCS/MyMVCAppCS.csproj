@@ -255,13 +255,13 @@
     <Content Include="Views\Walks\Edit.aspx" />
     <None Include="Views\Walks\HillClasses.cshtml" />
     <None Include="Views\Walks\HillDetails.cshtml" />
-    <Content Include="Views\Walks\HillsByArea.aspx" />
-    <Content Include="Views\Walks\HillsInClassification.aspx" />
+    <None Include="Views\Walks\HillsByArea.cshtml" />
+    <None Include="Views\Walks\HillsInClassification.cshtml" />
     <Content Include="Views\Walks\HillSuggestions.ascx" />
     <Content Include="Views\Walks\Index.aspx" />
     <Content Include="Views\Walks\MarkerSuggestions.ascx" />
     <Content Include="Views\Walks\WalkAreaSuggestions.ascx" />
-    <Content Include="Views\Walks\WalkingAreasByCountry.aspx" />
+    <None Include="Views\Walks\WalkingAreasByCountry.cshtml" />
     <Content Include="Views\Walks\WalksByDate.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

@@ -419,7 +419,6 @@ namespace MyMVCAppCS.Controllers
             //var strKeys = Request.Form.AllKeys;
 
             int iWalkID;
-            int iRetval = 0;
 
             List<HillAscent> arHillAscents;
             List<Walk_AssociatedFile> arAssociatedFiles;

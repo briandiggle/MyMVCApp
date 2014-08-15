@@ -378,9 +378,9 @@ namespace MyMVCAppCS.Controllers
             var oWalkMarkers = this.repository.GetMarkersCreatedOnWalk(id);
 
             ViewData["WalkTypes"] = new SelectList(oWalkTypes, "WalkTypeString", "WalkTypeString");
-            ViewData["Associated_File_Types"] = new SelectList(oAssociatedFileTypes, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1");
+            ViewBag.Associated_File_Types = new SelectList(oAssociatedFileTypes, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1");
             ViewData["Model"] = oWalk;
-            ViewData["Auxilliary_Files"] = oAuxilliaryFiles.AsEnumerable();
+            ViewBag.Auxilliary_Files = oAuxilliaryFiles.AsEnumerable().ToList();
             ViewData["WalkMarkersAlreadyCreated"] = oWalkMarkers;
 
             return this.View(oWalk);

@@ -162,7 +162,7 @@
             </span>
             <% if (SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_WORK))
                { %>       
-                   &nbsp;<%= MyMVCApp.DAL.WalkingStick.ExtractFileNameFromPath(oWalkImage.Walk_AssociatedFile_Name) %><br />
+                   &nbsp;<%= WalkingStick.ExtractFileNameFromPath(oWalkImage.Walk_AssociatedFile_Name) %><br />
             <% }
                else
                { %>
@@ -180,8 +180,8 @@
            <div class="editor-label">
              <strong>Edit Existing Additional Files</strong>
            </div>
-           <% List<SelectListItem> selectlist = (List<SelectListItem>)ViewData["Associated_File_Types"];
-              List<Walk_AssociatedFile> IQAuxilliaryFiles =(List<Walk_AssociatedFile>)ViewData["Auxilliary_Files"];
+           <% SelectList selectlist = ViewBag.Associated_File_Types;
+              List<Walk_AssociatedFile> IQAuxilliaryFiles = ViewBag.Auxilliary_Files;
 
               for (int iAuxCounter = 1; iAuxCounter <= IQAuxilliaryFiles.Count; iAuxCounter++)
               { %>

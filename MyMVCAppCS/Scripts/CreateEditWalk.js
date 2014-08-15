@@ -106,7 +106,7 @@ $(function () {
                 var elementroot = event.target.id.replace(/[0-9]/g, '');
                 var imagenumber = extractnumber(elementroot, event.target.id);
                 var markerid = extractid(ui.item.value);
-                if (elementroot.contains("existing")) {
+                if (elementroot.indexOf("existing") >=0) {
                     $("#existingimagemarkerid" + imagenumber).val(markerid);
                 } else {
                     $("#imagemarkerid" + imagenumber).val(markerid);
@@ -120,7 +120,7 @@ $(function () {
     $(document).on("click", ".imageismarker:checked", function (e) {
         var elementroot = e.target.id.replace(/[0-9]/g, '');
         var markerimage = extractnumber(elementroot, e.target.id);
-        if (elementroot.contains("existing")) {
+        if (elementroot.indexOf("existing") >= 0) {
             $("#existingimagemarkerdetails" + markerimage).show();
         } else {
             $("#imagemarkerdetails" + markerimage).show();

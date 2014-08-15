@@ -249,20 +249,20 @@
     <None Include="Views\Search\Index.cshtml" />
     <None Include="Views\Search\MarkerSearch.cshtml" />
     <None Include="Views\Search\WalkSearch.cshtml" />
-    <Content Include="Views\Walks\CheckImages.ascx" />
-    <Content Include="Views\Walks\Create.aspx" />
+    <None Include="Views\Walks\CheckImages.cshtml" />
+    <None Include="Views\Walks\Create.cshtml" />
     <None Include="Views\Walks\Details.cshtml" />
     <Content Include="Views\Walks\Edit.aspx" />
     <None Include="Views\Walks\HillClasses.cshtml" />
     <None Include="Views\Walks\HillDetails.cshtml" />
     <None Include="Views\Walks\HillsByArea.cshtml" />
     <None Include="Views\Walks\HillsInClassification.cshtml" />
-    <Content Include="Views\Walks\HillSuggestions.ascx" />
-    <Content Include="Views\Walks\Index.aspx" />
-    <Content Include="Views\Walks\MarkerSuggestions.ascx" />
-    <Content Include="Views\Walks\WalkAreaSuggestions.ascx" />
+    <None Include="Views\Walks\HillSuggestions.cshtml" />
+    <None Include="Views\Walks\Index.cshtml" />
+    <None Include="Views\Walks\MarkerSuggestions.cshtml" />
+    <None Include="Views\Walks\WalkAreaSuggestions.cshtml" />
     <None Include="Views\Walks\WalkingAreasByCountry.cshtml" />
-    <Content Include="Views\Walks\WalksByDate.aspx" />
+    <None Include="Views\Walks\WalksByDate.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

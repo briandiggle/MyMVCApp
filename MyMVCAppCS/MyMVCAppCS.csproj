@@ -252,7 +252,7 @@
     <None Include="Views\Walks\CheckImages.cshtml" />
     <None Include="Views\Walks\Create.cshtml" />
     <None Include="Views\Walks\Details.cshtml" />
-    <Content Include="Views\Walks\Edit.aspx" />
+    <None Include="Views\Walks\Edit.cshtml" />
     <None Include="Views\Walks\HillClasses.cshtml" />
     <None Include="Views\Walks\HillDetails.cshtml" />
     <None Include="Views\Walks\HillsByArea.cshtml" />
@@ -281,8 +281,7 @@
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <None Include="Views\Home\About.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\Error.aspx" />
-    <Content Include="Views\Shared\Site.Master" />
+    <None Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>

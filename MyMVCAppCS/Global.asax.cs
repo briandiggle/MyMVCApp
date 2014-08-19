@@ -43,6 +43,13 @@ namespace MyMVCAppCS
 
             RegisterRoutes(RouteTable.Routes);
 
+            // Clears all previously registered view engines.
+            ViewEngines.Engines.Clear();
+
+            // Register the razor view engine only
+            ViewEngines.Engines.Add(new RazorViewEngine());
+
+
         }
 
         protected void Session_Start(object sender, EventArgs e)

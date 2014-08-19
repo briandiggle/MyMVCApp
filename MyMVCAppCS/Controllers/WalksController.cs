@@ -383,6 +383,9 @@ namespace MyMVCAppCS.Controllers
             ViewBag.Auxilliary_Files = oAuxilliaryFiles.AsEnumerable().ToList();
             ViewData["WalkMarkersAlreadyCreated"] = oWalkMarkers;
 
+            ViewBag.WalkHours = (int)oWalk.WalkTotalTime / 60;
+            ViewBag.WalkMinutes = (int)oWalk.WalkTotalTime % 60;
+
             return this.View(oWalk);
         }
 

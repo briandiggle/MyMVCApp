@@ -29,7 +29,8 @@ namespace MyMVCAppCS.Controllers
         // GET: /Walks/
         public ActionResult Index()
         {
-            ViewData["MVCVersion"] = typeof(Controller).Assembly.CodeBase;
+            ViewBag.MVCVersion = typeof(Controller).Assembly.GetName().Version;
+  
             return View();
         }
 

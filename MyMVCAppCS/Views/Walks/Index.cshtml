@@ -51,7 +51,7 @@
     <p>@Html.ActionLink("Islands of Isle of Man", "WalkingAreasByCountry", new {strCountryCode = "IM", strAreaType = "I"})</p>
 </td>
 </tr>
-<tr><td colspan="4">MVC Version: @ViewData["MVCVersion"]</td></tr>
+<tr><td colspan="4">MVC Version: @ViewBag.MVCVersion</td></tr>
 <tr><td colspan="4">UsageLocation: @SessionSingleton.Current.UsageLocation</td></tr>
 
 </table>

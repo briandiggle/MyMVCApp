@@ -104,7 +104,7 @@
                     @if (ViewData["OrderBy"].Equals("TotalTime"))
                     {
                         <strong>
-                        if (ViewData["OrderAscDesc"].Equals("Asc"))
+                        @if (ViewData["OrderAscDesc"].Equals("Asc"))
                         {
                             @Html.ActionLink("TotalTime <Asc>", "WalksByDate", new { OrderBy = "TotalTimeDesc" })
                         } else

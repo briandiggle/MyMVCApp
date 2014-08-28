@@ -1,7 +1,7 @@
 ﻿
 @using MyMVCApp.DAL
 @using MyMVCApp.Model
-@model MyMVCApp.DAL.Walk
+@model Walk
 @{
     ViewBag.Title = Model.WalkTitle+ ", " + String.Format("{0:D}", Model.WalkDate);
 }
@@ -108,37 +108,40 @@
 <p>No Markers</p>
     
   }
+
   @if (Model.HillAscents.Count > 0)
   {
-      <table>
-          <tr><td colspan="4"><strong>Ascents on this walk</strong></td></tr>  
-          <tr>
-              <th class="hillname">Name</th>
-              <th class="hillname">Height</th>
-              <th class="hillname">Classes</th>
-              <th class="hillname"></th>
-          </tr>
-          @{
-              foreach (HillAscent oHillAscent in Model.HillAscents)
+    <table>
+        <tr><td colspan="4"><strong>Ascents on this walk</strong></td></tr>
+        <tr>
+            <th class="hillname">Name</th>
+            <th class="hillname">Height</th>
+            <th class="hillname">Classes</th>
+            <th class="hillname"></th>
+        </tr>
+       
+            @foreach (HillAscent oHillAscent in Model.HillAscents)
               {
-                  <tr>
-                      <td>@Html.ActionLink(oHillAscent.Hill.Hillname, "HillDetails", "Walks", new { id = oHillAscent.Hillnumber }, null) </td>
-                      <td>@oHillAscent.Hill.Metres.ToString() m, @oHillAscent.Hill.Feet.ToString() ft</td>
-                      <td>@oHillAscent.Hill.Classification </td>
-                      <td>@if (oHillAscent.Hill.HillAscents.Count == 1)
+                <tr>
+                    <td>@Html.ActionLink(oHillAscent.Hill.Hillname, "HillDetails", "Walks", new { id = oHillAscent.Hillnumber }, null) </td>
+                    <td>@oHillAscent.Hill.Metres.ToString() m, @oHillAscent.Hill.Feet.ToString() ft</td>
+                    <td>@oHillAscent.Hill.Classification </td>
+                    <td>
+                        @if (oHillAscent.Hill.HillAscents.Count == 1)
                           {
-                              @: <em>First Ascent</em>
+                             <em>First Ascent</em>
                           }
-                          &nbsp;</td>
-                  </tr>
+                    &nbsp;
+                </td>
+            </tr>
               }
 
+        </table>
 
-          }
-      
-      </table>
+}
+    
 
-      foreach (Walk_AssociatedFile oFile in Model.Walk_AssociatedFiles)
+      @foreach (Walk_AssociatedFile oFile in Model.Walk_AssociatedFiles)
       {
 
           if (oFile.Walk_AssociatedFile_Type.Equals("Image - Altitude Profile"))
@@ -190,21 +193,23 @@
 
       }
 
-      int iCounter = 1;
-      foreach (Walk_AssociatedFile oFile in Model.Walk_AssociatedFiles)
-      {
-          if (oFile.Walk_AssociatedFile_Type.Equals("Image") && SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_WORK))
-          {
-              <div><br /><em>@iCounter.ToString(). @oFile.Walk_AssociatedFile_Caption</em><br />@oFile.Walk_AssociatedFile_Name</div>
-          }
-          else if (oFile.Walk_AssociatedFile_Type.Equals("Image") && SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_HOME))
-          {
-              <div>&nbsp;<br />@iCounter.ToString(). <em>@oFile.Walk_AssociatedFile_Caption</em><br /><img src="@oFile.Walk_AssociatedFile_Name" border="1" alt="@oFile.Walk_AssociatedFile_Caption" /></div>
-          }
-          iCounter = iCounter + 1;
-      }
+        @{
+            int iCounter = 1;
+            foreach (Walk_AssociatedFile oFile in Model.Walk_AssociatedFiles)
+            {
+                if (oFile.Walk_AssociatedFile_Type.Equals("Image") && SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_WORK))
+                {
+                    <div><br /><em>@iCounter.ToString(). @oFile.Walk_AssociatedFile_Caption</em><br />@oFile.Walk_AssociatedFile_Name</div>
+                }
+                else if (oFile.Walk_AssociatedFile_Type.Equals("Image") && SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_HOME))
+                {
+                    <div>&nbsp;<br />@iCounter.ToString(). <em>@oFile.Walk_AssociatedFile_Caption</em><br /><img src="@oFile.Walk_AssociatedFile_Name" border="1" alt="@oFile.Walk_AssociatedFile_Caption" /></div>
+                }
+                iCounter = iCounter + 1;
+            }
+        }
       <p>
           @Html.ActionLink("Edit this walk", "Edit", new { id = Model.WalkID })
       </p>
-  }
+
   </table>

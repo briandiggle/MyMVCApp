@@ -12,6 +12,7 @@
 *.user
 *.sln.docstates
 *.trc
+*.gpx
 
 # Build results
 [Dd]ebug/

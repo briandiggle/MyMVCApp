@@ -1,4 +1,5 @@
-﻿@using MyMVCApp.DAL
+﻿@using System.Threading
+@using MyMVCApp.DAL
 @model MyMVCAppCS.ViewModels.WalkSearchViewModel
 
 @{ViewBag.Title = "Search walking database for Walks"; }
@@ -15,7 +16,7 @@
 @if (Model.WalkResultsAvailable)
 {
         @Html.Raw(Model.SearchSummary)
-        <p><strong> @(Model.WalksFound.Count.ToString())  walks found </strong></p>
+        <p><strong> @(Model.WalksFound.Count.ToString(Thread.CurrentThread.CurrentCulture))  walks found </strong></p>
         
         <table>
         <tr>
@@ -36,7 +37,7 @@
          iResultCounter++;
 
          <tr>
-             <td>@iResultCounter.ToString() </td>
+             <td>@iResultCounter.ToString(Thread.CurrentThread.CurrentCulture) </td>
              <td>@Html.ActionLink(walk.WalkTitle, "Details", "Walks", new { id = walk.WalkID }, new { dummy = 1 })</td>
              <td>@Html.ActionLink(walk.WalkAreaName, "HillsByArea", "Walks", new { id = walk.Area.Arearef.Trim() }, new { dummy = 1 })</td>
              <td>@walk.CartographicLength</td>

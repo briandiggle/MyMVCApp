@@ -1,4 +1,5 @@
 ﻿
+@using System.Threading
 @using MyMVCApp.DAL
 @using MyMVCApp.Model
 @model Walk
@@ -124,7 +125,7 @@
               {
                 <tr>
                     <td>@Html.ActionLink(oHillAscent.Hill.Hillname, "HillDetails", "Walks", new { id = oHillAscent.Hillnumber }, null) </td>
-                    <td>@oHillAscent.Hill.Metres.ToString() m, @oHillAscent.Hill.Feet.ToString() ft</td>
+                    <td>@oHillAscent.Hill.Metres.ToString(Thread.CurrentThread.CurrentCulture) m, @oHillAscent.Hill.Feet.ToString() ft</td>
                     <td>@oHillAscent.Hill.Classification </td>
                     <td>
                         @if (oHillAscent.Hill.HillAscents.Count == 1)
@@ -199,7 +200,7 @@
             {
                 if (oFile.Walk_AssociatedFile_Type.Equals("Image") && SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_WORK))
                 {
-                    <div><br /><em>@iCounter.ToString(). @oFile.Walk_AssociatedFile_Caption</em><br />@oFile.Walk_AssociatedFile_Name</div>
+                    <div><br /><em>@iCounter.ToString(Thread.CurrentThread.CurrentCulture). @oFile.Walk_AssociatedFile_Caption</em><br />@oFile.Walk_AssociatedFile_Name</div>
                 }
                 else if (oFile.Walk_AssociatedFile_Type.Equals("Image") && SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_HOME))
                 {

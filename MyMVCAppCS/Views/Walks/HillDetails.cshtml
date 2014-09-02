@@ -1,4 +1,5 @@
-﻿@using MyMVCApp.DAL
+﻿@using System.Threading
+@using MyMVCApp.DAL
 @model MyMVCApp.DAL.Hill
 
 @{ ViewBag.Title = Model.Hillname; }
@@ -80,7 +81,7 @@
             {
 
                 <tr>
-                    <td class="ascentnumber">@iAscentCounter.ToString()</td>
+                    <td class="ascentnumber">@iAscentCounter.ToString(Thread.CurrentThread.CurrentCulture)</td>
                     <td class="walkdate">@Html.Encode(String.Format("{0:D}", oAscent.AscentDate))</td>
                     <td class="walktitle"><a href="/Walks/Details/@oAscent.Walk.WalkID">@oAscent.Walk.WalkTitle</a></td>
                     <td><a href="/Walks/Details/@oAscent.Walk.WalkID">@oAscent.Walk.WalkSummary</a></td>

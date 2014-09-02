@@ -1,4 +1,5 @@
 ﻿@model MyMVCApp.DAL.Walk
+@using System.Threading
 @using MyMVCApp.DAL
 @using MyMVCApp.Model
 
@@ -66,15 +67,15 @@
     </div>
     @for (int iHillAscentsCounter = 1; iHillAscentsCounter <= Model.HillAscents.Count; iHillAscentsCounter++)
     {
-        <div class="editor-field" id="DivVisitedSummit@(iHillAscentsCounter.ToString())">
+        <div class="editor-field" id="DivVisitedSummit@(iHillAscentsCounter.ToString(Thread.CurrentThread.CurrentCulture))">
             @Html.TextBox("VisitedSummit" + iHillAscentsCounter, WalkingStick.FormatHillSummaryAsLine(Model.HillAscents[iHillAscentsCounter - 1].Hill) + " ", new { size = 80 })
-            @Html.Hidden("VisitedSummit" + iHillAscentsCounter + "HillID", Model.HillAscents[iHillAscentsCounter - 1].Hillnumber.ToString())
+            @Html.Hidden("VisitedSummit" + iHillAscentsCounter + "HillID", Model.HillAscents[iHillAscentsCounter - 1].Hillnumber.ToString(Thread.CurrentThread.CurrentCulture))
         </div>
     }
 
     @for (int iHillVisitedCounter = Model.HillAscents.Count + 1; iHillVisitedCounter <= 15; iHillVisitedCounter++)
     {
-        <div class="editor-field" id="DivVisitedSummit@(iHillVisitedCounter.ToString())">
+        <div class="editor-field" id="DivVisitedSummit@(iHillVisitedCounter.ToString(Thread.CurrentThread.CurrentCulture))">
             @Html.TextBox("VisitedSummit" + iHillVisitedCounter, "", new { size = 80 }) @Html.Hidden("VisitedSummit" + iHillVisitedCounter + "HillID")
         </div>
     }
@@ -82,7 +83,7 @@
           <!-- Section: Markers Created---------------------------------------------------------------------------------------------------->
 
             @{
-                List<Marker> oWalkMarkersAlreadyCreated = (List<Marker>)ViewData["WalkMarkersAlreadyCreated"];
+                var oWalkMarkersAlreadyCreated = (List<Marker>)ViewData["WalkMarkersAlreadyCreated"];
                 if (oWalkMarkersAlreadyCreated.Count > 0)
                 {
                     @:&nbsp;
@@ -147,26 +148,26 @@
                 }
 
                 <br />
-                @:Image @iExistingImageCount.ToString() Delete? <input type="checkbox" id="deletexistingimage@(iExistingImageCount.ToString())" name="deletexistingimage@(iExistingImageCount.ToString())" /><br />
-                <input type="text" name="existingimagecaption@(iExistingImageCount.ToString())" value="@oWalkImage.Walk_AssociatedFile_Caption" size="100" />
-                <input type="hidden" name="existingimagename@(iExistingImageCount.ToString())" value="@oWalkImage.Walk_AssociatedFile_Name" />
+                @:Image @iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture) Delete? <input type="checkbox" id="deletexistingimage@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" name="deletexistingimage@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" /><br />
+                <input type="text" name="existingimagecaption@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" value="@oWalkImage.Walk_AssociatedFile_Caption" size="100" />
+                <input type="hidden" name="existingimagename@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" value="@oWalkImage.Walk_AssociatedFile_Name" />
                 @:&nbsp;
 
                 @:Marker?
                 if (oWalkImage.Walk_AssociatedFile_MarkerID != null)
                 {
-                    <input type="checkbox" id="existingimageismarker@(iExistingImageCount.ToString())" name="existingimageismarker@(iExistingImageCount.ToString())" checked class="imageismarker" />
+                    <input type="checkbox" id="existingimageismarker@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" name="existingimageismarker@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" checked class="imageismarker" />
                 }
                 else
                 {
-                    <input type="checkbox" id="existingimageismarker@(iExistingImageCount.ToString())" name="existingimageismarker@(iExistingImageCount.ToString())" class="imageismarker" />
+                    <input type="checkbox" id="existingimageismarker@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" name="existingimageismarker@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" class="imageismarker" />
                 }
-                <span id="existingimagemarkerdetails@(iExistingImageCount.ToString())" class="existingimagemarkerdetails">
+                <span id="existingimagemarkerdetails@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" class="existingimagemarkerdetails">
 
                     <br />Marker name:
-                    <input type="text" size="50" name="existingimagemarkername@(iExistingImageCount.ToString())" id="existingimagemarkername@(iExistingImageCount.ToString())" value="@WalkingStick.FormatMarkerAsLine(oWalkImage.Marker)" class="markersuggestions" />
-                    Not Found? <input type="checkbox" id="existingimagemarkernotfound@(iExistingImageCount.ToString())" name="existingimagemarkernotfound@(iExistingImageCount.ToString())" />
-                    <input type="hidden" id="existingimagemarkerid@(iExistingImageCount.ToString())" name="existingimagemarkerid@(iExistingImageCount.ToString())" value="@oWalkImage.Walk_AssociatedFile_MarkerID.ToString()" />
+                    <input type="text" size="50" name="existingimagemarkername@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" id="existingimagemarkername@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" value="@WalkingStick.FormatMarkerAsLine(oWalkImage.Marker)" class="markersuggestions" />
+                    Not Found? <input type="checkbox" id="existingimagemarkernotfound@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" name="existingimagemarkernotfound@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" />
+                    <input type="hidden" id="existingimagemarkerid@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" name="existingimagemarkerid@(iExistingImageCount.ToString(Thread.CurrentThread.CurrentCulture))" value="@oWalkImage.Walk_AssociatedFile_MarkerID.ToString()" />
                 </span>
                 if (SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_WORK))
                 {
@@ -193,14 +194,14 @@
     </div>
     @{
         SelectList selectlist = ViewBag.Associated_File_Types;
-        List<Walk_AssociatedFile> IQAuxilliaryFiles = ViewBag.Auxilliary_Files;
+        List<Walk_AssociatedFile> iqAuxilliaryFiles = ViewBag.Auxilliary_Files;
 
-        for (int iAuxCounter = 1; iAuxCounter <= IQAuxilliaryFiles.Count; iAuxCounter++)
+        for (int iAuxCounter = 1; iAuxCounter <= iqAuxilliaryFiles.Count; iAuxCounter++)
         {
             <div class="editor-field" id="existing_auxilliary_filesdiv@iAuxCounter">
-                @IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Name  ( @IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Type ) <em>@IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Caption</em>
-                Delete? <input type="checkbox" name="delexisting_auxilliary_file@(iAuxCounter)" /> <input type="hidden" name="existingauxfilename@(iAuxCounter.ToString())" value="@IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Name" />
-                <input type="hidden" name="existingauxfiletype@(iAuxCounter.ToString())" value="@IQAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Type" />
+                @iqAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Name  ( @iqAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Type ) <em>@iqAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Caption</em>
+                Delete? <input type="checkbox" name="delexisting_auxilliary_file@(iAuxCounter)" /> <input type="hidden" name="existingauxfilename@(iAuxCounter.ToString(Thread.CurrentThread.CurrentCulture))" value="@iqAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Name" />
+                <input type="hidden" name="existingauxfiletype@(iAuxCounter.ToString(Thread.CurrentThread.CurrentCulture))" value="@iqAuxilliaryFiles[iAuxCounter - 1].Walk_AssociatedFile_Type" />
             </div>
         }
     }
@@ -218,7 +219,7 @@
         <div class="editor-field" id="auxilliary_filesdiv@(iAuxCounter)">
             <strong>@iAuxCounter</strong>
             <input type="text" id="auxilliary_file@(iAuxCounter)" name="auxilliary_file@(iAuxCounter)" size="80"/>
-            @Html.DropDownList("auxilliary_filetype" + iAuxCounter.ToString(), selectlist)
+            @Html.DropDownList("auxilliary_filetype" + iAuxCounter, selectlist)
             <input type="text" id="auxilliary_caption@(iAuxCounter)" name="auxilliary_caption@(iAuxCounter)" size="40" /><br />
         </div>
     }

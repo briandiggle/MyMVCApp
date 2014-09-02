@@ -1,4 +1,6 @@
-﻿@model MyMVCApp.DAL.Walk
+﻿
+@using System.Threading
+@model MyMVCApp.DAL.Walk
 
 @{ ViewBag.Title = "Add New Walk";}
 
@@ -62,8 +64,8 @@
             @for (int iHillVisitedCounter = 1; iHillVisitedCounter <= 15; iHillVisitedCounter++)
             { 
                      
-           <div class="editor-field" id="DivVisitedSummit@(iHillVisitedCounter.ToString())">
-                @Html.TextBox("VisitedSummit" + iHillVisitedCounter.ToString(), "", new {size = 80}) @Html.Hidden("VisitedSummit" + iHillVisitedCounter + "HillID")
+           <div class="editor-field" id="DivVisitedSummit@(iHillVisitedCounter.ToString(Thread.CurrentThread.CurrentCulture))">
+                @Html.TextBox("VisitedSummit" + iHillVisitedCounter, "", new {size = 80}) @Html.Hidden("VisitedSummit" + iHillVisitedCounter + "HillID")
             </div>
             }
             &nbsp;

@@ -1,5 +1,5 @@
 ﻿@using MyMVCApp.DAL
-@model MyMVCAppCS.Models.PaginatedListMVC<MyMVCApp.DAL.Hill>
+@model MyMVCAppCS.Models.PaginatedListMVC<Hill>
 
 @{ ViewBag.Title = "Hills in Classification " + ViewData["HillClassName"];}
  
@@ -84,7 +84,7 @@
          <tr style="background-color:@Html.Raw(WalkingStick.NumberOfAscentsAsColour(item.NumberOfAscents))">
              <td class="hilllistnumber">@iHillNumberInClassification</td>
              <td class="hillname">@Html.ActionLink(item.Hillname, "HillDetails", new { id = item.Hillnumber }) </td>
-             <td class="hillclasses">@Html.Raw(MyMVCApp.DAL.WalkingStick.HillClassesToLinks(item.Classification))</td>
+             <td class="hillclasses">@Html.Raw(WalkingStick.HillClassesToLinks(item.Classification))</td>
              <td>@Html.Encode(String.Format("{0:#}", item.Metres))</td>
              <td>@String.Format("{0:#}", item.Feet)</td>
              <td class="gridref">

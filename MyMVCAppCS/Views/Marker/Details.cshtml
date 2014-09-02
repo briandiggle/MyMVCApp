@@ -1,4 +1,5 @@
-﻿@model MyMVCApp.DAL.Marker
+﻿@using MyMVCApp.Model
+@model MyMVCApp.DAL.Marker
 
 @{ViewBag.Title = "Marker: " + Model.MarkerTitle; }
 	
@@ -76,7 +77,7 @@
                <td>@oAssocFile.Walk.WalkDate.Day.ToString() @oAssocFile.Walk.WalkDate.ToString("MMMM") @oAssocFile.Walk.WalkDate.Year.ToString() : <em>@oAssocFile.Walk_AssociatedFile_Caption</em></td>
           </tr>
         <tr>
-            <td>@if (SessionSingleton.Current.UsageLocation.Equals("At Work"))
+            <td>@if (SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_WORK))
                    {
                        Response.Write(oAssocFile.Walk_AssociatedFile_Name);
                    }

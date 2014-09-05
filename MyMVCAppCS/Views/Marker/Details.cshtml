@@ -79,7 +79,7 @@
         <tr>
             <td>@if (SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_WORK))
                    {
-                       Response.Write(oAssocFile.Walk_AssociatedFile_Name);
+                       @oAssocFile.Walk_AssociatedFile_Name
                    }
                    else
                    {

@@ -215,10 +215,9 @@
 
     @for (int iAuxCounter = 1; iAuxCounter <= 6; iAuxCounter++)
     {
-
         <div class="editor-field" id="auxilliary_filesdiv@(iAuxCounter)">
             <strong>@iAuxCounter</strong>
-            <input type="text" id="auxilliary_file@(iAuxCounter)" name="auxilliary_file@(iAuxCounter)" size="80"/>
+            <input type="text" id="auxilliary_file@(iAuxCounter)" name="auxilliary_file@(iAuxCounter)" size="80" class="auxilliaryfileclass" />
             @Html.DropDownList("auxilliary_filetype" + iAuxCounter, selectlist)
             <input type="text" id="auxilliary_caption@(iAuxCounter)" name="auxilliary_caption@(iAuxCounter)" size="40" /><br />
         </div>

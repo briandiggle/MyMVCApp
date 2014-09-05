@@ -9,6 +9,8 @@ namespace MyMVCAppCS.Controllers
     using System.Web.Configuration;
 
     using MyMVCApp.DAL;
+    using MyMVCApp.Model;
+
     using MyMVCAppCS.Models;
     using MyMVCAppCS.ViewModels;
 
@@ -612,10 +614,12 @@ namespace MyMVCAppCS.Controllers
         // -----------------------
         public JsonResult CheckImages(string imagepath, string options="") 
         {
-       
-            string strAtWork;
-       
-            strAtWork = WebConfigurationManager.AppSettings["atwork"];
+            string strAtWork = "False";
+            if (SessionSingleton.Current.UsageLocation == WalkingConstants.AT_WORK)
+            {
+                strAtWork = "True";
+            }
+    
             imagepath = imagepath.Replace("\\", "/");
             int iLoc;
             try {
@@ -635,7 +639,7 @@ namespace MyMVCAppCS.Controllers
             string strRootPath = Server.MapPath("/").Replace("\\", "/");
 
             // -----Check that the path specified is valid------------------------
-            if (!WalkingStick.DetermineIfDirectoryExists(strPath)) 
+            if (!WalkingStick.DetermineIfDirectoryExists(strRootPath + strPath)) 
             {
                 ViewData["checkresults"] = "{\"Error\" | \"Directory Not Found.\"}";
                 return Json(new { Error = "Directory Not Found." },JsonRequestBehavior.AllowGet);

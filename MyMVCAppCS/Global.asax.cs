@@ -55,7 +55,7 @@ namespace MyMVCAppCS
         protected void Session_Start(object sender, EventArgs e)
         {
             // event is raised each time a new session is created     
-            SessionSingleton.Current.UsageLocation = WalkingConstants.AT_HOME;
+            SessionSingleton.Current.UsageLocation = WalkingConstants.AT_WORK;
         }
 
     }

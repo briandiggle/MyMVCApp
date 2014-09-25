@@ -26,7 +26,8 @@ namespace MyMVCApp.DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PLLPC4004\\OI;Initial Catalog=walkingDB;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PLLPC4004\\SQLEXPRESS2014;Initial Catalog=walkingDB;Integrated Securit" +
+            "y=True")]
         public string walkingLIVE {
             get {
                 return ((string)(this["walkingLIVE"]));
@@ -36,7 +37,8 @@ namespace MyMVCApp.DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PLLPC4004\\OI;Initial Catalog=walkingDB_DEV;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PLLPC4004\\SQLEXPRESS2014;Initial Catalog=walkingDB_DEV;Integrated Sec" +
+            "urity=True")]
         public string walkingDEV {
             get {
                 return ((string)(this["walkingDEV"]));

@@ -1,4 +1,0 @@
-Need square: 
-
-Top left : SE 30000 52000
-Bottom R:  SE 37000 45000

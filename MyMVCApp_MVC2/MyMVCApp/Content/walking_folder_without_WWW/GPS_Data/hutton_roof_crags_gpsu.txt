@@ -1,6 +1,0 @@
-I  GPSU 4.15
-M E   Ord Srvy Grt Britn 075  5.7360400E+02  1.1960020E-05 375 -111 431
-U  BRITISH GRID
-
-F ID---- Zn East  North T  Alt(m)   Comment
-W EW2682 SD 55699 77508 C     275.0 Hutton Roof Crags

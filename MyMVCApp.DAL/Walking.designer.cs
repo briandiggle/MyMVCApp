@@ -79,7 +79,7 @@ namespace MyMVCApp.DAL
         /// TODO: make this an application variable which can be changed at runtime
         /// </summary>
 		public WalkingDataContext() : 
-				base(global::MyMVCApp.DAL.Properties.Settings.Default.walkingLIVE, mappingSource)
+				base(global::MyMVCApp.DAL.Properties.Settings.Default.walkingDEV, mappingSource)
 		{
 			OnCreated();
 		}

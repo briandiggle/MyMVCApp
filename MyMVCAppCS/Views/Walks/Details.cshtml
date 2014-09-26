@@ -184,7 +184,12 @@
           }
           else if (oFile.Walk_AssociatedFile_Type.Equals("GPX File"))
           {
-              <div>&nbsp;<br /><br /><strong><a href="@oFile.Walk_AssociatedFile_Name"  title="GPX file" >GPX file of the walk <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
+              <div>&nbsp;<br /><br /><strong><a href="@oFile.Walk_AssociatedFile_Name"  title="GPX file" >GPX file with Track of the walk <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
+
+          }
+          else if (oFile.Walk_AssociatedFile_Type.Equals("GPX File with Route and Track"))
+          {
+            <div>&nbsp;<br /><br /><strong><a href="@oFile.Walk_AssociatedFile_Name" title="GPX file">GPX file with Route and Track of the walk <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
 
           }
           else if (oFile.Walk_AssociatedFile_Type.Equals("GTM File for GPS Trackmaker"))

@@ -1,7 +1,9 @@
 ﻿
 namespace MyMVCApp.Model
 {
+    using System;
     using System.Drawing;
+    using System.IO;
     using System.Text;
     using System.Web;
 
@@ -11,12 +13,20 @@ namespace MyMVCApp.Model
         {
            
             string imagePath = HttpRuntime.AppDomainAppPath + imagePathFromAppRoot.Substring(1, imagePathFromAppRoot.Length - 1).Replace(@"/",@"\");
-
+            Image imageToResize;
             // Create image.
-            Image image = Image.FromFile(imagePath);
+            try
+            {
+                 imageToResize = Image.FromFile(imagePath);
+            }
+            catch (FileNotFoundException)
+            {
+                return "Could not find image at [" + imagePath + "]";
+            }
+         
 
-            int width = image.Width/ 8;
-            int height = image.Height/ 8;
+            int width = imageToResize.Width/ 8;
+            int height = imageToResize.Height/ 8;
 
             var oStringBuilder = new StringBuilder();
 

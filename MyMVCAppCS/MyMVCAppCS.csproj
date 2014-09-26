@@ -215,6 +215,7 @@
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\PublishWalkingMVC.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\CreateEditWalk.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />

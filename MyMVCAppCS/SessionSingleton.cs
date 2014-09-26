@@ -32,6 +32,13 @@ public sealed class SessionSingleton
     /// </summary>
     public string UsageLocation { get; set; }
 
+    /// <summary>
+    /// Connection string driven from web.config app key DataTierTarget
+    /// </summary>
     public string ConnectionString { get; set; }
-    // ...
+
+    /// <summary>
+    /// Driven from web.config app key DataTierTarget
+    /// </summary>
+    public string DataTierTarget { get; set; }
 }

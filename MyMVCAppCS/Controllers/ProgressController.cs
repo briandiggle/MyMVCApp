@@ -16,7 +16,7 @@ namespace MyMVCAppCS.Controllers
 
         public ProgressController()
         {
-            this.repository = new SqlWalkingRepository();
+            this.repository = new SqlWalkingRepository(SessionSingleton.Current.ConnectionString);
         }
 
         //

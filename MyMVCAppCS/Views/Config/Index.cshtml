@@ -15,7 +15,19 @@
             <td class="searchform">@Html.DropDownListFor(config => config.AtWorkSetting, Model.UsageLocationOptions)</td>               
             <td class="searchform"></td> 
         </tr>
-                                                                                   
+              
+        <tr>
+            <td class="searchform">@Html.LabelFor(configmodel => configmodel.DataTierTargetSetting)</td>
+            <td class="searchform">@Html.DropDownListFor(config => config.DataTierTargetSetting, Model.DataTierSelectionOptions)</td>
+            <td class="searchform"></td>          
+        </tr>
+            
+        <tr>
+            <td colspan="3" class="searchform, aligncenter">
+                &nbsp;
+            </td>
+        </tr>        
+                                                                         
         <tr>
             <td colspan="3" class="searchform, aligncenter">
                 <input type="submit" value="Update Session Config" />
@@ -28,7 +40,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3" class="searchform, aligncenter">@Model.ConfigUpdateMessage</td>
+            <td colspan="3" class="searchform, aligncenter">@Html.Raw(Model.ConfigUpdateMessage)</td>
         </tr>
     </table>    
     }

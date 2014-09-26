@@ -48,7 +48,7 @@ namespace MyMVCApp.DAL
         void UpdateHillDetails(Walk walk);
 
         void DeleteHill(Walk walk);
-        IQueryable<HillAscent> GetHillAscents(int iHillID);
+        IQueryable<HillAscent> GetHillAscents(int iHillId);
         int GetNumberOfHillAscentsByHillID(int iHillID);
         int DeleteHillAscentsForWalk(int iWalkID);
         int DeleteAssociateFilesForWalk(int iWalkID);

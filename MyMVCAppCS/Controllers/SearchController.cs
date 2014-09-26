@@ -18,7 +18,7 @@ namespace MyMVCAppCS.Controllers
 
         public SearchController()
         {
-            this.repository = new SqlWalkingRepository();
+            this.repository = new SqlWalkingRepository(SessionSingleton.Current.ConnectionString);
         }
 
         public ActionResult Index()

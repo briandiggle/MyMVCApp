@@ -6,6 +6,8 @@ using System.Web.Routing;
 namespace MyMVCAppCS
 {
     using System;
+    using System.Configuration;
+
     using MyMVCApp.Model;
 
     public class MvcApplication : HttpApplication
@@ -56,6 +58,22 @@ namespace MyMVCAppCS
         {
             // event is raised each time a new session is created     
             SessionSingleton.Current.UsageLocation = WalkingConstants.AT_WORK;
+
+            string dataTierTarget = System.Web.Configuration.WebConfigurationManager.AppSettings["DataTierTarget"];
+
+            if (dataTierTarget.Equals(WalkingConstants.LIVE_DB_TIER) || dataTierTarget.Equals(WalkingConstants.TEST_DB_TIER))
+            {
+                SessionSingleton.Current.ConnectionString =
+                    ConfigurationManager.ConnectionStrings[dataTierTarget].ConnectionString;
+
+                SessionSingleton.Current.DataTierTarget = dataTierTarget;
+            }
+            else {
+                throw new ConfigurationErrorsException(
+                    "Value of appKey DataTierTarget must be either " + WalkingConstants.LIVE_DB_TIER + " or "
+                    + WalkingConstants.TEST_DB_TIER);
+            }
+
         }
 
     }

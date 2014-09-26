@@ -5,19 +5,19 @@
     using System.Collections.Specialized;
     using System.Linq;
 
-    
-
     public class SqlWalkingRepository : IWalkingRepository
     {
+        readonly WalkingDataContext myWalkingDB;
 
-        WalkingDataContext myWalkingDB;
-
-        //----Declare our constructor - 
-
+        //----Declare default constructor where no connection string is available
         public SqlWalkingRepository()
         {
 	        this.myWalkingDB = new WalkingDataContext();
+        }
 
+        public SqlWalkingRepository(string connectionString)
+        {
+            this.myWalkingDB = new WalkingDataContext(connectionString);
         }
 
         public int AddWalk(Walk walk)
@@ -68,6 +68,11 @@
                 int iHillNumber = oHillAscent.Hillnumber;
                 Hill oHill = this.myWalkingDB.Hills.SingleOrDefault(h => h.Hillnumber == iHillNumber);
 
+                if (oHill == null)
+                {
+                    throw new NullReferenceException("Could not find Hill ID " + iHillNumber + " in the Hills table in the database");
+                }
+
                 if (oHill.NumberOfAscents == 0)
                 {
                     oHill.FirstClimbedDate = oHillAscent.AscentDate;
@@ -93,22 +98,22 @@
 
         }
 
-        public IQueryable<HillAscent> GetHillAscents(int iHillID)
+        public IQueryable<HillAscent> GetHillAscents(int iHillId)
         {
 
 	        IQueryable<HillAscent> oAscents = from ascent in this.myWalkingDB.HillAscents 
-                              where ascent.Hillnumber == iHillID
+                              where ascent.Hillnumber == iHillId
                               select ascent;
 
 	        return oAscents;
 
         }
 
-        public int GetNumberOfHillAscentsByHillID(int iHillID)
+        public int GetNumberOfHillAscentsByHillID(int iHillId)
         {
 
             IQueryable<HillAscent> oAscents = from ascent in this.myWalkingDB.HillAscents 
-                              where ascent.Hillnumber == iHillID
+                              where ascent.Hillnumber == iHillId
                               select ascent;
 
 	        return oAscents.Count();
@@ -158,22 +163,22 @@
 
 
     
-        public int DeleteHillAscentsForWalk(int iWalkID)
+        public int DeleteHillAscentsForWalk(int iWalkId)
         {
 
             IEnumerable<HillAscent> existingHillAscents = from myHillAscent in this.myWalkingDB.HillAscents
-                                                          where myHillAscent.WalkID == iWalkID
+                                                          where myHillAscent.WalkID == iWalkId
                                                           select myHillAscent;
             this.myWalkingDB.HillAscents.DeleteAllOnSubmit(existingHillAscents);
             this.myWalkingDB.SubmitChanges();
             return 0;
         }
 
-        public int DeleteAssociateFilesForWalk(int iWalkID)
+        public int DeleteAssociateFilesForWalk(int iWalkId)
         {
 
             IEnumerable<Walk_AssociatedFile> existingAssocFiles = from myAssocFile in this.myWalkingDB.Walk_AssociatedFiles
-                                                                  where myAssocFile.WalkID == iWalkID
+                                                                  where myAssocFile.WalkID == iWalkId
                                                                   select myAssocFile;
 
             this.myWalkingDB.Walk_AssociatedFiles.DeleteAllOnSubmit(existingAssocFiles);
@@ -265,20 +270,11 @@
             return this.myWalkingDB.Areas.Where(area => area.Country==strCountryCode).OrderBy(area => area.Shortname);
         }
 
-
-
-
-
         public string GetWalkAreaTypeNameFromType(string strAreaType)
         {
-
-            AreaType oAreaType;
-
-            oAreaType = this.myWalkingDB.AreaTypes.SingleOrDefault(at => at.AreaType1.Equals(strAreaType));
+            AreaType oAreaType = this.myWalkingDB.AreaTypes.SingleOrDefault(at => at.AreaType1.Equals(strAreaType));
             return oAreaType.AreaTypeName;
-
         }
-
 
         //------------------------------------------------------------------------------------------------------------
         // Function: GetAllWalkingArea(strCoutry)
@@ -356,14 +352,14 @@
         }
 
 
-        public List<Marker> GetMarkersCreatedOnWalk(int iWalkID)
+        public List<Marker> GetMarkersCreatedOnWalk(int iWalkId)
         {
 
 	        List<Marker> oMarkers = new List<Marker>();
 
-            IQueryable<Marker> q = from m in this.myWalkingDB.Markers where m.WalkID == iWalkID select m;
+            IQueryable<Marker> markerquery = from marker in this.myWalkingDB.Markers where marker.WalkID == iWalkId select marker;
 
-	        foreach (Marker oMarker in q.AsEnumerable()) {
+	        foreach (Marker oMarker in markerquery.AsEnumerable()) {
 		        oMarkers.Add(oMarker);
 	        }
 
@@ -398,7 +394,7 @@
         {
    
             // ---Not as simple as that - the text in hill table given comma separated list of classifications-----
-            if (!(strHillClassification == null))
+            if (strHillClassification != null)
             {
                 return from hillclass in this.myWalkingDB.Classlinks
                        where hillclass.Classref == strHillClassification
@@ -407,10 +403,9 @@
                        select myHill;
         
             }
-            else
-            {
-                return from myHill in this.myWalkingDB.Hills orderby myHill.Hillname select myHill;
-            }
+
+            return from myHill in this.myWalkingDB.Hills orderby myHill.Hillname select myHill;
+           
         }
 
 
@@ -463,22 +458,22 @@
         {
             int iRetval = 0;
             var arrMarkerIDs = oForm["markers_added"].Split(':');
+
             // ----First associate any newly created markers (created with ajax) with the newly created walk----------------
             for (int iCounter = 0; iCounter <= arrMarkerIDs.Count() - 1; iCounter++)
             {
-                if ((!(arrMarkerIDs[iCounter] == null)
+                if ((arrMarkerIDs[iCounter] != null
                             && (arrMarkerIDs[iCounter].Length > 0)))
                 {
                     try
                     {
-                        int iMarkerID = int.Parse(arrMarkerIDs[iCounter]);
-                        Marker oMarker;
+                        int iMarkerId = int.Parse(arrMarkerIDs[iCounter]);
                         // ----Update marker with walk ID------
-                        oMarker = this.myWalkingDB.Markers.SingleOrDefault(m => m.MarkerID == iMarkerID);
+                        Marker oMarker = this.myWalkingDB.Markers.SingleOrDefault(m => m.MarkerID == iMarkerId);
                         oMarker.WalkID = iWalkID;
                         // ----Write a "created" marker observation--------
                         Marker_Observation oMarkerObs = new Marker_Observation();
-                        oMarkerObs.MarkerID = iMarkerID;
+                        oMarkerObs.MarkerID = iMarkerId;
                         oMarkerObs.FoundFlag = false;
                         oMarkerObs.WalkID = iWalkID;
                         oMarkerObs.ObservationText = "Set in place";
@@ -500,17 +495,16 @@
             }
             int iImageCounter = 1;
             // ----Now write any marker observations necessary for newly added images either in create or edit-----------------------------
-            while ((!(oForm[("imagerelpath" + iImageCounter.ToString())] == null)
-                        && (oForm[("imagerelpath" + iImageCounter.ToString())].Length > 0)))
+            while ((oForm[("imagerelpath" + iImageCounter)] != null
+                        && (oForm[("imagerelpath" + iImageCounter)].Length > 0)))
             {
-                if ( oForm[("imageismarker" + iImageCounter.ToString())] == "on"
-                            && !arrMarkerIDs.Contains(oForm["imagemarkerid" + iImageCounter.ToString()]))
+                if ( oForm[("imageismarker" + iImageCounter)] == "on"
+                            && !arrMarkerIDs.Contains(oForm["imagemarkerid" + iImageCounter]))
                 {
-                    int iMarkerID = 0;
                     try
                     {
-                        iMarkerID = int.Parse(oForm[("imagemarkerid" + iImageCounter.ToString())]);
-                        Marker oMarker = this.myWalkingDB.Markers.SingleOrDefault(m => m.MarkerID == iMarkerID);
+                        int iMarkerId = int.Parse(oForm[("imagemarkerid" + iImageCounter)]);
+                        Marker oMarker = this.myWalkingDB.Markers.SingleOrDefault(m => m.MarkerID == iMarkerId);
                         // ----Write any found/not found observation. Only do so if the walk is not the walk on which the marker was created--------
                         if ((oMarker.WalkID != iWalkID))
                         {
@@ -520,9 +514,9 @@
                             {
                                 oMarker.WalkID = iWalkID;
                             }
-                            oMarkerObs.MarkerID = iMarkerID;
+                            oMarkerObs.MarkerID = iMarkerId;
                             oMarkerObs.WalkID = iWalkID;
-                            if ((oForm[("imagemarkernotfound" + iImageCounter.ToString())] == "on"))
+                            if ((oForm[("imagemarkernotfound" + iImageCounter)] == "on"))
                             {
                                 oMarker.Status = "Marker Left - Revisited, not found      ";
                                 oMarkerObs.ObservationText = "Revisited but not found";
@@ -550,12 +544,14 @@
                             }
                         }
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
+                        throw new Exception("An error occurred when preparing the marker observation for new images:" + ex.Message, ex);
                     }
                 }
                 iImageCounter = (iImageCounter + 1);
             }
+
             int iNumExistingImages = 0;
             try
             {
@@ -567,17 +563,15 @@
             // ----Now write any marker observations necessary for existing images in edit walk-----------------------------
             for (int iExistingImageCount = 1; (iExistingImageCount <= iNumExistingImages); iExistingImageCount++)
             {
-                if ((oForm[("existingimageismarker" + iExistingImageCount.ToString())] == "on")
-                            && !arrMarkerIDs.Contains(oForm[("existingimagemarkerid" + iExistingImageCount.ToString())]))
+                if ((oForm[("existingimageismarker" + iExistingImageCount)] == "on")
+                            && !arrMarkerIDs.Contains(oForm[("existingimagemarkerid" + iExistingImageCount)]))
                 {
-                    int iMarkerID = 0;
                     try
                     {
-                        iMarkerID = int.Parse(oForm[("existingimagemarkerid" + iExistingImageCount.ToString())]);
-                        Marker oMarker = this.myWalkingDB.Markers.SingleOrDefault(m => m.MarkerID == iMarkerID);
+                        int iMarkerId = int.Parse(oForm[("existingimagemarkerid" + iExistingImageCount)]);
+                        Marker oMarker = this.myWalkingDB.Markers.SingleOrDefault(m => m.MarkerID == iMarkerId);
                         // ----Write any found/not found observation. Only do so if the walk is not the walk on which the marker was created--------
-                        if (((oMarker.WalkID != iWalkID)
-                                    || (oMarker.WalkID == null)))
+                        if (((oMarker.WalkID != iWalkID)|| (oMarker.WalkID == null)))
                         {
                             // ---If the marker is not yet associated with a walk then associate it with this walk
                             if ((oMarker.WalkID == null))
@@ -585,9 +579,9 @@
                                 oMarker.WalkID = iWalkID;
                             }
                             Marker_Observation oMarkerObs = new Marker_Observation();
-                            oMarkerObs.MarkerID = iMarkerID;
+                            oMarkerObs.MarkerID = iMarkerId;
                             oMarkerObs.WalkID = iWalkID;
-                            if ((oForm[("existingimagemarkernotfound" + iExistingImageCount.ToString())] == "on"))
+                            if ((oForm[("existingimagemarkernotfound" + iExistingImageCount)] == "on"))
                             {
                                 oMarker.Status = "Marker Left - Revisited, not found      ";
                                 oMarkerObs.ObservationText = "Revisited but not found";
@@ -615,8 +609,9 @@
                             }
                         }
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
+                        throw new Exception("An error occurred when preparing the marker observation for existing images:" + ex.Message, ex);
                     }
                 }
             }
@@ -633,9 +628,9 @@
         //  Function: GetMarkerDetails
         //  Returns a single marker object
         // -------------------------------------------------------------
-        public Marker GetMarkerDetails(int iMarkerID) {
+        public Marker GetMarkerDetails(int iMarkerId) {
 
-            return this.myWalkingDB.Markers.SingleOrDefault(m => m.MarkerID == iMarkerID);
+            return this.myWalkingDB.Markers.SingleOrDefault(m => m.MarkerID == iMarkerId);
         }
     
         public IQueryable<Marker_Status> GetAllMarkerStatusOptions()
@@ -676,8 +671,8 @@
         //  Function: GetWalkDetails
         //  Returns single walk
         // -------------------------------------------------------------
-        public Walk GetWalkDetails(int iWalkID) {
-            return this.myWalkingDB.Walks.SingleOrDefault(w => w.WalkID==iWalkID);
+        public Walk GetWalkDetails(int iWalkId) {
+            return this.myWalkingDB.Walks.SingleOrDefault(w => w.WalkID==iWalkId);
         }
     
         public void UpdateHillDetails(Walk walk) {
@@ -718,11 +713,6 @@
 
         public void UpdateWalkDetails(Walk walk, NameValueCollection oForm, string strRootPath)
         {
-            int iRetval = 0;
-            List<HillAscent> arHillAscents;
-           
-           List<Walk_AssociatedFile> arAssociatedFiles;
-      
             // ----Update the walk object. Unit of work pattern ensures the changes made are committed below-----
             WalkingStick.FillWalkFromFormVariables(ref walk, oForm);
 
@@ -730,22 +720,22 @@
             this.DeleteHillAscentsForWalk(walk.WalkID);
 
             // ---Add hill ascents as per updated form-----------------
-            arHillAscents = WalkingStick.FillHillAscentsFromFormVariables(walk.WalkID, oForm);
-            iRetval = this.AddWalkSummitsVisited(arHillAscents);
+            List<HillAscent> arHillAscents = WalkingStick.FillHillAscentsFromFormVariables(walk.WalkID, oForm);
+            this.AddWalkSummitsVisited(arHillAscents);
 
             // ---Delete the existing associated files---------
-            iRetval = this.DeleteAssociateFilesForWalk(walk.WalkID);
+            this.DeleteAssociateFilesForWalk(walk.WalkID);
 
             // ----Add updated existing associated files--------
-            arAssociatedFiles = WalkingStick.FillExistingAssociatedFilesFromFormVariables(walk.WalkID, oForm, strRootPath);
-            iRetval = this.AddWalkAssociatedFiles(arAssociatedFiles);
+            List<Walk_AssociatedFile> arAssociatedFiles = WalkingStick.FillExistingAssociatedFilesFromFormVariables(walk.WalkID, oForm, strRootPath);
+            this.AddWalkAssociatedFiles(arAssociatedFiles);
 
             // ---Add the any new associated files-----
             arAssociatedFiles = WalkingStick.FillHillAssociatedFilesFromFormVariables(walk.WalkID, oForm, strRootPath);
-            iRetval = this.AddWalkAssociatedFiles(arAssociatedFiles);
+            this.AddWalkAssociatedFiles(arAssociatedFiles);
 
             // ---update any markers created by ajax call with walk id, and add any marker observations----------------
-            iRetval = this.AssociateMarkersWithWalk(oForm, walk.WalkID);
+            this.AssociateMarkersWithWalk(oForm, walk.WalkID);
             this.myWalkingDB.SubmitChanges();
         }
 

@@ -19,7 +19,7 @@ namespace MyMVCAppCS.Controllers
 
         public MarkerController()
         {
-            this.repository = new SqlWalkingRepository();
+            this.repository = new SqlWalkingRepository(SessionSingleton.Current.ConnectionString);
         }
 
         //

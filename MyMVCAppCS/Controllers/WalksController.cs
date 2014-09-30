@@ -5,6 +5,7 @@ using System.Linq;
 namespace MyMVCAppCS.Controllers
 {
     using System;
+    using System.IO;
     using System.Collections.Generic;
     using System.Web.Configuration;
 
@@ -569,7 +570,7 @@ namespace MyMVCAppCS.Controllers
             foreach (Walk oWalk in IQWalks)
             {
                 var walkTitle = WalkingStick.FormatWalkAsLine(oWalk);
-                suggestedWalks.Add(new AutocompleteSuggestionOption { label = walkTitle, value = walkTitle + " | " + oWalk.WalkID.ToString() });
+                suggestedWalks.Add(new AutocompleteSuggestionOption { label = walkTitle, value = walkTitle + " | " + oWalk.WalkID });
             }
             return Json(suggestedWalks, JsonRequestBehavior.AllowGet);
         }
@@ -577,7 +578,10 @@ namespace MyMVCAppCS.Controllers
 
         public JsonResult CheckFileInWebrootJSON(string imagepath)
         {
-           var  bIsInPath = imagepath.StartsWith(this.Server.MapPath("/"));
+            string strPathToRoot = Server.MapPath("/").Replace("\\", "/").TrimEnd('/');
+            string strFullPathToFile = strPathToRoot + imagepath.Replace("\\", "/");
+
+            bool bIsInPath = System.IO.File.Exists(strFullPathToFile);
 
             var oRes = new { isinpath = bIsInPath.ToString() };
 
@@ -622,19 +626,16 @@ namespace MyMVCAppCS.Controllers
     
             imagepath = imagepath.Replace("\\", "/");
             int iLoc;
+
             try {
-                iLoc = imagepath.LastIndexOf("/");
+                iLoc = imagepath.LastIndexOf("/", StringComparison.Ordinal);
             }
             catch (Exception) {
                 iLoc = 0;
             }
 
-            string strPath = "";
-            try {
-                strPath = imagepath.Substring(0, (iLoc - 0));
-            }
-                catch (Exception) {
-            }
+            string strPath = imagepath.Substring(0, iLoc);
+        
 
             string strRootPath = Server.MapPath("/").Replace("\\", "/");
 

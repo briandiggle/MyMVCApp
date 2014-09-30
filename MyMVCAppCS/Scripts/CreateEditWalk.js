@@ -6,7 +6,7 @@
 /
 / Dependencies:
 /    1. jQuery 2.1.1
-/    2. jQuery UI 1.10.4
+/    2. jQuery UI 1.11.1
 /    3. jQuery Validation Plug-in v1.12.0
 /
 /-----------------------------------------------------------------------------------------------------------------------------*/
@@ -158,7 +158,8 @@ $(function () {
 
         $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file' + auxilliaryfilenumber).val() }, function (oResults) {
             if (oResults.isinpath == "False") {
-                alert('The file you chose is not in the web site root.');
+                alert('The file you specified is either not in the web site root or does not exist');
+                $('#auxilliary_file' + auxilliaryfilenumber).val("");
             } else {
                 $('#auxilliary_filesdiv' + (parseInt(auxilliaryfilenumber) + 1)).show();
             }

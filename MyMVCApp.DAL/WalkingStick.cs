@@ -184,8 +184,7 @@
         public static object CheckFilesInDirectory(string strRelativePath, string strFilenamePrefix, ref string strRootPath, bool bAtWork) 
         {
             var oDirInfo = new DirectoryInfo(strRootPath + strRelativePath);
-            var oRegex = new Regex(("^" 
-                            + (strFilenamePrefix + "[0-9]+")));
+            var oRegex = new Regex(("^" + (strFilenamePrefix + "[0-9]+")));
             var oSB = new StringBuilder();
             int iNumPicturesFound = 0;
            
@@ -197,18 +196,8 @@
                 }
             }
             oSB.AppendLine("{");
-            //iLoc = strDirName.IndexOf(strRootPath);
-
-            //if ((iLoc < 0)) {
-            //    oSB.AppendLine(("\"errors\": " + "\"Path invalid\","));
-            //}
-            //else {
-            //    strRelativePath = strDirName.Substring((strRootPath.Length - 1), ((strDirName.Length - strRootPath.Length) 
-            //                    + 1));
-            //}
-
+   
             var oResults = new{imagesfound = iNumPicturesFound, path = (strRelativePath + "/" + strFilenamePrefix), atwork = bAtWork.ToString(), filenameprefix = strFilenamePrefix};
-
         
             return oResults;
         }

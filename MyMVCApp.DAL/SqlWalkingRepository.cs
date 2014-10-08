@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Collections.Specialized;
+    using System.Data;
     using System.Linq;
 
     public class SqlWalkingRepository : IWalkingRepository
@@ -713,6 +714,13 @@
 
         public void UpdateWalkDetails(Walk walk, NameValueCollection oForm, string strRootPath)
         {
+            //---Want to avoid a situation where form has been left overnight, and connection lost
+            if (this.myWalkingDB.Connection.State != ConnectionState.Open)
+            {
+                this.myWalkingDB.Connection.Close();
+                this.myWalkingDB.Connection.Open();
+            }
+
             // ----Update the walk object. Unit of work pattern ensures the changes made are committed below-----
             WalkingStick.FillWalkFromFormVariables(ref walk, oForm);
 

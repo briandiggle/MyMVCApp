@@ -205,6 +205,7 @@
 
     
         public static void FillWalkFromFormVariables(ref Walk oWalk, NameValueCollection oForm) {
+
             int iLoc = 0;
             int iWalkTotalTime = 0;
             try {

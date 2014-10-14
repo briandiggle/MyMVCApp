@@ -57,8 +57,18 @@ namespace MyMVCAppCS
         protected void Session_Start(object sender, EventArgs e)
         {
             // event is raised each time a new session is created     
-            SessionSingleton.Current.UsageLocation = WalkingConstants.AT_WORK;
 
+            string usageLocation = System.Web.Configuration.WebConfigurationManager.AppSettings["atwork"];
+
+            if (usageLocation.Equals("true"))
+            {
+                SessionSingleton.Current.UsageLocation = WalkingConstants.AT_WORK;
+            }
+            else
+            {
+                SessionSingleton.Current.UsageLocation = WalkingConstants.AT_HOME;
+            }
+ 
             string dataTierTarget = System.Web.Configuration.WebConfigurationManager.AppSettings["DataTierTarget"];
 
             if (dataTierTarget.Equals(WalkingConstants.LIVE_DB_TIER) || dataTierTarget.Equals(WalkingConstants.TEST_DB_TIER))

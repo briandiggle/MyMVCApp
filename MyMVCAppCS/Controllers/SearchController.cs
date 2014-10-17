@@ -4,6 +4,8 @@ using System.Web.Mvc;
 
 namespace MyMVCAppCS.Controllers
 {
+    using System.Web;
+
     using MyMVCApp.DAL;
 
     using MyMVCAppCS.Models;
@@ -59,6 +61,7 @@ namespace MyMVCAppCS.Controllers
         public ActionResult ImageSearch()
         {
             var imageSearchViewModel = new ImageSearchViewModel();
+ 
             return this.View(imageSearchViewModel);
         }
 
@@ -70,7 +73,8 @@ namespace MyMVCAppCS.Controllers
             {
                 return this.View(imageSearchViewModel);
             }
-
+            ViewBag.ImagesDirectory = Server.MapPath("~/Content/images/");
+            ViewBag.ApplicationRoot = VirtualPathUtility.ToAbsolute("~/");
             List<Walk_AssociatedFile> allImages = this.repository.GetAllImages().ToList();
 
             var imageSearchEngine = new ImageSearchEngine(new ImageSelector());

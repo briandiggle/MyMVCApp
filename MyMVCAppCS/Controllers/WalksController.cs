@@ -1,5 +1,6 @@
 ﻿
 using System.Web.Mvc;
+using System.Web.UI;
 using System.Linq;
 
 namespace MyMVCAppCS.Controllers
@@ -7,6 +8,7 @@ namespace MyMVCAppCS.Controllers
     using System;
     using System.IO;
     using System.Collections.Generic;
+    using System.Web;
     using System.Web.Configuration;
 
     using MyMVCApp.DAL;
@@ -381,7 +383,8 @@ namespace MyMVCAppCS.Controllers
             var oWalkTypes = this.repository.GetWalkTypes();
             var oWalkMarkers = this.repository.GetMarkersCreatedOnWalk(id);
 
-            ViewData["WalkTypes"] = new SelectList(oWalkTypes, "WalkTypeString", "WalkTypeString");
+            ViewBag.WalkTypes = new SelectList(oWalkTypes, "WalkTypeString", "WalkTypeString", oWalk.WalkType);
+         //   ViewData["WalkTypes"] = new SelectList(oWalkTypes, "WalkTypeString", "WalkTypeString");
             ViewBag.Associated_File_Types = new SelectList(oAssociatedFileTypes, "Walk_AssociatedFile_Type1", "Walk_AssociatedFile_Type1");
             ViewData["Model"] = oWalk;
             ViewBag.Auxilliary_Files = oAuxilliaryFiles.AsEnumerable().ToList();
@@ -429,30 +432,24 @@ namespace MyMVCAppCS.Controllers
         //  Descr   : Create Walk form
         // --------------------------------------------------------------------------------------
         [AcceptVerbs(HttpVerbs.Post)]
-        public ActionResult Create(Walk walk) 
+        public ActionResult Create(Walk walk)
         {
-
-            //string strViewData = "";
-            //var strKeys = Request.Form.AllKeys;
-
-            int iWalkID;
-
-            List<HillAscent> arHillAscents;
-            List<Walk_AssociatedFile> arAssociatedFiles;
-           
             // ----This should really be done by a customised Model Binder-----------
             Walk oWalk = new Walk();
             WalkingStick.FillWalkFromFormVariables(ref oWalk, Request.Form);
-            iWalkID = repository.AddWalk(oWalk);
-            
+            int iWalkID = this.repository.AddWalk(oWalk);
+
             // ---Add hill ascents-----------------
-            arHillAscents = WalkingStick.FillHillAscentsFromFormVariables(iWalkID, Request.Form);
+            List<HillAscent> arHillAscents = WalkingStick.FillHillAscentsFromFormVariables(iWalkID, this.Request.Form);
             repository.AddWalkSummitsVisited(arHillAscents);
-          
+
             // ---Add the associated files-----
-            arAssociatedFiles = WalkingStick.FillHillAssociatedFilesFromFormVariables(iWalkID, Request.Form, Server.MapPath("/"));
+            List<Walk_AssociatedFile> arAssociatedFiles = WalkingStick.FillHillAssociatedFilesFromFormVariables(
+                iWalkID,
+                this.Request.Form,
+                this.Server.MapPath("/"));
             repository.AddWalkAssociatedFiles(arAssociatedFiles);
-           
+
             // ---update any markers created by ajax call with walk id, and add any marker observations----------------
             repository.AssociateMarkersWithWalk(Request.Form, iWalkID);
             if ((walk.HillAscents.Count > 0))
@@ -461,13 +458,6 @@ namespace MyMVCAppCS.Controllers
             }
 
             return RedirectToAction("WalksByDate", new { OrderBy = "DateDesc" });
-            
-            // ---For dev to display form details-------
-            // For Each item In strKeys
-            //     strViewData = strViewData + "Key:" + item.ToString + " Value:" + Request.Form(item.ToString) + "<Br/>"
-            // Next
-            // ViewData("allthekeys") = strViewData
-            // Return View("DisplayFormDetails")
         }
 
 
@@ -578,8 +568,8 @@ namespace MyMVCAppCS.Controllers
 
         public JsonResult CheckFileInWebrootJSON(string imagepath)
         {
-            string strPathToRoot = Server.MapPath("/").Replace("\\", "/").TrimEnd('/');
-            string strFullPathToFile = strPathToRoot + imagepath.Replace("\\", "/");
+            string strPathToRoot = Server.MapPath("~/Content/images/");
+            string strFullPathToFile = strPathToRoot + imagepath;
 
             bool bIsInPath = System.IO.File.Exists(strFullPathToFile);
 
@@ -637,7 +627,7 @@ namespace MyMVCAppCS.Controllers
             string strPath = imagepath.Substring(0, iLoc);
         
 
-            string strRootPath = Server.MapPath("/").Replace("\\", "/");
+            string strRootPath = Server.MapPath("~/Content/images/").Replace("\\", "/");
 
             // -----Check that the path specified is valid------------------------
             if (!WalkingStick.DetermineIfDirectoryExists(strRootPath + strPath)) 
@@ -645,8 +635,10 @@ namespace MyMVCAppCS.Controllers
                 ViewData["checkresults"] = "{\"Error\" | \"Directory Not Found.\"}";
                 return Json(new { Error = "Directory Not Found." },JsonRequestBehavior.AllowGet);
             }
+
+
             // ----Now check that images are found in this directory------------------
-            var oResults = WalkingStick.CheckFilesInDirectory(strPath, imagepath.Substring((iLoc + 1), ((imagepath.Length - iLoc) 
+            var oResults = WalkingStick.CheckFilesInDirectory(VirtualPathUtility.ToAbsolute("~/"),strPath, imagepath.Substring((iLoc + 1), ((imagepath.Length - iLoc) 
                                 - 1)), ref strRootPath, bool.Parse(strAtWork));
        
             return Json(oResults, JsonRequestBehavior.AllowGet);

@@ -39,16 +39,16 @@
         }
 
         <tr>
-            <td>@Html.Raw(WalkingStick.HillClassToLink(oClassProgress.ClassRef, ""))</td>
-            <td>@Html.Raw(WalkingStick.HillClassToLink(oClassProgress.ClassRef, oClassProgress.ClassName))</td> 
+            <td>@Html.Raw(WalkingStick.HillClassToLink(oClassProgress.ClassRef, oClassProgress.ClassRef, VirtualPathUtility.ToAbsolute("~/")))</td>
+            <td>@Html.Raw(WalkingStick.HillClassToLink(oClassProgress.ClassRef, oClassProgress.ClassName, VirtualPathUtility.ToAbsolute("~/")))</td> 
             <td>@oClassProgress.NumberClimbed.ToString()</td> 
             <td>@oClassProgress.TotalHills.ToString()</td>
             <td>@String.Format("{0:F}", dPercentComplete)</td> 
             <td>@if (oClassProgress.NumberClimbed > 0)
                 {
-                    <img src="../../Content/images/bk_item_off_green_light.png" width="@iCompletePixels.ToString()" height="31"/>
+                    <img src="~/Content/images/bk_item_off_green_light.png" width="@iCompletePixels.ToString()" height="31"/>
                 } 
-                <img src="../../Content/images/bk_item_off_red_light.png" width="@(ProgressBarTotalPixels - iCompletePixels).ToString()" height="31"/>
+                <img src="~/Content/images/bk_item_off_red_light.png" width="@(ProgressBarTotalPixels - iCompletePixels).ToString()" height="31"/>
             </td> 
         </tr>
     }

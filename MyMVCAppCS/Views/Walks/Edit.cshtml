@@ -126,7 +126,7 @@
 
             <div class="editor-label">
                 <strong>New Images</strong>
-                <label for="images_path">Relative path from web root and name prefix of images </label>E.g. <pre>\Content\images\lakes\212\BlackFell_22April2003_</pre>
+                <label for="images_path">Relative path from images directory and name prefix of images </label>E.g. <pre>lakes\212\BlackFell_22April2003_</pre>
             </div>
             <div class="editor-field">
                 <input type="text" name="images_path" id="images_path" size="80" maxlength="160"  value="" />
@@ -176,7 +176,7 @@
                 else
                 {
                     <br />
-                    <img src="@oWalkImage.Walk_AssociatedFile_Name" class="walkimage" alt="existing image" />
+                    <img src="~/@oWalkImage.Walk_AssociatedFile_Name" class="walkimage" alt="existing image" />
                 }
                 iExistingImageCount = iExistingImageCount + 1;
             }
@@ -210,7 +210,7 @@
 
     <div class="editor-label">
         <strong>Add New Additional Files</strong><br />
-        <br />Relative path from web root including file name E.g. <pre>\Content\images\lakes\1\ScafellPike _23_March_2014.gpx</pre>
+        <br />Relative path from images directory including file name E.g. <pre>lakes\1\ScafellPike_23_March_2014.gpx</pre>
     </div>
 
     @for (int iAuxCounter = 1; iAuxCounter <= 6; iAuxCounter++)

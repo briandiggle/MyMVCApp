@@ -2,7 +2,7 @@
 @using MyMVCApp.Model
 @model MyMVCAppCS.ViewModels.ImageSearchViewModel
 
-@{ViewBag.Title = "earch Walking Database for Images"; }
+@{ViewBag.Title = "Search Walking Database for Images"; }
 
 <h2>Search Walking Database for Images</h2>
     
@@ -34,7 +34,7 @@
 
                     <tr>
                         <td>@iResultCounter.ToString()</td>            
-                        <td>@Html.Raw(ImageHelper.BuildImgTag(imageFile.Walk_AssociatedFile_Name))</td>
+                        <td>@Html.Raw(ImageHelper.BuildImgTag(ViewBag.ImagesDirectory,imageFile.Walk_AssociatedFile_Name, ViewBag.ApplicationRoot))</td>
                         <td><span class="verysmall">@imageFile.Walk_AssociatedFile_Name :</span><br/>&nbsp;<br/>
                             <em>@imageFile.Walk_AssociatedFile_Caption</em>
                         </td>

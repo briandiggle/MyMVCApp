@@ -151,7 +151,7 @@
               if (SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_HOME))
               {
 
-                  <div>&nbsp;<br /><strong>Altitude Profile <em>@oFile.Walk_AssociatedFile_Caption</em></strong><br /><img src="@oFile.Walk_AssociatedFile_Name" border="1" alt="Altitude Profile" /></div>
+                  <div>&nbsp;<br /><strong>Altitude Profile <em>@oFile.Walk_AssociatedFile_Caption</em></strong><br /><img src="~/@oFile.Walk_AssociatedFile_Name" border="1" alt="Altitude Profile" /></div>
               }
               else
               {
@@ -163,7 +163,7 @@
           {
               if (SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_HOME))
               {
-                  <div>&nbsp;<br /><strong>Map of Walk Area <em>@oFile.Walk_AssociatedFile_Caption</em></strong><br /><img src="@oFile.Walk_AssociatedFile_Name" border="1" alt="Map of walk area" /></div>
+                  <div>&nbsp;<br /><strong>Map of Walk Area <em>@oFile.Walk_AssociatedFile_Caption</em></strong><br /><img src="~/@oFile.Walk_AssociatedFile_Name" border="1" alt="Map of walk area" /></div>
               }
               else
               {
@@ -174,7 +174,7 @@
           {
               if (SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_HOME))
               {
-                  <div>&nbsp;<br /><strong>Map with track overlay <em>@oFile.Walk_AssociatedFile_Caption </em></strong><br /><img src="@oFile.Walk_AssociatedFile_Name" border="1" alt="Map with track overlay" /></div>
+                  <div>&nbsp;<br /><strong>Map with track overlay <em>@oFile.Walk_AssociatedFile_Caption </em></strong><br /><img src="~/@oFile.Walk_AssociatedFile_Name" border="1" alt="Map with track overlay" /></div>
               }
               else
               {
@@ -184,17 +184,17 @@
           }
           else if (oFile.Walk_AssociatedFile_Type.Equals("GPX File"))
           {
-              <div>&nbsp;<br /><br /><strong><a href="@oFile.Walk_AssociatedFile_Name"  title="GPX file" >GPX file with Track of the walk <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
+              <div>&nbsp;<br /><br /><strong><a href="~/@oFile.Walk_AssociatedFile_Name"  title="GPX file" >GPX file with Track of the walk <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
 
           }
           else if (oFile.Walk_AssociatedFile_Type.Equals("GPX File with Route and Track"))
           {
-            <div>&nbsp;<br /><br /><strong><a href="@oFile.Walk_AssociatedFile_Name" title="GPX file">GPX file with Route and Track of the walk <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
+            <div>&nbsp;<br /><br /><strong><a href="~/@oFile.Walk_AssociatedFile_Name" title="GPX file">GPX file with Route and Track of the walk <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
 
           }
           else if (oFile.Walk_AssociatedFile_Type.Equals("GTM File for GPS Trackmaker"))
           {
-              <div>&nbsp;<br /><br /><strong><a href="@oFile.Walk_AssociatedFile_Name"  title="GPX file" >GTM File for GPS Trackmaker <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
+              <div>&nbsp;<br /><br /><strong><a href="~/@oFile.Walk_AssociatedFile_Name"  title="GPX file" >GTM File for GPS Trackmaker <em>@oFile.Walk_AssociatedFile_Caption</em></a></strong></div>
           }
 
       }
@@ -209,7 +209,7 @@
                 }
                 else if (oFile.Walk_AssociatedFile_Type.Equals("Image") && SessionSingleton.Current.UsageLocation.Equals(WalkingConstants.AT_HOME))
                 {
-                    <div>&nbsp;<br />@iCounter.ToString(). <em>@oFile.Walk_AssociatedFile_Caption</em><br /><img src="@oFile.Walk_AssociatedFile_Name" border="1" alt="@oFile.Walk_AssociatedFile_Caption" /></div>
+                    <div>&nbsp;<br />@iCounter.ToString(). <em>@oFile.Walk_AssociatedFile_Caption</em><br /><img src="~/@oFile.Walk_AssociatedFile_Name" border="1" alt="@oFile.Walk_AssociatedFile_Caption" /></div>
                 }
                 iCounter = iCounter + 1;
             }

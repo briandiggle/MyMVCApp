@@ -10,14 +10,19 @@
 /    3. jQuery Validation Plug-in v1.12.0
 /
 /-----------------------------------------------------------------------------------------------------------------------------*/
+function getHome() {
+    return document.getElementById("ApplicationRoot").href;
+}
 
 $(function () {
 
+ 
+     
     /*----Associate an autocomplete with the marker left on hill box which will make an AJAX call-----*/
     $("#MarkerLeftOnHill").autocomplete({
         source: function (request, response) {
             $.ajax({
-                url: "/Walks/HillSuggestions",
+                url: getHome() +  "Walks/HillSuggestions",
                 dataType: "json",
                 data: {
                     term: request.term,
@@ -46,7 +51,7 @@ $(function () {
     }
 
     $("#WalkAreaName").autocomplete({
-        source: "/Walks/WalkAreaSuggestions",
+        source: getHome() + "Walks/WalkAreaSuggestions",
         minLength: 2,
         select: function (event, ui) {
             extractareaid(ui.item.value);
@@ -63,7 +68,7 @@ $(function () {
         $("#VisitedSummit" + iSummitVisitCount).autocomplete({
             source: function (request, response) {
                 $.ajax({
-                    url: "/Walks/HillSuggestions",
+                    url: getHome() + "Walks/HillSuggestions",
                     dataType: "json",
                     data: {
                         term: request.term,
@@ -100,7 +105,7 @@ $(function () {
     $(document).on("keydown.autocomplete", ".markersuggestions", function () {
 
         $(this).autocomplete({
-            source: "/Walks/MarkerSuggestions",
+            source: getHome()+ "Walks/MarkerSuggestions",
             minLength: 2,
             select: function (event, ui) {
                 var elementroot = event.target.id.replace(/[0-9]/g, '');
@@ -156,7 +161,7 @@ $(function () {
 
         var auxilliaryfilenumber = extractnumber("auxilliary_file", e.target.id);
 
-        $.getJSON('/Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file' + auxilliaryfilenumber).val() }, function (oResults) {
+        $.getJSON(getHome() + 'Walks/CheckFileInWebrootJSON', { imagepath: $('#auxilliary_file' + auxilliaryfilenumber).val() }, function (oResults) {
             if (oResults.isinpath == "False") {
                 alert('The file you specified is either not in the web site root or does not exist');
                 $('#auxilliary_file' + auxilliaryfilenumber).val("");
@@ -200,7 +205,7 @@ $(document).ready(function () {
     /*----Then insert the images together with ImageCaption text boxes into the DOM------*/
     $('#getimages').click(function () {
 
-        $.get('/Walks/CheckImages', { imagepath: $("#images_path").val() }, function (oResults) {
+        $.get(getHome() + 'Walks/CheckImages', { imagepath: $("#images_path").val() }, function (oResults) {
 
             for (var iImageCount = 1; iImageCount <= oResults.imagesfound; iImageCount = iImageCount + 1) {
                 $("#walkimages").append('<br/><b>Image ' + iImageCount + '</b><br/><input type="text" id="imagecaption' + iImageCount + '" name="imagecaption' + iImageCount + '" size="100" />&nbsp;Marker? <input type="checkbox" class="imageismarker" id="imageismarker' + iImageCount + '" name="imageismarker' + iImageCount + '"/>');
@@ -299,7 +304,7 @@ $(document).ready(function () {
                 if (bValid) {
 
                     /*-----Do AJAX call to add insert the new marker so that its available immediately for selection----*/
-                    $.getJSON('/Walks/CreateMarker', { mtitle: markertitle.val(), mdesc: markerdescription.val(), mdate: markerdateleft.val(), mhillid: markerhillid.val(), mgps: markergps.val() },
+                    $.getJSON(getHome() + 'Walks/CreateMarker', { mtitle: markertitle.val(), mdesc: markerdescription.val(), mdate: markerdateleft.val(), mhillid: markerhillid.val(), mgps: markergps.val() },
                         function (oResults, status) {
                             if (status == "success") {
                                 $('#WalkMarkers').append('<br/><table class="markertable"><tr><td colspan="2"><strong>Marker Created</strong></td></tr>' +

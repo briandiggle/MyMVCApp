@@ -4,17 +4,24 @@
 
 @section ViewSpecificHead
 {
-<link type="text/css" href="../../Content/themes/base/jquery.ui.all.css" rel="Stylesheet" />
-<script type="text/javascript" src="../../Scripts/jquery-2.1.1.js"></script>
-<script type="text/javascript" src="../../Scripts/jquery-ui-1.10.4.js"></script>
+<link type="text/css" href="~/Content/jquery-ui.css" rel="Stylesheet" />
+<script type="text/javascript" src="~/Scripts/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery-ui-1.11.1.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.validate.js"></script>
+
 }
     
 <script type="text/javascript">
     
+    function getHome() {
+        return document.getElementById("ApplicationRoot").href;
+    }
+
+
     $(function () {
         $().ready(function() {
             $("#Hillnumber").autocomplete({
-                source: "/Walks/HillSuggestions",
+                source: getHome() + "Walks/HillSuggestions",
                 minLength: 2,
                 select: function(event, ui) {
                     var hillid = extractid(ui.item.value);
@@ -32,7 +39,7 @@
             }
         
             $("#WalkTitle").autocomplete({
-                source: "/Walks/WalkSuggestions",
+                source: getHome() + "Walks/WalkSuggestions",
                 minLength: 2,
                 select: function(event, ui) {
                     var walkid = extractid(ui.item.value);

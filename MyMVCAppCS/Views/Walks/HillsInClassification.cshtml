@@ -3,7 +3,7 @@
 
 @{ ViewBag.Title = "Hills in Classification " + ViewData["HillClassName"];}
  
-    <h2>@ViewData["HillClassName"] s <em>(@ViewData["NumberClimbed"] of @Model.TotalCount climbed)</em></h2>
+    <h2>@ViewData["HillClassName"]s <em>(@ViewData["NumberClimbed"] of @Model.TotalCount climbed)</em></h2>
     
     <table class="hiddentable">
     <tr> 
@@ -84,7 +84,7 @@
          <tr style="background-color:@Html.Raw(WalkingStick.NumberOfAscentsAsColour(item.NumberOfAscents))">
              <td class="hilllistnumber">@iHillNumberInClassification</td>
              <td class="hillname">@Html.ActionLink(item.Hillname, "HillDetails", new { id = item.Hillnumber }) </td>
-             <td class="hillclasses">@Html.Raw(WalkingStick.HillClassesToLinks(item.Classification))</td>
+             <td class="hillclasses">@Html.Raw(WalkingStick.HillClassesToLinks(item.Classification, VirtualPathUtility.ToAbsolute("~/")))</td>
              <td>@Html.Encode(String.Format("{0:#}", item.Metres))</td>
              <td>@String.Format("{0:#}", item.Feet)</td>
              <td class="gridref">

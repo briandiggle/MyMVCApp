@@ -83,8 +83,8 @@
                 <tr>
                     <td class="ascentnumber">@iAscentCounter.ToString(Thread.CurrentThread.CurrentCulture)</td>
                     <td class="walkdate">@Html.Encode(String.Format("{0:D}", oAscent.AscentDate))</td>
-                    <td class="walktitle"><a href="/Walks/Details/@oAscent.Walk.WalkID">@oAscent.Walk.WalkTitle</a></td>
-                    <td><a href="/Walks/Details/@oAscent.Walk.WalkID">@oAscent.Walk.WalkSummary</a></td>
+                    <td class="walktitle">@Html.ActionLink(oAscent.Walk.WalkTitle, "Details", new { id = oAscent.Walk.WalkID })</td>
+                    <td>@Html.ActionLink(oAscent.Walk.WalkSummary, "Details", new { id = oAscent.Walk.WalkID })</td>
                 </tr>
 
                 iAscentCounter = iAscentCounter + 1;

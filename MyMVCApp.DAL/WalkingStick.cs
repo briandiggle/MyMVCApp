@@ -11,20 +11,20 @@
     {
 
     
-        public static string HillClassToLink(string strHillClass, string strLinkText) 
+        public static string HillClassToLink(string strHillClass, string strLinkText, string strApplicationRoot) 
         {
             if ((strLinkText == "")) 
             {
                 strLinkText = strHillClass;
                 // Warning!!! Optional parameters not supported
             }
-            return ("<a href=\"/Walks/HillsInClassification/" 
+            return ("<a href=\"" +  strApplicationRoot + "Walks/HillsInClassification/" 
                         + (strHillClass + ("\">" 
                         + (strLinkText + "</a>"))));
         }
 
  
-        public static string HillClassesToLinks(string strHillClasses) 
+        public static string HillClassesToLinks(string strHillClasses, string strApplicationRoot) 
         {
             var oSb = new StringBuilder();
             bool bFirst = true;
@@ -45,9 +45,9 @@
                     {
                         oSb.Append(", ");
                     }
-                    oSb.Append(("<a href=\"/Walks/HillsInClassification/" 
+                    oSb.Append("<a href=\"" + strApplicationRoot + "Walks/HillsInClassification/" 
                                     + (strClass + ("\">" 
-                                    + (strClass + "</a>")))));
+                                    + (strClass + "</a>"))));
                 }
             }
             return oSb.ToString();
@@ -181,11 +181,10 @@
         /// <param name="strRootPath"></param>
         /// <param name="bAtWork"></param>
         /// <returns>Json formatted summary of results</returns>
-        public static object CheckFilesInDirectory(string strRelativePath, string strFilenamePrefix, ref string strRootPath, bool bAtWork) 
+        public static object CheckFilesInDirectory(string strAppRoot, string strRelativePath, string strFilenamePrefix, ref string strRootPath, bool bAtWork) 
         {
             var oDirInfo = new DirectoryInfo(strRootPath + strRelativePath);
             var oRegex = new Regex(("^" + (strFilenamePrefix + "[0-9]+")));
-            var oSB = new StringBuilder();
             int iNumPicturesFound = 0;
            
             var oFiles = oDirInfo.GetFiles((strFilenamePrefix + "*"));
@@ -195,9 +194,7 @@
                     iNumPicturesFound++;
                 }
             }
-            oSB.AppendLine("{");
-   
-            var oResults = new{imagesfound = iNumPicturesFound, path = (strRelativePath + "/" + strFilenamePrefix), atwork = bAtWork.ToString(), filenameprefix = strFilenamePrefix};
+            var oResults = new{imagesfound = iNumPicturesFound, path = (strAppRoot + "Content/images/" + strRelativePath + "/" + strFilenamePrefix), atwork = bAtWork.ToString(), filenameprefix = strFilenamePrefix};
         
             return oResults;
         }
@@ -270,7 +267,7 @@
             
             try 
             {
-                if ((!(oForm["total_time_hours"] == null) && (oForm["total_time_hours"].Length > 0))) 
+                if ((oForm["total_time_hours"] != null && (oForm["total_time_hours"].Length > 0))) 
                 {
                     iWalkTotalTime = (int.Parse(oForm["total_time_hours"]) * 60);
                 }
@@ -281,7 +278,7 @@
             }
 
             try {
-                if ((!(oForm["total_time_mins"] == null) && (oForm["total_time_mins"].Length > 0))) 
+                if ((oForm["total_time_mins"] != null && (oForm["total_time_mins"].Length > 0))) 
                 {
                     iWalkTotalTime = (iWalkTotalTime + int.Parse(oForm["total_time_mins"]));
                 }
@@ -294,7 +291,7 @@
                 oWalk.WalkTotalTime = iWalkTotalTime;
             }
 
-            if (!(oForm["summary_auto"] == null)) 
+            if (oForm["summary_auto"] != null) 
             {
                 var oSB = new StringBuilder();
                 oSB.Append(oForm["WalkStartPoint"]);
@@ -316,7 +313,7 @@
                             oSB.Append(oForm[("VisitedSummit" + iCounter)]);
                         }
                         else {
-                            oSB.Append((oForm[("VisitedSummit" + iCounter)]).Substring(0, iFirstLocation) + "(");
+                            oSB.Append((oForm[("VisitedSummit" + iCounter)]).Substring(0, iFirstLocation));
                         }
                         iCounter = (iCounter + 1);
                     }
@@ -347,9 +344,19 @@
                                  GPS_Reference = oMarker.GPS_Reference,
                                  Hillnumber = Int16.Parse(oForm["HillID"]),
                                  Location_Description = oMarker.Location_Description,
-                                 Status = oForm["MarkerStatusii"],
-                                 WalkID = Int32.Parse(oForm["WalkID"])
+                                 Status = oForm["MarkerStatusii"]
+       
                              };
+
+            // Allow the walk to be null - it is possible that a marker was placed when not doing a walk as such
+            try
+            {
+                oNewMarker.WalkID = Int32.Parse(oForm["WalkID"]);
+            }
+            catch (Exception)
+            {
+                oNewMarker.WalkID = null;
+            }
 
             return oNewMarker;
         }
@@ -393,7 +400,13 @@
         }
 
 
-    
+    /// <summary>
+    /// Given the walk details form, prepare the DAL objects for insertion
+    /// </summary>
+    /// <param name="iWalkID"></param>
+    /// <param name="oForm"></param>
+    /// <param name="strRootpath"></param>
+    /// <returns></returns>
         public static List<Walk_AssociatedFile> FillHillAssociatedFilesFromFormVariables(int iWalkID, NameValueCollection oForm, string strRootpath) 
         {
     
@@ -408,7 +421,7 @@
                             && (oForm[("imagerelpath" + iCounter)]).Length > 0)) {
                     var oHillAssociateFile = new Walk_AssociatedFile();
                     oHillAssociateFile.WalkID = iWalkID;
-                    oHillAssociateFile.Walk_AssociatedFile_Name = oForm[("imagerelpath" + iCounter)];
+                    oHillAssociateFile.Walk_AssociatedFile_Name = CleanUpAssociateFilePath(oForm[("imagerelpath" + iCounter)], "/Content/images/");
                     oHillAssociateFile.Walk_AssociatedFile_Type = "Image";
                     oHillAssociateFile.Walk_AssociatedFile_Caption = oForm[("imagecaption" + iCounter)];
                     oHillAssociateFile.Walk_AssociatedFile_Sequence = (short)(iCounter);
@@ -432,7 +445,7 @@
                 {
                     Walk_AssociatedFile oHillAssociateFile = new Walk_AssociatedFile();
                     oHillAssociateFile.WalkID = iWalkID;
-                    oHillAssociateFile.Walk_AssociatedFile_Name = ConvertPathToRelativeURL(oForm[("auxilliary_file" + iCounter)], strRootpath);
+                    oHillAssociateFile.Walk_AssociatedFile_Name = CleanUpAssociateFilePath(oForm[("auxilliary_file" + iCounter)], "/Content/images/");
                     oHillAssociateFile.Walk_AssociatedFile_Type = oForm[("auxilliary_filetype" + iCounter)];
                     oHillAssociateFile.Walk_AssociatedFile_Sequence = (short)(iCounter + iNumImages);
                     oHillAssociateFile.Walk_AssociatedFile_Caption = oForm[("auxilliary_caption" + iCounter)];
@@ -446,7 +459,33 @@
             return collHillAssociatedFiles;
         }
 
+        /// <summary>
+        /// The associated file path must start with the /Content/images/ (in strPathToImges
+        /// </summary>
+        /// <param name="strPathToClean"></param>
+        /// <param name="strPathToImages"></param>
+        /// <returns></returns>
+        public static string CleanUpAssociateFilePath(string strPathToClean, string strPathToImages)
+        {
+            string strCleanedPath = strPathToClean;
 
+            // Ensure that we have only single forward slashes in the path
+            strCleanedPath = strCleanedPath.Replace('\\','/');
+            strCleanedPath = strCleanedPath.Replace("//", "/");
+
+            // Remove anything which is found before /Content/images/
+            int iLoc = strCleanedPath.IndexOf(strPathToImages);
+            if (iLoc > 0)
+            {
+                strCleanedPath = strCleanedPath.Substring(iLoc, strCleanedPath.Length - iLoc);
+            }else if (iLoc == -1)
+            {  
+                // Add in the path to the images directory if not present
+                strCleanedPath = strPathToImages + strCleanedPath;
+            }
+
+            return strCleanedPath;
+        }
 
     
         public static List<Walk_AssociatedFile> FillExistingAssociatedFilesFromFormVariables(int iWalkID, NameValueCollection oForm, string strRootpath) 

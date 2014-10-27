@@ -83,7 +83,7 @@
                          @Html.ActionLink(item.Hillname, "HillDetails", new { id = item.Hillnumber })
                      </td>
                      <td>
-                         @Html.Raw(WalkingStick.HillClassesToLinks(item.Classification))
+                         @Html.Raw(WalkingStick.HillClassesToLinks(item.Classification, VirtualPathUtility.ToAbsolute("~/")))
                      </td>
                      <td>
                          @Html.Encode(String.Format("{0:#}", item.Metres))
